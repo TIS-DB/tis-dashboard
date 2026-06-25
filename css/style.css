@@ -1,53 +1,164 @@
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    margin:0;
-    background:#f5f7fa;
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+    color: #222;
 }
 
-.header{
-    background:#003366;
-    color:white;
-    padding:20px;
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #1f2a44;
+    color: white;
+    padding: 15px 20px;
 }
 
-.container{
-    padding:20px;
+.header h1 {
+    margin: 0;
+    font-size: 20px;
 }
 
-.kpi-container{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:20px;
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    padding: 20px;
 }
 
-.kpi-card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,.1);
-    min-width:200px;
+/* =========================
+   KPI CARDS
+========================= */
+
+.kpi-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.filters{
-    background:white;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:20px;
+.kpi-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
+.kpi-card h3 {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
 }
 
-th,td{
-    border:1px solid #ddd;
-    padding:8px;
+.kpi-card div {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
-th{
-    background:#003366;
-    color:white;
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+    margin: 10px 0;
+}
+
+.filters input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 300px;
+    outline: none;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+#breadcrumb {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+#breadcrumb span {
+    color: #1f6feb;
+    cursor: pointer;
+}
+
+/* =========================
+   TABLE (BI STYLE)
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+thead {
+    background: #f0f2f5;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f9fbff;
+    cursor: pointer;
+}
+
+/* Expand icon column */
+td:first-child {
+    width: 30px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+/* =========================
+   CHART CARD
+========================= */
+
+.chart-card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Chart sizing */
+canvas {
+    max-height: 350px;
+}
+
+/* =========================
+   SMALL UX IMPROVEMENTS
+========================= */
+
+/* smooth hover feel */
+tr {
+    transition: background 0.2s ease;
+}
+
+/* clickable rows */
+tr:hover {
+    background: #eef4ff;
 }
