@@ -1,245 +1,305 @@
-
 let rawData = [];
+let categoryChart;
 
 let state = {
-    level: "category",
-    selectedCategory: null,
-    selectedCourse: null
+  level: "category",
+  selectedCategory: null,
+  selectedCourse: null
 };
 
-// ---------------- INIT ----------------
 document.addEventListener("DOMContentLoaded", async () => {
-    const res = await fetch("data/enrollments.json");
-    rawData = await res.json();
-    render();
+  await loadData();
 });
 
-// ---------------- MAIN RENDER ----------------
+async function loadData() {
+  const res = await fetch("data/enrollments.json?v=" + Date.now());
+  rawData = await res.json();
+  render();
+}
+
+function refreshDashboard() {
+  loadData();
+}
+
 function render() {
-    renderBreadcrumb();
-    renderHeader();
-    renderTable();
-    renderKPI();
+  renderKPI();
+  renderSummary();
+  renderChart();
+  renderBreadcrumb();
+  renderList();
 }
 
-// ---------------- KPI ----------------
+function fee(r) {
+  return Number(r.course_fee || 0);
+}
+
+function typeOfStudent(r) {
+  return String(r["new/existing"] || "").toLowerCase();
+}
+
+function formatShortCurrency(value) {
+  if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
+  if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
+  return "₹" + value.toLocaleString();
+}
+
 function renderKPI() {
+  const totalRevenue = rawData.reduce((s, r) => s + fee(r), 0);
+  const totalStudents = rawData.length;
 
-    const totalRevenue = rawData.reduce((s, r) =>
-        s + Number(r.course_fee || 0), 0);
+  const newRows = rawData.filter(r => typeOfStudent(r).includes("new"));
+  const existingRows = rawData.filter(r => typeOfStudent(r).includes("existing"));
 
-    const totalStudents = rawData.length;
+  const newRevenue = newRows.reduce((s, r) => s + fee(r), 0);
+  const existingRevenue = existingRows.reduce((s, r) => s + fee(r), 0);
 
-    const avgRevenue = totalStudents > 0
-        ? totalRevenue / totalStudents
-        : 0;
+  const avg = totalStudents ? totalRevenue / totalStudents : 0;
+  const share = totalStudents ? (newRows.length / totalStudents) * 100 : 0;
 
-    document.getElementById("totalRevenue").innerText =
-        "₹" + totalRevenue.toLocaleString();
-
-    document.getElementById("totalStudents").innerText =
-        totalStudents;
-
-    document.getElementById("avgRevenue").innerText =
-        "₹" + avgRevenue.toFixed(0);
+  document.getElementById("totalRevenue").innerText = formatShortCurrency(totalRevenue);
+  document.getElementById("totalStudents").innerText = totalStudents;
+  document.getElementById("avgRevenue").innerText = formatShortCurrency(avg);
+  document.getElementById("existingRevenue").innerText = formatShortCurrency(existingRevenue);
+  document.getElementById("newRevenue").innerText = formatShortCurrency(newRevenue);
+  document.getElementById("existingCount").innerText = existingRows.length;
+  document.getElementById("newCount").innerText = newRows.length;
+  document.getElementById("newShare").innerText = share.toFixed(1) + "%";
+  document.getElementById("newShareText").innerText =
+    `${newRows.length} of ${totalStudents} students`;
 }
 
-// ---------------- HEADER ----------------
-function renderHeader() {
+function renderSummary() {
+  const totalRevenue = rawData.reduce((s, r) => s + fee(r), 0);
+  const totalStudents = rawData.length;
 
-    const head = document.getElementById("tableHead");
+  document.getElementById("summaryText").innerText =
+    `${totalStudents} enrolments · ${formatShortCurrency(totalRevenue)} revenue · FY27`;
 
-    if (state.level === "category") {
-        head.innerHTML = `
-        <tr>
-            <th></th>
-            <th>Category</th>
-            <th>Students</th>
-            <th>Revenue</th>
-        </tr>`;
-    }
-
-    if (state.level === "course") {
-        head.innerHTML = `
-        <tr>
-            <th></th>
-            <th>Course</th>
-            <th>Students</th>
-            <th>Revenue</th>
-        </tr>`;
-    }
-
-    if (state.level === "student") {
-        head.innerHTML = `
-        <tr>
-            <th>Student</th>
-            <th>Course</th>
-            <th>Category</th>
-            <th>Type</th>
-            <th>Date</th>
-            <th>Fee</th>
-        </tr>`;
-    }
+  const now = new Date();
+  document.getElementById("updatedAt").innerText =
+    "Updated " + now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
-// ---------------- TABLE ----------------
-function renderTable() {
+function renderChart() {
+  const grouped = groupByCategory(rawData);
 
-    const body = document.getElementById("tableBody");
-    body.innerHTML = "";
+  const labels = grouped.map(r => r.category);
+  const existingData = grouped.map(g =>
+    rawData
+      .filter(r => r.course_category === g.category && typeOfStudent(r).includes("existing"))
+      .reduce((s, r) => s + fee(r), 0)
+  );
 
-    // LEVEL 1 → CATEGORY
-    if (state.level === "category") {
+  const newData = grouped.map(g =>
+    rawData
+      .filter(r => r.course_category === g.category && typeOfStudent(r).includes("new"))
+      .reduce((s, r) => s + fee(r), 0)
+  );
 
-        const grouped = groupByCategory(rawData);
+  const ctx = document.getElementById("categoryChart");
 
-        grouped.forEach(r => {
+  if (categoryChart) categoryChart.destroy();
 
-            const icon = "▸";
-
-            body.innerHTML += `
-            <tr onclick="drillToCourse('${escape(r.category)}')" style="cursor:pointer;">
-                <td>${icon}</td>
-                <td>${r.category}</td>
-                <td>${r.count}</td>
-                <td>₹${r.revenue.toLocaleString()}</td>
-            </tr>`;
-        });
+  categoryChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [
+        {
+          label: "Existing",
+          data: existingData,
+          backgroundColor: "#368ddb",
+          borderRadius: 5
+        },
+        {
+          label: "New",
+          data: newData,
+          backgroundColor: "#1b9d7f",
+          borderRadius: 5
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "bottom"
+        }
+      },
+      scales: {
+        y: {
+          ticks: {
+            callback: value => formatShortCurrency(value)
+          }
+        }
+      }
     }
-
-    // LEVEL 2 → COURSE
-    if (state.level === "course") {
-
-        const filtered = rawData.filter(r =>
-            r.course_category === state.selectedCategory
-        );
-
-        const grouped = groupByCourse(filtered);
-
-        grouped.forEach(r => {
-
-            const icon = "▸";
-
-            body.innerHTML += `
-            <tr onclick="drillToStudent('${escape(r.course)}')" style="cursor:pointer;">
-                <td>${icon}</td>
-                <td>${r.course}</td>
-                <td>${r.count}</td>
-                <td>₹${r.revenue.toLocaleString()}</td>
-            </tr>`;
-        });
-    }
-
-    // LEVEL 3 → STUDENT
-    if (state.level === "student") {
-
-        const filtered = rawData.filter(r =>
-            r.course_name === state.selectedCourse
-        );
-
-        filtered.forEach(r => {
-
-            body.innerHTML += `
-            <tr>
-                <td>${r.student_name}</td>
-                <td>${r.course_name}</td>
-                <td>${r.course_category}</td>
-                <td>${r["new/existing"]}</td>
-                <td>${r.enrolment_date}</td>
-                <td>₹${r.course_fee}</td>
-            </tr>`;
-        });
-    }
+  });
 }
 
-// ---------------- GROUP BY CATEGORY ----------------
+function renderBreadcrumb() {
+  const b = document.getElementById("breadcrumb");
+
+  if (state.level === "category") {
+    b.innerText = "Tap category → course → students";
+  }
+
+  if (state.level === "course") {
+    b.innerHTML = `<span onclick="goHome()">Home</span> → ${state.selectedCategory}`;
+  }
+
+  if (state.level === "student") {
+    b.innerHTML =
+      `<span onclick="goHome()">Home</span> → 
+       <span onclick="backToCourses()">${state.selectedCategory}</span> → 
+       ${state.selectedCourse}`;
+  }
+}
+
+function renderList() {
+  const box = document.getElementById("listContainer");
+  box.innerHTML = "";
+
+  if (state.level === "category") {
+    const grouped = groupByCategory(rawData);
+
+    grouped.forEach(r => {
+      box.innerHTML += `
+        <div class="list-card" onclick="drillToCourse('${encodeURIComponent(r.category)}')">
+          <div class="icon">▶</div>
+          <div class="title">${r.category}</div>
+          <div>
+            <div class="amount">${formatShortCurrency(r.revenue)}</div>
+            <div class="students">${r.count} students</div>
+          </div>
+        </div>`;
+    });
+
+    box.innerHTML += grandTotalCard(rawData);
+  }
+
+  if (state.level === "course") {
+    const filtered = rawData.filter(r => r.course_category === state.selectedCategory);
+    const grouped = groupByCourse(filtered);
+
+    grouped.forEach(r => {
+      box.innerHTML += `
+        <div class="list-card" onclick="drillToStudent('${encodeURIComponent(r.course)}')">
+          <div class="icon">▶</div>
+          <div class="title">${r.course}</div>
+          <div>
+            <div class="amount">${formatShortCurrency(r.revenue)}</div>
+            <div class="students">${r.count} students</div>
+          </div>
+        </div>`;
+    });
+  }
+
+  if (state.level === "student") {
+    const filtered = rawData.filter(r => r.course_name === state.selectedCourse);
+
+    filtered.forEach(r => {
+      const initials = getInitials(r.student_name);
+
+      box.innerHTML += `
+        <div class="student-row">
+          <div class="avatar">${initials}</div>
+          <div>
+            <div class="title">${r.student_name}</div>
+            <div class="students">${r.enrolment_date || ""}</div>
+          </div>
+          <div>
+            <div class="amount">₹${fee(r).toLocaleString()}</div>
+            <div class="badge">${r["new/existing"] || ""}</div>
+          </div>
+        </div>`;
+    });
+  }
+}
+
+function grandTotalCard(data) {
+  const totalRevenue = data.reduce((s, r) => s + fee(r), 0);
+  return `
+    <div class="list-card">
+      <div></div>
+      <div class="title">Grand Total</div>
+      <div>
+        <div class="amount">₹${totalRevenue.toLocaleString()}</div>
+        <div class="students">${data.length} students</div>
+      </div>
+    </div>`;
+}
+
 function groupByCategory(data) {
+  const map = {};
 
-    const map = {};
+  data.forEach(r => {
+    const cat = r.course_category || "Uncategorised";
 
-    data.forEach(r => {
+    if (!map[cat]) {
+      map[cat] = { category: cat, count: 0, revenue: 0 };
+    }
 
-        const cat = r.course_category;
+    map[cat].count++;
+    map[cat].revenue += fee(r);
+  });
 
-        if (!map[cat]) {
-            map[cat] = { category: cat, count: 0, revenue: 0 };
-        }
-
-        map[cat].count++;
-        map[cat].revenue += Number(r.course_fee || 0);
-    });
-
-    return Object.values(map);
+  return Object.values(map).sort((a, b) => b.revenue - a.revenue);
 }
 
-// ---------------- GROUP BY COURSE ----------------
 function groupByCourse(data) {
+  const map = {};
 
-    const map = {};
+  data.forEach(r => {
+    const course = r.course_name || "Unnamed Course";
 
-    data.forEach(r => {
+    if (!map[course]) {
+      map[course] = { course, count: 0, revenue: 0 };
+    }
 
-        const course = r.course_name;
+    map[course].count++;
+    map[course].revenue += fee(r);
+  });
 
-        if (!map[course]) {
-            map[course] = { course, count: 0, revenue: 0 };
-        }
-
-        map[course].count++;
-        map[course].revenue += Number(r.course_fee || 0);
-    });
-
-    return Object.values(map);
+  return Object.values(map).sort((a, b) => b.revenue - a.revenue);
 }
 
-// ---------------- DRILL DOWN ----------------
-function drillToCourse(category) {
+function getInitials(name = "") {
+  return name
+    .split(" ")
+    .map(x => x[0])
+    .join("")
+    .substring(0, 2)
+    .toUpperCase();
+}
 
-    state.level = "course";
-    state.selectedCategory = unescape(category);
-    render();
+function drillToCourse(category) {
+  state.level = "course";
+  state.selectedCategory = decodeURIComponent(category);
+  render();
 }
 
 function drillToStudent(course) {
-
-    state.level = "student";
-    state.selectedCourse = unescape(course);
-    render();
+  state.level = "student";
+  state.selectedCourse = decodeURIComponent(course);
+  render();
 }
 
-// ---------------- BACK ----------------
+function backToCourses() {
+  state.level = "course";
+  state.selectedCourse = null;
+  render();
+}
+
 function goHome() {
-
-    state.level = "category";
-    state.selectedCategory = null;
-    state.selectedCourse = null;
-    render();
+  state.level = "category";
+  state.selectedCategory = null;
+  state.selectedCourse = null;
+  render();
 }
 
-// ---------------- BREADCRUMB ----------------
-function renderBreadcrumb() {
-
-    const b = document.getElementById("breadcrumb");
-
-    if (state.level === "category") {
-        b.innerHTML = "Home (Category View)";
-    }
-
-    if (state.level === "course") {
-        b.innerHTML = `
-        <span onclick="goHome()" style="cursor:pointer;color:blue;">Home</span>
-        &nbsp;›&nbsp; ${state.selectedCategory}`;
-    }
-
-    if (state.level === "student") {
-        b.innerHTML = `
-        <span onclick="goHome()" style="cursor:pointer;color:blue;">Home</span>
-        &nbsp;›&nbsp; ${state.selectedCategory}
-        &nbsp;›&nbsp; ${state.selectedCourse}`;
-    }
-}
-
-// expose
 window.drillToCourse = drillToCourse;
 window.drillToStudent = drillToStudent;
 window.goHome = goHome;
+window.backToCourses = backToCourses;
+window.refreshDashboard = refreshDashboard;
