@@ -1,7 +1,8 @@
 let rawData = [];
 
 let state = {
-    level: "summary",
+    level: "category",   // START FROM CATEGORY (changed)
+    selectedCategory: null,
     selectedCourse: null
 };
 
@@ -21,29 +22,27 @@ function render() {
     renderKPI();
 }
 
-// ---------------- KPI ----------------
+// ---------------- KPI (GLOBAL) ----------------
 function renderKPI() {
-    const totalRevenue = rawData.reduce((sum, r) =>
-        sum + Number(r.course_fee || 0), 0);
+    const totalRevenue = rawData.reduce((s, r) =>
+        s + Number(r.course_fee || 0), 0);
 
     document.getElementById("totalRevenue").innerText =
         "₹" + totalRevenue.toLocaleString();
 
     document.getElementById("totalStudents").innerText =
         rawData.length;
-
-    document.getElementById("avgRevenue").innerText =
-        "₹" + Math.round(totalRevenue / rawData.length || 0);
 }
 
 // ---------------- HEADER ----------------
 function renderHeader() {
+
     const head = document.getElementById("tableHead");
 
-    if (state.level === "summary") {
+    if (state.level === "category") {
         head.innerHTML = `
         <tr>
-            <th>Course</th>
+            <th>Category</th>
             <th>Students</th>
             <th>Revenue</th>
         </tr>`;
@@ -52,7 +51,17 @@ function renderHeader() {
     if (state.level === "course") {
         head.innerHTML = `
         <tr>
+            <th>Course</th>
+            <th>Students</th>
+            <th>Revenue</th>
+        </tr>`;
+    }
+
+    if (state.level === "student") {
+        head.innerHTML = `
+        <tr>
             <th>Student</th>
+            <th>Course</th>
             <th>Category</th>
             <th>Type</th>
             <th>Date</th>
@@ -66,12 +75,31 @@ function renderTable() {
     const body = document.getElementById("tableBody");
     body.innerHTML = "";
 
-    if (state.level === "summary") {
-        const grouped = groupByCourse(rawData);
+    // LEVEL 1 → CATEGORY
+    if (state.level === "category") {
+        const grouped = groupByCategory(rawData);
 
         grouped.forEach(r => {
             body.innerHTML += `
-            <tr onclick="drillToCourse('${r.course}')">
+            <tr onclick="drillToCourse('${r.category}')">
+                <td>${r.category}</td>
+                <td>${r.count}</td>
+                <td>₹${r.revenue.toLocaleString()}</td>
+            </tr>`;
+        });
+    }
+
+    // LEVEL 2 → COURSE (inside category)
+    if (state.level === "course") {
+        const filtered = rawData.filter(r =>
+            r.course_category === state.selectedCategory
+        );
+
+        const grouped = groupByCourse(filtered);
+
+        grouped.forEach(r => {
+            body.innerHTML += `
+            <tr onclick="drillToStudent('${r.course}')">
                 <td>${r.course}</td>
                 <td>${r.count}</td>
                 <td>₹${r.revenue.toLocaleString()}</td>
@@ -79,7 +107,9 @@ function renderTable() {
         });
     }
 
-    if (state.level === "course") {
+    // LEVEL 3 → STUDENT
+    if (state.level === "student") {
+
         const filtered = rawData.filter(r =>
             r.course_name === state.selectedCourse
         );
@@ -88,6 +118,7 @@ function renderTable() {
             body.innerHTML += `
             <tr>
                 <td>${r.student_name}</td>
+                <td>${r.course_name}</td>
                 <td>${r.course_category}</td>
                 <td>${r["new/existing"]}</td>
                 <td>${r.enrolment_date}</td>
@@ -97,55 +128,87 @@ function renderTable() {
     }
 }
 
-// ---------------- GROUP BY COURSE ----------------
-function groupByCourse(data) {
+// ---------------- GROUP BY CATEGORY ----------------
+function groupByCategory(data) {
     const map = {};
 
     data.forEach(r => {
+        const cat = r.course_category;
 
-        const course = r.course_name || "Unknown";
-        const fee = Number(r.course_fee || 0);
-
-        if (!map[course]) {
-            map[course] = {
-                course,
-                count: 0,
-                revenue: 0
-            };
+        if (!map[cat]) {
+            map[cat] = { category: cat, count: 0, revenue: 0 };
         }
 
-        map[course].count += 1;
-        map[course].revenue += fee;
+        map[cat].count++;
+        map[cat].revenue += Number(r.course_fee || 0);
     });
 
     return Object.values(map);
 }
 
-// ---------------- DRILL DOWN ----------------
-function drillToCourse(course) {
+// ---------------- GROUP BY COURSE ----------------
+function groupByCourse(data) {
+    const map = {};
+
+    data.forEach(r => {
+        const course = r.course_name;
+
+        if (!map[course]) {
+            map[course] = { course, count: 0, revenue: 0 };
+        }
+
+        map[course].count++;
+        map[course].revenue += Number(r.course_fee || 0);
+    });
+
+    return Object.values(map);
+}
+
+// ---------------- DRILL FUNCTIONS ----------------
+function drillToCourse(category) {
     state.level = "course";
+    state.selectedCategory = category;
+    render();
+}
+
+function drillToStudent(course) {
+    state.level = "student";
     state.selectedCourse = course;
     render();
 }
 
-// ---------------- BACK ----------------
+// ---------------- BACK NAVIGATION ----------------
 function goHome() {
-    state.level = "summary";
+    state.level = "category";
+    state.selectedCategory = null;
     state.selectedCourse = null;
     render();
 }
 
 // ---------------- BREADCRUMB ----------------
 function renderBreadcrumb() {
+
     const b = document.getElementById("breadcrumb");
 
-    if (state.level === "summary") {
-        b.innerHTML = "Home";
-    } else {
-        b.innerHTML = `<span onclick="goHome()" style="cursor:pointer;">Home</span> > ${state.selectedCourse}`;
+    if (state.level === "category") {
+        b.innerHTML = "Home (Category View)";
+    }
+
+    if (state.level === "course") {
+        b.innerHTML = `
+        <span onclick="goHome()" style="cursor:pointer;">Home</span>
+        &nbsp;>&nbsp; ${state.selectedCategory}`;
+    }
+
+    if (state.level === "student") {
+        b.innerHTML = `
+        <span onclick="goHome()" style="cursor:pointer;">Home</span>
+        &nbsp;>&nbsp; ${state.selectedCategory}
+        &nbsp;>&nbsp; ${state.selectedCourse}`;
     }
 }
 
-// expose functions for HTML onclick
+// expose functions
 window.drillToCourse = drillToCourse;
+window.drillToStudent = drillToStudent;
 window.goHome = goHome;
