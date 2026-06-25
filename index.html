@@ -3,19 +3,39 @@
 
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>TIS Enrollment Dashboard</title>
+
 <link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
-    <h1>TIS Enrollment Dashboard</h1>
+
+    <div style="display:flex;align-items:center;gap:15px;">
+
+        <!-- Uncomment after adding logo -->
+        <!--
+        <img src="assets/tis-logo.png"
+             alt="TIS Logo"
+             style="height:50px;">
+        -->
+
+        <h1>TIS Enrollment Dashboard</h1>
+
+    </div>
+
 </div>
 
 <div class="container">
 
-    <!-- KPI -->
+    <!-- KPI CARDS -->
     <div class="kpi-container">
 
         <div class="kpi-card">
@@ -35,18 +55,47 @@
 
     </div>
 
+    <!-- MONTHLY CHART -->
+    <div class="chart-card">
+
+        <h3>Monthly Enrolments</h3>
+
+        <canvas id="monthlyChart"></canvas>
+
+    </div>
+
     <!-- SEARCH -->
     <div class="filters">
-        <input type="text" id="searchStudent" placeholder="Search..." style="padding:8px;width:300px;">
+
+        <input
+            type="text"
+            id="searchStudent"
+            placeholder="Search Student..."
+            style="padding:8px;width:300px;"
+        >
+
     </div>
 
     <!-- BREADCRUMB -->
-    <div id="breadcrumb" style="margin:10px 0; font-weight:bold; cursor:pointer;"></div>
+    <div
+        id="breadcrumb"
+        style="
+            margin:15px 0;
+            font-weight:bold;
+            cursor:pointer;
+        ">
+        Home
+    </div>
 
-    <!-- TABLE -->
+    <!-- DATA TABLE -->
     <table>
-        <thead id="tableHead"></thead>
-        <tbody id="tableBody"></tbody>
+
+        <thead id="tableHead">
+        </thead>
+
+        <tbody id="tableBody">
+        </tbody>
+
     </table>
 
 </div>
