@@ -2768,14 +2768,6 @@
         "course_fee": "70000"
     },
     {
-        "course_category": "TIS Compete",
-        "course_name": "VEX IQ 2026-27",
-        "student_name": "Agastya Marfatia",
-        "new/existing": "Existing",
-        "enrolment_date": "19-Jun-2026",
-        "course_fee": "125000"
-    },
-    {
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Ishaan J",
