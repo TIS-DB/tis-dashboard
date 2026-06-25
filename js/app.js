@@ -1,3 +1,4 @@
+console.log("🔥 APP.JS IS LOADING");
 let rawData = [];
 
 let state = {
