@@ -1,82 +1,122 @@
-let enrollments = [];
+let rawData = [];
 
-fetch("data/enrollments.json")
-.then(response => response.json())
-.then(data => {
+let selectedCategory = "";
+let selectedCourse = "";
 
-    enrollments = data;
-
-    updateDashboard(enrollments);
-
-});
-
-
-
-function updateDashboard(data){
-
-    document.getElementById("totalStudents").innerHTML =
-        data.length;
+// Load data
+fetch("./data/enrollments.json")
+  .then(res => res.json())
+  .then(data => {
+    rawData = data;
+    renderCategories();
+  });
 
 
-    let revenue = data.reduce((sum,item)=>{
-        return sum + Number(item.revenue || 0);
-    },0);
+// --------------------
+// LEVEL 1: CATEGORY
+// --------------------
+function renderCategories() {
 
+  selectedCategory = "";
+  selectedCourse = "";
 
-    document.getElementById("totalRevenue").innerHTML =
-        "₹" + revenue.toLocaleString();
+  document.getElementById("breadcrumb").innerHTML = "";
 
+  const grouped = groupBy(rawData, "course_category");
 
-    let completion = data.reduce((sum,item)=>{
-        return sum + Number(item.completion || 0);
-    },0);
+  let rows = "";
 
+  Object.keys(grouped).forEach(cat => {
+    rows += `
+      <tr>
+        <td colspan="5" style="cursor:pointer;color:blue"
+            onclick="openCategory('${cat}')">
+            📂 ${cat} (${grouped[cat].length})
+        </td>
+      </tr>
+    `;
+  });
 
-    let avg = data.length ? completion/data.length : 0;
-
-
-    document.getElementById("avgCompletion").innerHTML =
-        avg.toFixed(1)+"%";
-
-
-    renderTable(data);
-
+  document.getElementById("tableBody").innerHTML = rows;
 }
 
 
+// --------------------
+// LEVEL 2: COURSE
+// --------------------
+function openCategory(category) {
 
-function renderTable(data){
+  selectedCategory = category;
 
-let rows="";
+  document.getElementById("breadcrumb").innerHTML =
+    `<span onclick="renderCategories()" style="cursor:pointer;color:blue">Categories</span> → ${category}`;
 
+  const filtered = rawData.filter(d => d.course_category === category);
 
-data.forEach(item=>{
+  const grouped = groupBy(filtered, "course_name");
 
-rows += `
+  let rows = "";
 
-<tr>
+  Object.keys(grouped).forEach(course => {
+    rows += `
+      <tr>
+        <td colspan="5" style="cursor:pointer;color:green"
+            onclick="openCourse('${course}')">
+            📘 ${course} (${grouped[course].length})
+        </td>
+      </tr>
+    `;
+  });
 
-<td>${item.student_name || ""}</td>
-
-<td>${item.course || ""}</td>
-
-<td>${item.category || ""}</td>
-
-<td>${item.school || ""}</td>
-
-<td>${item.center || ""}</td>
-
-<td>${item.mentor || ""}</td>
-
-<td>${item.completion || 0}%</td>
-
-</tr>
-
-`;
-
-});
+  document.getElementById("tableBody").innerHTML = rows;
+}
 
 
-document.getElementById("tableBody").innerHTML = rows;
+// --------------------
+// LEVEL 3: STUDENTS
+// --------------------
+function openCourse(course) {
 
+  selectedCourse = course;
+
+  document.getElementById("breadcrumb").innerHTML =
+    `<span onclick="renderCategories()" style="cursor:pointer;color:blue">Categories</span>
+     → <span onclick="openCategory('${selectedCategory}')" style="cursor:pointer;color:blue">${selectedCategory}</span>
+     → ${course}`;
+
+  const filtered = rawData.filter(
+    d =>
+      d.course_category === selectedCategory &&
+      d.course_name === course
+  );
+
+  let rows = "";
+
+  filtered.forEach(item => {
+    rows += `
+      <tr>
+        <td>${item.student_name || ""}</td>
+        <td>${item.course_name || ""}</td>
+        <td>${item.course_category || ""}</td>
+        <td>${item.new_existing || ""}</td>
+        <td>${item.enrolment_date || ""}</td>
+        <td>₹${item.course_fee || 0}</td>
+      </tr>
+    `;
+  });
+
+  document.getElementById("tableBody").innerHTML = rows;
+}
+
+
+// --------------------
+// HELPER
+// --------------------
+function groupBy(data, key) {
+  return data.reduce((acc, item) => {
+    const k = item[key] || "Unknown";
+    if (!acc[k]) acc[k] = [];
+    acc[k].push(item);
+    return acc;
+  }, {});
 }
