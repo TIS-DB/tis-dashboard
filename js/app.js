@@ -24,14 +24,24 @@ function render() {
 
 // ---------------- KPI (GLOBAL) ----------------
 function renderKPI() {
+
     const totalRevenue = rawData.reduce((s, r) =>
         s + Number(r.course_fee || 0), 0);
+
+    const totalStudents = rawData.length;
+
+    const avgRevenue = totalStudents > 0
+        ? totalRevenue / totalStudents
+        : 0;
 
     document.getElementById("totalRevenue").innerText =
         "₹" + totalRevenue.toLocaleString();
 
     document.getElementById("totalStudents").innerText =
-        rawData.length;
+        totalStudents;
+
+    document.getElementById("avgRevenue").innerText =
+        "₹" + avgRevenue.toFixed(0);
 }
 
 // ---------------- HEADER ----------------
