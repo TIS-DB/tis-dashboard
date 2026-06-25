@@ -29,17 +29,18 @@ if "enrolment_date" in df.columns:
 
 # Clean course_fee (remove commas)
 if "course_fee" in df.columns:
-    df["course_fee"] = (
-        df["course_fee"]
-        .astype(str)
-        .str.replace(",", "")
-    )
+   df["course_fee"] = (
+    df["course_fee"]
+    .astype(str)
+    .str.replace(",", "", regex=False)
+)
 
 # Fix NaN
 df = df.replace([np.nan], "")
 
 # Convert to JSON-safe format
 data = df.to_dict(orient="records")
+os.makedirs("data", exist_ok=True)
 
 # Write JSON
 with open("data/enrollments.json", "w", encoding="utf-8") as f:
