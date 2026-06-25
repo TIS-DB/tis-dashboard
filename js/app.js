@@ -1,7 +1,8 @@
+
 let rawData = [];
 
 let state = {
-    level: "category",   // START FROM CATEGORY (changed)
+    level: "category",
     selectedCategory: null,
     selectedCourse: null
 };
@@ -10,7 +11,6 @@ let state = {
 document.addEventListener("DOMContentLoaded", async () => {
     const res = await fetch("data/enrollments.json");
     rawData = await res.json();
-
     render();
 });
 
@@ -22,7 +22,7 @@ function render() {
     renderKPI();
 }
 
-// ---------------- KPI (GLOBAL) ----------------
+// ---------------- KPI ----------------
 function renderKPI() {
 
     const totalRevenue = rawData.reduce((s, r) =>
@@ -52,6 +52,7 @@ function renderHeader() {
     if (state.level === "category") {
         head.innerHTML = `
         <tr>
+            <th></th>
             <th>Category</th>
             <th>Students</th>
             <th>Revenue</th>
@@ -61,6 +62,7 @@ function renderHeader() {
     if (state.level === "course") {
         head.innerHTML = `
         <tr>
+            <th></th>
             <th>Course</th>
             <th>Students</th>
             <th>Revenue</th>
@@ -82,16 +84,22 @@ function renderHeader() {
 
 // ---------------- TABLE ----------------
 function renderTable() {
+
     const body = document.getElementById("tableBody");
     body.innerHTML = "";
 
     // LEVEL 1 → CATEGORY
     if (state.level === "category") {
+
         const grouped = groupByCategory(rawData);
 
         grouped.forEach(r => {
+
+            const icon = "▸";
+
             body.innerHTML += `
-            <tr onclick="drillToCourse('${r.category}')">
+            <tr onclick="drillToCourse('${escape(r.category)}')" style="cursor:pointer;">
+                <td>${icon}</td>
                 <td>${r.category}</td>
                 <td>${r.count}</td>
                 <td>₹${r.revenue.toLocaleString()}</td>
@@ -99,8 +107,9 @@ function renderTable() {
         });
     }
 
-    // LEVEL 2 → COURSE (inside category)
+    // LEVEL 2 → COURSE
     if (state.level === "course") {
+
         const filtered = rawData.filter(r =>
             r.course_category === state.selectedCategory
         );
@@ -108,8 +117,12 @@ function renderTable() {
         const grouped = groupByCourse(filtered);
 
         grouped.forEach(r => {
+
+            const icon = "▸";
+
             body.innerHTML += `
-            <tr onclick="drillToStudent('${r.course}')">
+            <tr onclick="drillToStudent('${escape(r.course)}')" style="cursor:pointer;">
+                <td>${icon}</td>
                 <td>${r.course}</td>
                 <td>${r.count}</td>
                 <td>₹${r.revenue.toLocaleString()}</td>
@@ -125,6 +138,7 @@ function renderTable() {
         );
 
         filtered.forEach(r => {
+
             body.innerHTML += `
             <tr>
                 <td>${r.student_name}</td>
@@ -140,9 +154,11 @@ function renderTable() {
 
 // ---------------- GROUP BY CATEGORY ----------------
 function groupByCategory(data) {
+
     const map = {};
 
     data.forEach(r => {
+
         const cat = r.course_category;
 
         if (!map[cat]) {
@@ -158,9 +174,11 @@ function groupByCategory(data) {
 
 // ---------------- GROUP BY COURSE ----------------
 function groupByCourse(data) {
+
     const map = {};
 
     data.forEach(r => {
+
         const course = r.course_name;
 
         if (!map[course]) {
@@ -174,21 +192,24 @@ function groupByCourse(data) {
     return Object.values(map);
 }
 
-// ---------------- DRILL FUNCTIONS ----------------
+// ---------------- DRILL DOWN ----------------
 function drillToCourse(category) {
+
     state.level = "course";
-    state.selectedCategory = category;
+    state.selectedCategory = unescape(category);
     render();
 }
 
 function drillToStudent(course) {
+
     state.level = "student";
-    state.selectedCourse = course;
+    state.selectedCourse = unescape(course);
     render();
 }
 
-// ---------------- BACK NAVIGATION ----------------
+// ---------------- BACK ----------------
 function goHome() {
+
     state.level = "category";
     state.selectedCategory = null;
     state.selectedCourse = null;
@@ -206,19 +227,19 @@ function renderBreadcrumb() {
 
     if (state.level === "course") {
         b.innerHTML = `
-        <span onclick="goHome()" style="cursor:pointer;">Home</span>
-        &nbsp;>&nbsp; ${state.selectedCategory}`;
+        <span onclick="goHome()" style="cursor:pointer;color:blue;">Home</span>
+        &nbsp;›&nbsp; ${state.selectedCategory}`;
     }
 
     if (state.level === "student") {
         b.innerHTML = `
-        <span onclick="goHome()" style="cursor:pointer;">Home</span>
-        &nbsp;>&nbsp; ${state.selectedCategory}
-        &nbsp;>&nbsp; ${state.selectedCourse}`;
+        <span onclick="goHome()" style="cursor:pointer;color:blue;">Home</span>
+        &nbsp;›&nbsp; ${state.selectedCategory}
+        &nbsp;›&nbsp; ${state.selectedCourse}`;
     }
 }
 
-// expose functions
+// expose
 window.drillToCourse = drillToCourse;
 window.drillToStudent = drillToStudent;
 window.goHome = goHome;
