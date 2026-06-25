@@ -15,7 +15,7 @@
 
 <div class="container">
 
-    <!-- KPI SECTION -->
+    <!-- KPI -->
     <div class="kpi-container">
 
         <div class="kpi-card">
@@ -24,28 +24,8 @@
         </div>
 
         <div class="kpi-card">
-            <h3>Existing Revenue</h3>
-            <div id="existingRevenue">₹0</div>
-        </div>
-
-        <div class="kpi-card">
-            <h3>New Revenue</h3>
-            <div id="newRevenue">₹0</div>
-        </div>
-
-        <div class="kpi-card">
             <h3>Total Enrolments</h3>
             <div id="totalStudents">0</div>
-        </div>
-
-        <div class="kpi-card">
-            <h3>Existing Students</h3>
-            <div id="existingStudents">0</div>
-        </div>
-
-        <div class="kpi-card">
-            <h3>New Students</h3>
-            <div id="newStudents">0</div>
         </div>
 
         <div class="kpi-card">
@@ -53,33 +33,20 @@
             <div id="avgRevenue">₹0</div>
         </div>
 
-        <div class="kpi-card">
-            <h3>New Enrolment Share</h3>
-            <div id="newShare">0%</div>
-        </div>
-
     </div>
 
-    <!-- FILTERS -->
+    <!-- SEARCH -->
     <div class="filters">
-        <input
-            type="text"
-            id="searchStudent"
-            placeholder="Search..."
-            style="padding:8px;width:300px;"
-        >
+        <input type="text" id="searchStudent" placeholder="Search..." style="padding:8px;width:300px;">
     </div>
 
     <!-- BREADCRUMB -->
     <div id="breadcrumb" style="margin:10px 0; font-weight:bold; cursor:pointer;"></div>
 
-    <!-- BI TABLE (DYNAMIC) -->
+    <!-- TABLE -->
     <table>
-
         <thead id="tableHead"></thead>
-
         <tbody id="tableBody"></tbody>
-
     </table>
 
 </div>
@@ -87,5 +54,4 @@
 <script src="js/app.js"></script>
 
 </body>
-
 </html>
