@@ -1,6 +1,16 @@
 let rawData = [];
 
 // --------------------
+// SAFE KEY HELPER
+// --------------------
+function get(item, keys) {
+  for (let k of keys) {
+    if (item[k] !== undefined) return item[k];
+  }
+  return "";
+}
+
+// --------------------
 // LOAD DATA
 // --------------------
 fetch("./data/enrollments.json")
@@ -15,7 +25,7 @@ fetch("./data/enrollments.json")
 
 
 // --------------------
-// KPI CALCULATION
+// KPIs
 // --------------------
 function updateKPIs() {
 
@@ -29,8 +39,8 @@ function updateKPIs() {
 
   rawData.forEach(item => {
 
-    let fee = Number((item.course_fee || 0).toString().replace(/,/g, ""));
-    let type = (item.new_existing || "").toLowerCase();
+    let fee = Number((get(item, ["course_fee"]) || 0).toString().replace(/,/g, ""));
+    let type = (get(item, ["new/existing"]) || "").toLowerCase();
 
     totalRevenue += fee;
 
@@ -66,7 +76,13 @@ function renderCategories() {
 
   document.getElementById("breadcrumb").innerHTML = "";
 
-  const grouped = groupBy(rawData, "category");
+  const grouped = {};
+
+  rawData.forEach(item => {
+    const cat = get(item, ["course_category", "category"]);
+    if (!grouped[cat]) grouped[cat] = [];
+    grouped[cat].push(item);
+  });
 
   let rows = "";
 
@@ -93,9 +109,17 @@ function openCategory(category) {
   document.getElementById("breadcrumb").innerHTML =
     `<span onclick="renderCategories()" style="cursor:pointer;color:blue">Categories</span> → ${category}`;
 
-  const filtered = rawData.filter(d => d.category === category);
+  const filtered = rawData.filter(item =>
+    get(item, ["course_category", "category"]) === category
+  );
 
-  const grouped = groupBy(filtered, "course");
+  const grouped = {};
+
+  filtered.forEach(item => {
+    const course = get(item, ["course_name", "course"]);
+    if (!grouped[course]) grouped[course] = [];
+    grouped[course].push(item);
+  });
 
   let rows = "";
 
@@ -124,25 +148,26 @@ function openCourse(category, course) {
      → <span onclick="openCategory('${category}')" style="cursor:pointer;color:blue">${category}</span>
      → ${course}`;
 
-  const filtered = rawData.filter(
-    d => d.category === category && d.course === course
+  const filtered = rawData.filter(item =>
+    get(item, ["course_category", "category"]) === category &&
+    get(item, ["course_name", "course"]) === course
   );
 
   let rows = "";
 
   filtered.forEach(item => {
 
-    let fee = Number((item.course_fee || 0).toString().replace(/,/g, ""));
+    let fee = Number((get(item, ["course_fee"]) || 0).toString().replace(/,/g, ""));
+    let type = get(item, ["new/existing"]);
 
     rows += `
       <tr>
-        <td>${item.student_name || ""}</td>
-        <td>${item.course || ""}</td>
-        <td>${item.category || ""}</td>
-        <td>${item.school || ""}</td>
-        <td>${item.center || ""}</td>
-        <td>${item.mentor || ""}</td>
-        <td>${item.completion || 0}%</td>
+        <td>${get(item, ["student_name"])}</td>
+        <td>${get(item, ["course_name", "course"])}</td>
+        <td>${get(item, ["course_category", "category"])}</td>
+        <td>${type}</td>
+        <td>${get(item, ["enrolment_date"])}</td>
+        <td>₹${fee.toLocaleString()}</td>
       </tr>
     `;
   });
@@ -152,19 +177,8 @@ function openCourse(category, course) {
 
 
 // --------------------
-// HELPERS
+// FORMATTER
 // --------------------
-function groupBy(data, key) {
-  return data.reduce((acc, item) => {
-    const k = item[key] || "Unknown";
-    if (!acc[k]) acc[k] = [];
-    acc[k].push(item);
-    return acc;
-  }, {});
-}
-
-
-// Format INR (K / L / Cr)
 function formatINR(num) {
   num = Math.round(num);
 
