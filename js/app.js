@@ -1,190 +1,127 @@
+let viewState = {
+    level: "summary",
+    selectedCourse: null
+};
+
 let rawData = [];
 
-// --------------------
-// SAFE KEY HELPER
-// --------------------
-function get(item, keys) {
-  for (let k of keys) {
-    if (item[k] !== undefined) return item[k];
-  }
-  return "";
+// ---------------- INIT ----------------
+document.addEventListener("DOMContentLoaded", async function () {
+    const res = await fetch("data/enrollments.json");
+    rawData = await res.json();
+
+    render();
+});
+
+// ---------------- RENDER ENGINE ----------------
+function render() {
+    renderBreadcrumb();
+    renderHeader();
+    renderTable();
 }
 
-// --------------------
-// LOAD DATA
-// --------------------
-fetch("./data/enrollments.json")
-  .then(res => res.json())
-  .then(data => {
-    rawData = data;
+// ---------------- HEADER ----------------
+function renderHeader() {
+    const head = document.getElementById("tableHead");
 
-    updateKPIs();
-    renderCategories();
-  })
-  .catch(err => console.error("JSON Load Error:", err));
-
-
-// --------------------
-// KPIs
-// --------------------
-function updateKPIs() {
-
-  let totalRevenue = 0;
-  let existingRevenue = 0;
-  let newRevenue = 0;
-
-  let total = rawData.length;
-  let existingCount = 0;
-  let newCount = 0;
-
-  rawData.forEach(item => {
-
-    let fee = Number((get(item, ["course_fee"]) || 0).toString().replace(/,/g, ""));
-    let type = (get(item, ["new/existing"]) || "").toLowerCase();
-
-    totalRevenue += fee;
-
-    if (type === "existing") {
-      existingRevenue += fee;
-      existingCount++;
-    } else if (type === "new") {
-      newRevenue += fee;
-      newCount++;
+    if (viewState.level === "summary") {
+        head.innerHTML = `
+        <tr>
+            <th>Course</th>
+            <th>Total Students</th>
+            <th>Total Revenue</th>
+        </tr>`;
     }
-  });
 
-  let avgRevenue = total ? (totalRevenue / total) : 0;
-  let newShare = total ? (newCount / total) * 100 : 0;
-
-  document.getElementById("totalRevenue").innerText = "₹" + formatINR(totalRevenue);
-  document.getElementById("existingRevenue").innerText = "₹" + formatINR(existingRevenue);
-  document.getElementById("newRevenue").innerText = "₹" + formatINR(newRevenue);
-
-  document.getElementById("totalStudents").innerText = total;
-  document.getElementById("existingStudents").innerText = existingCount;
-  document.getElementById("newStudents").innerText = newCount;
-
-  document.getElementById("avgRevenue").innerText = "₹" + formatINR(avgRevenue);
-  document.getElementById("newShare").innerText = newShare.toFixed(1) + "%";
+    if (viewState.level === "course") {
+        head.innerHTML = `
+        <tr>
+            <th>Student</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Fee</th>
+        </tr>`;
+    }
 }
 
+// ---------------- TABLE ----------------
+function renderTable() {
+    const body = document.getElementById("tableBody");
+    body.innerHTML = "";
 
-// --------------------
-// LEVEL 1: CATEGORY
-// --------------------
-function renderCategories() {
+    if (viewState.level === "summary") {
+        const summary = groupByCourse(rawData);
 
-  document.getElementById("breadcrumb").innerHTML = "";
+        summary.forEach(item => {
+            body.innerHTML += `
+            <tr onclick="drillToCourse('${item.course}')">
+                <td>${item.course}</td>
+                <td>${item.count}</td>
+                <td>₹${item.revenue}</td>
+            </tr>`;
+        });
+    }
 
-  const grouped = {};
+    if (viewState.level === "course") {
+        const filtered = rawData.filter(r => r.course === viewState.selectedCourse);
 
-  rawData.forEach(item => {
-    const cat = get(item, ["course_category", "category"]);
-    if (!grouped[cat]) grouped[cat] = [];
-    grouped[cat].push(item);
-  });
-
-  let rows = "";
-
-  Object.keys(grouped).forEach(cat => {
-    rows += `
-      <tr>
-        <td colspan="6" style="cursor:pointer;color:blue"
-            onclick="openCategory('${cat}')">
-            📂 ${cat} (${grouped[cat].length})
-        </td>
-      </tr>
-    `;
-  });
-
-  document.getElementById("tableBody").innerHTML = rows;
+        filtered.forEach(r => {
+            body.innerHTML += `
+            <tr>
+                <td>${r.student || ""}</td>
+                <td>${r.category || ""}</td>
+                <td>${r.type || ""}</td>
+                <td>${r.enrolment_date || ""}</td>
+                <td>₹${r.course_fee || 0}</td>
+            </tr>`;
+        });
+    }
 }
 
-
-// --------------------
-// LEVEL 2: COURSE
-// --------------------
-function openCategory(category) {
-
-  document.getElementById("breadcrumb").innerHTML =
-    `<span onclick="renderCategories()" style="cursor:pointer;color:blue">Categories</span> → ${category}`;
-
-  const filtered = rawData.filter(item =>
-    get(item, ["course_category", "category"]) === category
-  );
-
-  const grouped = {};
-
-  filtered.forEach(item => {
-    const course = get(item, ["course_name", "course"]);
-    if (!grouped[course]) grouped[course] = [];
-    grouped[course].push(item);
-  });
-
-  let rows = "";
-
-  Object.keys(grouped).forEach(course => {
-    rows += `
-      <tr>
-        <td colspan="6" style="cursor:pointer;color:green"
-            onclick="openCourse('${category}','${course}')">
-            📘 ${course} (${grouped[course].length})
-        </td>
-      </tr>
-    `;
-  });
-
-  document.getElementById("tableBody").innerHTML = rows;
+// ---------------- DRILL DOWN ----------------
+function drillToCourse(course) {
+    viewState.level = "course";
+    viewState.selectedCourse = course;
+    render();
 }
 
-
-// --------------------
-// LEVEL 3: STUDENTS
-// --------------------
-function openCourse(category, course) {
-
-  document.getElementById("breadcrumb").innerHTML =
-    `<span onclick="renderCategories()" style="cursor:pointer;color:blue">Categories</span>
-     → <span onclick="openCategory('${category}')" style="cursor:pointer;color:blue">${category}</span>
-     → ${course}`;
-
-  const filtered = rawData.filter(item =>
-    get(item, ["course_category", "category"]) === category &&
-    get(item, ["course_name", "course"]) === course
-  );
-
-  let rows = "";
-
-  filtered.forEach(item => {
-
-    let fee = Number((get(item, ["course_fee"]) || 0).toString().replace(/,/g, ""));
-    let type = get(item, ["new/existing"]);
-
-    rows += `
-      <tr>
-        <td>${get(item, ["student_name"])}</td>
-        <td>${get(item, ["course_name", "course"])}</td>
-        <td>${get(item, ["course_category", "category"])}</td>
-        <td>${type}</td>
-        <td>${get(item, ["enrolment_date"])}</td>
-        <td>₹${fee.toLocaleString()}</td>
-      </tr>
-    `;
-  });
-
-  document.getElementById("tableBody").innerHTML = rows;
+// ---------------- BACK ----------------
+function goHome() {
+    viewState.level = "summary";
+    viewState.selectedCourse = null;
+    render();
 }
 
+// ---------------- BREADCRUMB ----------------
+function renderBreadcrumb() {
+    const b = document.getElementById("breadcrumb");
 
-// --------------------
-// FORMATTER
-// --------------------
-function formatINR(num) {
-  num = Math.round(num);
+    if (viewState.level === "summary") {
+        b.innerHTML = "Home";
+    }
 
-  if (num >= 10000000) return (num / 10000000).toFixed(2) + " Cr";
-  if (num >= 100000) return (num / 100000).toFixed(2) + " L";
-  if (num >= 1000) return (num / 1000).toFixed(1) + " K";
+    if (viewState.level === "course") {
+        b.innerHTML = `
+        <span onclick="goHome()">Home</span>
+        &nbsp;>&nbsp; ${viewState.selectedCourse}`;
+    }
+}
 
-  return num;
+// ---------------- GROUPING LOGIC ----------------
+function groupByCourse(data) {
+    const map = {};
+
+    data.forEach(r => {
+        const course = r.course || "Unknown";
+
+        if (!map[course]) {
+            map[course] = { course, count: 0, revenue: 0 };
+        }
+
+        map[course].count += 1;
+        map[course].revenue += Number(r.course_fee || 0);
+    });
+
+    return Object.values(map);
 }
