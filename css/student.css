@@ -287,3 +287,70 @@ body {
   margin-top: 50px;
   font-size: 18px;
 }
+.dark-header {
+  background: #14375f;
+  color: white;
+  padding: 42px 48px 36px;
+}
+
+.dark-header h1 {
+  color: white;
+  font-size: 34px;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.dark-header p {
+  color: #d8e6f8;
+  font-size: 20px;
+  margin-top: 14px;
+}
+
+.dark-header .header-right {
+  color: #d8e6f8;
+}
+
+.dark-header .header-right button {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-weight: 700;
+}
+
+.student-page {
+  background: #f3f6fb;
+  min-height: calc(100vh - 210px);
+  padding: 36px 48px;
+}
+
+.search-box {
+  background: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 14px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.search-box span {
+  font-size: 26px;
+  margin-right: 12px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+
+.search-box button {
+  border: none;
+  background: none;
+  font-size: 34px;
+  color: #999;
+  cursor: pointer;
+}
