@@ -1,73 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Student Dashboard</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TIS Management Dashboard</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background: #f4f6f9;
-        }
-
-        h2 {
-            margin-bottom: 15px;
-        }
-
-        #search {
-            padding: 10px;
-            width: 320px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-            font-size: 14px;
-        }
-
-        th {
-            background: #2c3e50;
-            color: white;
-            position: sticky;
-            top: 0;
-        }
-
-        tr:hover {
-            background: #f1f1f1;
-        }
-    </style>
+<link rel="stylesheet" href="css/student.css">
 </head>
 
 <body>
+
+<header class="top-header">
+  <div>
+    <h1>TIS Management<br>Dashboard</h1>
+    <p id="dashboardSummary">Loading...</p>
+  </div>
+
+  <div class="header-right">
+    <div id="updatedTime">Updated --</div>
+    <button onclick="refreshStudents()">↻ Refresh</button>
+  </div>
+</header>
+
 <nav class="tabs">
   <button onclick="goToFY27()">FY27 Enrolments</button>
   <button onclick="goToFY26()">FY26 Enrolments</button>
   <button class="active">Student Details</button>
 </nav>
-    <h2>Student Dashboard</h2>
 
-    <input type="text" id="search" placeholder="Search students..." />
+<main class="page">
 
-    <table>
-        <thead>
-            <tr id="headerRow"></tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
+  <div class="search-box">
+    <span>🔍</span>
+    <input id="search" type="text" placeholder="Search student name..." />
+    <button id="clearSearch">×</button>
+  </div>
 
-    <!-- Your JS file -->
-    <script src="js/student.js"></script>
+  <section id="studentPanel"></section>
 
+</main>
+
+<script src="js/student.js"></script>
 </body>
 </html>
