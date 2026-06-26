@@ -360,7 +360,7 @@ function renderList() {
 }
 
 function grandTotalCard(data) {
-  const totalRevenue = data.reduce((s, r) => s + fee(r), 0);
+  //const totalRevenue = data.reduce((s, r) => s + fee(r), 0);
   const newPct = newPercent(data).toFixed(0);
 
   return `
@@ -368,8 +368,8 @@ function grandTotalCard(data) {
       <div></div>
       <div class="title">Grand Total</div>
       <div>
-        <div class="amount">₹${totalRevenue.toLocaleString()}</div>
-        <div class="students">${data.length} students · ${newPct}% new</div>
+         <div class="amount">${data.length} Students</div>
+        <div class="students">${newPct}% new</div>
       </div>
     </div>`;
 }
