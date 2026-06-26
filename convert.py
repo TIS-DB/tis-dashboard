@@ -17,13 +17,15 @@ BASE_PATH = os.path.join(
 FILES = {
     "enrollments": "Course Wise Enrollment.xlsx",
     "students": "Student Master.xlsx",
-    "weeklyreview": "Main Dashboard.xlsx"
+    "weeklyreview": "Main Dashboard.xlsx",
+    "cskpi": "CS KPI.xlsx"
 }
 
 OUTPUT_FILES = {
     "enrollments": "data/enrollments.json",
     "students": "data/students.json",
-    "weeklyreview": "data/weeklyreview.json"
+    "weeklyreview": "data/weeklyreview.json",
+    "cskpi": "data/cskpi.json"
 }
 
 
@@ -130,7 +132,7 @@ def run():
     process_file("enrollments", FILES["enrollments"])
     process_file("students", FILES["students"])
     process_weekly_review()
-
+    process_file("cskpi", FILES["cskpi"])
     print("\n🎯 All files processed successfully")
 
 
