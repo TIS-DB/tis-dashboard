@@ -345,3 +345,239 @@ body{
     padding:26px 28px;
   }
 }
+
+/* ==============================
+   STUDENT DETAILS PAGE
+============================== */
+
+.student-search-card{
+  background:#fff;
+  border-radius:18px;
+  padding:18px 20px;
+  margin-bottom:24px;
+  box-shadow:0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.search-box span{
+  font-size:22px;
+  color:var(--muted);
+}
+
+.search-box input{
+  width:100%;
+  border:0;
+  outline:0;
+  font-size:16px;
+  color:var(--text);
+}
+
+.search-box button{
+  border:0;
+  background:transparent;
+  font-size:26px;
+  color:var(--muted);
+  cursor:pointer;
+}
+
+.student-profile{
+  background:#fff;
+  border-radius:18px;
+  padding:20px;
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  box-shadow:0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.student-profile .avatar{
+  width:52px;
+  height:52px;
+  font-size:16px;
+}
+
+.student-profile h2{
+  margin:0;
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:-0.4px;
+}
+
+.student-profile p{
+  margin:5px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.student-kpis{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:16px;
+  margin-bottom:24px;
+}
+
+.student-kpis .kpi-card{
+  min-height:125px;
+}
+
+.student-kpis .kpi-card h3{
+  margin-bottom:12px;
+}
+
+.student-section-title{
+  margin:26px 4px 14px;
+}
+
+.student-section-title h2{
+  margin:0;
+  font-size:20px;
+  font-weight:800;
+}
+
+.student-section-title p{
+  margin:6px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.course-card{
+  background:#fff;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:14px;
+  box-shadow:0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.course-card.latest{
+  border:1px solid #bfdbfe;
+  background:#f8fbff;
+}
+
+.course-top{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:12px;
+  align-items:start;
+}
+
+.course-name{
+  font-size:16px;
+  font-weight:800;
+  line-height:1.35;
+  color:var(--text);
+}
+
+.course-fee{
+  font-size:16px;
+  font-weight:800;
+  color:var(--light-blue);
+  white-space:nowrap;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:16px 0;
+}
+
+.tag{
+  background:#eef2f7;
+  color:var(--muted);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.tag.center{
+  background:#e8f7f2;
+  color:var(--green);
+}
+
+.tag.latest-tag{
+  background:#eaf4ff;
+  color:var(--light-blue);
+}
+
+.att-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin:14px 0 10px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.progress{
+  height:9px;
+  background:#e5e7eb;
+  border-radius:999px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+  background:var(--green);
+  border-radius:999px;
+}
+
+.hours-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:12px;
+  margin-top:18px;
+  text-align:center;
+}
+
+.hours-grid .num{
+  font-size:22px;
+  font-weight:800;
+  color:var(--text);
+}
+
+.hours-grid .completed{
+  color:var(--green);
+}
+
+.hours-grid .pending{
+  color:var(--gold);
+}
+
+.hours-grid .txt{
+  margin-top:4px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.empty{
+  background:#fff;
+  border-radius:18px;
+  padding:28px 20px;
+  text-align:center;
+  color:var(--muted);
+  box-shadow:0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+@media(min-width:768px){
+  .student-profile{
+    padding:24px 26px;
+  }
+
+  .student-kpis{
+    grid-template-columns:repeat(4, 1fr);
+  }
+
+  .course-card{
+    padding:22px 24px;
+  }
+}
