@@ -8,7 +8,8 @@ BASE_FOLDER = "/Users/raginimishra/Library/CloudStorage/OneDrive-EdunnovateTechn
 
 WATCH_FILES = {
     "Course Wise Enrollment.xlsx",
-    "Student Master.xlsx"
+    "Student Master.xlsx",
+    "Main Dashboard.xlsx"
 }
 
 DEBOUNCE_SECONDS = 5

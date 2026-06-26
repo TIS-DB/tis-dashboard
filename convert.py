@@ -16,12 +16,14 @@ BASE_PATH = os.path.join(
 
 FILES = {
     "enrollments": "Course Wise Enrollment.xlsx",
-    "students": "Student Master.xlsx"
+    "students": "Student Master.xlsx",
+    "weeklyreview": "Main Dashboard.xlsx"
 }
 
 OUTPUT_FILES = {
     "enrollments": "data/enrollments.json",
-    "students": "data/students.json"
+    "students": "data/students.json",
+    "weeklyreview": "data/weeklyreview.json"
 }
 
 
@@ -30,24 +32,32 @@ OUTPUT_FILES = {
 # ----------------------------
 def clean_df(df):
     df.columns = [
-        c.strip().lower().replace(" ", "_")
+        str(c).strip().lower().replace(" ", "_")
         for c in df.columns
     ]
 
-    # Convert any datetime columns safely
     for col in df.columns:
         if "date" in col:
             df[col] = pd.to_datetime(df[col], errors="coerce")
             df[col] = df[col].dt.strftime("%d-%b-%Y")
 
-    # Clean numeric-like fields (remove commas)
     for col in df.columns:
         df[col] = df[col].astype(str).str.replace(",", "", regex=False)
 
-    # Fix NaN
-    df = df.replace([np.nan], "")
+    df = df.replace([np.nan, "nan", "NaT"], "")
 
     return df
+
+
+def write_json(output_path, data):
+    os.makedirs("data", exist_ok=True)
+
+    tmp_file = output_path + ".tmp"
+
+    with open(tmp_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+    os.replace(tmp_file, output_path)
 
 
 def process_file(key, filename):
@@ -61,19 +71,40 @@ def process_file(key, filename):
 
         data = df.to_dict(orient="records")
 
-        os.makedirs("data", exist_ok=True)
-
-        tmp_file = OUTPUT_FILES[key] + ".tmp"
-
-        with open(tmp_file, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-
-        os.replace(tmp_file, OUTPUT_FILES[key])
+        write_json(OUTPUT_FILES[key], data)
 
         print(f"✅ {key}.json updated → Rows: {len(data)}")
 
     except Exception as e:
         print(f"❌ Error processing {filename}: {e}")
+
+
+def process_weekly_review():
+    path = os.path.join(BASE_PATH, FILES["weeklyreview"])
+
+    print("📥 Reading Main Dashboard.xlsx...")
+
+    try:
+        dashboard_df = pd.read_excel(path, sheet_name="Dashboard")
+        links_df = pd.read_excel(path, sheet_name="Collated links")
+
+        dashboard_df = clean_df(dashboard_df)
+        links_df = clean_df(links_df)
+
+        output = {
+            "dashboard": dashboard_df.to_dict(orient="records"),
+            "links": links_df.to_dict(orient="records")
+        }
+
+        write_json(OUTPUT_FILES["weeklyreview"], output)
+
+        print(
+            f"✅ weeklyreview.json updated → "
+            f"Dashboard: {len(dashboard_df)} rows, Links: {len(links_df)} rows"
+        )
+
+    except Exception as e:
+        print(f"❌ Error processing Main Dashboard.xlsx: {e}")
 
 
 # ----------------------------
@@ -82,8 +113,9 @@ def process_file(key, filename):
 def run():
     print("\n🚀 Starting conversion pipeline...\n")
 
-    for key, file in FILES.items():
-        process_file(key, file)
+    process_file("enrollments", FILES["enrollments"])
+    process_file("students", FILES["students"])
+    process_weekly_review()
 
     print("\n🎯 All files processed successfully")
 
