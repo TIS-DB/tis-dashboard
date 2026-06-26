@@ -6,25 +6,26 @@ const studentPanel = document.getElementById("studentPanel");
 const dashboardSummary = document.getElementById("dashboardSummary");
 const updatedTime = document.getElementById("updatedTime");
 
-// -----------------------------
-// LOAD DATA
-// -----------------------------
-document.addEventListener("DOMContentLoaded", () => {
-  loadStudents();
-});
+document.addEventListener("DOMContentLoaded", loadStudents);
 
 function loadStudents() {
   fetch("data/students.json?v=" + Date.now())
     .then(res => res.json())
     .then(data => {
-      students = data || [];
+      students = Array.isArray(data) ? data : [data];
+
       renderDashboardSummary();
       updateTime();
-      renderStudentView("");
+
+      if (searchBox.value.trim()) {
+        renderStudentView(searchBox.value.trim());
+      } else {
+        studentPanel.innerHTML = `<div class="empty">Search a student to view details</div>`;
+      }
     })
     .catch(err => {
       console.error("Error loading students.json", err);
-      studentPanel.innerHTML = `<div class="empty">Unable to load student data</div>`;
+      studentPanel.innerHTML = `<div class="empty">Unable to load students.json</div>`;
     });
 }
 
@@ -32,12 +33,17 @@ function refreshStudents() {
   loadStudents();
 }
 
-// -----------------------------
-// SUMMARY HEADER
-// -----------------------------
+searchBox.addEventListener("input", () => {
+  renderStudentView(searchBox.value.trim());
+});
+
+clearSearch.addEventListener("click", () => {
+  searchBox.value = "";
+  studentPanel.innerHTML = `<div class="empty">Search a student to view details</div>`;
+});
+
 function renderDashboardSummary() {
   const fy27 = students.filter(r => r.financial_year === "FY27");
-
   const totalEnrollments = fy27.length;
   const totalRevenue = fy27.reduce((sum, r) => sum + num(r.course_fee), 0);
 
@@ -48,56 +54,37 @@ function renderDashboardSummary() {
 function updateTime() {
   const now = new Date();
   updatedTime.innerText =
-    "Updated " + now.toLocaleTimeString("en-IN", {
+    "Updated " +
+    now.toLocaleTimeString("en-IN", {
       hour: "2-digit",
       minute: "2-digit",
-      hour12: true
-    }).toLowerCase();
+      hour12: false
+    });
 }
 
-// -----------------------------
-// SEARCH
-// -----------------------------
-searchBox.addEventListener("input", () => {
-  renderStudentView(searchBox.value.trim());
-});
-
-clearSearch.addEventListener("click", () => {
-  searchBox.value = "";
-  renderStudentView("");
-});
-
-// -----------------------------
-// MAIN STUDENT VIEW
-// -----------------------------
 function renderStudentView(searchText) {
-  if (!students.length) {
-    studentPanel.innerHTML = `<div class="empty">No student data found</div>`;
+  if (!searchText) {
+    studentPanel.innerHTML = `<div class="empty">Search a student to view details</div>`;
     return;
   }
 
-  let filtered = students;
+  const q = searchText.toLowerCase();
 
-  if (searchText) {
-    const q = searchText.toLowerCase();
+  const matched = students.filter(r =>
+    String(r.student_name || "").toLowerCase().includes(q) ||
+    String(r.contact_number || "").toLowerCase().includes(q) ||
+    String(r.school || "").toLowerCase().includes(q)
+  );
 
-    filtered = students.filter(r =>
-      String(r.student_name || "").toLowerCase().includes(q) ||
-      String(r.contact_number || "").toLowerCase().includes(q) ||
-      String(r.school || "").toLowerCase().includes(q)
-    );
-  }
-
-  if (!filtered.length) {
+  if (!matched.length) {
     studentPanel.innerHTML = `<div class="empty">No matching student found</div>`;
     return;
   }
 
-  // Pick first matching student
-  const studentName = filtered[0].student_name;
+  const studentName = matched[0].student_name;
 
   const records = students
-    .filter(r => r.student_name === studentName)
+    .filter(r => String(r.student_name || "").toLowerCase() === studentName.toLowerCase())
     .sort((a, b) => parseDate(b.enrolled_date) - parseDate(a.enrolled_date));
 
   renderStudent(studentName, records);
@@ -109,11 +96,9 @@ function renderStudent(studentName, records) {
   const pendingHours = records.reduce((sum, r) => sum + num(r.attendance_pending_hours), 0);
   const completedHours = records.reduce((sum, r) => sum + num(r.attendance_completed_hours), 0);
 
-  const initials = getInitials(studentName);
-
   let html = `
     <div class="student-head">
-      <div class="avatar">${initials}</div>
+      <div class="avatar">${getInitials(studentName)}</div>
       <div>
         <h2>${studentName}</h2>
         <p>${totalCourses} course${totalCourses > 1 ? "s" : ""} enrolled</p>
@@ -142,16 +127,13 @@ function renderStudent(studentName, records) {
     <div class="section-title">COURSES — NEWEST FIRST</div>
   `;
 
-  records.forEach((course, index) => {
-    html += renderCourseCard(course, index === 0);
+  records.forEach((r, i) => {
+    html += renderCourseCard(r, i === 0);
   });
 
   studentPanel.innerHTML = html;
 }
 
-// -----------------------------
-// COURSE CARD
-// -----------------------------
 function renderCourseCard(r, isLatest) {
   const scheduled = num(r.attendance_scheduled_hours);
   const completed = num(r.attendance_completed_hours);
@@ -186,12 +168,10 @@ function renderCourseCard(r, isLatest) {
           <div class="num">${formatHours(scheduled)}</div>
           <div class="txt">Scheduled</div>
         </div>
-
         <div>
           <div class="num completed">${formatHours(completed)}</div>
           <div class="txt">Completed</div>
         </div>
-
         <div>
           <div class="num pending">${formatHours(pending)}</div>
           <div class="txt">Pending</div>
@@ -201,22 +181,18 @@ function renderCourseCard(r, isLatest) {
   `;
 }
 
-// -----------------------------
-// HELPERS
-// -----------------------------
-function num(value) {
-  return Number(value || 0);
+function num(v) {
+  return Number(v || 0);
 }
 
-function formatHours(value) {
-  if (value % 1 === 0) return `${value.toFixed(0)}h`;
-  return `${value.toFixed(2)}h`;
+function formatHours(v) {
+  return v % 1 === 0 ? `${v.toFixed(0)}h` : `${v.toFixed(2)}h`;
 }
 
-function formatCurrency(value) {
-  if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
-  if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
-  return "₹" + value.toLocaleString("en-IN");
+function formatCurrency(v) {
+  if (v >= 10000000) return "₹" + (v / 10000000).toFixed(2) + " Cr";
+  if (v >= 100000) return "₹" + (v / 100000).toFixed(2) + " L";
+  return "₹" + v.toLocaleString("en-IN");
 }
 
 function getInitials(name) {
@@ -232,14 +208,16 @@ function parseDate(dateStr) {
   if (!dateStr) return new Date(0);
 
   const parts = String(dateStr).split("-");
-  if (parts.length !== 3) return new Date(dateStr);
-
   const months = {
     Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
     Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11
   };
 
-  return new Date(parts[2], months[parts[1]], parts[0]);
+  if (parts.length === 3 && months[parts[1]] !== undefined) {
+    return new Date(parts[2], months[parts[1]], parts[0]);
+  }
+
+  return new Date(dateStr);
 }
 
 function formatDate(dateStr) {
@@ -253,9 +231,6 @@ function formatDate(dateStr) {
   });
 }
 
-// -----------------------------
-// TAB NAVIGATION
-// -----------------------------
 function goToFY27() {
   window.location.href = "index.html";
 }
