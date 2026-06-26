@@ -61,3 +61,15 @@ searchBox.addEventListener("input", function () {
 
     renderTable(filtered);
 });
+
+function goToFY27() {
+    window.location.href = "index.html";
+}
+
+function goToFY26() {
+    window.location.href = "index.html";
+}
+
+// expose to HTML
+window.goToFY27 = goToFY27;
+window.goToFY26 = goToFY26;
