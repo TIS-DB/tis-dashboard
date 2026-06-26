@@ -1,4 +1,265 @@
 {
-  "dashboard": [],
-  "links": []
+    "dashboard": [
+        {
+            "unnamed:_0": "",
+            "sr._no": "1.0",
+            "incharge": "Kshitij",
+            "key_updates": "",
+            "operational_performance": "Kit Budget is Locked at 17000 INR",
+            "project_status": "Kit Golden Sample are currently in production expected delivery for all content is 30th June.",
+            "risks": "Delay from Delivery from independent connecting vendor might delay production timeline.",
+            "challenges": "Space Constraint to setup inventory and Kit assembly stations in Bandra Office",
+            "support_required": "Additional Mentor supprot required from 1st to 15th July to work on  - Game Manual NRL Bootcamp Kit & Curicullum NRL Software and Firmware devlopment"
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "Kit Production Qty. locked at 500 Kits.",
+            "project_status": "Internal Team currently working on Documentation & Curriculum prepration.",
+            "risks": "",
+            "challenges": "",
+            "support_required": "IIT Bombay confirmation on NRL Fees and Launch date"
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "500 Kits readiness by 31st July",
+            "project_status": "Awaiting approval from Meenal ma'am",
+            "risks": "",
+            "challenges": "",
+            "support_required": "Space Allotment at IIT Bombay Research Park or elsewhere for July & August"
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "2.0",
+            "incharge": "Bhagyashree",
+            "key_updates": "",
+            "operational_performance": "INR 700100 Received so far from (SrijanEHSI )",
+            "project_status": "Program delivery at each school ",
+            "risks": "Mentor dependancy is very high we need experience mentors with an experienc ein classroom engagement ",
+            "challenges": "Need to create a scalable Program for Schools - should have been standardized and with tangible outcomes - In School and After School",
+            "support_required": "Kits and Curriculum Packaging "
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "Creating Robotics Foundation Bootcamp - 24 Hrs - Brochure to propose to NRL schools \nCreated a list of the schools to reach out ",
+            "project_status": "Creating a School Upsale pipeline - Review on 24th June",
+            "risks": "School outreach for NRL should start before 15 July if not late to sale bootcamps ",
+            "challenges": "",
+            "support_required": ""
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "Pradnya",
+            "key_updates": "",
+            "operational_performance": "Received Revenue ₹748627 ",
+            "project_status": "Summer Innovation Sprint is actively running from June 15 to June 27. ",
+            "risks": "Tentatively a revenue totaling ₹1225960 unconfirmed/pending across three upcoming planned programs.",
+            "challenges": "Final dates for the ATLAS University August cohort are still TBD",
+            "support_required": ""
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "A total of 276 students have been reached across completed tracks.",
+            "project_status": "Upcoming cohorts are scheduled for July (Harry Potter Mumbai on July 18) and August (AI for Business on August 1).",
+            "risks": "",
+            "challenges": "",
+            "support_required": ""
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "Emerald Heights Srijan School OIS - Completed Summer Camps\nBSS - Ongoing ECA till September\nCAJCS OIS SFHS LOS BIS - 3 yet to be started",
+            "project_status": "LMS uploads are running on track for active modules. ",
+            "risks": "OIS August SFHS LOS BIS CAJCS - Separate school curriculum frameworks all share the exact same final target Date of Completion on June 30",
+            "challenges": "SFHS LOS BIS - \"Yet to be Started\" where core curriculum frameworks are still being drafted while targeting the June 30 deadline.",
+            "support_required": ""
+        },
+        {
+            "unnamed:_0": "",
+            "sr._no": "",
+            "incharge": "",
+            "key_updates": "",
+            "operational_performance": "",
+            "project_status": "BSS and CAJCS are currently \"Work In Progress\" for LMS integration with a firm target completion date of June 30.",
+            "risks": "",
+            "challenges": "",
+            "support_required": ""
+        }
+    ],
+    "links": [
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "1.0",
+            "incharge": "Bhagyashree",
+            "team": "School Enrollments",
+            "links": "School wise data"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Proposal Tracker"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Partner School Tracker"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Mentor Assignment"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "IIT-B Outreach"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "2.0",
+            "incharge": "Pradnya",
+            "team": "School Curriculum",
+            "links": "Curriculum"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Outreach data"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "3.0",
+            "incharge": "Kshitij",
+            "team": "NRL (National Robotics League)",
+            "links": "Roles & Responsibilities"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Kit Production Timeline"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Internal Timeline"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "External Timeline"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Budget Overview"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Regional Dates"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Regional Day Plan"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Regional Event No."
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Regional Team Req."
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Content & Documentation"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Kit Budget"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Content Timeline"
+        },
+        {
+            "unnamed:_0": "",
+            "unnamed:_1": "",
+            "sr._no": "",
+            "incharge": "",
+            "team": "",
+            "links": "Mentor Review Timline"
+        }
+    ]
 }
