@@ -581,3 +581,85 @@ body{
     padding:22px 24px;
   }
 }
+/* FIX STUDENT DETAILS LAYOUT */
+
+.student-profile{
+  max-width:720px;
+  margin:0 auto 20px;
+}
+
+.student-kpis{
+  max-width:720px;
+  margin:0 auto 24px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:14px;
+}
+
+.student-kpis .kpi-card{
+  min-height:115px;
+  padding:18px 16px;
+  border-radius:16px;
+}
+
+.student-kpis .kpi-card h3{
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+.student-kpis .big,
+.student-kpis .big-small{
+  font-size:28px;
+}
+
+.student-section-title{
+  max-width:720px;
+  margin:24px auto 10px;
+}
+
+.course-card{
+  max-width:720px;
+  margin:0 auto 16px;
+}
+
+.course-card.latest{
+  background:#eaf6ff;
+  border:1px solid #a9cbe5;
+}
+
+.course-top{
+  align-items:start;
+}
+
+.course-name{
+  font-size:18px;
+}
+
+.course-fee{
+  font-size:18px;
+}
+
+.hours-grid .num{
+  font-size:24px;
+}
+
+@media(max-width:600px){
+  .student-kpis{
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+  }
+
+  .student-kpis .kpi-card{
+    padding:16px 12px;
+  }
+
+  .student-kpis .big,
+  .student-kpis .big-small{
+    font-size:24px;
+  }
+
+  .course-name,
+  .course-fee{
+    font-size:16px;
+  }
+}
