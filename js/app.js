@@ -1,5 +1,6 @@
 let rawData = [];
 let categoryChart;
+let monthlyChart;
 
 let state = {
   level: "category",
@@ -24,6 +25,7 @@ function refreshDashboard() {
 function render() {
   renderKPI();
   renderSummary();
+  renderMonthlyChart();
   renderChart();
   renderBreadcrumb();
   renderList();
@@ -42,6 +44,21 @@ function formatShortCurrency(value) {
   if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
   return "₹" + value.toLocaleString();
 }
+
+function getDateValue(r) {
+  return r.enrolment_date || r.enrollment_date || r.date || r.created_at || "";
+}
+
+function getMonthLabel(dateText) {
+  if (!dateText) return "Unknown";
+
+  const d = new Date(dateText);
+
+  if (isNaN(d)) return "Unknown";
+
+  return d.toLocaleString("en-US", { month: "short" });
+}
+
 
 function renderKPI() {
   const totalRevenue = rawData.reduce((s, r) => s + fee(r), 0);
@@ -80,10 +97,99 @@ function renderSummary() {
     "Updated " + now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
+function renderMonthlyChart() {
+  const monthOrder = ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"];
+
+  const monthMap = {};
+  monthOrder.forEach(m => {
+    monthMap[m] = { existing: 0, new: 0 };
+  });
+
+  rawData.forEach(r => {
+    const month = getMonthLabel(getDateValue(r));
+    if (!monthMap[month]) return;
+
+    if (typeOfStudent(r).includes("existing")) {
+      monthMap[month].existing++;
+    } else if (typeOfStudent(r).includes("new")) {
+      monthMap[month].new++;
+    }
+  });
+
+  const existingData = monthOrder.map(m => monthMap[m].existing);
+  const newData = monthOrder.map(m => monthMap[m].new);
+
+  const ctx = document.getElementById("monthlyChart");
+
+  if (monthlyChart) monthlyChart.destroy();
+
+  monthlyChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: monthOrder,
+      datasets: [
+        {
+          label: "Existing",
+          data: existingData,
+          backgroundColor: "#368ddb",
+          borderRadius: 5,
+          stack: "monthly"
+        },
+        {
+          label: "New",
+          data: newData,
+          backgroundColor: "#1b9d7f",
+          borderRadius: 5,
+          stack: "monthly"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      plugins: {
+        legend: {
+          position: "top",
+          align: "end",
+          labels: {
+            boxWidth: 12,
+            boxHeight: 12,
+            font: { size: 12 }
+          }
+        }
+      },
+
+      scales: {
+        x: {
+          stacked: true,
+          grid: { display: false },
+          ticks: {
+            font: { size: 12 },
+            maxRotation: 0,
+            minRotation: 0
+          }
+        },
+
+        y: {
+          stacked: true,
+          beginAtZero: true,
+          grid: { color: "#e5e5e5" },
+          ticks: {
+            precision: 0,
+            font: { size: 12 }
+          }
+        }
+      }
+    }
+  });
+}
+
 function renderChart() {
   const grouped = groupByCategory(rawData);
 
   const labels = grouped.map(r => r.category);
+
   const existingData = grouped.map(g =>
     rawData
       .filter(r => r.course_category === g.category && typeOfStudent(r).includes("existing"))
@@ -121,14 +227,36 @@ function renderChart() {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
+
       plugins: {
         legend: {
-          position: "bottom"
+          position: "top",
+          align: "end",
+          labels: {
+            boxWidth: 12,
+            boxHeight: 12,
+            font: { size: 12 }
+          }
         }
       },
+
       scales: {
-        y: {
+        x: {
+          grid: { display: false },
           ticks: {
+            font: { size: 11 },
+            maxRotation: 0,
+            minRotation: 0,
+            autoSkip: false
+          }
+        },
+
+        y: {
+          beginAtZero: true,
+          grid: { color: "#e5e5e5" },
+          ticks: {
+            font: { size: 12 },
             callback: value => formatShortCurrency(value)
           }
         }
@@ -219,6 +347,7 @@ function renderList() {
 
 function grandTotalCard(data) {
   const totalRevenue = data.reduce((s, r) => s + fee(r), 0);
+
   return `
     <div class="list-card">
       <div></div>
