@@ -634,3 +634,68 @@ body{
     font-size:16px;
   }
 }
+/* STUDENT TOP SECTION FIX */
+
+.student-profile{
+  padding:0;
+  margin:0 0 18px;
+  background:transparent;
+  box-shadow:none;
+}
+
+.student-profile h2{
+  font-size:24px;
+}
+
+.student-profile p{
+  font-size:15px;
+}
+
+.student-kpis{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:14px;
+  margin-bottom:24px;
+}
+
+.student-kpis .kpi-card{
+  min-height:auto;
+  height:auto;
+  padding:18px 20px;
+  border-radius:16px;
+}
+
+.student-kpis .kpi-card h3{
+  margin:0 0 8px;
+  font-size:12px;
+  color:#94a3b8;
+}
+
+.student-kpis .big,
+.student-kpis .big-small{
+  font-size:30px;
+  line-height:1;
+}
+
+.student-kpis .kpi-card p,
+.student-kpis .sub{
+  margin-top:6px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+@media(max-width:700px){
+  .student-kpis{
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+  }
+
+  .student-kpis .kpi-card{
+    padding:15px 12px;
+  }
+
+  .student-kpis .big,
+  .student-kpis .big-small{
+    font-size:24px;
+  }
+}
