@@ -105,26 +105,27 @@ function renderStudent(studentName, records) {
       </div>
     </div>
 
-    <div class="student-kpis">
+  
+  <div class="kpi-grid">
 
-      <div class="kpi-card student-mini-card">
-        <h3>COURSES</h3>
+    <div class="kpi-card small">
+        <h3>Courses</h3>
         <div class="big">${totalCourses}</div>
-        <p>enrolled</p>
-      </div>
+        <p>Enrolled</p>
+    </div>
 
-      <div class="kpi-card student-mini-card">
-        <h3>TOTAL FEES</h3>
-        <div class="big">${formatCurrency(totalFees)}</div>
-      </div>
+    <div class="kpi-card small">
+        <h3>Total Fees</h3>
+        <div class="big blue">${formatCurrency(totalFees)}</div>
+    </div>
 
-      <div class="kpi-card student-mini-card">
-        <h3>PENDING HRS</h3>
+    <div class="kpi-card small">
+        <h3>Pending Hours</h3>
         <div class="big">${formatHours(pendingHours)}</div>
         <p>${formatHours(completedHours)} completed</p>
-      </div>
-
     </div>
+
+</div>
 
     <div class="student-section-title">
       <h2>COURSES — NEWEST FIRST</h2>
