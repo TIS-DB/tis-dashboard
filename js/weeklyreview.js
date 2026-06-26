@@ -12,9 +12,7 @@ async function loadWeeklyReview() {
   try {
     const res = await fetch("data/weeklyreview.json?v=" + Date.now());
 
-    if (!res.ok) {
-      throw new Error("weeklyreview.json not found");
-    }
+    if (!res.ok) throw new Error("weeklyreview.json not found");
 
     weeklyData = await res.json();
 
@@ -23,9 +21,7 @@ async function loadWeeklyReview() {
 
   } catch (err) {
     console.error("Error loading weeklyreview.json", err);
-    weeklyContainer.innerHTML = `
-      <div class="empty">Unable to load weekly review data</div>
-    `;
+    weeklyContainer.innerHTML = `<div class="empty">Unable to load weekly review data</div>`;
   }
 }
 
@@ -36,37 +32,24 @@ function refreshWeeklyReview() {
 function renderSummary() {
   const grouped = groupDashboardRows(weeklyData.dashboard || []);
 
-  const totalUnits = grouped.length;
-  const totalRisks = grouped.filter(x => hasText(x.risks)).length;
-  const totalChallenges = grouped.filter(x => hasText(x.challenges)).length;
-  const totalSupport = grouped.filter(x => hasText(x.support_required)).length;
+  document.getElementById("totalUnits").innerText = grouped.length;
+  document.getElementById("totalRisks").innerText = grouped.filter(x => hasText(x.risks)).length;
+  document.getElementById("totalChallenges").innerText = grouped.filter(x => hasText(x.challenges)).length;
+  document.getElementById("totalSupport").innerText = grouped.filter(x => hasText(x.support_required)).length;
 
-  document.getElementById("totalUnits").innerText = totalUnits;
-  document.getElementById("totalRisks").innerText = totalRisks;
-  document.getElementById("totalChallenges").innerText = totalChallenges;
-  document.getElementById("totalSupport").innerText = totalSupport;
-
-  const now = new Date();
   updatedAt.innerText =
-    "Updated " +
-    now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    "Updated " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
 function renderWeeklyReview() {
   const grouped = groupDashboardRows(weeklyData.dashboard || []);
 
   if (!grouped.length) {
-    weeklyContainer.innerHTML = `
-      <div class="empty">No weekly review data found</div>
-    `;
+    weeklyContainer.innerHTML = `<div class="empty">No weekly review data found</div>`;
     return;
   }
 
-  weeklyContainer.innerHTML = "";
-
-  grouped.forEach(item => {
-    weeklyContainer.innerHTML += renderReviewCard(item);
-  });
+  weeklyContainer.innerHTML = grouped.map(item => renderReviewCard(item)).join("");
 }
 
 function groupDashboardRows(rows) {
@@ -82,7 +65,6 @@ function groupDashboardRows(rows) {
         sr_no: srNo,
         incharge: incharge || "Not Assigned",
         title: getBusinessTitle(incharge),
-        key_updates: [],
         operational_performance: [],
         project_status: [],
         risks: [],
@@ -95,7 +77,6 @@ function groupDashboardRows(rows) {
 
     if (!current) return;
 
-    pushIfText(current.key_updates, row.key_updates);
     pushIfText(current.operational_performance, row.operational_performance);
     pushIfText(current.project_status, row.project_status);
     pushIfText(current.risks, row.risks);
@@ -108,23 +89,36 @@ function groupDashboardRows(rows) {
 
 function renderReviewCard(item) {
   const relatedLinks = getLinksForIncharge(item.incharge);
+  const status = getStatus(item);
 
   return `
     <article class="weekly-card">
 
       <div class="weekly-card-head">
         <div>
-          <div class="weekly-eyebrow">${item.title}</div>
-          <h3>${item.incharge}</h3>
+          <div class="weekly-eyebrow">${escapeHtml(item.title)}</div>
+          <h3>${escapeHtml(item.incharge)}</h3>
+          ${item.sr_no ? `<p class="weekly-sr">Sr. No. ${escapeHtml(item.sr_no)}</p>` : ""}
         </div>
-        <div class="weekly-avatar">${getInitials(item.incharge)}</div>
+
+        <div class="weekly-head-right">
+          <span class="weekly-status ${status.className}">${status.label}</span>
+          <div class="weekly-avatar">${getInitials(item.incharge)}</div>
+        </div>
       </div>
 
-      ${renderSection("Operational Performance", item.operational_performance, "blue")}
-      ${renderSection("Project Status", item.project_status, "green")}
-      ${renderSection("Risks", item.risks, "gold")}
-      ${renderSection("Challenges", item.challenges, "gold")}
-      ${renderSection("Support Required", item.support_required, "green")}
+      <div class="weekly-two-column">
+        <div>
+          ${renderSection("Progress / Output", item.operational_performance, "blue")}
+          ${renderSection("Current Project Status", item.project_status, "green")}
+        </div>
+
+        <div>
+          ${renderSection("Risks", item.risks, "gold")}
+          ${renderSection("Challenges", item.challenges, "gold")}
+          ${renderSection("Support Required", item.support_required, "green")}
+        </div>
+      </div>
 
       ${renderLinks(relatedLinks)}
 
@@ -148,10 +142,15 @@ function renderLinks(links) {
 
   return `
     <div class="weekly-links">
-      <h4>Related Links</h4>
+      <h4>Reference Documents</h4>
       <div class="weekly-link-list">
         ${links.map(link => `
-          <span class="weekly-link-pill">${escapeHtml(link)}</span>
+          <a class="weekly-link-pill"
+             href="${escapeAttr(link.url)}"
+             target="_blank"
+             rel="noopener noreferrer">
+             🔗 ${escapeHtml(link.title)}
+          </a>
         `).join("")}
       </div>
     </div>
@@ -169,11 +168,15 @@ function getLinksForIncharge(incharge) {
       currentIncharge = clean(row.incharge);
     }
 
+    const title = clean(row.links);
+    const url = clean(row.url || row.link || row.hyperlink);
+
     if (
       currentIncharge.toLowerCase() === clean(incharge).toLowerCase() &&
-      clean(row.links)
+      title &&
+      url
     ) {
-      result.push(clean(row.links));
+      result.push({ title, url });
     }
   });
 
@@ -200,12 +203,21 @@ function getBusinessTitle(incharge) {
   return "Business Unit";
 }
 
+function getStatus(item) {
+  if (hasText(item.risks) || hasText(item.challenges)) {
+    return { label: "Needs Attention", className: "status-watch" };
+  }
+
+  if (hasText(item.support_required)) {
+    return { label: "Support Needed", className: "status-risk" };
+  }
+
+  return { label: "On Track", className: "status-complete" };
+}
+
 function pushIfText(arr, value) {
   const text = clean(value);
-
-  if (text) {
-    arr.push(text);
-  }
+  if (text) arr.push(text);
 }
 
 function hasText(arr) {
@@ -233,6 +245,10 @@ function escapeHtml(text) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;")
     .replaceAll("\n", "<br>");
+}
+
+function escapeAttr(text) {
+  return clean(text).replaceAll('"', "%22");
 }
 
 window.refreshWeeklyReview = refreshWeeklyReview;
