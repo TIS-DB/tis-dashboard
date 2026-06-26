@@ -17,10 +17,20 @@ function loadStudents() {
       renderDashboardSummary();
       updateTime();
 
-      if (searchBox.value.trim()) {
+      /*if (searchBox.value.trim()) {
         renderStudentView(searchBox.value.trim());
       } else {
         studentPanel.innerHTML = `<div class="empty">Search a student to view details</div>`;
+      }*/
+
+      if (searchBox.value.trim()) {
+  renderStudentView(searchBox.value.trim());
+} else if (students.length > 0) {
+  const firstStudentName = students[0].student_name || "";
+  searchBox.value = firstStudentName;
+  renderStudentView(firstStudentName);
+} else {
+  studentPanel.innerHTML = `<div class="empty">No student data found</div>`;
       }
     })
     .catch(err => {
@@ -37,9 +47,21 @@ searchBox.addEventListener("input", () => {
   renderStudentView(searchBox.value.trim());
 });
 
-clearSearch.addEventListener("click", () => {
+/*clearSearch.addEventListener("click", () => {
   searchBox.value = "";
   studentPanel.innerHTML = `<div class="empty">Search a student to view details</div>`;
+});*/
+
+clearSearch.addEventListener("click", () => {
+  searchBox.value = "";
+
+  if (students.length > 0) {
+    const firstStudentName = students[0].student_name || "";
+    searchBox.value = firstStudentName;
+    renderStudentView(firstStudentName);
+  } else {
+    studentPanel.innerHTML = `<div class="empty">No student data found</div>`;
+  }
 });
 
 function renderDashboardSummary() {
