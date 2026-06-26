@@ -54,9 +54,15 @@ def clean_df(df):
             df[col] = pd.to_datetime(df[col], errors="coerce")
             df[col] = df[col].dt.strftime("%d-%b-%Y")
 
-    # Remove commas from numbers
-    for col in df.columns:
-        df[col] = df[col].astype(str).str.replace(",", "", regex=False)
+    
+    # Convert everything to string, remove commas and trim spaces
+for col in df.columns:
+    df[col] = (
+        df[col]
+        .astype(str)
+        .str.replace(",", "", regex=False)
+        .str.strip()
+    )
 
     # Replace NaN / NaT with blanks
     df = df.replace([np.nan, "nan", "NaT"], "")
