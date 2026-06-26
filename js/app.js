@@ -26,7 +26,7 @@ function render() {
   renderKPI();
   renderSummary();
   renderMonthlyChart();
-  renderChart();
+  //renderChart();
   renderBreadcrumb();
   renderList();
 }
