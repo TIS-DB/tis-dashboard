@@ -79,11 +79,11 @@ function renderKPI() {
   const avg = totalStudents ? totalRevenue / totalStudents : 0;
   const share = totalStudents ? (newRows.length / totalStudents) * 100 : 0;
 
-  document.getElementById("totalRevenue").innerText = formatShortCurrency(totalRevenue);
+  //document.getElementById("totalRevenue").innerText = formatShortCurrency(totalRevenue);
   document.getElementById("totalStudents").innerText = totalStudents;
-  document.getElementById("avgRevenue").innerText = formatShortCurrency(avg);
-  document.getElementById("existingRevenue").innerText = formatShortCurrency(existingRevenue);
-  document.getElementById("newRevenue").innerText = formatShortCurrency(newRevenue);
+  //document.getElementById("avgRevenue").innerText = formatShortCurrency(avg);
+  //document.getElementById("existingRevenue").innerText = formatShortCurrency(existingRevenue);
+  //document.getElementById("newRevenue").innerText = formatShortCurrency(newRevenue);
   document.getElementById("existingCount").innerText = existingRows.length;
   document.getElementById("newCount").innerText = newRows.length;
   document.getElementById("newShare").innerText = share.toFixed(1) + "%";
@@ -95,8 +95,10 @@ function renderSummary() {
   const totalRevenue = rawData.reduce((s, r) => s + fee(r), 0);
   const totalStudents = rawData.length;
 
+  /*document.getElementById("summaryText").innerText =
+    `${totalStudents} enrolments · ${formatShortCurrency(totalRevenue)} revenue · FY27`;*/
   document.getElementById("summaryText").innerText =
-    `${totalStudents} enrolments · ${formatShortCurrency(totalRevenue)} revenue · FY27`;
+  `${totalStudents} enrolments · FY27`;
 
   const now = new Date();
   document.getElementById("updatedAt").innerText =
@@ -306,8 +308,8 @@ function renderList() {
           <div class="icon">▶</div>
           <div class="title">${r.category}</div>
           <div>
-            <div class="amount">${formatShortCurrency(r.revenue)}</div>
-            <div class="students">${r.count} students · ${newPct}% new</div>
+              <div class="amount">${r.count} Students</div>
+              <div class="students">${newPct}% new</div>
           </div>
         </div>`;
     });
@@ -328,8 +330,8 @@ function renderList() {
           <div class="icon">▶</div>
           <div class="title">${r.course}</div>
           <div>
-            <div class="amount">${formatShortCurrency(r.revenue)}</div>
-            <div class="students">${r.count} students · ${newPct}% new</div>
+              <div class="amount">${r.count} Students</div>
+              <div class="students">${newPct}% new</div>
           </div>
         </div>`;
     });
