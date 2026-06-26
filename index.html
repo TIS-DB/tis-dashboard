@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TIS Management Dashboard</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -32,10 +34,13 @@
 <main class="container">
 
   <section class="kpi-grid">
+
     <div class="kpi-card">
       <h3>Total Revenue</h3>
       <div id="totalRevenue" class="big">₹0</div>
+
       <hr>
+
       <div class="split">
         <span>Existing<br><b id="existingRevenue">₹0</b></span>
         <span>New<br><b class="green" id="newRevenue">₹0</b></span>
@@ -45,7 +50,9 @@
     <div class="kpi-card">
       <h3>Total Enrolments</h3>
       <div id="totalStudents" class="big">0</div>
+
       <hr>
+
       <div class="split">
         <span>Existing<br><b id="existingCount">0</b></span>
         <span>New<br><b class="green" id="newCount">0</b></span>
@@ -63,6 +70,7 @@
       <div id="newShare" class="green big-small">0%</div>
       <p id="newShareText">0 of 0 students</p>
     </div>
+
   </section>
 
   <section class="chart-card">
@@ -71,7 +79,7 @@
   </section>
 
   <section class="chart-card">
-    <h3>Revenue by Category (₹)</h3>
+    <h3>Revenue by Category</h3>
     <canvas id="categoryChart"></canvas>
   </section>
 
