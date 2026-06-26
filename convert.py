@@ -31,19 +31,32 @@ OUTPUT_FILES = {
 # UTIL FUNCTIONS
 # ----------------------------
 def clean_df(df):
+    # Remove completely empty rows
+    df = df.dropna(how="all")
+
+    # Remove completely empty columns
+    df = df.dropna(axis=1, how="all")
+
+    # Clean column names
     df.columns = [
         str(c).strip().lower().replace(" ", "_")
         for c in df.columns
     ]
 
+    # Remove Excel "Unnamed" columns
+    df = df.loc[:, ~df.columns.str.startswith("unnamed")]
+
+    # Format dates
     for col in df.columns:
         if "date" in col:
             df[col] = pd.to_datetime(df[col], errors="coerce")
             df[col] = df[col].dt.strftime("%d-%b-%Y")
 
+    # Remove commas from numbers
     for col in df.columns:
         df[col] = df[col].astype(str).str.replace(",", "", regex=False)
 
+    # Replace NaN / NaT with blanks
     df = df.replace([np.nan, "nan", "NaT"], "")
 
     return df
