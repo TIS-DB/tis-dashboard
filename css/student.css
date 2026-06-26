@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f3;
+  color: #111;
+}
+
+.top-header {
+  background: white;
+  padding: 24px 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-header h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.top-header p {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.header-right {
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+}
+
+.header-right button {
+  margin-top: 14px;
+  padding: 13px 24px;
+  border-radius: 28px;
+  border: 1px solid #b7cddd;
+  background: #eaf5ff;
+  color: #22638f;
+  font-size: 18px;
+}
+
+.tabs {
+  display: flex;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs button {
+  flex: 1;
+  border: none;
+  background: white;
+  padding: 14px 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+}
+
+.tabs .active {
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+
+.page {
+  padding: 32px 16px 24px;
+}
+
+.search-box {
+  height: 56px;
+  background: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.search-box span {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 21px;
+}
+
+.search-box button {
+  border: none;
+  background: none;
+  font-size: 34px;
+  color: #999;
+}
+
+.student-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #e7f4ff;
+  border: 3px solid #c8def0;
+  color: #1e6595;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.student-head h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.student-head p {
+  margin: 4px 0 0;
+  font-size: 17px;
+  color: #777;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.kpi-card {
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  padding: 20px 14px;
+  min-height: 110px;
+}
+
+.kpi-card .label {
+  color: #999;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.kpi-card .value {
+  margin-top: 8px;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.kpi-card .sub {
+  margin-top: 4px;
+  color: #777;
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: #555;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 22px 16px;
+  margin-bottom: 18px;
+}
+
+.course-card.latest {
+  background: #eaf6ff;
+  border-color: #a9cbe5;
+}
+
+.course-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.course-name {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.course-fee {
+  font-size: 21px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.tag {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #e8e6e1;
+  color: #666;
+  font-weight: 700;
+}
+
+.tag.center {
+  background: #d9f5eb;
+  color: #087354;
+}
+
+.tag.latest-tag {
+  background: transparent;
+  color: #176fa4;
+  padding-left: 0;
+}
+
+.att-row {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.progress {
+  height: 10px;
+  background: #e8e8e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #20a27f;
+  border-radius: 20px;
+}
+
+.hours-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.hours-grid .num {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.hours-grid .completed {
+  color: #20a27f;
+}
+
+.hours-grid .pending {
+  color: #b8770f;
+}
+
+.hours-grid .txt {
+  color: #999;
+  font-size: 15px;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 50px;
+  font-size: 18px;
+}
