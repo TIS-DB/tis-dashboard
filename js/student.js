@@ -1,75 +1,269 @@
 let students = [];
 
-const tableBody = document.getElementById("tableBody");
-const headerRow = document.getElementById("headerRow");
 const searchBox = document.getElementById("search");
+const clearSearch = document.getElementById("clearSearch");
+const studentPanel = document.getElementById("studentPanel");
+const dashboardSummary = document.getElementById("dashboardSummary");
+const updatedTime = document.getElementById("updatedTime");
 
 // -----------------------------
 // LOAD DATA
 // -----------------------------
-fetch("data/students.json")
+document.addEventListener("DOMContentLoaded", () => {
+  loadStudents();
+});
+
+function loadStudents() {
+  fetch("data/students.json?v=" + Date.now())
     .then(res => res.json())
     .then(data => {
-        students = data;
-        renderTable(students);
+      students = data || [];
+      renderDashboardSummary();
+      updateTime();
+      renderStudentView("");
     })
     .catch(err => {
-        console.error("Error loading students.json", err);
-    });
-
-// -----------------------------
-// RENDER TABLE
-// -----------------------------
-function renderTable(data) {
-    if (!data || data.length === 0) return;
-
-    tableBody.innerHTML = "";
-    headerRow.innerHTML = "";
-
-    // headers
-    Object.keys(data[0]).forEach(key => {
-        let th = document.createElement("th");
-        th.innerText = key;
-        headerRow.appendChild(th);
-    });
-
-    // rows
-    data.forEach(row => {
-        let tr = document.createElement("tr");
-
-        Object.values(row).forEach(val => {
-            let td = document.createElement("td");
-            td.innerText = val;
-            tr.appendChild(td);
-        });
-
-        tableBody.appendChild(tr);
+      console.error("Error loading students.json", err);
+      studentPanel.innerHTML = `<div class="empty">Unable to load student data</div>`;
     });
 }
 
-// -----------------------------
-// SEARCH FILTER
-// -----------------------------
-searchBox.addEventListener("input", function () {
-    let value = this.value.toLowerCase();
+function refreshStudents() {
+  loadStudents();
+}
 
-    let filtered = students.filter(student =>
-        Object.values(student).some(v =>
-            String(v).toLowerCase().includes(value)
-        )
-    );
+// -----------------------------
+// SUMMARY HEADER
+// -----------------------------
+function renderDashboardSummary() {
+  const fy27 = students.filter(r => r.financial_year === "FY27");
 
-    renderTable(filtered);
+  const totalEnrollments = fy27.length;
+  const totalRevenue = fy27.reduce((sum, r) => sum + num(r.course_fee), 0);
+
+  dashboardSummary.innerText =
+    `${totalEnrollments} enrolments · ${formatCurrency(totalRevenue)} revenue · FY27`;
+}
+
+function updateTime() {
+  const now = new Date();
+  updatedTime.innerText =
+    "Updated " + now.toLocaleTimeString("en-IN", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true
+    }).toLowerCase();
+}
+
+// -----------------------------
+// SEARCH
+// -----------------------------
+searchBox.addEventListener("input", () => {
+  renderStudentView(searchBox.value.trim());
 });
 
+clearSearch.addEventListener("click", () => {
+  searchBox.value = "";
+  renderStudentView("");
+});
+
+// -----------------------------
+// MAIN STUDENT VIEW
+// -----------------------------
+function renderStudentView(searchText) {
+  if (!students.length) {
+    studentPanel.innerHTML = `<div class="empty">No student data found</div>`;
+    return;
+  }
+
+  let filtered = students;
+
+  if (searchText) {
+    const q = searchText.toLowerCase();
+
+    filtered = students.filter(r =>
+      String(r.student_name || "").toLowerCase().includes(q) ||
+      String(r.contact_number || "").toLowerCase().includes(q) ||
+      String(r.school || "").toLowerCase().includes(q)
+    );
+  }
+
+  if (!filtered.length) {
+    studentPanel.innerHTML = `<div class="empty">No matching student found</div>`;
+    return;
+  }
+
+  // Pick first matching student
+  const studentName = filtered[0].student_name;
+
+  const records = students
+    .filter(r => r.student_name === studentName)
+    .sort((a, b) => parseDate(b.enrolled_date) - parseDate(a.enrolled_date));
+
+  renderStudent(studentName, records);
+}
+
+function renderStudent(studentName, records) {
+  const totalCourses = records.length;
+  const totalFees = records.reduce((sum, r) => sum + num(r.course_fee), 0);
+  const pendingHours = records.reduce((sum, r) => sum + num(r.attendance_pending_hours), 0);
+  const completedHours = records.reduce((sum, r) => sum + num(r.attendance_completed_hours), 0);
+
+  const initials = getInitials(studentName);
+
+  let html = `
+    <div class="student-head">
+      <div class="avatar">${initials}</div>
+      <div>
+        <h2>${studentName}</h2>
+        <p>${totalCourses} course${totalCourses > 1 ? "s" : ""} enrolled</p>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="label">COURSES</div>
+        <div class="value">${totalCourses}</div>
+        <div class="sub">enrolled</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="label">TOTAL FEES</div>
+        <div class="value">${formatCurrency(totalFees)}</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="label">PENDING HRS</div>
+        <div class="value">${formatHours(pendingHours)}</div>
+        <div class="sub">${formatHours(completedHours)} completed</div>
+      </div>
+    </div>
+
+    <div class="section-title">COURSES — NEWEST FIRST</div>
+  `;
+
+  records.forEach((course, index) => {
+    html += renderCourseCard(course, index === 0);
+  });
+
+  studentPanel.innerHTML = html;
+}
+
+// -----------------------------
+// COURSE CARD
+// -----------------------------
+function renderCourseCard(r, isLatest) {
+  const scheduled = num(r.attendance_scheduled_hours);
+  const completed = num(r.attendance_completed_hours);
+  const pending = num(r.attendance_pending_hours);
+  const completion = num(r.completion_percentage);
+
+  return `
+    <div class="course-card ${isLatest ? "latest" : ""}">
+      <div class="course-top">
+        <div class="course-name">${r.course_name || "-"}</div>
+        <div class="course-fee">${formatCurrency(num(r.course_fee))}</div>
+      </div>
+
+      <div class="tags">
+        ${isLatest ? `<span class="tag latest-tag">★ Latest</span>` : ""}
+        <span class="tag center">${r.enrolment_center || "-"}</span>
+        <span class="tag">${formatDate(r.enrolled_date)}</span>
+        <span class="tag">${formatHours(num(r.course_duration_hours))} course</span>
+      </div>
+
+      <div class="att-row">
+        <span>ATTENDANCE</span>
+        <span>${Math.round(completion)}% complete</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" style="width:${Math.min(completion, 100)}%"></div>
+      </div>
+
+      <div class="hours-grid">
+        <div>
+          <div class="num">${formatHours(scheduled)}</div>
+          <div class="txt">Scheduled</div>
+        </div>
+
+        <div>
+          <div class="num completed">${formatHours(completed)}</div>
+          <div class="txt">Completed</div>
+        </div>
+
+        <div>
+          <div class="num pending">${formatHours(pending)}</div>
+          <div class="txt">Pending</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// -----------------------------
+// HELPERS
+// -----------------------------
+function num(value) {
+  return Number(value || 0);
+}
+
+function formatHours(value) {
+  if (value % 1 === 0) return `${value.toFixed(0)}h`;
+  return `${value.toFixed(2)}h`;
+}
+
+function formatCurrency(value) {
+  if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
+  if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
+  return "₹" + value.toLocaleString("en-IN");
+}
+
+function getInitials(name) {
+  return String(name || "")
+    .split(" ")
+    .map(w => w[0])
+    .join("")
+    .substring(0, 2)
+    .toUpperCase();
+}
+
+function parseDate(dateStr) {
+  if (!dateStr) return new Date(0);
+
+  const parts = String(dateStr).split("-");
+  if (parts.length !== 3) return new Date(dateStr);
+
+  const months = {
+    Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
+    Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11
+  };
+
+  return new Date(parts[2], months[parts[1]], parts[0]);
+}
+
+function formatDate(dateStr) {
+  const d = parseDate(dateStr);
+  if (isNaN(d)) return dateStr || "-";
+
+  return d.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+}
+
+// -----------------------------
+// TAB NAVIGATION
+// -----------------------------
 function goToFY27() {
-    window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 
 function goToFY26() {
-    window.location.href = "index.html";
+  window.location.href = "index.html";
 }
 
-// expose to HTML
 window.goToFY27 = goToFY27;
 window.goToFY26 = goToFY26;
+window.refreshStudents = refreshStudents;
