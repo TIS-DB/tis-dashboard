@@ -440,6 +440,10 @@ function goHome() {
   render();
 }
 
+function goToStudents() {
+    window.location.href = "student.html";
+}
+
 window.drillToCourse = drillToCourse;
 window.drillToStudent = drillToStudent;
 window.goHome = goHome;
