@@ -39,6 +39,13 @@ function typeOfStudent(r) {
   return String(r["new/existing"] || "").toLowerCase();
 }
 
+function newPercent(data) {
+  if (!data.length) return 0;
+
+  const newRows = data.filter(r => typeOfStudent(r).includes("new"));
+  return (newRows.length / data.length) * 100;
+}
+
 function formatShortCurrency(value) {
   if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
   if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
@@ -58,7 +65,6 @@ function getMonthLabel(dateText) {
 
   return d.toLocaleString("en-US", { month: "short" });
 }
-
 
 function renderKPI() {
   const totalRevenue = rawData.reduce((s, r) => s + fee(r), 0);
@@ -292,13 +298,16 @@ function renderList() {
     const grouped = groupByCategory(rawData);
 
     grouped.forEach(r => {
+      const categoryRows = rawData.filter(x => x.course_category === r.category);
+      const newPct = newPercent(categoryRows).toFixed(0);
+
       box.innerHTML += `
         <div class="list-card" onclick="drillToCourse('${encodeURIComponent(r.category)}')">
           <div class="icon">▶</div>
           <div class="title">${r.category}</div>
           <div>
             <div class="amount">${formatShortCurrency(r.revenue)}</div>
-            <div class="students">${r.count} students</div>
+            <div class="students">${r.count} students · ${newPct}% new</div>
           </div>
         </div>`;
     });
@@ -311,13 +320,16 @@ function renderList() {
     const grouped = groupByCourse(filtered);
 
     grouped.forEach(r => {
+      const courseRows = filtered.filter(x => x.course_name === r.course);
+      const newPct = newPercent(courseRows).toFixed(0);
+
       box.innerHTML += `
         <div class="list-card" onclick="drillToStudent('${encodeURIComponent(r.course)}')">
           <div class="icon">▶</div>
           <div class="title">${r.course}</div>
           <div>
             <div class="amount">${formatShortCurrency(r.revenue)}</div>
-            <div class="students">${r.count} students</div>
+            <div class="students">${r.count} students · ${newPct}% new</div>
           </div>
         </div>`;
     });
@@ -347,6 +359,7 @@ function renderList() {
 
 function grandTotalCard(data) {
   const totalRevenue = data.reduce((s, r) => s + fee(r), 0);
+  const newPct = newPercent(data).toFixed(0);
 
   return `
     <div class="list-card">
@@ -354,7 +367,7 @@ function grandTotalCard(data) {
       <div class="title">Grand Total</div>
       <div>
         <div class="amount">₹${totalRevenue.toLocaleString()}</div>
-        <div class="students">${data.length} students</div>
+        <div class="students">${data.length} students · ${newPct}% new</div>
       </div>
     </div>`;
 }
