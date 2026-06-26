@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f4f6f9;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        #search {
+            padding: 10px;
+            width: 320px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Dashboard</h2>
+
+    <input type="text" id="search" placeholder="Search students..." />
+
+    <table>
+        <thead>
+            <tr id="headerRow"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <!-- Your JS file -->
+    <script src="js/student.js"></script>
+
+</body>
+</html>
