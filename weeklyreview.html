@@ -1,46 +1,73 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Student Dashboard</title>
-<link rel="stylesheet" href="css/style.css">
+    <title>TIS Weekly Review Dashboard</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="top-header dark-header">
-  <div>
-    <h1>TIS Management<br>Dashboard</h1>
-    <p id="dashboardSummary">Loading...</p>
-  </div>
+    <header class="top-header">
+        <div>
+            <h1>TIS Management<br>Dashboard</h1>
+            <p id="summaryText">Weekly review across Schools & Outreach business units</p>
+        </div>
 
-  <div class="header-right">
-    <div id="updatedTime">Updated --</div>
-    <button onclick="refreshStudents()">↻ Refresh</button>
-  </div>
-</header>
+        <div class="header-right">
+            <span id="updatedAt">Updated now</span>
+            <button onclick="refreshWeeklyReview()">↻ Refresh</button>
+        </div>
+    </header>
 
-<nav class="tabs">
-  <button onclick="goToFY27()">FY27 Enrolments</button>
-  <button class="active">Student Details</button>
-</nav>
+    <nav class="tabs">
+        <button onclick="location.href='index.html'">FY27 Enrolments</button>
+        <button onclick="location.href='student.html'">Student Details</button>
+        <button class="active">Weekly Review-Schools</button>
+    </nav>
 
-<main class="student-page">
+    <main class="container">
 
-  <div class="search-box">
-    <span>🔍</span>
-    <input id="search" type="text" placeholder="Search student name..." />
-    <button id="clearSearch">×</button>
-  </div>
+        <section class="kpi-grid">
+            <div class="kpi-card small">
+                <h3>Business Units</h3>
+                <div id="totalUnits" class="big">0</div>
+                <p>weekly review areas</p>
+            </div>
 
-  <section id="studentPanel"></section>
+            <div class="kpi-card small">
+                <h3>Open Risks</h3>
+                <div id="totalRisks" class="big-small blue">0</div>
+                <p>items highlighted</p>
+            </div>
 
-</main>
+            <div class="kpi-card small">
+                <h3>Challenges</h3>
+                <div id="totalChallenges" class="big-small">0</div>
+                <p>requiring attention</p>
+            </div>
 
-<script src="js/students.js"></script>
+            <div class="kpi-card small">
+                <h3>Support Required</h3>
+                <div id="totalSupport" class="big-small green">0</div>
+                <p>action items</p>
+            </div>
+        </section>
+
+        <section class="breakdown-header">
+            <h2>Weekly Review</h2>
+            <p>Business unit wise update, risks, challenges and support required</p>
+        </section>
+
+        <section id="weeklyContainer" class="weekly-container"></section>
+
+    </main>
+
+    <script src="js/weeklyreview.js?v=2"></script>
 
 </body>
 </html>
