@@ -1,5 +1,221 @@
 [
     {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Riyan Mangal",
+        "new/existing": "New",
+        "enrolment_date": "02-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "SHREY SHAH",
+        "new/existing": "New",
+        "enrolment_date": "03-Apr-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Arhaan Sethi",
+        "new/existing": "New",
+        "enrolment_date": "03-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "MIT AI Fellowship",
+        "course_name": "AIFYGI -2026 - Schools",
+        "student_name": "Vikram Triplicane",
+        "new/existing": "Existing",
+        "enrolment_date": "05-Apr-2026",
+        "course_fee": "600000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Aryan Bakshi",
+        "new/existing": "Existing",
+        "enrolment_date": "08-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Sahana Vijay",
+        "new/existing": "Existing",
+        "enrolment_date": "08-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Daksh Aggarwal",
+        "new/existing": "New",
+        "enrolment_date": "09-Apr-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Coding Junior",
+        "student_name": "Anika Dharia",
+        "new/existing": "New",
+        "enrolment_date": "09-Apr-2026",
+        "course_fee": "12000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Preksh Doshi",
+        "new/existing": "New",
+        "enrolment_date": "09-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 3)",
+        "student_name": "Ohm Shah",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Apr-2026",
+        "course_fee": "45000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Veer Mahajan",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Beginner",
+        "student_name": "Yuvaan Parekh",
+        "new/existing": "New",
+        "enrolment_date": "10-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Arnav Bansal",
+        "new/existing": "Existing",
+        "enrolment_date": "11-Apr-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 3)",
+        "student_name": "Krishiv Desai",
+        "new/existing": "Existing",
+        "enrolment_date": "11-Apr-2026",
+        "course_fee": "45000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Jianna Vasa",
+        "new/existing": "New",
+        "enrolment_date": "11-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "MIT AI Fellowship",
+        "course_name": "AIFYGI -2026 - Schools",
+        "student_name": "Aaryav Vidya Saju",
+        "new/existing": "Existing",
+        "enrolment_date": "13-Apr-2026",
+        "course_fee": "600000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Rohaan Gajjar",
+        "new/existing": "New",
+        "enrolment_date": "13-Apr-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Arsh Ahuja",
+        "new/existing": "Existing",
+        "enrolment_date": "13-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Junior (20 hours)",
+        "student_name": "Ohm Shah",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "40000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Ayush Ladsariya",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Aarav Pandya",
+        "new/existing": "New",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Advance",
+        "student_name": "Rudraang Goenka",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Rishi Deshmukh",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Yash Chhaparia",
+        "new/existing": "New",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Parth jain",
+        "new/existing": "Existing",
+        "enrolment_date": "15-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
+        "student_name": "Zahra Memon",
+        "new/existing": "Existing",
+        "enrolment_date": "15-Apr-2026",
+        "course_fee": "56250"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Dev Dwarkadas",
+        "new/existing": "Existing",
+        "enrolment_date": "16-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
         "course_category": "TIS Nurturing Innovators",
         "course_name": "NI Advanced 40 Hours",
         "student_name": "Niyant Shah",
@@ -218,7 +434,7 @@
     {
         "course_category": "TIS Nurturing Innovators",
         "course_name": "NI Junior (10 Hours)",
-        "student_name": "Srousha Bisht",
+        "student_name": "Srousha  Bisht",
         "new/existing": "Existing",
         "enrolment_date": "25-Apr-2026",
         "course_fee": "20000"
@@ -402,7 +618,7 @@
     {
         "course_category": "Bootcamps",
         "course_name": "Innovation Sprint (Senior)",
-        "student_name": "Kaeyan Sinha",
+        "student_name": "Kaeyan  Sinha",
         "new/existing": "Existing",
         "enrolment_date": "02-May-2026",
         "course_fee": "15000"
@@ -1554,7 +1770,7 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FRC Java Skill Building",
-        "student_name": "Ishaan Panicker",
+        "student_name": "Ishaan  Panicker",
         "new/existing": "Existing",
         "enrolment_date": "04-Jun-2026",
         "course_fee": "24000"
@@ -1602,7 +1818,7 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FIRST Robotics Competition",
-        "student_name": "Ishaan Panicker",
+        "student_name": "Ishaan  Panicker",
         "new/existing": "Existing",
         "enrolment_date": "05-Jun-2026",
         "course_fee": "300000"
@@ -1794,7 +2010,7 @@
     {
         "course_category": "TIS Foundation",
         "course_name": "Design Foundation",
-        "student_name": "Ayaan Merchant",
+        "student_name": "Ayaan  Merchant",
         "new/existing": "Existing",
         "enrolment_date": "11-Jun-2026",
         "course_fee": "15000"
@@ -1969,7 +2185,7 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "AI - Data Science",
+        "course_name": "AI  - Data Science",
         "student_name": "Mihir Garg",
         "new/existing": "Existing",
         "enrolment_date": "15-Jun-2026",
@@ -2010,7 +2226,7 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FRC CAD Skill Building",
-        "student_name": "Ishaan Panicker",
+        "student_name": "Ishaan  Panicker",
         "new/existing": "Existing",
         "enrolment_date": "16-Jun-2026",
         "course_fee": "24000"
@@ -2768,6 +2984,14 @@
         "course_fee": "70000"
     },
     {
+        "course_category": "TIS Compete",
+        "course_name": "VEX IQ 2026-27",
+        "student_name": "Agastya Marfatia",
+        "new/existing": "Existing",
+        "enrolment_date": "19-Jun-2026",
+        "course_fee": "125000"
+    },
+    {
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Ishaan J",
@@ -2834,7 +3058,7 @@
     {
         "course_category": "TIS Nurturing Innovators",
         "course_name": "NI Advanced 40 Hours",
-        "student_name": "Abir Chhatwal",
+        "student_name": "Abir  Chhatwal",
         "new/existing": "Existing",
         "enrolment_date": "20-Jun-2026",
         "course_fee": "120000"

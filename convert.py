@@ -1,50 +1,92 @@
 import pandas as pd
 import json
 import numpy as np
-
-
 import os
 
-file_name = os.path.join(
+# ----------------------------
+# CONFIG
+# ----------------------------
+BASE_PATH = os.path.join(
     os.path.expanduser("~"),
     "Library",
     "CloudStorage",
     "OneDrive-EdunnovateTechnologiesPrivateLimited",
-    "TIS-Enrollment-Data",
-    "Course Wise Enrollment.xlsx"
+    "TIS-Enrollment-Data"
 )
 
-df = pd.read_excel(file_name)
+FILES = {
+    "enrollments": "Course Wise Enrollment.xlsx",
+    "students": "Student Master.xlsx"
+}
 
-# Clean column names
-df.columns = [
-    c.strip().lower().replace(" ", "_")
-    for c in df.columns
-]
+OUTPUT_FILES = {
+    "enrollments": "data/enrollments.json",
+    "students": "data/students.json"
+}
 
-# Convert Excel date → readable string
-if "enrolment_date" in df.columns:
-    df["enrolment_date"] = pd.to_datetime(df["enrolment_date"], errors="coerce")
-    df["enrolment_date"] = df["enrolment_date"].dt.strftime("%d-%b-%Y")
 
-# Clean course_fee (remove commas)
-if "course_fee" in df.columns:
-   df["course_fee"] = (
-    df["course_fee"]
-    .astype(str)
-    .str.replace(",", "", regex=False)
-)
+# ----------------------------
+# UTIL FUNCTIONS
+# ----------------------------
+def clean_df(df):
+    df.columns = [
+        c.strip().lower().replace(" ", "_")
+        for c in df.columns
+    ]
 
-# Fix NaN
-df = df.replace([np.nan], "")
+    # Convert any datetime columns safely
+    for col in df.columns:
+        if "date" in col:
+            df[col] = pd.to_datetime(df[col], errors="coerce")
+            df[col] = df[col].dt.strftime("%d-%b-%Y")
 
-# Convert to JSON-safe format
-data = df.to_dict(orient="records")
-os.makedirs("data", exist_ok=True)
+    # Clean numeric-like fields (remove commas)
+    for col in df.columns:
+        df[col] = df[col].astype(str).str.replace(",", "", regex=False)
 
-# Write JSON
-with open("data/enrollments.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
+    # Fix NaN
+    df = df.replace([np.nan], "")
 
-print("✅ JSON updated")
-print("Rows:", len(data))
+    return df
+
+
+def process_file(key, filename):
+    path = os.path.join(BASE_PATH, filename)
+
+    print(f"📥 Reading {filename}...")
+
+    try:
+        df = pd.read_excel(path)
+        df = clean_df(df)
+
+        data = df.to_dict(orient="records")
+
+        os.makedirs("data", exist_ok=True)
+
+        tmp_file = OUTPUT_FILES[key] + ".tmp"
+
+        with open(tmp_file, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+
+        os.replace(tmp_file, OUTPUT_FILES[key])
+
+        print(f"✅ {key}.json updated → Rows: {len(data)}")
+
+    except Exception as e:
+        print(f"❌ Error processing {filename}: {e}")
+
+
+# ----------------------------
+# MAIN PIPELINE
+# ----------------------------
+def run():
+    print("\n🚀 Starting conversion pipeline...\n")
+
+    for key, file in FILES.items():
+        process_file(key, file)
+
+    print("\n🎯 All files processed successfully")
+
+
+if __name__ == "__main__":
+    run()
