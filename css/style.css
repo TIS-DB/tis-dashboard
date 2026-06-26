@@ -347,8 +347,16 @@ body{
 }
 
 /* ==============================
-   STUDENT DETAILS PAGE
+   STUDENT DETAILS PAGE - FINAL
 ============================== */
+
+.student-page{
+  max-width:1080px;
+  margin:0 auto;
+  padding:28px 30px 44px;
+}
+
+/* Search */
 
 .student-search-card{
   background:#fff;
@@ -375,6 +383,7 @@ body{
   outline:0;
   font-size:16px;
   color:var(--text);
+  background:transparent;
 }
 
 .search-box button{
@@ -385,59 +394,79 @@ body{
   cursor:pointer;
 }
 
+/* Student header */
+
 .student-profile{
-  background:#fff;
-  border-radius:18px;
-  padding:20px;
-  margin-bottom:20px;
+  background:transparent;
+  border-radius:0;
+  padding:8px 0 18px;
+  margin-bottom:8px;
   display:flex;
   align-items:center;
-  gap:14px;
-  box-shadow:0 8px 24px rgba(15, 23, 42, 0.08);
+  gap:16px;
+  box-shadow:none;
 }
 
 .student-profile .avatar{
-  width:52px;
-  height:52px;
-  font-size:16px;
+  width:58px;
+  height:58px;
+  font-size:17px;
+  border:3px solid #c7e0f5;
 }
 
 .student-profile h2{
   margin:0;
-  font-size:22px;
+  font-size:26px;
   font-weight:800;
-  letter-spacing:-0.4px;
+  letter-spacing:-0.5px;
 }
 
 .student-profile p{
   margin:5px 0 0;
-  font-size:14px;
+  font-size:15px;
   color:var(--muted);
 }
 
+/* Student KPIs */
+
 .student-kpis{
   display:grid;
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:repeat(3, 1fr);
   gap:16px;
-  margin-bottom:24px;
+  margin-bottom:28px;
 }
 
 .student-kpis .kpi-card{
-  min-height:125px;
+  min-height:115px;
+  padding:18px 20px;
+  border-radius:18px;
 }
 
 .student-kpis .kpi-card h3{
-  margin-bottom:12px;
+  margin:0 0 10px;
+  font-size:12px;
+  letter-spacing:1.1px;
+  color:#94a3b8;
 }
 
+.student-kpis .big,
+.student-kpis .big-small{
+  font-size:30px;
+  line-height:1;
+}
+
+/* Section title */
+
 .student-section-title{
-  margin:26px 4px 14px;
+  margin:28px 4px 14px;
 }
 
 .student-section-title h2{
   margin:0;
-  font-size:20px;
+  font-size:18px;
   font-weight:800;
+  color:#334155;
+  letter-spacing:1px;
 }
 
 .student-section-title p{
@@ -446,17 +475,19 @@ body{
   color:var(--muted);
 }
 
+/* Course cards */
+
 .course-card{
   background:#fff;
   border-radius:18px;
-  padding:18px;
-  margin-bottom:14px;
+  padding:22px 24px;
+  margin-bottom:16px;
   box-shadow:0 6px 18px rgba(15, 23, 42, 0.06);
 }
 
 .course-card.latest{
-  border:1px solid #bfdbfe;
-  background:#f8fbff;
+  background:#eaf6ff;
+  border:1px solid #a9cbe5;
 }
 
 .course-top{
@@ -467,14 +498,14 @@ body{
 }
 
 .course-name{
-  font-size:16px;
+  font-size:18px;
   font-weight:800;
   line-height:1.35;
   color:var(--text);
 }
 
 .course-fee{
-  font-size:16px;
+  font-size:18px;
   font-weight:800;
   color:var(--light-blue);
   white-space:nowrap;
@@ -484,13 +515,13 @@ body{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
-  margin:16px 0;
+  margin:18px 0;
 }
 
 .tag{
   background:#eef2f7;
   color:var(--muted);
-  padding:6px 10px;
+  padding:7px 11px;
   border-radius:999px;
   font-size:12px;
   font-weight:700;
@@ -540,7 +571,7 @@ body{
 }
 
 .hours-grid .num{
-  font-size:22px;
+  font-size:24px;
   font-weight:800;
   color:var(--text);
 }
@@ -568,82 +599,13 @@ body{
   box-shadow:0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
-@media(min-width:768px){
-  .student-profile{
-    padding:24px 26px;
+/* Mobile */
+
+@media(max-width:700px){
+  .student-page{
+    padding:20px 16px 34px;
   }
 
-  .student-kpis{
-    grid-template-columns:repeat(4, 1fr);
-  }
-
-  .course-card{
-    padding:22px 24px;
-  }
-}
-/* FIX STUDENT DETAILS LAYOUT */
-
-.student-profile{
-  max-width:720px;
-  margin:0 auto 20px;
-}
-
-.student-kpis{
-  max-width:720px;
-  margin:0 auto 24px;
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:14px;
-}
-
-.student-kpis .kpi-card{
-  min-height:115px;
-  padding:18px 16px;
-  border-radius:16px;
-}
-
-.student-kpis .kpi-card h3{
-  font-size:12px;
-  margin-bottom:8px;
-}
-
-.student-kpis .big,
-.student-kpis .big-small{
-  font-size:28px;
-}
-
-.student-section-title{
-  max-width:720px;
-  margin:24px auto 10px;
-}
-
-.course-card{
-  max-width:720px;
-  margin:0 auto 16px;
-}
-
-.course-card.latest{
-  background:#eaf6ff;
-  border:1px solid #a9cbe5;
-}
-
-.course-top{
-  align-items:start;
-}
-
-.course-name{
-  font-size:18px;
-}
-
-.course-fee{
-  font-size:18px;
-}
-
-.hours-grid .num{
-  font-size:24px;
-}
-
-@media(max-width:600px){
   .student-kpis{
     grid-template-columns:repeat(3, 1fr);
     gap:10px;
@@ -651,11 +613,20 @@ body{
 
   .student-kpis .kpi-card{
     padding:16px 12px;
+    min-height:110px;
   }
 
   .student-kpis .big,
   .student-kpis .big-small{
     font-size:24px;
+  }
+
+  .student-profile h2{
+    font-size:22px;
+  }
+
+  .course-card{
+    padding:18px 16px;
   }
 
   .course-name,
