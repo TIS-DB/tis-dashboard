@@ -97,7 +97,7 @@ function renderStudent(studentName, records) {
   const completedHours = records.reduce((sum, r) => sum + num(r.attendance_completed_hours), 0);
 
   let html = `
-    <div class="student-head">
+    <div class="student-profile">
       <div class="avatar">${getInitials(studentName)}</div>
       <div>
         <h2>${studentName}</h2>
@@ -105,35 +105,38 @@ function renderStudent(studentName, records) {
       </div>
     </div>
 
-    <div class="kpi-grid">
-      <div class="kpi-card">
-        <div class="label">COURSES</div>
-        <div class="value">${totalCourses}</div>
-        <div class="sub">enrolled</div>
+    <div class="student-kpis">
+
+      <div class="kpi-card student-mini-card">
+        <h3>COURSES</h3>
+        <div class="big">${totalCourses}</div>
+        <p>enrolled</p>
       </div>
 
-      <div class="kpi-card">
-        <div class="label">TOTAL FEES</div>
-        <div class="value">${formatCurrency(totalFees)}</div>
+      <div class="kpi-card student-mini-card">
+        <h3>TOTAL FEES</h3>
+        <div class="big">${formatCurrency(totalFees)}</div>
       </div>
 
-      <div class="kpi-card">
-        <div class="label">PENDING HRS</div>
-        <div class="value">${formatHours(pendingHours)}</div>
-        <div class="sub">${formatHours(completedHours)} completed</div>
+      <div class="kpi-card student-mini-card">
+        <h3>PENDING HRS</h3>
+        <div class="big">${formatHours(pendingHours)}</div>
+        <p>${formatHours(completedHours)} completed</p>
       </div>
+
     </div>
 
-    <div class="section-title">COURSES — NEWEST FIRST</div>
+    <div class="student-section-title">
+      <h2>COURSES — NEWEST FIRST</h2>
+    </div>
   `;
 
-  records.forEach((r, i) => {
-    html += renderCourseCard(r, i === 0);
+  records.forEach((r, index) => {
+    html += renderCourseCard(r, index === 0);
   });
 
   studentPanel.innerHTML = html;
 }
-
 function renderCourseCard(r, isLatest) {
   const scheduled = num(r.attendance_scheduled_hours);
   const completed = num(r.attendance_completed_hours);
