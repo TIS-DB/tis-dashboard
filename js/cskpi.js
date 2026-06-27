@@ -1,8 +1,4 @@
-let cskpiData = {
-  report_period: "",
-  kpis: []
-};
-
+let cskpiData = [];
 let activeCategory = "All";
 
 const kpiContainer = document.getElementById("kpiContainer");
@@ -15,7 +11,6 @@ document.addEventListener("DOMContentLoaded", loadCSKPI);
 async function loadCSKPI() {
   try {
     const res = await fetch("data/cskpi.json?v=" + Date.now());
-
     if (!res.ok) throw new Error("cskpi.json not found");
 
     cskpiData = await res.json();
@@ -36,8 +31,8 @@ function refreshCSKPI() {
 }
 
 function renderHeader() {
-  dashboardSummary.innerText =
-    `Customer Success KPI Scorecard · ${cskpiData.report_period || ""}`;
+  const period = cskpiData[0]?.time_period_analysed || "";
+  dashboardSummary.innerText = `Customer Success KPI Scorecard · ${period}`;
 
   updatedTime.innerText =
     "Updated " + new Date().toLocaleTimeString("en-IN", {
@@ -49,7 +44,7 @@ function renderHeader() {
 function renderFilters() {
   const categories = [
     "All",
-    ...new Set((cskpiData.kpis || []).map(k => clean(k.category)).filter(Boolean))
+    ...new Set(cskpiData.map(k => clean(k.kpi_category)).filter(Boolean))
   ];
 
   categoryFilters.innerHTML = categories.map(cat => `
@@ -62,24 +57,22 @@ function renderFilters() {
 }
 
 function renderSummary() {
-  const kpis = cskpiData.kpis || [];
+  const kpis = cskpiData || [];
 
-  const total = kpis.length;
-  const onTrack = kpis.filter(k => getKPIStatus(k).status === "on-track").length;
-  const atRisk = kpis.filter(k => getKPIStatus(k).status === "at-risk").length;
-  const offTrack = kpis.filter(k => getKPIStatus(k).status === "off-track").length;
-
-  document.getElementById("totalKpis").innerText = total;
-  document.getElementById("onTrackKpis").innerText = onTrack;
-  document.getElementById("atRiskKpis").innerText = atRisk;
-  document.getElementById("offTrackKpis").innerText = offTrack;
+  document.getElementById("totalKpis").innerText = kpis.length;
+  document.getElementById("onTrackKpis").innerText =
+    kpis.filter(k => getKPIStatus(k).status === "on-track").length;
+  document.getElementById("atRiskKpis").innerText =
+    kpis.filter(k => getKPIStatus(k).status === "at-risk").length;
+  document.getElementById("offTrackKpis").innerText =
+    kpis.filter(k => getKPIStatus(k).status === "off-track").length;
 }
 
 function renderKPIs() {
-  let kpis = cskpiData.kpis || [];
+  let kpis = cskpiData || [];
 
   if (activeCategory !== "All") {
-    kpis = kpis.filter(k => clean(k.category) === activeCategory);
+    kpis = kpis.filter(k => clean(k.kpi_category) === activeCategory);
   }
 
   if (!kpis.length) {
@@ -92,23 +85,23 @@ function renderKPIs() {
 
 function renderKPICard(kpi) {
   const status = getKPIStatus(kpi);
-  const valueText = formatValue(kpi.overall, kpi.unit);
+  const valueText = formatValue(kpi.kpi_value);
   const progress = getProgressPercent(kpi);
 
   const breakdown = [
-    { label: "NI", value: kpi.ni },
-    { label: "Foundation", value: kpi.foundation },
-    { label: "Bandra", value: kpi.bandra },
-    { label: "Dadar", value: kpi.dadar }
-  ].filter(x => x.value !== null && x.value !== undefined && x.value !== "");
+    { label: "NI", value: kpi.ni_kpi },
+    { label: "Foundation", value: kpi.foundation_kpi },
+    { label: "Bandra", value: kpi.bandra_kpi },
+    { label: "Dadar", value: kpi.dadar_kpi }
+  ].filter(x => clean(x.value));
 
   return `
     <article class="cs-kpi-card">
 
       <div class="cs-kpi-top">
         <div>
-          <h2>${escapeHtml(kpi.name)}</h2>
-          <p class="cs-period">${escapeHtml(kpi.period || cskpiData.report_period || "")}</p>
+          <h2>${escapeHtml(kpi.kpi_name)}</h2>
+          <p class="cs-period">${escapeHtml(kpi.time_period_analysed)}</p>
         </div>
 
         <span class="cs-status-pill ${status.className}">
@@ -119,7 +112,7 @@ function renderKPICard(kpi) {
       <p class="cs-metric">${escapeHtml(kpi.metric)}</p>
 
       <div class="cs-kpi-main">
-        <span class="cs-category-pill">${escapeHtml(kpi.category)}</span>
+        <span class="cs-category-pill">${escapeHtml(kpi.kpi_category)}</span>
 
         <div class="cs-value-block">
           <div class="cs-kpi-value ${status.valueClass}">
@@ -129,18 +122,9 @@ function renderKPICard(kpi) {
         </div>
       </div>
 
-      ${kpi.unit === "%"
-        ? `
-          <div class="cs-progress">
-            <div class="cs-progress-bar ${status.progressClass}" style="width:${progress}%"></div>
-          </div>
-        `
-        : `
-          <div class="cs-tat-box ${status.className}">
-            ${status.label}
-          </div>
-        `
-      }
+      <div class="cs-progress">
+        <div class="cs-progress-bar ${status.progressClass}" style="width:${progress}%"></div>
+      </div>
 
       ${breakdown.length ? `
         <div class="cs-breakdown-title">NI & Foundation / Centre Split</div>
@@ -149,18 +133,12 @@ function renderKPICard(kpi) {
           ${breakdown.map(x => `
             <div class="cs-breakdown-card">
               <h4>${escapeHtml(x.label)}</h4>
-              <div class="${getKPIStatus({ ...kpi, overall: x.value }).valueClass}">
-                ${formatValue(x.value, kpi.unit)}
+              <div class="${getKPIStatus({ ...kpi, kpi_value: x.value }).valueClass}">
+                ${formatValue(x.value)}
               </div>
-
-              ${kpi.unit === "%"
-                ? `
-                  <div class="cs-mini-progress">
-                    <div style="width:${Math.min(num(x.value), 100)}%"></div>
-                  </div>
-                `
-                : ""
-              }
+              <div class="cs-mini-progress">
+                <div style="width:${Math.min(num(x.value), 100)}%"></div>
+              </div>
             </div>
           `).join("")}
         </div>
@@ -177,13 +155,15 @@ function setCSCategory(category) {
 }
 
 function getKPIStatus(kpi) {
-  const value = num(kpi.overall);
+  const value = num(kpi.kpi_value);
   const targetValue = extractTargetNumber(kpi.target);
-  const direction = clean(kpi.direction) || "higher";
+  const targetText = clean(kpi.target);
+
+  let lowerIsBetter = targetText.includes("<") || targetText.includes("≤");
 
   let status = "off-track";
 
-  if (direction === "lower") {
+  if (lowerIsBetter) {
     if (value <= targetValue) status = "on-track";
     else if (value <= targetValue * 1.25) status = "at-risk";
   } else {
@@ -192,32 +172,14 @@ function getKPIStatus(kpi) {
   }
 
   if (status === "on-track") {
-    return {
-      status,
-      label: "On track",
-      className: "cs-on-track",
-      valueClass: "green",
-      progressClass: "green-bar"
-    };
+    return { status, label: "On track", className: "cs-on-track", valueClass: "green", progressClass: "green-bar" };
   }
 
   if (status === "at-risk") {
-    return {
-      status,
-      label: "At risk",
-      className: "cs-at-risk",
-      valueClass: "gold",
-      progressClass: "gold-bar"
-    };
+    return { status, label: "At risk", className: "cs-at-risk", valueClass: "gold", progressClass: "gold-bar" };
   }
 
-  return {
-    status,
-    label: "Off track",
-    className: "cs-off-track",
-    valueClass: "red",
-    progressClass: "red-bar"
-  };
+  return { status, label: "Off track", className: "cs-off-track", valueClass: "red", progressClass: "red-bar" };
 }
 
 function extractTargetNumber(target) {
@@ -226,26 +188,25 @@ function extractTargetNumber(target) {
 }
 
 function getProgressPercent(kpi) {
-  const value = num(kpi.overall);
+  const value = num(kpi.kpi_value);
+  const targetValue = extractTargetNumber(kpi.target);
+  const lowerIsBetter = clean(kpi.target).includes("<") || clean(kpi.target).includes("≤");
 
-  if (clean(kpi.direction) === "lower") {
-    const target = extractTargetNumber(kpi.target);
-    if (!target) return 100;
-    return Math.min((target / Math.max(value, target)) * 100, 100);
+  if (!targetValue) return Math.min(value, 100);
+
+  if (lowerIsBetter) {
+    return Math.min((targetValue / Math.max(value, targetValue)) * 100, 100);
   }
 
-  return Math.min(value, 100);
+  return Math.min((value / targetValue) * 100, 100);
 }
 
-function formatValue(value, unit) {
+function formatValue(value) {
   if (value === null || value === undefined || value === "") return "-";
-
-  const n = num(value);
-
-  if (unit === "%") return n.toFixed(n % 1 === 0 ? 0 : 1) + "%";
-  if (unit === "hrs") return n + " hrs";
-
-  return n.toString();
+  const raw = clean(value);
+  const n = num(raw);
+  if (raw.includes("%")) return n.toFixed(n % 1 === 0 ? 0 : 1) + "%";
+  return raw;
 }
 
 function clean(value) {
@@ -253,7 +214,7 @@ function clean(value) {
 }
 
 function num(value) {
-  return Number(value || 0);
+  return Number(clean(value).replace("%", "")) || 0;
 }
 
 function escapeHtml(text) {
@@ -266,7 +227,7 @@ function escapeHtml(text) {
 }
 
 function escapeAttr(text) {
-  return escapeHtml(text).replaceAll("'", "\\'");
+  return clean(text).replaceAll("'", "\\'");
 }
 
 window.refreshCSKPI = refreshCSKPI;
