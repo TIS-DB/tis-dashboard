@@ -26,7 +26,7 @@ function loadStudents() {
       if (searchBox.value.trim()) {
   renderStudentView(searchBox.value.trim());
 } else if (students.length > 0) {
-  const firstStudentName = students[0].student_name || "";
+  const firstStudentName = students[1].student_name || "";
   searchBox.value = firstStudentName;
   renderStudentView(firstStudentName);
 } else {
