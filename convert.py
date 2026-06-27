@@ -6,7 +6,7 @@ import os
 FILES = {
     "enrollments": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQBY0YxMDubZTrhClYnfi6jkARuhda3zffKkko6k6bUfh3k?e=QpKJ6k&download=1",
     "students": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCHsGYHDxfpQIBCovKgYcaqAf9wgHYLPVkXXE_9Ujuf35c?e=FQ3KKh&download=1",
-    "weeklyreview": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCjE3LbsEwFSqfJH50WVPojAXzmaoIU5t9M3304eIbUigI?e=KV0tAq&download=1",
+    "weeklyreview": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCVj4o03bHiRbeZNqbnsMhGAUx-Wtt6gRtQaQX3PvDIX8A?e=blmKtF&download=1",
     "cskpi": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCCBGFU2GdjRb8TV4GAroICAVtDTH91QnsgMy-aQcEwo8k?e=oaXKoe&download=1"
 }
 
