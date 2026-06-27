@@ -194,7 +194,7 @@ function renderLinks(links) {
     <div class="weekly-link-list">
       ${links.map(link => `
         <a class="weekly-link-pill"
-           href="${escapeAttr(link.url)}"
+           href="${link.url}"
            target="_blank"
            rel="noopener noreferrer">
            ↗ ${escapeHtml(link.title)}
