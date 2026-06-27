@@ -7,7 +7,7 @@ FILES = {
     "enrollments": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQBY0YxMDubZTrhClYnfi6jkARuhda3zffKkko6k6bUfh3k?e=QpKJ6k&download=1",
     "students": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCHsGYHDxfpQIBCovKgYcaqAf9wgHYLPVkXXE_9Ujuf35c?e=FQ3KKh&download=1",
     "weeklyreview": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCVj4o03bHiRbeZNqbnsMhGAUx-Wtt6gRtQaQX3PvDIX8A?e=blmKtF&download=1",
-    "cskpi": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCjE3LbsEwFSqfJH50WVPojAXzmaoIU5t9M3304eIbUigI?e=OrXqFI&download=1"
+    "cskpi": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQAym7uuyQONR5IlvQ5RtRdpAcBPWmEK0iaqcNYVUHocHo4?e=4GDegj&download=1"
 }
 
 OUTPUT_FILES = {
