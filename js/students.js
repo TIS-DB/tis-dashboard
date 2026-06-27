@@ -70,7 +70,7 @@ function renderDashboardSummary() {
   const totalRevenue = fy27.reduce((sum, r) => sum + num(r.course_fee), 0);
 
   dashboardSummary.innerText =
-    `${totalEnrollments} enrolments · ${formatCurrency(totalRevenue)} revenue · FY27`;
+    `${totalEnrollments} enrolments · FY27`;
 }
 
 function updateTime() {
