@@ -1,10 +1,14 @@
 let weeklyData = {
-  dashboard: [],
+  weeks: [],
   links: []
 };
 
+let selectedWeek = "";
+let activeFilter = "all";
+
 const weeklyContainer = document.getElementById("weeklyContainer");
 const updatedAt = document.getElementById("updatedAt");
+const weekSelect = document.getElementById("weekSelect");
 
 document.addEventListener("DOMContentLoaded", loadWeeklyReview);
 
@@ -16,6 +20,7 @@ async function loadWeeklyReview() {
 
     weeklyData = await res.json();
 
+    setupWeekDropdown();
     renderSummary();
     renderWeeklyReview();
 
@@ -29,199 +34,233 @@ function refreshWeeklyReview() {
   loadWeeklyReview();
 }
 
-function renderSummary() {
-  const grouped = groupDashboardRows(weeklyData.dashboard || []);
+function setupWeekDropdown() {
+  const weeks = weeklyData.weeks || [];
 
-  document.getElementById("totalUnits").innerText = grouped.length;
-  document.getElementById("totalRisks").innerText = grouped.filter(x => hasText(x.risks)).length;
-  document.getElementById("totalChallenges").innerText = grouped.filter(x => hasText(x.challenges)).length;
-  document.getElementById("totalSupport").innerText = grouped.filter(x => hasText(x.support_required)).length;
+  if (!weeks.length) {
+    weekSelect.innerHTML = `<option>No weeks found</option>`;
+    return;
+  }
+
+  selectedWeek = selectedWeek || weeks[weeks.length - 1].week;
+
+  weekSelect.innerHTML = weeks.map(w => `
+    <option value="${escapeAttr(w.week)}" ${w.week === selectedWeek ? "selected" : ""}>
+      ${escapeHtml(w.label || w.week)}
+    </option>
+  `).join("");
+}
+
+function changeWeek() {
+  selectedWeek = weekSelect.value;
+  renderSummary();
+  renderWeeklyReview();
+}
+
+function getCurrentWeekData() {
+  const weeks = weeklyData.weeks || [];
+  return weeks.find(w => w.week === selectedWeek) || weeks[weeks.length - 1] || { dashboard: [] };
+}
+
+function renderSummary() {
+  const weekData = getCurrentWeekData();
+  const dashboard = weekData.dashboard || [];
+
+  const totalUnits = dashboard.length;
+  const totalRisks = countSectionItems(dashboard, "Risks");
+  const totalChallenges = countSectionItems(dashboard, "Challenges");
+  const totalSupport = countSectionItems(dashboard, "Support Required");
+
+  const avgProgress = totalUnits
+    ? Math.round(dashboard.reduce((sum, x) => sum + num(x.progress_percent), 0) / totalUnits)
+    : 0;
+
+  document.getElementById("totalUnits").innerText = totalUnits;
+  document.getElementById("totalRisks").innerText = totalRisks;
+  document.getElementById("totalChallenges").innerText = totalChallenges;
+  document.getElementById("totalSupport").innerText = totalSupport;
+  document.getElementById("avgProgress").innerText = avgProgress + "%";
 
   updatedAt.innerText =
     "Updated " + new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
 
 function renderWeeklyReview() {
-  const grouped = groupDashboardRows(weeklyData.dashboard || []);
+  const weekData = getCurrentWeekData();
+  let dashboard = weekData.dashboard || [];
 
-  if (!grouped.length) {
+  dashboard = dashboard.filter(item => {
+    const status = clean(item.status).toLowerCase();
+
+    if (activeFilter === "attention") return status.includes("attention");
+    if (activeFilter === "track") return status.includes("track");
+    if (activeFilter === "blocked") return status.includes("block");
+
+    return true;
+  });
+
+  if (!dashboard.length) {
     weeklyContainer.innerHTML = `<div class="empty">No weekly review data found</div>`;
     return;
   }
 
-  weeklyContainer.innerHTML = grouped.map(item => renderReviewCard(item)).join("");
-}
-
-function groupDashboardRows(rows) {
-  const grouped = [];
-  let current = null;
-
-  rows.forEach(row => {
-    const incharge = clean(row.incharge);
-    const srNo = clean(row["sr._no"]);
-
-    if (incharge || srNo) {
-      current = {
-        sr_no: srNo,
-        incharge: incharge || "Not Assigned",
-        title: getBusinessTitle(incharge),
-        operational_performance: [],
-        project_status: [],
-        risks: [],
-        challenges: [],
-        support_required: []
-      };
-
-      grouped.push(current);
-    }
-
-    if (!current) return;
-
-    pushIfText(current.operational_performance, row.operational_performance);
-    pushIfText(current.project_status, row.project_status);
-    pushIfText(current.risks, row.risks);
-    pushIfText(current.challenges, row.challenges);
-    pushIfText(current.support_required, row.support_required);
-  });
-
-  return grouped;
+  weeklyContainer.innerHTML = dashboard.map(item => renderReviewCard(item)).join("");
 }
 
 function renderReviewCard(item) {
-  const relatedLinks = getLinksForIncharge(item.incharge);
-  const status = getStatus(item);
+  const links = getLinksForIncharge(item.incharge);
+  const status = getStatus(item.status);
 
   return `
-    <article class="weekly-card">
+    <article class="weekly-card-new ${status.borderClass}">
 
-      <div class="weekly-card-head">
-        <div>
-          <div class="weekly-eyebrow">${escapeHtml(item.title)}</div>
-          <h3>${escapeHtml(item.incharge)}</h3>
-          ${item.sr_no ? `<p class="weekly-sr">Sr. No. ${escapeHtml(item.sr_no)}</p>` : ""}
+      <aside class="weekly-owner-panel">
+        <div class="weekly-avatar">${getInitials(item.incharge)}</div>
+
+        <h3>${escapeHtml(item.incharge)}</h3>
+        <p>${escapeHtml(item.team)}</p>
+        <p class="weekly-sr">Sr. No. ${escapeHtml(item.sr_no)}</p>
+
+        <span class="weekly-status ${status.className}">
+          ${escapeHtml(item.status || "On Track")}
+        </span>
+
+        <div class="progress-circle" style="--progress:${num(item.progress_percent)}">
+          <span>${num(item.progress_percent)}%</span>
         </div>
 
-        <div class="weekly-head-right">
-          <span class="weekly-status ${status.className}">${status.label}</span>
-          <div class="weekly-avatar">${getInitials(item.incharge)}</div>
-        </div>
-      </div>
+        <p class="progress-note">Progress</p>
+      </aside>
 
-      <div class="weekly-two-column">
-        <div>
-          ${renderSection("Progress / Output", item.operational_performance, "blue")}
-          ${renderSection("Current Project Status", item.project_status, "green")}
-        </div>
+      <section class="weekly-detail-grid">
+        ${renderSection(item, "Progress / Output", "blue")}
+        ${renderSection(item, "Current Project Status", "green")}
+        ${renderSection(item, "Risks", "red")}
+        ${renderSection(item, "Challenges", "orange")}
+        ${renderSection(item, "Support Required", "green")}
+      </section>
 
-        <div>
-          ${renderSection("Risks", item.risks, "gold")}
-          ${renderSection("Challenges", item.challenges, "gold")}
-          ${renderSection("Support Required", item.support_required, "green")}
-        </div>
-      </div>
-
-      ${renderLinks(relatedLinks)}
+      <aside class="weekly-links-panel">
+        <h4>Reference Links</h4>
+        ${renderLinks(links)}
+      </aside>
 
     </article>
   `;
 }
 
-function renderSection(title, values, colorClass) {
-  if (!values || !values.length) return "";
+function renderSection(item, sectionName, colorClass) {
+  const section = (item.sections || []).find(s => clean(s.section) === sectionName);
+
+  if (!section || !section.items || !section.items.length) {
+    return `
+      <div class="weekly-section-new">
+        <h4 class="${colorClass}">${sectionName}</h4>
+        <p class="muted">No update</p>
+      </div>
+    `;
+  }
 
   return `
-    <div class="weekly-section">
-      <h4 class="${colorClass}">${title}</h4>
-      ${values.map(v => `<p>${escapeHtml(v)}</p>`).join("")}
-    </div>
-  `;
-}
+    <div class="weekly-section-new">
+      <h4 class="${colorClass}">${escapeHtml(sectionName)}</h4>
 
-function renderLinks(links) {
-  if (!links.length) return "";
-
-  return `
-    <div class="weekly-links">
-      <h4>Reference Documents</h4>
-      <div class="weekly-link-list">
-        ${links.map(link => `
-          <a class="weekly-link-pill"
-             href="${escapeAttr(link.url)}"
-             target="_blank"
-             rel="noopener noreferrer">
-             🔗 ${escapeHtml(link.title)}
-          </a>
+      <ul>
+        ${section.items.map(x => `
+          <li>
+            ${escapeHtml(x.item)}
+            ${x.status ? `<span class="mini-status">${escapeHtml(x.status)}</span>` : ""}
+          </li>
         `).join("")}
+      </ul>
+
+      <div class="last-week-box">
+        <strong>Last Week</strong>
+        <ul>
+          ${section.items
+            .filter(x => clean(x.last_week))
+            .map(x => `<li>${escapeHtml(x.last_week)}</li>`)
+            .join("") || "<li>No last week update</li>"}
+        </ul>
       </div>
     </div>
   `;
 }
 
+function renderLinks(links) {
+  if (!links.length) return `<p class="muted">No links added</p>`;
+
+  return `
+    <div class="weekly-link-list">
+      ${links.map(link => `
+        <a class="weekly-link-pill"
+           href="${escapeAttr(link.url)}"
+           target="_blank"
+           rel="noopener noreferrer">
+           ↗ ${escapeHtml(link.title)}
+        </a>
+      `).join("")}
+    </div>
+  `;
+}
+
 function getLinksForIncharge(incharge) {
-  const links = weeklyData.links || [];
-  const result = [];
+  return (weeklyData.links || [])
+    .filter(row => clean(row.incharge).toLowerCase() === clean(incharge).toLowerCase())
+    .filter(row => clean(row.url))
+    .map(row => ({
+      title: clean(row.title || row.links),
+      url: clean(row.url || row.link || row.hyperlink)
+    }));
+}
 
-  let currentIncharge = "";
+function countSectionItems(dashboard, sectionName) {
+  return dashboard.reduce((sum, item) => {
+    const section = (item.sections || []).find(s => clean(s.section) === sectionName);
+    return sum + (section && section.items ? section.items.length : 0);
+  }, 0);
+}
 
-  links.forEach(row => {
-    if (clean(row.incharge)) {
-      currentIncharge = clean(row.incharge);
-    }
+function setFilter(filter) {
+  activeFilter = filter;
 
-    const title = clean(row.links);
-    const url = clean(row.url || row.link || row.hyperlink);
-
-    if (
-      currentIncharge.toLowerCase() === clean(incharge).toLowerCase() &&
-      title &&
-      url
-    ) {
-      result.push({ title, url });
-    }
+  document.querySelectorAll(".filter-chip").forEach(btn => {
+    btn.classList.remove("active");
   });
 
-  return result;
+  if (filter === "all") document.getElementById("filterAll").classList.add("active");
+  if (filter === "attention") document.getElementById("filterAttention").classList.add("active");
+  if (filter === "track") document.getElementById("filterTrack").classList.add("active");
+  if (filter === "blocked") document.getElementById("filterBlocked").classList.add("active");
+
+  renderWeeklyReview();
 }
 
-function getBusinessTitle(incharge) {
-  const links = weeklyData.links || [];
-  let currentIncharge = "";
+function getStatus(statusText) {
+  const s = clean(statusText).toLowerCase();
 
-  for (const row of links) {
-    if (clean(row.incharge)) {
-      currentIncharge = clean(row.incharge);
-    }
-
-    if (
-      currentIncharge.toLowerCase() === clean(incharge).toLowerCase() &&
-      clean(row.team)
-    ) {
-      return clean(row.team);
-    }
+  if (s.includes("block")) {
+    return {
+      className: "status-blocked",
+      borderClass: "border-blocked"
+    };
   }
 
-  return "Business Unit";
-}
-
-function getStatus(item) {
-  if (hasText(item.risks) || hasText(item.challenges)) {
-    return { label: "Needs Attention", className: "status-watch" };
+  if (s.includes("attention") || s.includes("risk")) {
+    return {
+      className: "status-watch",
+      borderClass: "border-watch"
+    };
   }
 
-  if (hasText(item.support_required)) {
-    return { label: "Support Needed", className: "status-risk" };
-  }
-
-  return { label: "On Track", className: "status-complete" };
+  return {
+    className: "status-complete",
+    borderClass: "border-complete"
+  };
 }
 
-function pushIfText(arr, value) {
-  const text = clean(value);
-  if (text) arr.push(text);
-}
-
-function hasText(arr) {
-  return Array.isArray(arr) && arr.some(x => clean(x));
+function num(v) {
+  return Number(v || 0);
 }
 
 function clean(value) {
@@ -252,3 +291,5 @@ function escapeAttr(text) {
 }
 
 window.refreshWeeklyReview = refreshWeeklyReview;
+window.changeWeek = changeWeek;
+window.setFilter = setFilter;
