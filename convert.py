@@ -97,8 +97,31 @@ def process_weekly_review():
     print("📥 Reading Main Dashboard.xlsx...")
 
     try:
-        dashboard_df = pd.read_excel(path, sheet_name="Dashboard", engine="openpyxl")
-        links_df = pd.read_excel(path, sheet_name="Collated links", engine="openpyxl")
+        import requests
+        import io
+
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+
+        response = requests.get(path, headers=headers)
+        response.raise_for_status()
+
+        excel_file = io.BytesIO(response.content)
+
+        dashboard_df = pd.read_excel(
+            excel_file,
+            sheet_name="Dashboard",
+            engine="openpyxl"
+        )
+
+        excel_file.seek(0)
+
+        links_df = pd.read_excel(
+            excel_file,
+            sheet_name="Collated links",
+            engine="openpyxl"
+        )
 
         dashboard_df = clean_df(dashboard_df)
         links_df = clean_df(links_df)
