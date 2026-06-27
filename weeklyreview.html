@@ -1,73 +1,83 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>TIS Weekly Review Dashboard</title>
+  <title>TIS Weekly Review Dashboard</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="top-header">
-        <div>
-            <h1>TIS Management<br>Dashboard</h1>
-            <p id="summaryText">Weekly review across Schools & Outreach business units</p>
-        </div>
+<header class="top-header">
+  <div>
+    <h1>Weekly Review</h1>
+    <p id="summaryText">Business unit wise update, risks, challenges and support required</p>
+  </div>
 
-        <div class="header-right">
-            <span id="updatedAt">Updated now</span>
-            <button onclick="refreshWeeklyReview()">↻ Refresh</button>
-        </div>
-    </header>
+  <div class="header-right">
+    <label class="week-label">View Week</label>
+    <select id="weekSelect" onchange="changeWeek()"></select>
+    <span id="updatedAt">Updated now</span>
+    <button onclick="refreshWeeklyReview()">↻ Refresh</button>
+  </div>
+</header>
 
-    <nav class="tabs">
-        <button onclick="location.href='index.html'">FY27 Enrolments</button>
-        <button onclick="location.href='student.html'">Student Details</button>
-        <button class="active">Weekly Review-Schools</button>
-    </nav>
+<nav class="tabs">
+  <button onclick="location.href='index.html'">FY27 Enrolments</button>
+  <button onclick="location.href='student.html'">Student Details</button>
+  <button class="active">Weekly Review</button>
+</nav>
 
-    <main class="container">
+<main class="container">
 
-        <section class="kpi-grid">
-            <div class="kpi-card small">
-                <h3>Business Units</h3>
-                <div id="totalUnits" class="big">0</div>
-                <p>weekly review areas</p>
-            </div>
+  <section class="kpi-grid">
+    <div class="kpi-card small">
+      <h3>Business Units</h3>
+      <div id="totalUnits" class="big">0</div>
+      <p>under review</p>
+    </div>
 
-            <div class="kpi-card small">
-                <h3>Open Risks</h3>
-                <div id="totalRisks" class="big-small blue">0</div>
-                <p>items highlighted</p>
-            </div>
+    <div class="kpi-card small">
+      <h3>Open Risks</h3>
+      <div id="totalRisks" class="big-small blue">0</div>
+      <p>needs attention</p>
+    </div>
 
-            <div class="kpi-card small">
-                <h3>Challenges</h3>
-                <div id="totalChallenges" class="big-small">0</div>
-                <p>requiring attention</p>
-            </div>
+    <div class="kpi-card small">
+      <h3>Challenges</h3>
+      <div id="totalChallenges" class="big-small">0</div>
+      <p>requiring action</p>
+    </div>
 
-            <div class="kpi-card small">
-                <h3>Support Required</h3>
-                <div id="totalSupport" class="big-small green">0</div>
-                <p>action items</p>
-            </div>
-        </section>
+    <div class="kpi-card small">
+      <h3>Support Required</h3>
+      <div id="totalSupport" class="big-small green">0</div>
+      <p>action items</p>
+    </div>
 
-        <section class="breakdown-header">
-            <h2>Weekly Review</h2>
-            <p>Business unit wise update, risks, challenges and support required</p>
-        </section>
+    <div class="kpi-card small">
+      <h3>Avg Progress</h3>
+      <div id="avgProgress" class="big-small purple">0%</div>
+      <p>across all units</p>
+    </div>
+  </section>
 
-        <section id="weeklyContainer" class="weekly-container"></section>
+  <section class="weekly-filter-row">
+    <button class="filter-chip active" onclick="setFilter('all')" id="filterAll">All Units</button>
+    <button class="filter-chip" onclick="setFilter('attention')" id="filterAttention">Needs Attention</button>
+    <button class="filter-chip" onclick="setFilter('track')" id="filterTrack">On Track</button>
+    <button class="filter-chip" onclick="setFilter('blocked')" id="filterBlocked">Blocked</button>
+  </section>
 
-    </main>
+  <section id="weeklyContainer" class="weekly-container"></section>
 
-    <script src="js/weeklyreview.js?v=2"></script>
+</main>
+
+<script src="js/weeklyreview.js?v=5"></script>
 
 </body>
 </html>
