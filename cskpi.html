@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS KPI Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+  <div>
+    <h1>TIS Management<br>Dashboard</h1>
+    <p id="dashboardSummary">Customer Success KPI Scorecard</p>
+  </div>
+
+  <div class="header-right">
+    <span id="updatedTime">Updated now</span>
+    <button onclick="refreshCSKPI()">↻ Refresh</button>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button onclick="location.href='index.html'">FY26 Enrolments</button>
+  <button onclick="location.href='student.html'">Student Details</button>
+  <button class="active">CS Dashboard</button>
+</nav>
+
+<main class="container">
+
+  <section id="categoryFilters" class="cs-filter-row"></section>
+
+  <section class="cs-summary-grid">
+    <div class="cs-summary-card">
+      <div class="cs-icon">📊</div>
+      <div>
+        <div id="totalKpis" class="cs-big">0</div>
+        <p>Total</p>
+      </div>
+    </div>
+
+    <div class="cs-summary-card">
+      <div class="cs-icon green-bg">✓</div>
+      <div>
+        <div id="onTrackKpis" class="cs-big green">0</div>
+        <p>On track</p>
+      </div>
+    </div>
+
+    <div class="cs-summary-card">
+      <div class="cs-icon gold-bg">!</div>
+      <div>
+        <div id="atRiskKpis" class="cs-big gold">0</div>
+        <p>At risk</p>
+      </div>
+    </div>
+
+    <div class="cs-summary-card">
+      <div class="cs-icon red-bg">×</div>
+      <div>
+        <div id="offTrackKpis" class="cs-big red">0</div>
+        <p>Off track</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kpiContainer" class="cs-kpi-container"></section>
+
+</main>
+
+<script src="js/cskpi.js?v=1"></script>
+
+</body>
+</html>
