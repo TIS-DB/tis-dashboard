@@ -64,7 +64,21 @@ def process_file(key):
     print(f"📥 Reading {key} file...")
 
     try:
-        df = pd.read_excel(path, engine="openpyxl")
+        import requests
+        import io
+
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+
+        response = requests.get(path, headers=headers)
+        response.raise_for_status()
+
+        df = pd.read_excel(
+            io.BytesIO(response.content),
+            engine="openpyxl"
+        )
+
         df = clean_df(df)
 
         data = df.to_dict(orient="records")
