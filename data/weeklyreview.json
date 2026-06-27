@@ -1,395 +1,734 @@
 {
-  "weeks": [
-    {
-      "week": "2026-07-01",
-      "label": "Week of 1 Jul 2026",
-      "dashboard": [
+    "dashboard": [
         {
-          "sr_no": "1.0",
-          "incharge": "Kshitij",
-          "team": "NRL (National Robotics League)",
-          "progress_percent": 60,
-          "status": "Needs Attention",
-          "sections": [
-            {
-              "section": "Progress / Output",
-              "items": [
-                {
-                  "item": "Kit budget locked at ₹17,000",
-                  "last_week": "Kit budget under discussion",
-                  "status": "Complete"
-                },
-                {
-                  "item": "Kit production quantity locked at 500 kits",
-                  "last_week": "Production quantity finalising",
-                  "status": "Complete"
-                },
-                {
-                  "item": "500 kits readiness target by 31st July",
-                  "last_week": "Readiness target discussion",
-                  "status": "In Progress"
-                }
-              ]
-            },
-            {
-              "section": "Current Project Status",
-              "items": [
-                {
-                  "item": "Golden samples are in production; expected delivery by 30th June",
-                  "last_week": "Sample production initiated",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "Internal team working on documentation and curriculum preparation",
-                  "last_week": "Documentation planning",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "Awaiting approval from Meenal ma’am",
-                  "last_week": "Approval awaited",
-                  "status": "Pending"
-                }
-              ]
-            },
-            {
-              "section": "Risks",
-              "items": [
-                {
-                  "item": "Independent connector vendor delay may impact production timeline",
-                  "last_week": "Vendor delay risk identified",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Challenges",
-              "items": [
-                {
-                  "item": "Space constraint for inventory and kit assembly stations in Bandra office",
-                  "last_week": "Bandra office space constraint",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Support Required",
-              "items": [
-                {
-                  "item": "Additional mentor support required from 1st to 15th July for Game Manual, NRL Bootcamp Kit, Curriculum, Software and Firmware development",
-                  "last_week": "Mentor support requested",
-                  "status": "Pending"
-                },
-                {
-                  "item": "IIT Bombay confirmation needed on NRL fees and launch date",
-                  "last_week": "IIT confirmation pending",
-                  "status": "Pending"
-                },
-                {
-                  "item": "Space allotment needed at IIT Bombay Research Park or elsewhere for July and August",
-                  "last_week": "Space allotment pending",
-                  "status": "Pending"
-                }
-              ]
-            }
-          ]
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "All Robot Kit production vendors finalised and production work initiated",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Vendor shortlisting in progress",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Kit Production Timeline"
         },
         {
-          "sr_no": "2.0",
-          "incharge": "Bhagyashree",
-          "team": "School Enrollments",
-          "progress_percent": 70,
-          "status": "Needs Attention",
-          "sections": [
-            {
-              "section": "Progress / Output",
-              "items": [
-                {
-                  "item": "₹7,00,100 received so far from Srijan / EHSI",
-                  "last_week": "Revenue collection tracking",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "Robotics Foundation Bootcamp 24-hour brochure created for NRL schools",
-                  "last_week": "Brochure planning",
-                  "status": "Complete"
-                },
-                {
-                  "item": "List of schools to reach out has been prepared",
-                  "last_week": "School list initial draft",
-                  "status": "Complete"
-                }
-              ]
-            },
-            {
-              "section": "Current Project Status",
-              "items": [
-                {
-                  "item": "Program delivery ongoing at each active school",
-                  "last_week": "Program execution started",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "School upsell pipeline under creation; review planned on 24th June",
-                  "last_week": "Upsell pipeline planning",
-                  "status": "In Progress"
-                }
-              ]
-            },
-            {
-              "section": "Risks",
-              "items": [
-                {
-                  "item": "High mentor dependency for classroom engagement",
-                  "last_week": "Mentor dependency noted",
-                  "status": "Open"
-                },
-                {
-                  "item": "NRL school outreach must start before 15th July or bootcamp sales opportunity may be lost",
-                  "last_week": "Outreach delay risk identified",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Challenges",
-              "items": [
-                {
-                  "item": "Need to create a scalable and standardised school program with tangible outcomes for in-school and after-school delivery",
-                  "last_week": "Program standardisation in progress",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Support Required",
-              "items": [
-                {
-                  "item": "Kits and curriculum packaging required",
-                  "last_week": "Packaging support required",
-                  "status": "Pending"
-                }
-              ]
-            }
-          ]
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "Game Reveal Animation Video creation initiated",
+            "status": "In Progress",
+            "progress_%": "35",
+            "last_week": "Concept discussion",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Content Timeline"
         },
         {
-          "sr_no": "3.0",
-          "incharge": "Pradnya",
-          "team": "School Curriculum / Programs",
-          "progress_percent": 60,
-          "status": "On Track",
-          "sections": [
-            {
-              "section": "Progress / Output",
-              "items": [
-                {
-                  "item": "Received revenue of ₹7,48,627",
-                  "last_week": "Revenue tracking",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "276 students reached across completed tracks",
-                  "last_week": "Student outreach tracking",
-                  "status": "Complete"
-                },
-                {
-                  "item": "Emerald Heights, Srijan School and OIS summer camps completed",
-                  "last_week": "Camps running",
-                  "status": "Complete"
-                }
-              ]
-            },
-            {
-              "section": "Current Project Status",
-              "items": [
-                {
-                  "item": "Summer Innovation Sprint running from June 15 to June 27",
-                  "last_week": "Sprint planning",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "Upcoming cohorts scheduled for July and August",
-                  "last_week": "Cohort planning",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "LMS uploads running on track for active modules",
-                  "last_week": "LMS integration started",
-                  "status": "In Progress"
-                },
-                {
-                  "item": "BSS and CAJCS LMS integration work in progress with target completion by 30th June",
-                  "last_week": "LMS work initiated",
-                  "status": "In Progress"
-                }
-              ]
-            },
-            {
-              "section": "Risks",
-              "items": [
-                {
-                  "item": "₹12,25,960 revenue is still unconfirmed across three upcoming planned programs",
-                  "last_week": "Revenue pending risk identified",
-                  "status": "Open"
-                },
-                {
-                  "item": "Multiple school curriculum frameworks have the same target completion date of 30th June",
-                  "last_week": "Timeline pressure noted",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Challenges",
-              "items": [
-                {
-                  "item": "Final dates for ATLAS University August cohort are still TBD",
-                  "last_week": "Date confirmation awaited",
-                  "status": "Open"
-                },
-                {
-                  "item": "SFHS and LOS BIS curriculum frameworks are still being drafted while targeting 30th June",
-                  "last_week": "Curriculum drafting in progress",
-                  "status": "Open"
-                }
-              ]
-            },
-            {
-              "section": "Support Required",
-              "items": [
-                {
-                  "item": "Confirm final dates for ATLAS August cohort",
-                  "last_week": "Date confirmation awaited",
-                  "status": "Pending"
-                },
-                {
-                  "item": "Support needed to finalise curriculum frameworks for SFHS and LOS BIS",
-                  "last_week": "Framework drafting pending",
-                  "status": "Pending"
-                }
-              ]
-            }
-          ]
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "Registration Portal ready to go live",
+            "status": "Ready",
+            "progress_%": "90",
+            "last_week": "Portal under testing",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Internal Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "Kit budget locked at ₹17000",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Budget awaiting approval",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Kit Budget"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "Kit production quantity locked at 500 kits",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Production quantity finalising",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Budget Overview"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Progress / Output",
+            "item": "500 kits readiness target by 31st July",
+            "status": "In Progress",
+            "progress_%": "45",
+            "last_week": "Readiness target discussion",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Kit Production Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Current Project Status",
+            "item": "Kit golden samples are in production; expected delivery by 30th June",
+            "status": "In Progress",
+            "progress_%": "60",
+            "last_week": "Samples production initiated",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Kit Production Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Current Project Status",
+            "item": "Internal team working on documentation and curriculum preparation",
+            "status": "In Progress",
+            "progress_%": "40",
+            "last_week": "Documentation planning",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Content & Documentation"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Current Project Status",
+            "item": "Awaiting approval from Meenal ma'am",
+            "status": "Pending",
+            "progress_%": "20",
+            "last_week": "Approval awaited",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Internal Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Risks",
+            "item": "Independent connector vendor delay may impact production timeline",
+            "status": "Open",
+            "progress_%": "30",
+            "last_week": "Vendor delay risk identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "External Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Challenges",
+            "item": "Space constraint to set up inventory and kit assembly stations in Bandra office",
+            "status": "Open",
+            "progress_%": "10",
+            "last_week": "Space constraint identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Space Plan"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Support Required",
+            "item": "Additional mentor support required from 1st to 15th July for game manual NRL bootcamp kit & curriculum software and firmware development",
+            "status": "Pending",
+            "progress_%": "0",
+            "last_week": "Mentor support requested",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Mentor Review Timeline"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Support Required",
+            "item": "IIT Bombay confirmation on NRL fees and launch date required",
+            "status": "Pending",
+            "progress_%": "0",
+            "last_week": "IIT confirmation awaited",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "IIT-B Outreach"
+        },
+        {
+            "week": "46204",
+            "sr_no": "1",
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "section": "Support Required",
+            "item": "Space allotment required at IIT Bombay Research Park or elsewhere for July and August",
+            "status": "Pending",
+            "progress_%": "0",
+            "last_week": "Space allotment pending",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Regional Dates"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Key Updates",
+            "item": "OIS bootcamp concluded on 12th June with 30 participants",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Bootcamp running",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "School Wise Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Key Updates",
+            "item": "BSS after-school program started with 64 kids enrolled",
+            "status": "In Progress",
+            "progress_%": "70",
+            "last_week": "BSS launch planning",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Partner School Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Key Updates",
+            "item": "CAJCS starts on 30th June; Lodha Oakwood begins on 13th July",
+            "status": "Scheduled",
+            "progress_%": "50",
+            "last_week": "Dates under discussion",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "School Wise Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Key Updates",
+            "item": "OIS DBIS and DYPIS ECA awaiting school response; TSRA Hyd and SFHS awaiting bootcamp confirmation",
+            "status": "Pending",
+            "progress_%": "20",
+            "last_week": "Outreach ongoing",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Proposal Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Progress / Output",
+            "item": "₹700100 received so far from Srijan / EHSI",
+            "status": "In Progress",
+            "progress_%": "65",
+            "last_week": "Revenue tracking started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "School Wise Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Progress / Output",
+            "item": "Robotics Foundation Bootcamp 24-hour brochure created for NRL schools",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Brochure under preparation",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Proposal Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Progress / Output",
+            "item": "List of schools to reach out has been prepared",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "School list initial draft",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Partner School Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Current Project Status",
+            "item": "Program delivery ongoing at each active school",
+            "status": "In Progress",
+            "progress_%": "70",
+            "last_week": "Program execution started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Mentor Assignment"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Current Project Status",
+            "item": "School upsell pipeline under creation; review on 24th June",
+            "status": "In Progress",
+            "progress_%": "50",
+            "last_week": "Upsell pipeline planning",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Proposal Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Risks",
+            "item": "High mentor dependency; experienced classroom engagement mentors needed",
+            "status": "Open",
+            "progress_%": "25",
+            "last_week": "Mentor dependency identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Mentor Assignment"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Risks",
+            "item": "NRL school outreach must start before 15th July or bootcamp sales opportunity may be lost",
+            "status": "Open",
+            "progress_%": "20",
+            "last_week": "Outreach delay risk identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "IIT-B Outreach"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Challenges",
+            "item": "Need scalable standardised school program with tangible outcomes for in-school and after-school delivery",
+            "status": "Open",
+            "progress_%": "20",
+            "last_week": "Program standardisation in progress",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Curriculum"
+        },
+        {
+            "week": "46204",
+            "sr_no": "2",
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "section": "Support Required",
+            "item": "Kits and curriculum packaging required",
+            "status": "Pending",
+            "progress_%": "0",
+            "last_week": "Packaging support required",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Content & Documentation"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Key Updates",
+            "item": "Total projected outreach revenue is ₹1974587",
+            "status": "In Progress",
+            "progress_%": "65",
+            "last_week": "Revenue projection created",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Outreach Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Key Updates",
+            "item": "Specialised upcoming programs include Gesture Controlled Car at ATLAS University and AI for Business",
+            "status": "Scheduled",
+            "progress_%": "45",
+            "last_week": "Program planning underway",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Program Calendar"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Key Updates",
+            "item": "Content creation and documentation completed for BSS and CAJCS",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Content finalisation",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Curriculum"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Key Updates",
+            "item": "Team is converting content into interactive LMS material",
+            "status": "In Progress",
+            "progress_%": "55",
+            "last_week": "LMS conversion started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "LMS Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Progress / Output",
+            "item": "Received revenue of ₹748627",
+            "status": "In Progress",
+            "progress_%": "60",
+            "last_week": "Revenue tracking started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Outreach Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Progress / Output",
+            "item": "276 students reached across completed tracks",
+            "status": "In Progress",
+            "progress_%": "65",
+            "last_week": "Student outreach ongoing",
+            "due_date": "01-Jan-1970",
+            "priority": "Medium",
+            "link_title": "Outreach Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Progress / Output",
+            "item": "Emerald Heights Srijan School and OIS summer camps completed",
+            "status": "Complete",
+            "progress_%": "100",
+            "last_week": "Camps running",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "School Wise Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Progress / Output",
+            "item": "BSS ongoing ECA continues till September; CAJCS OIS SFHS LOS and BIS yet to start",
+            "status": "In Progress",
+            "progress_%": "40",
+            "last_week": "School program tracking",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "School Wise Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Current Project Status",
+            "item": "Summer Innovation Sprint running from June 15 to June 27",
+            "status": "In Progress",
+            "progress_%": "80",
+            "last_week": "Sprint planning",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Program Calendar"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Current Project Status",
+            "item": "Upcoming cohorts scheduled for July: Harry Potter Mumbai on July 18 and August: AI for Business on August 1",
+            "status": "Scheduled",
+            "progress_%": "50",
+            "last_week": "Cohort planning",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Program Calendar"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Current Project Status",
+            "item": "LMS uploads are on track for active modules",
+            "status": "In Progress",
+            "progress_%": "60",
+            "last_week": "LMS integration started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "LMS Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Current Project Status",
+            "item": "BSS and CAJCS LMS integration work in progress with target completion by June 30",
+            "status": "In Progress",
+            "progress_%": "50",
+            "last_week": "LMS integration started",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "LMS Tracker"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Risks",
+            "item": "₹1225960 revenue remains unconfirmed across three upcoming planned programs",
+            "status": "Open",
+            "progress_%": "20",
+            "last_week": "Revenue pending risk identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Outreach Data"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Risks",
+            "item": "OIS August SFHS LOS BIS and CAJCS curriculum frameworks all share June 30 completion target",
+            "status": "Open",
+            "progress_%": "30",
+            "last_week": "Multiple deadlines identified",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Curriculum"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Challenges",
+            "item": "Final dates for ATLAS University August cohort still TBD",
+            "status": "Open",
+            "progress_%": "20",
+            "last_week": "Date confirmation awaited",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Program Calendar"
+        },
+        {
+            "week": "46204",
+            "sr_no": "3",
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "section": "Challenges",
+            "item": "SFHS LOS and BIS are yet to be started while targeting June 30 deadline",
+            "status": "Open",
+            "progress_%": "15",
+            "last_week": "Curriculum drafting in progress",
+            "due_date": "01-Jan-1970",
+            "priority": "High",
+            "link_title": "Curriculum"
         }
-      ]
-    }
-  ],
-  "links": [
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Roles & Responsibilities",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Kit Production Timeline",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Internal Timeline",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "External Timeline",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Budget Overview",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Regional Dates",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Regional Day Plan",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Regional Event Numbers",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Regional Team Requirement",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Content & Documentation",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Content Timeline",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-  {
-    "incharge": "Kshitij",
-    "team": "NRL (National Robotics League)",
-    "title": "Mentor Review Timeline",
-    "url": "https://theinnovationstory-my.sharepoint.com/:x:/p/kshitij_palan/IQBsGb0zi1drQY8onRq76eeEAR9VgojwUDfnzNbKpYQO8ic?e=fgAzpL"
-  },
-
-  {
-    "incharge": "Bhagyashree",
-    "team": "School Enrollments",
-    "title": "School Wise Data",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-  {
-    "incharge": "Bhagyashree",
-    "team": "School Enrollments",
-    "title": "Proposal Tracker",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-  {
-    "incharge": "Bhagyashree",
-    "team": "School Enrollments",
-    "title": "Partner School Tracker",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-  {
-    "incharge": "Bhagyashree",
-    "team": "School Enrollments",
-    "title": "Mentor Assignment",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-  {
-    "incharge": "Bhagyashree",
-    "team": "School Enrollments",
-    "title": "IIT-B Outreach",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-
-  {
-    "incharge": "Pradnya",
-    "team": "School Curriculum",
-    "title": "Curriculum",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  },
-  {
-    "incharge": "Pradnya",
-    "team": "School Curriculum",
-    "title": "Outreach Data",
-    "url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL"
-  }
-]
+    ],
+    "links": [
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Kit Production Timeline",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual Excel / OneDrive / SharePoint URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Internal Timeline",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "External Timeline",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Budget Overview",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Regional Dates",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Content & Documentation",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Kit Budget",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Content Timeline",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Kshitij",
+            "business_unit": "NRL (National Robotics League)",
+            "link_title": "Mentor Review Timeline",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "link_title": "School Wise Data",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "link_title": "Proposal Tracker",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "link_title": "Partner School Tracker",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "link_title": "Mentor Assignment",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Bhagyashree",
+            "business_unit": "School Enrolments",
+            "link_title": "IIT-B Outreach",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "link_title": "Curriculum",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "link_title": "Outreach Data",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "link_title": "LMS Tracker",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        },
+        {
+            "incharge": "Pradnya",
+            "business_unit": "School Curriculum / Programs",
+            "link_title": "Program Calendar",
+            "link_url": "https://theinnovationstory.sharepoint.com/:x:/s/SchoolCollab/IQBCuGictQ5kQJpR3-ERbe3GAYPA2N42OfpA_FyTKfBPKDo?e=LqEPOL",
+            "notes": "Paste actual URL"
+        }
+    ]
 }
