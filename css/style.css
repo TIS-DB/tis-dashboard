@@ -901,3 +901,303 @@ body{
   }
 }
 
+/* ==============================
+   CS KPI DASHBOARD
+============================== */
+
+.cs-filter-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:22px;
+}
+
+.cs-filter-chip{
+  border:1px solid var(--line);
+  background:#fff;
+  color:#64748b;
+  border-radius:999px;
+  padding:10px 16px;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.cs-filter-chip.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+.cs-summary-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-bottom:24px;
+}
+
+.cs-summary-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  box-shadow:0 6px 18px rgba(15,23,42,.06);
+}
+
+.cs-icon{
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  background:#eef6ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  font-weight:800;
+}
+
+.green-bg{background:#dcfce7;color:#15803d;}
+.gold-bg{background:#fef3c7;color:#b36b00;}
+.red-bg{background:#fee2e2;color:#dc2626;}
+
+.cs-big{
+  font-size:30px;
+  font-weight:800;
+  line-height:1;
+}
+
+.cs-summary-card p{
+  margin:4px 0 0;
+  font-size:13px;
+  color:#64748b;
+}
+
+.cs-kpi-container{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.cs-kpi-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(15,23,42,.07);
+}
+
+.cs-kpi-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:14px;
+}
+
+.cs-kpi-top h2{
+  margin:0;
+  font-size:22px;
+  line-height:1.25;
+  font-weight:800;
+}
+
+.cs-period{
+  margin:8px 0 0;
+  font-size:14px;
+  color:#94a3b8;
+}
+
+.cs-status-pill{
+  flex:0 0 auto;
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:13px;
+  font-weight:800;
+}
+
+.cs-on-track{
+  background:#dcfce7;
+  color:#15803d;
+}
+
+.cs-at-risk{
+  background:#fef3c7;
+  color:#b36b00;
+}
+
+.cs-off-track{
+  background:#fee2e2;
+  color:#dc2626;
+}
+
+.cs-metric{
+  margin:18px 0;
+  color:#64748b;
+  font-size:16px;
+  line-height:1.55;
+}
+
+.cs-kpi-main{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:14px;
+}
+
+.cs-category-pill{
+  background:#eaf4ff;
+  color:#0f2f57;
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:13px;
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.cs-value-block{
+  text-align:right;
+}
+
+.cs-kpi-value{
+  font-size:42px;
+  font-weight:800;
+  line-height:1;
+}
+
+.cs-value-block p{
+  margin:7px 0 0;
+  color:#64748b;
+  font-size:14px;
+}
+
+.gold{
+  color:#b36b00!important;
+}
+
+.cs-progress{
+  height:8px;
+  background:#e5e7eb;
+  border-radius:999px;
+  overflow:hidden;
+  margin:22px 0 12px;
+}
+
+.cs-progress-bar{
+  height:100%;
+  border-radius:999px;
+}
+
+.green-bar{
+  background:#1fa487;
+}
+
+.gold-bar{
+  background:#f59e0b;
+}
+
+.red-bar{
+  background:#dc2626;
+}
+
+.cs-tat-box{
+  margin-top:18px;
+  border-radius:14px;
+  padding:12px;
+  font-size:14px;
+  font-weight:800;
+  text-align:center;
+}
+
+.cs-breakdown-title{
+  margin-top:18px;
+  color:#0f2f57;
+  font-size:15px;
+  font-weight:800;
+}
+
+.cs-breakdown-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:14px;
+}
+
+.cs-breakdown-card{
+  background:#f8fafc;
+  border-radius:16px;
+  padding:16px;
+}
+
+.cs-breakdown-card h4{
+  margin:0 0 8px;
+  font-size:12px;
+  color:#64748b;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.cs-breakdown-card div{
+  font-size:26px;
+  font-weight:800;
+}
+
+.cs-mini-progress{
+  height:6px;
+  background:#e5e7eb;
+  border-radius:999px;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.cs-mini-progress div{
+  height:100%;
+  background:#1e73be;
+  border-radius:999px;
+}
+
+@media(max-width:700px){
+  .cs-summary-grid{
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+  }
+
+  .cs-summary-card{
+    padding:12px 8px;
+    flex-direction:column;
+    text-align:center;
+    gap:7px;
+  }
+
+  .cs-icon{
+    width:42px;
+    height:42px;
+    font-size:18px;
+  }
+
+  .cs-big{
+    font-size:28px;
+  }
+
+  .cs-summary-card p{
+    font-size:12px;
+    line-height:1.2;
+  }
+
+  .cs-kpi-card{
+    padding:18px;
+  }
+
+  .cs-kpi-top h2{
+    font-size:20px;
+  }
+
+  .cs-kpi-value{
+    font-size:40px;
+  }
+
+  .cs-breakdown-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
