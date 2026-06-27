@@ -221,7 +221,13 @@ function formatValue(value) {
 }
 
 function num(value) {
-  return Number(clean(value).replace("%", "")) || 0;
+  const raw = clean(value).replace("%", "");
+  const n = Number(raw) || 0;
+
+  if (clean(value).includes("%")) return n;
+  if (n <= 1) return n * 100;
+
+  return n;
 }
 
 function escapeHtml(text) {
