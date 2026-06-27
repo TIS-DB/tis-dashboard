@@ -3,22 +3,11 @@ import json
 import numpy as np
 import os
 
-# ----------------------------
-# CONFIG
-# ----------------------------
-BASE_PATH = os.path.join(
-    os.path.expanduser("~"),
-    "Library",
-    "CloudStorage",
-    "OneDrive-EdunnovateTechnologiesPrivateLimited",
-    "TIS-Enrollment-Data"
-)
-
 FILES = {
-    "enrollments": "Course Wise Enrollment.xlsx",
-    "students": "Student Master.xlsx",
-    "weeklyreview": "Main Dashboard.xlsx",
-    "cskpi": "CS KPI.xlsx"
+    "enrollments": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQBY0YxMDubZTrhClYnfi6jkARuhda3zffKkko6k6bUfh3k?e=QpKJ6k",
+    "students": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCHsGYHDxfpQIBCovKgYcaqAf9wgHYLPVkXXE_9Ujuf35c?e=FQ3KKh",
+    "weeklyreview": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCjE3LbsEwFSqfJH50WVPojAXzmaoIU5t9M3304eIbUigI?e=KV0tAq",
+    "cskpi": "https://theinnovationstory-my.sharepoint.com/:x:/p/ragini/IQCCBGFU2GdjRb8TV4GAroICAVtDTH91QnsgMy-aQcEwo8k?e=oaXKoe"
 }
 
 OUTPUT_FILES = {
@@ -29,43 +18,31 @@ OUTPUT_FILES = {
 }
 
 
-# ----------------------------
-# UTIL FUNCTIONS
-# ----------------------------
 def clean_df(df):
-    # Remove completely empty rows
     df = df.dropna(how="all")
-
-    # Remove completely empty columns
     df = df.dropna(axis=1, how="all")
 
-    # Clean column names
     df.columns = [
         str(c).strip().lower().replace(" ", "_")
         for c in df.columns
     ]
 
-    # Remove Excel "Unnamed" columns
     df = df.loc[:, ~df.columns.str.startswith("unnamed")]
 
-    # Format dates
     for col in df.columns:
         if "date" in col:
             df[col] = pd.to_datetime(df[col], errors="coerce")
             df[col] = df[col].dt.strftime("%d-%b-%Y")
 
-    
-    # Convert everything to string, remove commas and trim spaces
-for col in df.columns:
-    df[col] = (
-        df[col]
-        .astype(str)
-        .str.replace(",", "", regex=False)
-        .str.strip()
-    )
+    for col in df.columns:
+        df[col] = (
+            df[col]
+            .astype(str)
+            .str.replace(",", "", regex=False)
+            .str.strip()
+        )
 
-    # Replace NaN / NaT with blanks
-    df = df.replace([np.nan, "nan", "NaT"], "")
+    df = df.replace([np.nan, "nan", "NaT", "None"], "")
 
     return df
 
@@ -81,34 +58,33 @@ def write_json(output_path, data):
     os.replace(tmp_file, output_path)
 
 
-def process_file(key, filename):
-    path = os.path.join(BASE_PATH, filename)
+def process_file(key):
+    path = FILES[key]
 
-    print(f"📥 Reading {filename}...")
+    print(f"📥 Reading {key} file...")
 
     try:
-        df = pd.read_excel(path)
+        df = pd.read_excel(path, engine="openpyxl")
         df = clean_df(df)
 
         data = df.to_dict(orient="records")
-
         write_json(OUTPUT_FILES[key], data)
 
         print(f"✅ {key}.json updated → Rows: {len(data)}")
 
     except Exception as e:
-        print(f"❌ Error processing {filename}: {e}")
+        print(f"❌ Error processing {key}: {e}")
+        raise
 
 
 def process_weekly_review():
-    path = os.path.join(BASE_PATH, FILES["weeklyreview"])
+    path = FILES["weeklyreview"]
 
     print("📥 Reading Main Dashboard.xlsx...")
 
     try:
-        dashboard_df = pd.read_excel(path, sheet_name="Dashboard")
-        links_df = pd.read_excel(path, sheet_name="Collated links")
-  
+        dashboard_df = pd.read_excel(path, sheet_name="Dashboard", engine="openpyxl")
+        links_df = pd.read_excel(path, sheet_name="Collated links", engine="openpyxl")
 
         dashboard_df = clean_df(dashboard_df)
         links_df = clean_df(links_df)
@@ -126,19 +102,18 @@ def process_weekly_review():
         )
 
     except Exception as e:
-        print(f"❌ Error processing Main Dashboard.xlsx: {e}")
+        print(f"❌ Error processing weeklyreview: {e}")
+        raise
 
 
-# ----------------------------
-# MAIN PIPELINE
-# ----------------------------
 def run():
     print("\n🚀 Starting conversion pipeline...\n")
 
-    process_file("enrollments", FILES["enrollments"])
-    process_file("students", FILES["students"])
+    process_file("enrollments")
+    process_file("students")
     process_weekly_review()
-    process_file("cskpi", FILES["cskpi"])
+    process_file("cskpi")
+
     print("\n🎯 All files processed successfully")
 
 
