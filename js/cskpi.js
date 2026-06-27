@@ -201,20 +201,33 @@ function getProgressPercent(kpi) {
   return Math.min((value / targetValue) * 100, 100);
 }
 
-function formatValue(value) {
-  if (value === null || value === undefined || value === "") return "-";
-  const raw = clean(value);
-  const n = num(raw);
-  if (raw.includes("%")) return n.toFixed(n % 1 === 0 ? 0 : 1) + "%";
-  return raw;
-}
-
 function clean(value) {
   return String(value || "").trim();
 }
 
+function formatValue(value) {
+  if (value === null || value === undefined || value === "") return "-";
+
+  const raw = clean(value);
+  const n = num(raw);
+
+  if (raw.includes("%")) return raw;
+
+  if (n <= 1) {
+    return (n * 100).toFixed((n * 100) % 1 === 0 ? 0 : 1) + "%";
+  }
+
+  return n.toFixed(n % 1 === 0 ? 0 : 1) + "%";
+}
+
 function num(value) {
-  return Number(clean(value).replace("%", "")) || 0;
+  const raw = clean(value).replace("%", "");
+  const n = Number(raw) || 0;
+
+  if (clean(value).includes("%")) return n;
+  if (n <= 1) return n * 100;
+
+  return n;
 }
 
 function escapeHtml(text) {
