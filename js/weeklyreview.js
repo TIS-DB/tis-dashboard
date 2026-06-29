@@ -138,8 +138,8 @@ function renderWeeklyReview() {
 }
 
 function renderReviewCard(item) {
+  const links = getLinksForIncharge(item.incharge);
   const status = getStatus(item.status, item);
-  const progressClass = getProgressClass(item.progress_percent);
 
   return `
     <article class="weekly-card-new ${status.borderClass}">
@@ -155,7 +155,7 @@ function renderReviewCard(item) {
           ${escapeHtml(status.label)}
         </span>
 
-        <div class="progress-circle ${progressClass}" style="--progress:${num(item.progress_percent)}">
+        <div class="progress-circle" style="--progress:${num(item.progress_percent)}">
           <span>${num(item.progress_percent)}%</span>
         </div>
 
@@ -168,61 +168,63 @@ function renderReviewCard(item) {
         ${renderSection(item, "Project Status", "green")}
         ${renderSection(item, "Risks", "red")}
         ${renderSection(item, "Challenges", "orange")}
-        ${renderSection(item, "Support Required", "green support-heading")}
+        ${renderSection(item, "Support Required", "green")}
       </section>
+
+      <aside class="weekly-links-panel">
+        <h4>Reference Links</h4>
+        ${renderLinks(links)}
+      </aside>
 
     </article>
   `;
 }
-
 function renderSection(item, sectionName, colorClass) {
+
   const section = (item.sections || []).find(
     s => clean(s.section).toLowerCase() === clean(sectionName).toLowerCase()
   );
 
-  const sectionLinks = getLinksForSection(item.incharge, sectionName);
-  const supportClass = sectionName === "Support Required" ? "support-section-highlight" : "";
-
   if (!section || !section.items.length) {
     return `
-      <div class="weekly-section-new ${supportClass}">
+      <div class="weekly-section-new">
         <h4 class="${colorClass}">${sectionName}</h4>
         <p class="muted">No update</p>
-        ${renderSectionLinks(sectionLinks)}
       </div>
     `;
   }
 
   return `
-    <div class="weekly-section-new ${supportClass}">
-      <h4 class="${colorClass}">${escapeHtml(sectionName)}</h4>
+    <div class="weekly-section-new">
+      <h4 class="${colorClass}">
+        ${escapeHtml(sectionName)}
+      </h4>
 
       <ul>
         ${section.items.map(x => `
           <li>
+
             <div class="current-item">
               ${escapeHtml(x.item)}
-            </div>
-
-            <div class="item-meta-row">
-              ${x.status ? `<span class="mini-status">${escapeHtml(x.status)}</span>` : ""}
-              ${x.priority ? `<span class="priority-badge ${getPriorityClass(x.priority)}">${escapeHtml(x.priority)}</span>` : ""}
-              ${x.due_date ? `<span class="due-date-badge ${getDueDateClass(x.due_date)}">📅 ${escapeHtml(formatDueDate(x.due_date))}</span>` : ""}
+              ${x.status
+                ? `<span class="mini-status">${escapeHtml(x.status)}</span>`
+                : ""
+              }
             </div>
 
             ${
               clean(x.last_week)
                 ? `<div class="last-week-inline">
-                    <strong>Last week:</strong>
-                    ${escapeHtml(x.last_week)}
+                     <strong>Last week:</strong>
+                     ${escapeHtml(x.last_week)}
                    </div>`
                 : ""
             }
+
           </li>
         `).join("")}
       </ul>
 
-      ${renderSectionLinks(sectionLinks)}
     </div>
   `;
 }
@@ -309,95 +311,6 @@ function getStatus(statusText, item = null) {
   return { className: "status-complete", borderClass: "border-complete", label: "On Track" };
 }
 
-function getProgressClass(progress) {
-  const p = num(progress);
-
-  if (p >= 80) return "progress-green";
-  if (p >= 50) return "progress-amber";
-  return "progress-red";
-}
-
-function getPriorityClass(priority) {
-  const p = clean(priority).toLowerCase();
-
-  if (p === "high") return "priority-high";
-  if (p === "medium") return "priority-medium";
-  if (p === "low") return "priority-low";
-
-  return "priority-medium";
-}
-
-function formatDueDate(dateText) {
-  const raw = clean(dateText);
-  if (!raw) return "";
-
-  const d = new Date(raw);
-  if (isNaN(d)) return raw;
-
-  return d.toLocaleDateString("en-IN", {
-    day: "2-digit",
-    month: "short"
-  });
-}
-
-function getDueDateClass(dateText) {
-  const d = new Date(clean(dateText));
-  if (isNaN(d)) return "";
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  d.setHours(0, 0, 0, 0);
-
-  const diffDays = Math.ceil((d - today) / (1000 * 60 * 60 * 24));
-
-  if (diffDays < 0) return "due-overdue";
-  if (diffDays <= 3) return "due-soon";
-
-  return "due-normal";
-}
-
-function getLinksForSection(incharge, sectionName) {
-  const sectionKeywords = {
-    "Key Updates": ["timeline", "calendar", "tracker", "internal"],
-    "Operational Performance": ["budget", "data", "overview", "school wise", "outreach"],
-    "Project Status": ["timeline", "tracker", "assignment", "lms", "documentation"],
-    "Risks": ["risk", "external", "outreach", "curriculum"],
-    "Challenges": ["space", "curriculum", "program"],
-    "Support Required": ["mentor", "iit", "regional", "support"]
-  };
-
-  const keywords = sectionKeywords[sectionName] || [];
-
-  return (weeklyData.links || [])
-    .filter(row => clean(row.incharge).toLowerCase() === clean(incharge).toLowerCase())
-    .filter(row => clean(row.link_url))
-    .filter(row => {
-      const title = clean(row.link_title).toLowerCase();
-      return keywords.some(k => title.includes(k));
-    })
-    .slice(0, 3)
-    .map(row => ({
-      title: clean(row.link_title),
-      url: clean(row.link_url)
-    }));
-}
-
-function renderSectionLinks(links) {
-  if (!links.length) return "";
-
-  return `
-    <div class="section-link-row">
-      ${links.map(link => `
-        <a class="section-link-pill"
-           href="${escapeAttr(link.url)}"
-           target="_blank"
-           rel="noopener noreferrer">
-          🔗 ${escapeHtml(link.title)}
-        </a>
-      `).join("")}
-    </div>
-  `;
-}
 function num(v) {
   return Number(v || 0);
 }
