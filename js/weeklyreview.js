@@ -164,12 +164,10 @@ const status = getStatus(item.status, item);
       </aside>
 
       <section class="weekly-detail-grid">
-        ${renderSection(item, "Progress / Output", "blue")}
-        ${renderSection(item, "Current Project Status", "green")}
+        ${renderSection(item, "Key Updates", "blue")}
         ${renderSection(item, "Risks", "red")}
         ${renderSection(item, "Challenges", "orange")}
         ${renderSection(item, "Support Required", "green")}
-        ${renderSection(item, "Key Updates", "blue")}
       </section>
 
       <aside class="weekly-links-panel">
@@ -200,15 +198,25 @@ function renderSection(item, sectionName, colorClass) {
       <ul>
         ${section.items.map(x => `
           <li>
-            ${escapeHtml(x.item)}
-            ${x.status ? `<span class="mini-status">${escapeHtml(x.status)}</span>` : ""}
+            <div class="current-item">
+              ${escapeHtml(x.item)}
+              ${x.status ? `<span class="mini-status">${escapeHtml(x.status)}</span>` : ""}
+            </div>
+
+            ${
+              clean(x.last_week || x["Last Week"])
+                ? `<div class="last-week-inline">
+                    <strong>Last week:</strong>
+                    ${escapeHtml(x.last_week || x["Last Week"])}
+                   </div>`
+                : ""
+            }
           </li>
         `).join("")}
       </ul>
     </div>
   `;
 }
-
 function renderLinks(links) {
   if (!links.length) return `<p class="muted">No links added</p>`;
 
