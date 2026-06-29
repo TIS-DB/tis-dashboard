@@ -1,7 +1,7 @@
 {
     "dashboard": [
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -10,12 +10,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Vendor shortlisting in progress",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Kit Production Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -24,12 +24,12 @@
             "status": "In Progress",
             "progress_%": "35",
             "last_week": "Concept discussion",
-            "due_date": "01-Jan-1970",
+            "due_date": "10-Jul-2026",
             "priority": "Medium",
             "link_title": "Content Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -38,12 +38,12 @@
             "status": "Ready",
             "progress_%": "90",
             "last_week": "Portal under testing",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "High",
             "link_title": "Internal Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -52,12 +52,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Budget awaiting approval",
-            "due_date": "01-Jan-1970",
+            "due_date": "25-Jun-2026",
             "priority": "High",
             "link_title": "Kit Budget"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -66,12 +66,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Production quantity finalising",
-            "due_date": "01-Jan-1970",
+            "due_date": "28-Jun-2026",
             "priority": "High",
             "link_title": "Budget Overview"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -80,12 +80,12 @@
             "status": "In Progress",
             "progress_%": "45",
             "last_week": "Readiness target discussion",
-            "due_date": "01-Jan-1970",
+            "due_date": "31-Jul-2026",
             "priority": "High",
             "link_title": "Kit Production Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -94,12 +94,12 @@
             "status": "In Progress",
             "progress_%": "60",
             "last_week": "Samples production initiated",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Kit Production Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -108,12 +108,12 @@
             "status": "In Progress",
             "progress_%": "40",
             "last_week": "Documentation planning",
-            "due_date": "01-Jan-1970",
+            "due_date": "10-Jul-2026",
             "priority": "Medium",
             "link_title": "Content & Documentation"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -122,12 +122,12 @@
             "status": "Pending",
             "progress_%": "20",
             "last_week": "Approval awaited",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Internal Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -136,12 +136,12 @@
             "status": "Open",
             "progress_%": "30",
             "last_week": "Vendor delay risk identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "External Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -150,12 +150,12 @@
             "status": "Open",
             "progress_%": "10",
             "last_week": "Space constraint identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "05-Jul-2026",
             "priority": "High",
             "link_title": "Space Plan"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -164,12 +164,12 @@
             "status": "Pending",
             "progress_%": "0",
             "last_week": "Mentor support requested",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "High",
             "link_title": "Mentor Review Timeline"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -178,12 +178,12 @@
             "status": "Pending",
             "progress_%": "0",
             "last_week": "IIT confirmation awaited",
-            "due_date": "01-Jan-1970",
+            "due_date": "05-Jul-2026",
             "priority": "High",
             "link_title": "IIT-B Outreach"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "1",
             "incharge": "Kshitij",
             "business_unit": "NRL (National Robotics League)",
@@ -192,12 +192,12 @@
             "status": "Pending",
             "progress_%": "0",
             "last_week": "Space allotment pending",
-            "due_date": "01-Jan-1970",
+            "due_date": "05-Jul-2026",
             "priority": "High",
             "link_title": "Regional Dates"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -206,12 +206,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Bootcamp running",
-            "due_date": "01-Jan-1970",
+            "due_date": "12-Jun-2026",
             "priority": "Medium",
             "link_title": "School Wise Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -220,12 +220,12 @@
             "status": "In Progress",
             "progress_%": "70",
             "last_week": "BSS launch planning",
-            "due_date": "01-Jan-1970",
+            "due_date": "20-Jun-2026",
             "priority": "High",
             "link_title": "Partner School Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -234,12 +234,12 @@
             "status": "Scheduled",
             "progress_%": "50",
             "last_week": "Dates under discussion",
-            "due_date": "01-Jan-1970",
+            "due_date": "13-Jul-2026",
             "priority": "High",
             "link_title": "School Wise Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -248,12 +248,12 @@
             "status": "Pending",
             "progress_%": "20",
             "last_week": "Outreach ongoing",
-            "due_date": "01-Jan-1970",
+            "due_date": "15-Jul-2026",
             "priority": "High",
             "link_title": "Proposal Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -262,12 +262,12 @@
             "status": "In Progress",
             "progress_%": "65",
             "last_week": "Revenue tracking started",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "High",
             "link_title": "School Wise Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -276,12 +276,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Brochure under preparation",
-            "due_date": "01-Jan-1970",
+            "due_date": "24-Jun-2026",
             "priority": "Medium",
             "link_title": "Proposal Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -290,12 +290,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "School list initial draft",
-            "due_date": "01-Jan-1970",
+            "due_date": "24-Jun-2026",
             "priority": "Medium",
             "link_title": "Partner School Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -304,12 +304,12 @@
             "status": "In Progress",
             "progress_%": "70",
             "last_week": "Program execution started",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Sep-2026",
             "priority": "High",
             "link_title": "Mentor Assignment"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -318,12 +318,12 @@
             "status": "In Progress",
             "progress_%": "50",
             "last_week": "Upsell pipeline planning",
-            "due_date": "01-Jan-1970",
+            "due_date": "24-Jun-2026",
             "priority": "High",
             "link_title": "Proposal Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -332,12 +332,12 @@
             "status": "Open",
             "progress_%": "25",
             "last_week": "Mentor dependency identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "15-Jul-2026",
             "priority": "High",
             "link_title": "Mentor Assignment"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -346,12 +346,12 @@
             "status": "Open",
             "progress_%": "20",
             "last_week": "Outreach delay risk identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "15-Jul-2026",
             "priority": "High",
             "link_title": "IIT-B Outreach"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -360,12 +360,12 @@
             "status": "Open",
             "progress_%": "20",
             "last_week": "Program standardisation in progress",
-            "due_date": "01-Jan-1970",
+            "due_date": "15-Jul-2026",
             "priority": "High",
             "link_title": "Curriculum"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "2",
             "incharge": "Bhagyashree",
             "business_unit": "School Enrolments",
@@ -374,12 +374,12 @@
             "status": "Pending",
             "progress_%": "0",
             "last_week": "Packaging support required",
-            "due_date": "01-Jan-1970",
+            "due_date": "10-Jul-2026",
             "priority": "Medium",
             "link_title": "Content & Documentation"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -388,12 +388,12 @@
             "status": "In Progress",
             "progress_%": "65",
             "last_week": "Revenue projection created",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "High",
             "link_title": "Outreach Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -402,12 +402,12 @@
             "status": "Scheduled",
             "progress_%": "45",
             "last_week": "Program planning underway",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Aug-2026",
             "priority": "Medium",
             "link_title": "Program Calendar"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -416,12 +416,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Content finalisation",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Curriculum"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -430,12 +430,12 @@
             "status": "In Progress",
             "progress_%": "55",
             "last_week": "LMS conversion started",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "LMS Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -444,12 +444,12 @@
             "status": "In Progress",
             "progress_%": "60",
             "last_week": "Revenue tracking started",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "High",
             "link_title": "Outreach Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -458,12 +458,12 @@
             "status": "In Progress",
             "progress_%": "65",
             "last_week": "Student outreach ongoing",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Jul-2026",
             "priority": "Medium",
             "link_title": "Outreach Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -472,12 +472,12 @@
             "status": "Complete",
             "progress_%": "100",
             "last_week": "Camps running",
-            "due_date": "01-Jan-1970",
+            "due_date": "27-Jun-2026",
             "priority": "High",
             "link_title": "School Wise Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -486,12 +486,12 @@
             "status": "In Progress",
             "progress_%": "40",
             "last_week": "School program tracking",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Sep-2026",
             "priority": "High",
             "link_title": "School Wise Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -500,12 +500,12 @@
             "status": "In Progress",
             "progress_%": "80",
             "last_week": "Sprint planning",
-            "due_date": "01-Jan-1970",
+            "due_date": "27-Jun-2026",
             "priority": "High",
             "link_title": "Program Calendar"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -514,12 +514,12 @@
             "status": "Scheduled",
             "progress_%": "50",
             "last_week": "Cohort planning",
-            "due_date": "01-Jan-1970",
+            "due_date": "01-Aug-2026",
             "priority": "High",
             "link_title": "Program Calendar"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -528,12 +528,12 @@
             "status": "In Progress",
             "progress_%": "60",
             "last_week": "LMS integration started",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "LMS Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -542,12 +542,12 @@
             "status": "In Progress",
             "progress_%": "50",
             "last_week": "LMS integration started",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "LMS Tracker"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -556,12 +556,12 @@
             "status": "Open",
             "progress_%": "20",
             "last_week": "Revenue pending risk identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "15-Jul-2026",
             "priority": "High",
             "link_title": "Outreach Data"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -570,12 +570,12 @@
             "status": "Open",
             "progress_%": "30",
             "last_week": "Multiple deadlines identified",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Curriculum"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -584,12 +584,12 @@
             "status": "Open",
             "progress_%": "20",
             "last_week": "Date confirmation awaited",
-            "due_date": "01-Jan-1970",
+            "due_date": "10-Jul-2026",
             "priority": "High",
             "link_title": "Program Calendar"
         },
         {
-            "week": "46204",
+            "week": "2026-06-22",
             "sr_no": "3",
             "incharge": "Pradnya",
             "business_unit": "School Curriculum / Programs",
@@ -598,7 +598,7 @@
             "status": "Open",
             "progress_%": "15",
             "last_week": "Curriculum drafting in progress",
-            "due_date": "01-Jan-1970",
+            "due_date": "30-Jun-2026",
             "priority": "High",
             "link_title": "Curriculum"
         }
