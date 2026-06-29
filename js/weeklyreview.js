@@ -139,8 +139,9 @@ function renderWeeklyReview() {
 
 function renderReviewCard(item) {
   const links = getLinksForIncharge(item.incharge);
-  const status = getStatus(item.status);
-
+  //const status = getStatus(item.status);
+const status = getStatus(item.status, item);
+  
   return `
     <article class="weekly-card-new ${status.borderClass}">
 
@@ -152,7 +153,7 @@ function renderReviewCard(item) {
         <p class="weekly-sr">Sr. No. ${escapeHtml(item.sr_no)}</p>
 
         <span class="weekly-status ${status.className}">
-          ${escapeHtml(item.status || "On Track")}
+        ${escapeHtml(status.label)}
         </span>
 
         <div class="progress-circle" style="--progress:${num(item.progress_percent)}">
@@ -248,13 +249,46 @@ function setFilter(filter) {
   renderWeeklyReview();
 }
 
-function getStatus(statusText) {
+/*function getStatus(statusText) {
   const s = clean(statusText).toLowerCase();
 
   if (s.includes("block")) return { className: "status-blocked", borderClass: "border-blocked" };
   if (s.includes("pending") || s.includes("open")) return { className: "status-watch", borderClass: "border-watch" };
 
   return { className: "status-complete", borderClass: "border-complete" };
+}*/
+function getStatus(statusText, item = null) {
+  if (!item || !item.sections) {
+    const s = clean(statusText).toLowerCase();
+
+    if (s.includes("block")) {
+      return { className: "status-blocked", borderClass: "border-blocked", label: "Blocked" };
+    }
+
+    if (s.includes("pending") || s.includes("open")) {
+      return { className: "status-watch", borderClass: "border-watch", label: "Needs Attention" };
+    }
+
+    return { className: "status-complete", borderClass: "border-complete", label: "On Track" };
+  }
+
+  const supportItems = item.sections
+    .filter(s => clean(s.section) === "Support Required")
+    .flatMap(s => s.items);
+
+  const supportStatuses = supportItems
+    .map(x => clean(x.status).toLowerCase())
+    .join(" ");
+
+  if (supportStatuses.includes("block")) {
+    return { className: "status-blocked", borderClass: "border-blocked", label: "Blocked" };
+  }
+
+  if (supportStatuses.includes("pending") || supportStatuses.includes("open")) {
+    return { className: "status-watch", borderClass: "border-watch", label: "Needs Attention" };
+  }
+
+  return { className: "status-complete", borderClass: "border-complete", label: "On Track" };
 }
 
 function num(v) {
