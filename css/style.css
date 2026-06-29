@@ -1201,3 +1201,23 @@ body{
     grid-template-columns:1fr 1fr;
   }
 }
+.current-item{
+  font-weight:600;
+  color:#0f172a;
+}
+
+.last-week-inline{
+  margin-top:6px;
+  padding:8px 10px;
+  background:#f8fafc;
+  border-left:3px solid #cbd5e1;
+  border-radius:10px;
+  font-size:12px;
+  line-height:1.4;
+  color:#64748b;
+}
+
+.last-week-inline strong{
+  color:#0f2f57;
+  font-weight:800;
+}
