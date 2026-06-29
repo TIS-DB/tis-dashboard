@@ -162,9 +162,10 @@ const status = getStatus(item.status, item);
 
         <p class="progress-note">Progress</p>
       </aside>
-
       <section class="weekly-detail-grid">
         ${renderSection(item, "Key Updates", "blue")}
+        ${renderSection(item, "Operational Performance", "purple")}
+        ${renderSection(item, "Project Status", "green")}
         ${renderSection(item, "Risks", "red")}
         ${renderSection(item, "Challenges", "orange")}
         ${renderSection(item, "Support Required", "green")}
@@ -180,7 +181,10 @@ const status = getStatus(item.status, item);
 }
 
 function renderSection(item, sectionName, colorClass) {
-  const section = (item.sections || []).find(s => clean(s.section) === sectionName);
+  //const section = (item.sections || []).find(s => clean(s.section) === sectionName);
+  const section = (item.sections || []).find(
+  s => clean(s.section).toLowerCase() === clean(sectionName).toLowerCase()
+);
 
   if (!section || !section.items.length) {
     return `
