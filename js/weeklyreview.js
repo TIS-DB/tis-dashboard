@@ -181,10 +181,9 @@ const status = getStatus(item.status, item);
 }
 
 function renderSection(item, sectionName, colorClass) {
-  //const section = (item.sections || []).find(s => clean(s.section) === sectionName);
   const section = (item.sections || []).find(
-  s => clean(s.section).toLowerCase() === clean(sectionName).toLowerCase()
-);
+    s => clean(s.section).toLowerCase() === clean(sectionName).toLowerCase()
+  );
 
   if (!section || !section.items.length) {
     return `
@@ -198,7 +197,6 @@ function renderSection(item, sectionName, colorClass) {
   return `
     <div class="weekly-section-new">
       <h4 class="${colorClass}">${escapeHtml(sectionName)}</h4>
-
       <ul>
         ${section.items.map(x => `
           <li>
@@ -208,10 +206,10 @@ function renderSection(item, sectionName, colorClass) {
             </div>
 
             ${
-              clean(x.last_week || x["Last Week"])
+              clean(x.last_week)
                 ? `<div class="last-week-inline">
                     <strong>Last week:</strong>
-                    ${escapeHtml(x.last_week || x["Last Week"])}
+                    ${escapeHtml(x.last_week)}
                    </div>`
                 : ""
             }
@@ -221,6 +219,7 @@ function renderSection(item, sectionName, colorClass) {
     </div>
   `;
 }
+
 function renderLinks(links) {
   if (!links.length) return `<p class="muted">No links added</p>`;
 
