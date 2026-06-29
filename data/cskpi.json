@@ -5,10 +5,10 @@
         "kpi_name": "First session Scheduling SLA",
         "metric": "Students with first session schedule shared within 48 hrs / Enrolments",
         "target": ">95%",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "0.71",
-        "ni_kpi": "0.571",
-        "foundation_kpi": "0.786",
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "0.724",
+        "ni_kpi": "0.7",
+        "foundation_kpi": "0.737",
         "bandra_kpi": "",
         "dadar_kpi": ""
     },
@@ -18,10 +18,10 @@
         "kpi_name": "Complete Scheduling SLA",
         "metric": "Students with complete schedule shared within 48 hrs (post enrolment for Foundation and post ideation for NI) / Enrolments",
         "target": ">95%",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "0.5333",
-        "ni_kpi": "0.0",
-        "foundation_kpi": "0.571",
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "0.47619047619047616",
+        "ni_kpi": "0.5",
+        "foundation_kpi": "0.474",
         "bandra_kpi": "",
         "dadar_kpi": ""
     },
@@ -31,7 +31,7 @@
         "kpi_name": "Session Start Adherence",
         "metric": "Sessions started on time / Total sessions",
         "target": ">95%",
-        "time_period_analysed": "13th to 19th Jun",
+        "time_period_analysed": "20th to 26th Jun",
         "kpi_value": "0.951",
         "ni_kpi": "",
         "foundation_kpi": "",
@@ -44,12 +44,12 @@
         "kpi_name": "Mentor Continuity Rate",
         "metric": "Sessions by primary mentor / Total sessions",
         "target": ">90%",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "0.68",
-        "ni_kpi": "0.31",
-        "foundation_kpi": "0.89",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "0.704",
+        "ni_kpi": "",
+        "foundation_kpi": "",
+        "bandra_kpi": "0.704",
+        "dadar_kpi": "0.703"
     },
     {
         "1": "6",
@@ -57,12 +57,12 @@
         "kpi_name": "Attendance Rate",
         "metric": "Sessions not absent / Sessions scheduled",
         "target": ">85%",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "0.886",
-        "ni_kpi": "0.877",
-        "foundation_kpi": "0.887",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "0.873",
+        "ni_kpi": "",
+        "foundation_kpi": "",
+        "bandra_kpi": "0.915",
+        "dadar_kpi": "0.848"
     },
     {
         "1": "7",
@@ -70,8 +70,8 @@
         "kpi_name": "Query Response TAT",
         "metric": "Avg. response time to parent/student query",
         "target": "≤24 hrs",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "6.5",
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "6.95",
         "ni_kpi": "",
         "foundation_kpi": "",
         "bandra_kpi": "",
@@ -83,12 +83,12 @@
         "kpi_name": "Session Disruption Rate",
         "metric": "Excused sessions / Total sessions",
         "target": "<5%",
-        "time_period_analysed": "13th to 19th Jun",
-        "kpi_value": "0.013",
-        "ni_kpi": "0.037",
-        "foundation_kpi": "0.009",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "time_period_analysed": "20th to 26th Jun",
+        "kpi_value": "0.0",
+        "ni_kpi": "",
+        "foundation_kpi": "",
+        "bandra_kpi": "0.0",
+        "dadar_kpi": "0.0"
     },
     {
         "1": "9",
@@ -96,12 +96,12 @@
         "kpi_name": "Certificate TAT",
         "metric": "Certificates shared within 7 days / Completed students",
         "target": ">95%",
-        "time_period_analysed": "6th to 12th Jun",
+        "time_period_analysed": "13th to 19th Jun",
         "kpi_value": "1.0",
         "ni_kpi": "",
-        "foundation_kpi": "1.0",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "foundation_kpi": "",
+        "bandra_kpi": "1.0",
+        "dadar_kpi": "1.0"
     },
     {
         "1": "10",
@@ -109,12 +109,12 @@
         "kpi_name": "End course feedback TAT",
         "metric": "End course feedback shared within 7 days / Completed students",
         "target": ">95%",
-        "time_period_analysed": "6th to 12th Jun",
-        "kpi_value": "0.7143",
+        "time_period_analysed": "13th to 19th Jun",
+        "kpi_value": "0.25",
         "ni_kpi": "",
-        "foundation_kpi": "0.7143",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "foundation_kpi": "",
+        "bandra_kpi": "0.16666666666666666",
+        "dadar_kpi": "0.5"
     },
     {
         "1": "11",
@@ -122,11 +122,11 @@
         "kpi_name": "Student Retention Rate",
         "metric": "Students enrolling in another course / Eligible students",
         "target": ">90%",
-        "time_period_analysed": "6th to 12th Jun",
-        "kpi_value": "0.4286",
+        "time_period_analysed": "13th to 19th Jun",
+        "kpi_value": "0.5",
         "ni_kpi": "",
-        "foundation_kpi": "0.4286",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "foundation_kpi": "",
+        "bandra_kpi": "0.6666666666666666",
+        "dadar_kpi": "0.0"
     }
 ]
