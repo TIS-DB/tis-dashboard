@@ -71,11 +71,11 @@
         "metric": "Avg. response time to parent/student query",
         "target": "≤24 hrs",
         "time_period_analysed": "20th to 26th Jun",
-        "kpi_value": "6.95",
+        "kpi_value": "6.183333333333334",
         "ni_kpi": "",
         "foundation_kpi": "",
-        "bandra_kpi": "",
-        "dadar_kpi": ""
+        "bandra_kpi": "5.9",
+        "dadar_kpi": "6.466666666666667"
     },
     {
         "1": "8",
