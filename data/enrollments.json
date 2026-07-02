@@ -26,6 +26,22 @@
     {
         "course_category": "Bootcamps",
         "course_name": "ImmersionX 2026",
+        "student_name": "Bhavvyya Dubey",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "70000"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "ImmersionX 2026",
+        "student_name": "Dia Raghavan",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "70000"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "ImmersionX 2026",
         "student_name": "Vedant Samir Lakhani",
         "new/existing": "Existing",
         "enrolment_date": "19-Jun-2026",
@@ -101,6 +117,22 @@
         "student_name": "Trisha Desai",
         "new/existing": "New",
         "enrolment_date": "29-Jun-2026",
+        "course_fee": "70000"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "ImmersionX 2026",
+        "student_name": "NIARA KEDAR",
+        "new/existing": "New",
+        "enrolment_date": "01-Jul-2026",
+        "course_fee": "70000"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "ImmersionX 2026",
+        "student_name": "Sarakshi Devi Saravanaraj",
+        "new/existing": "New",
+        "enrolment_date": "30-Jun-2026",
         "course_fee": "70000"
     },
     {
@@ -1026,6 +1058,22 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FTC (Exclusive of Skill Building)",
+        "student_name": "Vanshika Lamba",
+        "new/existing": "Existing",
+        "enrolment_date": "01-Jul-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "FTC (Exclusive of Skill Building)",
+        "student_name": "Aarav Damodar",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "FTC (Exclusive of Skill Building)",
         "student_name": "Kabir Panjwani",
         "new/existing": "Existing",
         "enrolment_date": "25-Jun-2026",
@@ -1141,6 +1189,14 @@
         "student_name": "Vivaan Sanghavi",
         "new/existing": "Existing",
         "enrolment_date": "26-Jun-2026",
+        "course_fee": "125000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "VEX IQ 2026-27",
+        "student_name": "Aaryaa Chugh",
+        "new/existing": "New",
+        "enrolment_date": "30-Jun-2026",
         "course_fee": "125000"
     },
     {
@@ -1569,6 +1625,14 @@
     },
     {
         "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Nitighya Podar",
+        "new/existing": "New",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
         "course_name": "NI Advanced 50 Hours",
         "student_name": "Vivaan Agarwal",
         "new/existing": "New",
@@ -1702,6 +1766,14 @@
         "new/existing": "New",
         "enrolment_date": "26-Jun-2026",
         "course_fee": "60000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 30 Hours",
+        "student_name": "Jiya Jatin Doshi Doshi",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "90000"
     },
     {
         "course_category": "TIS Schools",
@@ -2240,206 +2312,6 @@
         "course_fee": "16000"
     },
     {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Advance",
-        "student_name": "Anay Bhandari",
-        "new/existing": "Existing",
-        "enrolment_date": "11-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Advance",
-        "student_name": "Arham Kothari",
-        "new/existing": "New",
-        "enrolment_date": "05-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Advance",
-        "student_name": "Rudraang Goenka",
-        "new/existing": "Existing",
-        "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Advance",
-        "student_name": "Yash Bhatia",
-        "new/existing": "New",
-        "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Beginner",
-        "student_name": "Yuvaan Parekh",
-        "new/existing": "New",
-        "enrolment_date": "10-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Aarav Shah",
-        "new/existing": "New",
-        "enrolment_date": "10-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Aman Goenka",
-        "new/existing": "New",
-        "enrolment_date": "12-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Arhaan Grover",
-        "new/existing": "New",
-        "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Dev Vaghani",
-        "new/existing": "New",
-        "enrolment_date": "25-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Mirka Bhartia",
-        "new/existing": "New",
-        "enrolment_date": "19-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Neil Sancheti",
-        "new/existing": "New",
-        "enrolment_date": "06-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Nivaan Tanna",
-        "new/existing": "New",
-        "enrolment_date": "19-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Riaan Banerjee",
-        "new/existing": "New",
-        "enrolment_date": "26-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Riddhiman Maheshwari",
-        "new/existing": "New",
-        "enrolment_date": "18-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Rishi Deshmukh",
-        "new/existing": "Existing",
-        "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Riyan Mangal",
-        "new/existing": "New",
-        "enrolment_date": "02-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Rudra Goel",
-        "new/existing": "Existing",
-        "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Swara Vijay",
-        "new/existing": "New",
-        "enrolment_date": "28-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Anay Lohia",
-        "new/existing": "New",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Aahana Dani",
-        "new/existing": "New",
-        "enrolment_date": "27-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "Nevaan Kohli",
-        "new/existing": "New",
-        "enrolment_date": "25-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Robotics",
-        "course_name": "Mechatronics Intermediate",
-        "student_name": "veer kacker",
-        "new/existing": "New",
-        "enrolment_date": "29-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "AI",
-        "course_name": "Artificial Intelligence: Concepts to Applications",
-        "student_name": "Arin Mathew",
-        "new/existing": "New",
-        "enrolment_date": "24-Apr-2026",
-        "course_fee": "75000"
-    },
-    {
-        "course_category": "AI",
-        "course_name": "Artificial Intelligence: Concepts to Applications",
-        "student_name": "Mihika Daga",
-        "new/existing": "Existing",
-        "enrolment_date": "18-Jun-2026",
-        "course_fee": "75000"
-    },
-    {
-        "course_category": "AI",
-        "course_name": "Artificial Intelligence: Concepts to Applications",
-        "student_name": "Tvissha Pilani",
-        "new/existing": "New",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "75000"
-    },
-    {
         "course_category": "Fellowship",
         "course_name": "AI Fellowship for Young Global Innovators 2026",
         "student_name": "Alissa Jhaveri",
@@ -2483,7 +2355,7 @@
         "course_category": "Fellowship",
         "course_name": "AI Fellowship for Young Global Innovators 2026",
         "student_name": "Arjun Raghavan",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "550000"
     },
@@ -2507,7 +2379,7 @@
         "course_category": "Fellowship",
         "course_name": "AI Fellowship for Young Global Innovators 2026",
         "student_name": "Avika Kedia",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "550000"
     },
@@ -2515,7 +2387,7 @@
         "course_category": "Fellowship",
         "course_name": "AI Fellowship for Young Global Innovators 2026",
         "student_name": "Gauri Khanna",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "550000"
     },
@@ -2594,7 +2466,7 @@
     {
         "course_category": "Fellowship",
         "course_name": "AI Fellowship for Young Global Innovators 2026",
-        "student_name": "SARTHAK SEKHSARIA",
+        "student_name": "Sarthak Sekhsaria",
         "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "550000"
@@ -2659,7 +2531,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Aaryav Vidya Saju",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "13-Apr-2026",
         "course_fee": "600000"
     },
@@ -2667,7 +2539,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "advay aggarwal",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2675,7 +2547,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Advik Jain",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2699,7 +2571,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Devesh Gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2707,7 +2579,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Harshal kapoor",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2715,7 +2587,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Hrishaan Choudhary",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2723,7 +2595,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Kashvi Mummaneni",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2747,7 +2619,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Neel Pappu",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2763,7 +2635,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Nirvaan Gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2771,7 +2643,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "priyaansh Gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2779,7 +2651,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Roshni Hormazdiyar",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2787,7 +2659,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "S. Nandan Kumar",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2795,7 +2667,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Shaurya Jain",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2811,7 +2683,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Shray Tripathi",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2819,7 +2691,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Sriranjan Balaji",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2827,7 +2699,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Tanishk gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2835,7 +2707,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Trivid Gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2843,7 +2715,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Tziona Suissa",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2851,7 +2723,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "veer charan",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2859,7 +2731,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Vidur Warikoo",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2875,7 +2747,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Vihaan Juneja",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2883,7 +2755,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Vikram Triplicane",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "05-Apr-2026",
         "course_fee": "600000"
     },
@@ -2891,7 +2763,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Vivaan Gautam",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2899,7 +2771,7 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Yuvraj Jangid",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
@@ -2907,809 +2779,17 @@
         "course_category": "Fellowship",
         "course_name": "AIFYGI -2026 - Schools",
         "student_name": "Zoe Khanna",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "22-May-2026",
         "course_fee": "600000"
     },
     {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Advait Adukia",
-        "new/existing": "New",
-        "enrolment_date": "29-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Arav Goyal",
+        "course_category": "International",
+        "course_name": "3D CAD INT",
+        "student_name": "TEST USD",
         "new/existing": "Existing",
-        "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Arjun Mehra",
-        "new/existing": "New",
-        "enrolment_date": "18-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Aryan Swaminathan",
-        "new/existing": "New",
-        "enrolment_date": "16-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Avyay Pant",
-        "new/existing": "New",
-        "enrolment_date": "13-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Eeshaan Aggarwal",
-        "new/existing": "New",
-        "enrolment_date": "17-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Eissa Shaikh",
-        "new/existing": "New",
-        "enrolment_date": "26-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Jaksh Aggarwal",
-        "new/existing": "New",
-        "enrolment_date": "19-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Jianna Vasa",
-        "new/existing": "New",
-        "enrolment_date": "11-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Kabir Kumar",
-        "new/existing": "New",
-        "enrolment_date": "10-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Kiah Sharma",
-        "new/existing": "New",
-        "enrolment_date": "19-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Praneet Modi",
-        "new/existing": "New",
-        "enrolment_date": "20-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Prithvi Ajith Menon",
-        "new/existing": "New",
-        "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Reyaan Dhulla",
-        "new/existing": "New",
-        "enrolment_date": "20-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Ryan Gandhi",
-        "new/existing": "New",
         "enrolment_date": "20-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Samaira Bhansali",
-        "new/existing": "New",
-        "enrolment_date": "01-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Shaurya Goel",
-        "new/existing": "New",
-        "enrolment_date": "18-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Shivansh Vora",
-        "new/existing": "New",
-        "enrolment_date": "06-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Vivaan Gupta",
-        "new/existing": "New",
-        "enrolment_date": "30-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior",
-        "student_name": "Tavish Mundra",
-        "new/existing": "New",
-        "enrolment_date": "25-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior - AI Extension",
-        "student_name": "Ayaan Sunny Shah",
-        "new/existing": "Existing",
-        "enrolment_date": "29-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Junior - AI Extension",
-        "student_name": "Amay Bhatter",
-        "new/existing": "Existing",
-        "enrolment_date": "26-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Aariket Bharech",
-        "new/existing": "New",
-        "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Aatman Surve",
-        "new/existing": "New",
-        "enrolment_date": "07-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Agniv Roy",
-        "new/existing": "New",
-        "enrolment_date": "18-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Arhaan Sethi",
-        "new/existing": "New",
-        "enrolment_date": "03-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Arjun Anand",
-        "new/existing": "New",
-        "enrolment_date": "20-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Kian Dinavahi",
-        "new/existing": "New",
-        "enrolment_date": "02-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Neel Soman",
-        "new/existing": "New",
-        "enrolment_date": "23-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Reyansh Chandra",
-        "new/existing": "New",
-        "enrolment_date": "24-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Shaurya Goel",
-        "new/existing": "Existing",
-        "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Shivaditya Murarka",
-        "new/existing": "New",
-        "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Veer Mehta",
-        "new/existing": "Existing",
-        "enrolment_date": "18-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Vidit Shukla",
-        "new/existing": "Existing",
-        "enrolment_date": "07-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Electronics Senior - Arduino",
-        "student_name": "Yuvraj Saraogi",
-        "new/existing": "Existing",
-        "enrolment_date": "26-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Electronics",
-        "course_name": "Internet of Things Advanced",
-        "student_name": "Piyansh Kaarthik",
-        "new/existing": "Existing",
-        "enrolment_date": "17-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Aariket Bharech",
-        "new/existing": "Existing",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Ansh Patel",
-        "new/existing": "New",
-        "enrolment_date": "24-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Arun Trivedi",
-        "new/existing": "New",
-        "enrolment_date": "17-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Arya Sabnis",
-        "new/existing": "Existing",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Dev Dwarkadas",
-        "new/existing": "Existing",
-        "enrolment_date": "16-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Dev Karan Singh",
-        "new/existing": "New",
-        "enrolment_date": "30-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Devansh Jaju",
-        "new/existing": "Existing",
-        "enrolment_date": "12-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Krishiv Desai",
-        "new/existing": "Existing",
-        "enrolment_date": "22-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "MISHKA MEHTA",
-        "new/existing": "New",
-        "enrolment_date": "27-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Pranava Randeria",
-        "new/existing": "Existing",
-        "enrolment_date": "28-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Raghav Tulsyan",
-        "new/existing": "New",
-        "enrolment_date": "07-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Reyansh Chandra",
-        "new/existing": "Existing",
-        "enrolment_date": "31-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Sanjay K Singh",
-        "new/existing": "New",
-        "enrolment_date": "30-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Vardaan Gupta",
-        "new/existing": "Existing",
-        "enrolment_date": "17-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "3D CAD",
-        "student_name": "Vihaan Varma",
-        "new/existing": "Existing",
-        "enrolment_date": "04-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Amaira Nawany",
-        "new/existing": "New",
-        "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Ananta Bajaj",
-        "new/existing": "Existing",
-        "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Aria Podar",
-        "new/existing": "New",
-        "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Arnav Gupta",
-        "new/existing": "New",
-        "enrolment_date": "20-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Ayaan  Merchant",
-        "new/existing": "Existing",
-        "enrolment_date": "11-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Hridhaan Sundesha",
-        "new/existing": "New",
-        "enrolment_date": "17-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Jahan Sukhia",
-        "new/existing": "New",
-        "enrolment_date": "08-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Keyaan Shah",
-        "new/existing": "New",
-        "enrolment_date": "06-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Mahika Ghai",
-        "new/existing": "Existing",
-        "enrolment_date": "30-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Neil Rana",
-        "new/existing": "Existing",
-        "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Nyra Chakka",
-        "new/existing": "Existing",
-        "enrolment_date": "07-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Samar Kumar",
-        "new/existing": "New",
-        "enrolment_date": "14-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Veer Mahajan",
-        "new/existing": "Existing",
-        "enrolment_date": "10-Apr-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Abram Vardhan",
-        "new/existing": "Existing",
-        "enrolment_date": "22-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Shivansh Rai",
-        "new/existing": "Existing",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "3D Designing",
-        "course_name": "Design Foundation",
-        "student_name": "Samara Lawande",
-        "new/existing": "New",
-        "enrolment_date": "30-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "AI  - Data Science",
-        "student_name": "Mihir Garg",
-        "new/existing": "Existing",
-        "enrolment_date": "15-Jun-2026",
-        "course_fee": "30000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Coding Junior",
-        "student_name": "Anika Dharia",
-        "new/existing": "New",
-        "enrolment_date": "09-Apr-2026",
-        "course_fee": "12000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Aarav Pandya",
-        "new/existing": "New",
-        "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Anoushka Kumar",
-        "new/existing": "New",
-        "enrolment_date": "07-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Dhrish Parikh",
-        "new/existing": "New",
-        "enrolment_date": "06-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "HUSAYN MERCHANT",
-        "new/existing": "Existing",
-        "enrolment_date": "21-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "SARTHAK SEKHSARIA",
-        "new/existing": "Existing",
-        "enrolment_date": "04-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Vanshika Lamba",
-        "new/existing": "Existing",
-        "enrolment_date": "15-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Vivaan Maheshwari",
-        "new/existing": "Existing",
-        "enrolment_date": "30-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Vivaan Puranik",
-        "new/existing": "New",
-        "enrolment_date": "13-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Java Programming Course",
-        "student_name": "Palaksi Agrawal",
-        "new/existing": "Existing",
-        "enrolment_date": "24-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Agastya Marfatia",
-        "new/existing": "Existing",
-        "enrolment_date": "06-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Anay Gautam",
-        "new/existing": "New",
-        "enrolment_date": "19-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Avantika Goenka",
-        "new/existing": "New",
-        "enrolment_date": "12-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Ayaan Gupta",
-        "new/existing": "New",
-        "enrolment_date": "15-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Dia Raghavan",
-        "new/existing": "Existing",
-        "enrolment_date": "29-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "KAVISH MAHESHWARI",
-        "new/existing": "Existing",
-        "enrolment_date": "21-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Nihira Marathe",
-        "new/existing": "Existing",
-        "enrolment_date": "09-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Om Chaitanya Vadkhalkar",
-        "new/existing": "New",
-        "enrolment_date": "04-May-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Preksh Doshi",
-        "new/existing": "New",
-        "enrolment_date": "09-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Raghavi Baheti",
-        "new/existing": "New",
-        "enrolment_date": "14-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "SAANVI MAHESHWARI",
-        "new/existing": "Existing",
-        "enrolment_date": "21-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Yash Chhaparia",
-        "new/existing": "New",
-        "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "AVYAHN DALMIA",
-        "new/existing": "Existing",
-        "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Aryan Nahar",
-        "new/existing": "New",
-        "enrolment_date": "26-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Samaya Mubayi Bery",
-        "new/existing": "New",
-        "enrolment_date": "26-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Aditya Khandge",
-        "new/existing": "New",
-        "enrolment_date": "25-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Beginner",
-        "student_name": "Reyaansh Pilani",
-        "new/existing": "New",
-        "enrolment_date": "24-Jun-2026",
-        "course_fee": "24000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Python Programming - Intermediate",
-        "student_name": "Kabir Chugh Asrani",
-        "new/existing": "New",
-        "enrolment_date": "04-Jun-2026",
-        "course_fee": "30000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Visual Programming",
-        "student_name": "ARMAAN THAKER",
-        "new/existing": "New",
-        "enrolment_date": "11-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Visual Programming",
-        "student_name": "Avyana Damani",
-        "new/existing": "New",
-        "enrolment_date": "22-May-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Visual Programming",
-        "student_name": "Viraansh Chavva",
-        "new/existing": "New",
-        "enrolment_date": "20-Jun-2026",
-        "course_fee": "15000"
-    },
-    {
-        "course_category": "Programming",
-        "course_name": "Web Development",
-        "student_name": "Pranav Pandya",
-        "new/existing": "Existing",
-        "enrolment_date": "06-May-2026",
-        "course_fee": "30000"
+        "course_fee": "360"
     },
     {
         "course_category": "International",
@@ -3718,5 +2798,1021 @@
         "new/existing": "New",
         "enrolment_date": "27-May-2026",
         "course_fee": "1800"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Aariket Bharech",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Ansh Patel",
+        "new/existing": "New",
+        "enrolment_date": "24-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Arun Trivedi",
+        "new/existing": "New",
+        "enrolment_date": "17-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Arya Sabnis",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Dev Dwarkadas",
+        "new/existing": "Existing",
+        "enrolment_date": "16-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Dev Karan Singh",
+        "new/existing": "New",
+        "enrolment_date": "30-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Devansh Jaju",
+        "new/existing": "Existing",
+        "enrolment_date": "12-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Krishiv Desai",
+        "new/existing": "Existing",
+        "enrolment_date": "22-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "MISHKA MEHTA",
+        "new/existing": "New",
+        "enrolment_date": "27-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Pranava Randeria",
+        "new/existing": "Existing",
+        "enrolment_date": "28-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Raghav Tulsyan",
+        "new/existing": "New",
+        "enrolment_date": "07-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Reyansh Chandra",
+        "new/existing": "Existing",
+        "enrolment_date": "31-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Sanjay K Singh",
+        "new/existing": "New",
+        "enrolment_date": "30-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Vardaan Gupta",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Vihaan Varma",
+        "new/existing": "Existing",
+        "enrolment_date": "04-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "AI  - Data Science",
+        "student_name": "Mihir Garg",
+        "new/existing": "Existing",
+        "enrolment_date": "15-Jun-2026",
+        "course_fee": "30000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Arin Mathew",
+        "new/existing": "New",
+        "enrolment_date": "24-Apr-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Mihika Daga",
+        "new/existing": "Existing",
+        "enrolment_date": "18-Jun-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Tvissha Pilani",
+        "new/existing": "New",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Anant Upadhya",
+        "new/existing": "Existing",
+        "enrolment_date": "01-Jul-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Coding Junior",
+        "student_name": "Anika Dharia",
+        "new/existing": "New",
+        "enrolment_date": "09-Apr-2026",
+        "course_fee": "12000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Amaira Nawany",
+        "new/existing": "New",
+        "enrolment_date": "03-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Ananta Bajaj",
+        "new/existing": "Existing",
+        "enrolment_date": "15-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Aria Podar",
+        "new/existing": "New",
+        "enrolment_date": "15-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Arnav Gupta",
+        "new/existing": "New",
+        "enrolment_date": "20-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Ayaan  Merchant",
+        "new/existing": "Existing",
+        "enrolment_date": "11-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Hridhaan Sundesha",
+        "new/existing": "New",
+        "enrolment_date": "17-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Jahan Sukhia",
+        "new/existing": "New",
+        "enrolment_date": "08-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Keyaan Shah",
+        "new/existing": "New",
+        "enrolment_date": "06-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Mahika Ghai",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Neil Rana",
+        "new/existing": "Existing",
+        "enrolment_date": "03-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Nyra Chakka",
+        "new/existing": "Existing",
+        "enrolment_date": "07-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Samar Kumar",
+        "new/existing": "New",
+        "enrolment_date": "14-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Veer Mahajan",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Abram Vardhan",
+        "new/existing": "Existing",
+        "enrolment_date": "22-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Shivansh Rai",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Samara Lawande",
+        "new/existing": "New",
+        "enrolment_date": "30-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Advait Adukia",
+        "new/existing": "New",
+        "enrolment_date": "29-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Arav Goyal",
+        "new/existing": "Existing",
+        "enrolment_date": "15-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Arjun Mehra",
+        "new/existing": "New",
+        "enrolment_date": "18-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Aryan Swaminathan",
+        "new/existing": "New",
+        "enrolment_date": "16-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Avyay Pant",
+        "new/existing": "New",
+        "enrolment_date": "13-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Eeshaan Aggarwal",
+        "new/existing": "New",
+        "enrolment_date": "17-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Eissa Shaikh",
+        "new/existing": "New",
+        "enrolment_date": "26-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Jaksh Aggarwal",
+        "new/existing": "New",
+        "enrolment_date": "19-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Jianna Vasa",
+        "new/existing": "New",
+        "enrolment_date": "11-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Kabir Kumar",
+        "new/existing": "New",
+        "enrolment_date": "10-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Kiah Sharma",
+        "new/existing": "New",
+        "enrolment_date": "19-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Praneet Modi",
+        "new/existing": "New",
+        "enrolment_date": "20-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Prithvi Ajith Menon",
+        "new/existing": "New",
+        "enrolment_date": "03-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Reyaan Dhulla",
+        "new/existing": "New",
+        "enrolment_date": "20-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Ryan Gandhi",
+        "new/existing": "New",
+        "enrolment_date": "20-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Samaira Bhansali",
+        "new/existing": "New",
+        "enrolment_date": "01-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Shaurya Goel",
+        "new/existing": "New",
+        "enrolment_date": "18-Apr-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Shivansh Vora",
+        "new/existing": "New",
+        "enrolment_date": "06-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Vivaan Gupta",
+        "new/existing": "New",
+        "enrolment_date": "30-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior",
+        "student_name": "Tavish Mundra",
+        "new/existing": "New",
+        "enrolment_date": "25-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior - AI Extension",
+        "student_name": "Ayaan Sunny Shah",
+        "new/existing": "Existing",
+        "enrolment_date": "29-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Junior - AI Extension",
+        "student_name": "Amay Bhatter",
+        "new/existing": "Existing",
+        "enrolment_date": "26-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Aariket Bharech",
+        "new/existing": "New",
+        "enrolment_date": "09-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Aatman Surve",
+        "new/existing": "New",
+        "enrolment_date": "07-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Agniv Roy",
+        "new/existing": "New",
+        "enrolment_date": "18-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Arhaan Sethi",
+        "new/existing": "New",
+        "enrolment_date": "03-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Arjun Anand",
+        "new/existing": "New",
+        "enrolment_date": "20-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Kian Dinavahi",
+        "new/existing": "New",
+        "enrolment_date": "02-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Neel Soman",
+        "new/existing": "New",
+        "enrolment_date": "23-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Reyansh Chandra",
+        "new/existing": "New",
+        "enrolment_date": "24-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Shaurya Goel",
+        "new/existing": "Existing",
+        "enrolment_date": "09-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Shivaditya Murarka",
+        "new/existing": "New",
+        "enrolment_date": "01-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Veer Mehta",
+        "new/existing": "Existing",
+        "enrolment_date": "18-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Vidit Shukla",
+        "new/existing": "Existing",
+        "enrolment_date": "07-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Yuvraj Saraogi",
+        "new/existing": "Existing",
+        "enrolment_date": "26-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Internet of Things Advanced",
+        "student_name": "Piyansh Kaarthik",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Aarav Pandya",
+        "new/existing": "New",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Anoushka Kumar",
+        "new/existing": "New",
+        "enrolment_date": "07-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Dhrish Parikh",
+        "new/existing": "New",
+        "enrolment_date": "06-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "HUSAYN MERCHANT",
+        "new/existing": "Existing",
+        "enrolment_date": "21-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Sarthak Sekhsaria",
+        "new/existing": "Existing",
+        "enrolment_date": "04-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Vanshika Lamba",
+        "new/existing": "Existing",
+        "enrolment_date": "15-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Vivaan Maheshwari",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Vivaan Puranik",
+        "new/existing": "New",
+        "enrolment_date": "13-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Java Programming Course",
+        "student_name": "Palaksi Agrawal",
+        "new/existing": "Existing",
+        "enrolment_date": "24-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Advance",
+        "student_name": "Anay Bhandari",
+        "new/existing": "Existing",
+        "enrolment_date": "11-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Advance",
+        "student_name": "Arham Kothari",
+        "new/existing": "New",
+        "enrolment_date": "05-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Advance",
+        "student_name": "Rudraang Goenka",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Advance",
+        "student_name": "Yash Bhatia",
+        "new/existing": "New",
+        "enrolment_date": "01-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Beginner",
+        "student_name": "Yuvaan Parekh",
+        "new/existing": "New",
+        "enrolment_date": "10-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Aarav Shah",
+        "new/existing": "New",
+        "enrolment_date": "10-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Aman Goenka",
+        "new/existing": "New",
+        "enrolment_date": "12-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Arhaan Grover",
+        "new/existing": "New",
+        "enrolment_date": "09-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Dev Vaghani",
+        "new/existing": "New",
+        "enrolment_date": "25-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Mirka Bhartia",
+        "new/existing": "New",
+        "enrolment_date": "19-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Neil Sancheti",
+        "new/existing": "New",
+        "enrolment_date": "06-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Nivaan Tanna",
+        "new/existing": "New",
+        "enrolment_date": "19-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Riaan Banerjee",
+        "new/existing": "New",
+        "enrolment_date": "26-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Riddhiman Maheshwari",
+        "new/existing": "New",
+        "enrolment_date": "18-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Rishi Deshmukh",
+        "new/existing": "Existing",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Riyan Mangal",
+        "new/existing": "New",
+        "enrolment_date": "02-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Rudra Goel",
+        "new/existing": "Existing",
+        "enrolment_date": "01-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Swara Vijay",
+        "new/existing": "New",
+        "enrolment_date": "28-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Anay Lohia",
+        "new/existing": "New",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Aahana Dani",
+        "new/existing": "New",
+        "enrolment_date": "27-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Nevaan Kohli",
+        "new/existing": "New",
+        "enrolment_date": "25-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "veer kacker",
+        "new/existing": "New",
+        "enrolment_date": "29-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Partth Arora",
+        "new/existing": "New",
+        "enrolment_date": "01-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Agastya Marfatia",
+        "new/existing": "Existing",
+        "enrolment_date": "06-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Anay Gautam",
+        "new/existing": "New",
+        "enrolment_date": "19-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Avantika Goenka",
+        "new/existing": "New",
+        "enrolment_date": "12-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Ayaan Gupta",
+        "new/existing": "Existing",
+        "enrolment_date": "15-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Dia Raghavan",
+        "new/existing": "Existing",
+        "enrolment_date": "29-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "KAVISH MAHESHWARI",
+        "new/existing": "Existing",
+        "enrolment_date": "21-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Nihira Marathe",
+        "new/existing": "Existing",
+        "enrolment_date": "09-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Om Chaitanya Vadkhalkar",
+        "new/existing": "New",
+        "enrolment_date": "04-May-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Preksh Doshi",
+        "new/existing": "New",
+        "enrolment_date": "09-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Raghavi Baheti",
+        "new/existing": "New",
+        "enrolment_date": "14-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "SAANVI MAHESHWARI",
+        "new/existing": "Existing",
+        "enrolment_date": "21-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Yash Chhaparia",
+        "new/existing": "New",
+        "enrolment_date": "14-Apr-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "AVYAHN DALMIA",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Aryan Nahar",
+        "new/existing": "New",
+        "enrolment_date": "26-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Samaya Mubayi Bery",
+        "new/existing": "New",
+        "enrolment_date": "26-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Aditya Khandge",
+        "new/existing": "New",
+        "enrolment_date": "25-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Reyaansh Pilani",
+        "new/existing": "New",
+        "enrolment_date": "24-Jun-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Intermediate",
+        "student_name": "Kabir Chugh Asrani",
+        "new/existing": "New",
+        "enrolment_date": "04-Jun-2026",
+        "course_fee": "30000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Visual Programming",
+        "student_name": "ARMAAN THAKER",
+        "new/existing": "New",
+        "enrolment_date": "11-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Visual Programming",
+        "student_name": "Avyana Damani",
+        "new/existing": "New",
+        "enrolment_date": "22-May-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Visual Programming",
+        "student_name": "Viraansh Chavva",
+        "new/existing": "New",
+        "enrolment_date": "20-Jun-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Web Development",
+        "student_name": "Pranav Pandya",
+        "new/existing": "Existing",
+        "enrolment_date": "06-May-2026",
+        "course_fee": "30000"
     }
 ]
