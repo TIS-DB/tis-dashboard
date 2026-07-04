@@ -31,12 +31,12 @@
         "kpi_name": "Session Start Adherence",
         "metric": "Sessions started on time / Total sessions",
         "target": ">95%",
-        "time_period_analysed": "20th to 26th Jun",
-        "kpi_value": "0.951",
+        "time_period_analysed": "27th Jun to 3rd Jul",
+        "kpi_value": "0.937",
         "ni_kpi": "",
         "foundation_kpi": "",
-        "bandra_kpi": "0.976",
-        "dadar_kpi": "0.937"
+        "bandra_kpi": "0.963",
+        "dadar_kpi": "0.919"
     },
     {
         "1": "5",
@@ -44,12 +44,12 @@
         "kpi_name": "Mentor Continuity Rate",
         "metric": "Sessions by primary mentor / Total sessions",
         "target": ">90%",
-        "time_period_analysed": "20th to 26th Jun",
-        "kpi_value": "0.704",
-        "ni_kpi": "",
-        "foundation_kpi": "",
-        "bandra_kpi": "0.704",
-        "dadar_kpi": "0.703"
+        "time_period_analysed": "27th Jun to 3rd Jul",
+        "kpi_value": "0.711",
+        "ni_kpi": "0.519",
+        "foundation_kpi": "0.774",
+        "bandra_kpi": "0.712",
+        "dadar_kpi": "0.711"
     },
     {
         "1": "6",
@@ -70,12 +70,12 @@
         "kpi_name": "Query Response TAT",
         "metric": "Avg. response time to parent/student query",
         "target": "≤24 hrs",
-        "time_period_analysed": "20th to 26th Jun",
-        "kpi_value": "6.183333333333334",
+        "time_period_analysed": "27th Jun to 3rd Jul",
+        "kpi_value": "4.816666666666666",
         "ni_kpi": "",
         "foundation_kpi": "",
-        "bandra_kpi": "5.9",
-        "dadar_kpi": "6.466666666666667"
+        "bandra_kpi": "4.366666666666666",
+        "dadar_kpi": "6.05"
     },
     {
         "1": "8",
@@ -96,7 +96,7 @@
         "kpi_name": "Certificate TAT",
         "metric": "Certificates shared within 7 days / Completed students",
         "target": ">95%",
-        "time_period_analysed": "13th to 19th Jun",
+        "time_period_analysed": "20th to 26th Jun",
         "kpi_value": "1.0",
         "ni_kpi": "",
         "foundation_kpi": "",
