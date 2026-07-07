@@ -1,5 +1,325 @@
 [
     {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Aryajay Dhadha",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Aryaman Rai",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Attharva Jani",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Christina Nagpal",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Daniela Nagpal",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Devarsh Trimukhe",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Fiona Kotak",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Jeev Puri",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Jianni Shah",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Krishang Malvadkar",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Mokshaj Tilwani",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Reyaansh Ruia",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Saanvi Malvadkar",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Samar Bisani",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Skie John",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Ishaan Chowdhury",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Manvir Bhatia",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Miraaya Davda",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Saanvie Pant",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Sayyam Shah",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Viraat Hingu",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Aditi Samant",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Arhaan Patwari",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Aria Nahar",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Ariana Aggarwal",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Avantika Prasad",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Ivaan Shah",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Mudita Kapoor",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Mysha Shah",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Neehara Chatterjee",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Nitara Kedia",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Shivaansh Jatia",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Shivansh Gupta",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Sia Goradia",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Siya Jain",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Ved Somaiya",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Zayn Kazi",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Electronics Senior - Arduino",
+        "student_name": "Aimee Mohan",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Meet Doshi",
+        "new/existing": "New",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Vir Dalmeida",
+        "new/existing": "Existing",
+        "enrolment_date": "06-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
         "course_category": "TIS Foundation",
         "course_name": "Artificial Intelligence: Concepts to Applications",
         "student_name": "Shreyan Limaye",
@@ -306,7 +626,7 @@
     {
         "course_category": "TIS Nurturing Innovators",
         "course_name": "NI Advanced 30 Hours",
-        "student_name": "Jiya Jatin Doshi Doshi",
+        "student_name": "Jiya Jatin Doshi",
         "new/existing": "Existing",
         "enrolment_date": "30-Jun-2026",
         "course_fee": "90000"
