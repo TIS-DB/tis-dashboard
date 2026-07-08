@@ -1,5 +1,53 @@
 [
     {
+        "course_category": "TIS Compete",
+        "course_name": "FTC (Exclusive of Skill Building)",
+        "student_name": "Sohum Arora",
+        "new/existing": "Existing",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 50 Hours",
+        "student_name": "Varna Rajesh kannan",
+        "new/existing": "New",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "150000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Aarushi Shah",
+        "new/existing": "Existing",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "KAVIR CHOWDHARY",
+        "new/existing": "New",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Rajveer Chawla",
+        "new/existing": "New",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Visual Programming",
+        "student_name": "Saisha Singh",
+        "new/existing": "New",
+        "enrolment_date": "07-Jul-2026",
+        "course_fee": "15000"
+    },
+    {
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Aryajay Dhadha",
