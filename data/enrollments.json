@@ -1,5 +1,133 @@
 [
     {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Shriya Garg",
+        "new/existing": "New",
+        "enrolment_date": "11-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Shaunak Jose",
+        "new/existing": "New",
+        "enrolment_date": "11-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Mivaan Poojara",
+        "new/existing": "New",
+        "enrolment_date": "11-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Anirvinn Sharma",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Fioni Kotak",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "student_name": "Karan Madnani",
+        "new/existing": "New",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "18000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Aryaveer Karre",
+        "new/existing": "New",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Zian Shah",
+        "new/existing": "New",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "16000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "First Tech Challenge - 2026 (Inclusive of Skill Building)",
+        "student_name": "Kavish Maheshwari",
+        "new/existing": "New",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "150000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Falak Jain",
+        "new/existing": "New",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Dev Dwarkadas",
+        "new/existing": "Existing",
+        "enrolment_date": "10-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Anay Dhawan",
+        "new/existing": "New",
+        "enrolment_date": "09-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Dhruvdutt Sharma",
+        "new/existing": "New",
+        "enrolment_date": "09-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "First Tech Challenge - 2026 (Inclusive of Skill Building)",
+        "student_name": "Krishiv Sureka",
+        "new/existing": "New",
+        "enrolment_date": "08-Jul-2026",
+        "course_fee": "150000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "VEX V5 RC",
+        "student_name": "Dev Dwarkadas",
+        "new/existing": "Existing",
+        "enrolment_date": "08-Jul-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Akshara Vivek",
+        "new/existing": "New",
+        "enrolment_date": "08-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
         "course_category": "TIS Compete",
         "course_name": "FTC (Exclusive of Skill Building)",
         "student_name": "Sohum Arora",
@@ -3408,6 +3536,14 @@
         "course_fee": "120000"
     },
     {
+        "course_category": "International",
+        "course_name": "3D CAD INT",
+        "student_name": "TEST USD",
+        "new/existing": "Existing",
+        "enrolment_date": "20-May-2026",
+        "course_fee": "360"
+    },
+    {
         "course_category": "TIS Foundation",
         "course_name": "Electronics Senior - Arduino",
         "student_name": "Arjun Anand",
@@ -3515,7 +3651,7 @@
         "course_category": "TIS Foundation",
         "course_name": "Python Programming - Beginner",
         "student_name": "Ayaan Gupta",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "15-May-2026",
         "course_fee": "24000"
     },

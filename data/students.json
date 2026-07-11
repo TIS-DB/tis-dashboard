@@ -1,5 +1,309 @@
 [
     {
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "course_category": "Hackathon",
+        "student_name": "Shriya Garg",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "11-Jul-2026",
+        "course_duration_hours": "20",
+        "course_fee": "424",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "20.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "8307605841",
+        "school": "Hiranandani Foundation School- Mumbai",
+        "date": "11-Jul-2026"
+    },
+    {
+        "course_name": "3D CAD",
+        "course_category": "3D Designing",
+        "student_name": "Shaunak Jose",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "11-Jul-2026",
+        "course_duration_hours": "24",
+        "course_fee": "24000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "24.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9873210363",
+        "school": "Oberoi International School-Goregaon East",
+        "date": "11-Jul-2026"
+    },
+    {
+        "course_name": "Mechatronics Intermediate",
+        "course_category": "Robotics",
+        "student_name": "Mivaan Poojara",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "11-Jul-2026",
+        "course_duration_hours": "24",
+        "course_fee": "24000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "24.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9561444761",
+        "school": "Oberoi International School-Goregaon East",
+        "date": "11-Jul-2026"
+    },
+    {
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "course_category": "TIS Schools",
+        "student_name": "Anirvinn Sharma",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "30",
+        "course_fee": "17000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "30.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9888898888",
+        "school": "Bombay Scottish School-Mahim",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "course_category": "TIS Schools",
+        "student_name": "Fioni Kotak",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "30",
+        "course_fee": "17000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "30.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9998887772",
+        "school": "Cathedral and John Connon School- Fort",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
+        "course_category": "TIS Schools",
+        "student_name": "Karan Madnani",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "30",
+        "course_fee": "18000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "30.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "8889997775",
+        "school": "Cathedral and John Connon School- Fort",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "course_category": "TIS Schools",
+        "student_name": "Aryaveer Karre",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "30",
+        "course_fee": "16000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "30.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9998887776",
+        "school": "Cathedral and John Connon School- Fort",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "course_category": "TIS Schools",
+        "student_name": "Zian Shah",
+        "enrolment_center": "School Premises",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "30",
+        "course_fee": "16000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "30.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9998887776",
+        "school": "Cathedral and John Connon School- Fort",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "First Tech Challenge - 2026 (Inclusive of Skill Building)",
+        "course_category": "TIS Compete",
+        "student_name": "Kavish Maheshwari",
+        "enrolment_center": "Mumbai Dadar",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "100",
+        "course_fee": "150000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "100.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9702888816",
+        "school": "Aditya Birla World Academy-Tardeo",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "NI Advanced 40 Hours",
+        "course_category": "TIS Nurturing Innovators",
+        "student_name": "Falak Jain",
+        "enrolment_center": "Mumbai Dadar",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "40",
+        "course_fee": "120000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "40.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "7400141028",
+        "school": "Aditya Birla World Academy-Tardeo",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Python Programming - Beginner",
+        "course_category": "Programming",
+        "student_name": "Dev Dwarkadas",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "10-Jul-2026",
+        "course_duration_hours": "24",
+        "course_fee": "24000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "24.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9833768471",
+        "school": "Bombay International School-Churchgate",
+        "date": "10-Jul-2026"
+    },
+    {
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "course_category": "Hackathon",
+        "student_name": "Anay Dhawan",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "09-Jul-2026",
+        "course_duration_hours": "20",
+        "course_fee": "424",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "20.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9326503299",
+        "school": "NES International School Mumbai-Mulund West",
+        "date": "09-Jul-2026"
+    },
+    {
+        "course_name": "Mechatronics Intermediate",
+        "course_category": "Robotics",
+        "student_name": "Dhruvdutt Sharma",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "09-Jul-2026",
+        "course_duration_hours": "24",
+        "course_fee": "24000",
+        "attendance_scheduled_hours": "24.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "24.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "Anthony Dsouza (12)",
+        "mentor_split": "Anthony Dsouza (12)",
+        "financial_year": "FY27",
+        "contact_number": "9167285447",
+        "school": "Jankidevi Public School-Andheri West",
+        "date": "09-Jul-2026"
+    },
+    {
+        "course_name": "First Tech Challenge - 2026 (Inclusive of Skill Building)",
+        "course_category": "TIS Compete",
+        "student_name": "Krishiv Sureka",
+        "enrolment_center": "Mumbai Dadar",
+        "enrolled_date": "08-Jul-2026",
+        "course_duration_hours": "100",
+        "course_fee": "150000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "100.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9987705797",
+        "school": "Aditya Birla World Academy-Tardeo",
+        "date": "08-Jul-2026"
+    },
+    {
+        "course_name": "VEX V5 RC",
+        "course_category": "TIS Compete",
+        "student_name": "Dev Dwarkadas",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "08-Jul-2026",
+        "course_duration_hours": "80",
+        "course_fee": "135000",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "80.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9833768471",
+        "school": "Bombay International School-Churchgate",
+        "date": "08-Jul-2026"
+    },
+    {
+        "course_name": "3D CAD",
+        "course_category": "3D Designing",
+        "student_name": "Akshara Vivek",
+        "enrolment_center": "Mumbai Dadar",
+        "enrolled_date": "08-Jul-2026",
+        "course_duration_hours": "24",
+        "course_fee": "24000",
+        "attendance_scheduled_hours": "7.5",
+        "attendance_completed_hours": "3.0",
+        "attendance_pending_hours": "21.0",
+        "completion_percentage": "12.5",
+        "primary_mentor_display": "Rui Jadhav (5)",
+        "mentor_split": "Rui Jadhav (5)",
+        "financial_year": "FY27",
+        "contact_number": "9769321162",
+        "school": "Divine Child Senior Secondary School (Cbse)-ANDHERI (EAST)-MUMBAI",
+        "date": "08-Jul-2026"
+    },
+    {
         "course_name": "FTC (Exclusive of Skill Building)",
         "course_category": "TIS Compete",
         "student_name": "Sohum Arora",
@@ -34,7 +338,7 @@
         "mentor_split": "Karan Jain (6)",
         "financial_year": "FY27",
         "contact_number": "97466249135",
-        "school": "Not Assigned",
+        "school": "Doha College",
         "date": "07-Jul-2026"
     },
     {
@@ -64,12 +368,12 @@
         "enrolled_date": "07-Jul-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "0.0",
+        "attendance_scheduled_hours": "20.0",
         "attendance_completed_hours": "0.0",
         "attendance_pending_hours": "24.0",
         "completion_percentage": "0.0",
-        "primary_mentor_display": "",
-        "mentor_split": "",
+        "primary_mentor_display": "Yash Prajapati (10)",
+        "mentor_split": "Yash Prajapati (10)",
         "financial_year": "FY27",
         "contact_number": "9372231385",
         "school": "The British School - New Delhi",
@@ -83,12 +387,12 @@
         "enrolled_date": "07-Jul-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "0.0",
+        "attendance_scheduled_hours": "15.0",
         "attendance_completed_hours": "0.0",
         "attendance_pending_hours": "15.0",
         "completion_percentage": "0.0",
-        "primary_mentor_display": "",
-        "mentor_split": "",
+        "primary_mentor_display": "Shivam Rane (10)",
+        "mentor_split": "Shivam Rane (10)",
         "financial_year": "FY27",
         "contact_number": "9820086987",
         "school": "The Hyderabad Public School",
@@ -103,9 +407,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "15.0",
-        "attendance_completed_hours": "0.0",
-        "attendance_pending_hours": "15.0",
-        "completion_percentage": "0.0",
+        "attendance_completed_hours": "1.5",
+        "attendance_pending_hours": "13.5",
+        "completion_percentage": "10.0",
         "primary_mentor_display": "Vaishnavi Bodke (10)",
         "mentor_split": "Vaishnavi Bodke (10)",
         "financial_year": "FY27",
@@ -824,12 +1128,12 @@
         "enrolled_date": "06-Jul-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "15.5",
-        "attendance_completed_hours": "4.0",
-        "attendance_pending_hours": "20.0",
-        "completion_percentage": "16.67",
-        "primary_mentor_display": "Aniket Karkala (8)",
-        "mentor_split": "Aniket Karkala (8)",
+        "attendance_scheduled_hours": "15.0",
+        "attendance_completed_hours": "7.0",
+        "attendance_pending_hours": "17.0",
+        "completion_percentage": "29.17",
+        "primary_mentor_display": "Aniket Karkala (7)",
+        "mentor_split": "Aniket Karkala (7)",
         "financial_year": "FY27",
         "contact_number": "9930744569",
         "school": "Bombay International School",
@@ -863,9 +1167,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "0.0",
-        "attendance_pending_hours": "24.0",
-        "completion_percentage": "0.0",
+        "attendance_completed_hours": "2.0",
+        "attendance_pending_hours": "22.0",
+        "completion_percentage": "8.33",
         "primary_mentor_display": "Vedant Patel (12)",
         "mentor_split": "Vedant Patel (12)",
         "financial_year": "FY27",
@@ -882,9 +1186,9 @@
         "course_duration_hours": "60",
         "course_fee": "75000",
         "attendance_scheduled_hours": "65.0",
-        "attendance_completed_hours": "12.5",
-        "attendance_pending_hours": "47.5",
-        "completion_percentage": "20.83",
+        "attendance_completed_hours": "14.0",
+        "attendance_pending_hours": "46.0",
+        "completion_percentage": "23.33",
         "primary_mentor_display": "Om Kulkarni (38)",
         "mentor_split": "Om Kulkarni (38)",
         "financial_year": "FY27",
@@ -946,7 +1250,7 @@
         "mentor_split": "Yash Prajapati (16)",
         "financial_year": "FY27",
         "contact_number": "9677756209",
-        "school": "Not Assigned",
+        "school": "The International School Bangalore",
         "date": "04-Jul-2026"
     },
     {
@@ -977,9 +1281,9 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "25.5",
-        "attendance_completed_hours": "9.5",
-        "attendance_pending_hours": "30.5",
-        "completion_percentage": "23.75",
+        "attendance_completed_hours": "11.5",
+        "attendance_pending_hours": "28.5",
+        "completion_percentage": "28.75",
         "primary_mentor_display": "Aniket Karkala (7)",
         "mentor_split": "Aniket Karkala (7) / Ankit Chheda (1)",
         "financial_year": "FY27",
@@ -1041,7 +1345,7 @@
         "mentor_split": "Akshat Shah (16)",
         "financial_year": "FY27",
         "contact_number": "8657286296",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "03-Jul-2026"
     },
     {
@@ -1470,12 +1774,12 @@
         "enrolled_date": "01-Jul-2026",
         "course_duration_hours": "60",
         "course_fee": "75000",
-        "attendance_scheduled_hours": "27.0",
+        "attendance_scheduled_hours": "29.5",
         "attendance_completed_hours": "6.0",
         "attendance_pending_hours": "54.0",
         "completion_percentage": "10.0",
-        "primary_mentor_display": "Janhavi Karandi (14)",
-        "mentor_split": "Janhavi Karandi (14)",
+        "primary_mentor_display": "Janhavi Karandi (16)",
+        "mentor_split": "Janhavi Karandi (16)",
         "financial_year": "FY27",
         "contact_number": "9930047710",
         "school": "ASCEND International School",
@@ -1490,9 +1794,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "4.0",
-        "attendance_pending_hours": "20.0",
-        "completion_percentage": "16.67",
+        "attendance_completed_hours": "8.0",
+        "attendance_pending_hours": "16.0",
+        "completion_percentage": "33.33",
         "primary_mentor_display": "Vedant Patel (12)",
         "mentor_split": "Vedant Patel (12)",
         "financial_year": "FY27",
@@ -1516,7 +1820,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8828431421",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "30-Jun-2026"
     },
     {
@@ -1642,9 +1946,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "13.5",
-        "attendance_completed_hours": "1.5",
-        "attendance_pending_hours": "13.5",
-        "completion_percentage": "10.0",
+        "attendance_completed_hours": "3.0",
+        "attendance_pending_hours": "12.0",
+        "completion_percentage": "20.0",
         "primary_mentor_display": "Vedant Patel (9)",
         "mentor_split": "Vedant Patel (9)",
         "financial_year": "FY27",
@@ -1687,7 +1991,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8153036306",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "29-Jun-2026"
     },
     {
@@ -1706,7 +2010,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9054137445",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "29-Jun-2026"
     },
     {
@@ -1782,7 +2086,7 @@
         "mentor_split": "Jaykumar Patel (1)",
         "financial_year": "FY27",
         "contact_number": "6309349458",
-        "school": "Not Assigned",
+        "school": "Oakridge International School",
         "date": "29-Jun-2026"
     },
     {
@@ -1801,7 +2105,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9137414437",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "28-Jun-2026"
     },
     {
@@ -1927,9 +2231,9 @@
         "course_duration_hours": "20",
         "course_fee": "60000",
         "attendance_scheduled_hours": "2.0",
-        "attendance_completed_hours": "0.5",
-        "attendance_pending_hours": "19.5",
-        "completion_percentage": "2.5",
+        "attendance_completed_hours": "2.0",
+        "attendance_pending_hours": "18.0",
+        "completion_percentage": "10.0",
         "primary_mentor_display": "Ankit Chheda (2)",
         "mentor_split": "Ankit Chheda (2) / Aniket Karkala (1)",
         "financial_year": "FY27",
@@ -1991,7 +2295,7 @@
         "mentor_split": "Ankit Chheda (2)",
         "financial_year": "FY27",
         "contact_number": "9909042917",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "26-Jun-2026"
     },
     {
@@ -2010,7 +2314,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9130011110",
-        "school": "Not Assigned",
+        "school": "The Bishop's School Camp-Pune",
         "date": "26-Jun-2026"
     },
     {
@@ -2021,12 +2325,12 @@
         "enrolled_date": "26-Jun-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "22.5",
-        "attendance_completed_hours": "4.5",
-        "attendance_pending_hours": "19.5",
-        "completion_percentage": "18.75",
-        "primary_mentor_display": "Ayushi lowanshi (15)",
-        "mentor_split": "Ayushi lowanshi (15)",
+        "attendance_scheduled_hours": "24.0",
+        "attendance_completed_hours": "6.0",
+        "attendance_pending_hours": "18.0",
+        "completion_percentage": "25.0",
+        "primary_mentor_display": "Ayushi lowanshi (16)",
+        "mentor_split": "Ayushi lowanshi (16)",
         "financial_year": "FY27",
         "contact_number": "7303605544",
         "school": "The Shri Ram School-Moulsari",
@@ -2192,15 +2496,15 @@
         "enrolled_date": "25-Jun-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "16.5",
-        "attendance_completed_hours": "5.5",
-        "attendance_pending_hours": "34.5",
-        "completion_percentage": "13.75",
-        "primary_mentor_display": "Janhavi Karandi (10)",
-        "mentor_split": "Janhavi Karandi (10) / Jaykumar Patel (1)",
+        "attendance_scheduled_hours": "16.0",
+        "attendance_completed_hours": "7.0",
+        "attendance_pending_hours": "33.0",
+        "completion_percentage": "17.5",
+        "primary_mentor_display": "Janhavi Karandi (9)",
+        "mentor_split": "Janhavi Karandi (9) / Jaykumar Patel (1)",
         "financial_year": "FY27",
         "contact_number": "6593971303",
-        "school": "Not Assigned",
+        "school": "DBRA CM SHRI SECTOR 10- NARELA",
         "date": "25-Jun-2026"
     },
     {
@@ -2231,9 +2535,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "0.0",
-        "attendance_pending_hours": "24.0",
-        "completion_percentage": "0.0",
+        "attendance_completed_hours": "6.0",
+        "attendance_pending_hours": "18.0",
+        "completion_percentage": "25.0",
         "primary_mentor_display": "Vaishnavi Bodke (12)",
         "mentor_split": "Vaishnavi Bodke (12)",
         "financial_year": "FY27",
@@ -2269,9 +2573,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "22.0",
-        "attendance_completed_hours": "8.0",
-        "attendance_pending_hours": "16.0",
-        "completion_percentage": "33.33",
+        "attendance_completed_hours": "10.0",
+        "attendance_pending_hours": "14.0",
+        "completion_percentage": "41.67",
         "primary_mentor_display": "Rui Jadhav (11)",
         "mentor_split": "Rui Jadhav (11)",
         "financial_year": "FY27",
@@ -2295,7 +2599,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9372426712",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "24-Jun-2026"
     },
     {
@@ -2314,7 +2618,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7977787267",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "24-Jun-2026"
     },
     {
@@ -2364,9 +2668,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "0.0",
-        "attendance_pending_hours": "24.0",
-        "completion_percentage": "0.0",
+        "attendance_completed_hours": "4.0",
+        "attendance_pending_hours": "20.0",
+        "completion_percentage": "16.67",
         "primary_mentor_display": "saiyad husain (17)",
         "mentor_split": "saiyad husain (17)",
         "financial_year": "FY27",
@@ -2382,12 +2686,12 @@
         "enrolled_date": "24-Jun-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "10.5",
-        "attendance_completed_hours": "6.0",
-        "attendance_pending_hours": "18.0",
-        "completion_percentage": "25.0",
-        "primary_mentor_display": "Janhavi Karandi (6)",
-        "mentor_split": "Janhavi Karandi (6) / Om Kulkarni (1)",
+        "attendance_scheduled_hours": "9.0",
+        "attendance_completed_hours": "7.5",
+        "attendance_pending_hours": "16.5",
+        "completion_percentage": "31.25",
+        "primary_mentor_display": "Janhavi Karandi (5)",
+        "mentor_split": "Janhavi Karandi (5) / Om Kulkarni (1)",
         "financial_year": "FY27",
         "contact_number": "8779357943",
         "school": "Aditya Birla World Academy",
@@ -2409,7 +2713,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8104403723",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2428,7 +2732,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9004029149",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2447,7 +2751,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7738313241",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2485,7 +2789,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7021072583",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2504,7 +2808,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8779950390",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2523,7 +2827,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9893549790",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2542,7 +2846,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8104994351",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2580,7 +2884,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8689951817",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2599,7 +2903,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9136383879",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "23-Jun-2026"
     },
     {
@@ -2618,7 +2922,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "6361960848",
-        "school": "Not Assigned",
+        "school": "Greenwood High International School Bangalore",
         "date": "23-Jun-2026"
     },
     {
@@ -2648,12 +2952,12 @@
         "enrolled_date": "23-Jun-2026",
         "course_duration_hours": "60",
         "course_fee": "75000",
-        "attendance_scheduled_hours": "9.0",
+        "attendance_scheduled_hours": "10.5",
         "attendance_completed_hours": "1.5",
         "attendance_pending_hours": "58.5",
         "completion_percentage": "2.5",
         "primary_mentor_display": "Jaykumar Patel (4)",
-        "mentor_split": "Jaykumar Patel (4) / Karan Jain (1)",
+        "mentor_split": "Jaykumar Patel (4) / Janhavi Karandi (1) / Karan Jain (1)",
         "financial_year": "FY27",
         "contact_number": "9820816057",
         "school": "Aditya Birla World Academy",
@@ -2782,9 +3086,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "22.5",
-        "attendance_completed_hours": "9.0",
-        "attendance_pending_hours": "15.0",
-        "completion_percentage": "37.5",
+        "attendance_completed_hours": "12.0",
+        "attendance_pending_hours": "12.0",
+        "completion_percentage": "50.0",
         "primary_mentor_display": "Ayush Dwivedy (15)",
         "mentor_split": "Ayush Dwivedy (15)",
         "financial_year": "FY27",
@@ -2808,7 +3112,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9699991310",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2827,7 +3131,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7021714089",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2846,7 +3150,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8355998606",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2865,7 +3169,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9321232667",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2884,7 +3188,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9220384051",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2903,7 +3207,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9167165599",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2922,7 +3226,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9768999995",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2941,7 +3245,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9029177755",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2960,7 +3264,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8102500773",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2979,7 +3283,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9320375160",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -2998,7 +3302,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8369801415",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -3017,7 +3321,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9619156749",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -3055,7 +3359,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8733906418",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Jun-2026"
     },
     {
@@ -3123,7 +3427,7 @@
         "enrolled_date": "22-Jun-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "7.5",
+        "attendance_scheduled_hours": "7.0",
         "attendance_completed_hours": "2.0",
         "attendance_pending_hours": "38.0",
         "completion_percentage": "5.0",
@@ -3131,7 +3435,7 @@
         "mentor_split": "Ankit Chheda (5)",
         "financial_year": "FY27",
         "contact_number": "9328946086",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "22-Jun-2026"
     },
     {
@@ -3188,7 +3492,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7208640726",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "21-Jun-2026"
     },
     {
@@ -3226,7 +3530,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9653400176",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "20-Jun-2026"
     },
     {
@@ -3264,7 +3568,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9594425033",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "20-Jun-2026"
     },
     {
@@ -3283,7 +3587,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9702364381",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "20-Jun-2026"
     },
     {
@@ -3302,7 +3606,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8928995788",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "20-Jun-2026"
     },
     {
@@ -3313,12 +3617,12 @@
         "enrolled_date": "20-Jun-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "1.5",
-        "attendance_completed_hours": "1.0",
-        "attendance_pending_hours": "39.0",
-        "completion_percentage": "2.5",
-        "primary_mentor_display": "Ankit Chheda (2)",
-        "mentor_split": "Ankit Chheda (2) / Om Kulkarni (1)",
+        "attendance_scheduled_hours": "7.5",
+        "attendance_completed_hours": "1.5",
+        "attendance_pending_hours": "38.5",
+        "completion_percentage": "3.75",
+        "primary_mentor_display": "Mayur Gaikawad (3)",
+        "mentor_split": "Mayur Gaikawad (3) / Ankit Chheda (2) / Om Kulkarni (1)",
         "financial_year": "FY27",
         "contact_number": "9892064844",
         "school": "Oberoi International school JVLR",
@@ -3416,7 +3720,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9833857909",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "19-Jun-2026"
     },
     {
@@ -3435,7 +3739,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9849304221",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "19-Jun-2026"
     },
     {
@@ -3473,7 +3777,7 @@
         "mentor_split": "Gaurish Vaze (3)",
         "financial_year": "FY27",
         "contact_number": "7058701817",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "19-Jun-2026"
     },
     {
@@ -3484,12 +3788,12 @@
         "enrolled_date": "19-Jun-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "24.0",
+        "attendance_scheduled_hours": "22.5",
         "attendance_completed_hours": "1.5",
         "attendance_pending_hours": "22.5",
         "completion_percentage": "6.25",
-        "primary_mentor_display": "Saket Singh (16)",
-        "mentor_split": "Saket Singh (16)",
+        "primary_mentor_display": "Saket Singh (15)",
+        "mentor_split": "Saket Singh (15)",
         "financial_year": "FY27",
         "contact_number": "9892152487",
         "school": "Cathedral and John Connon School",
@@ -4112,9 +4416,9 @@
         "course_duration_hours": "60",
         "course_fee": "75000",
         "attendance_scheduled_hours": "44.0",
-        "attendance_completed_hours": "8.0",
-        "attendance_pending_hours": "52.0",
-        "completion_percentage": "13.33",
+        "attendance_completed_hours": "10.0",
+        "attendance_pending_hours": "50.0",
+        "completion_percentage": "16.67",
         "primary_mentor_display": "Om Kulkarni (22)",
         "mentor_split": "Om Kulkarni (22)",
         "financial_year": "FY27",
@@ -4746,7 +5050,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9803139465",
-        "school": "Not Assigned",
+        "school": "Providence Day School",
         "date": "18-Jun-2026"
     },
     {
@@ -4803,7 +5107,7 @@
         "mentor_split": "Lavkush Chaudhary (6) / Jaykumar Patel (2) / Ankit Chheda (1)",
         "financial_year": "FY27",
         "contact_number": "1000000000000",
-        "school": "Not Assigned",
+        "school": "The Indian School-Dubai",
         "date": "18-Jun-2026"
     },
     {
@@ -4814,12 +5118,12 @@
         "enrolled_date": "18-Jun-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "14.0",
-        "attendance_pending_hours": "10.0",
-        "completion_percentage": "58.33",
-        "primary_mentor_display": "Gaurish Vaze (12)",
-        "mentor_split": "Gaurish Vaze (12)",
+        "attendance_scheduled_hours": "23.5",
+        "attendance_completed_hours": "18.0",
+        "attendance_pending_hours": "6.0",
+        "completion_percentage": "75.0",
+        "primary_mentor_display": "Gaurish Vaze (11)",
+        "mentor_split": "Gaurish Vaze (11) / Ayush Dwivedy (1)",
         "financial_year": "FY27",
         "contact_number": "9594939684",
         "school": "Dhirubhai Ambani International School",
@@ -4841,7 +5145,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9670359942",
-        "school": "Not Assigned",
+        "school": "Natvar Nagar MPS",
         "date": "17-Jun-2026"
     },
     {
@@ -4860,7 +5164,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8879533086",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -4879,7 +5183,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8104700572",
-        "school": "Not Assigned",
+        "school": "Bal Vikas Mandir Marathi Madhyamik Shala",
         "date": "17-Jun-2026"
     },
     {
@@ -4917,7 +5221,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7559350593",
-        "school": "Not Assigned",
+        "school": "Natvar Nagar MPS",
         "date": "17-Jun-2026"
     },
     {
@@ -4936,7 +5240,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8450939562",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -4955,7 +5259,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8879718775",
-        "school": "Not Assigned",
+        "school": "Bal Vikas Mandir Marathi Madhyamik Shala",
         "date": "17-Jun-2026"
     },
     {
@@ -4974,7 +5278,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9702665253",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -4993,7 +5297,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9082915266",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -5012,7 +5316,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8828177542",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -5031,7 +5335,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9082729186",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -5050,7 +5354,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9819659678",
-        "school": "Not Assigned",
+        "school": "Natvar Nagar MPS",
         "date": "17-Jun-2026"
     },
     {
@@ -5069,7 +5373,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9326649467",
-        "school": "Not Assigned",
+        "school": "Natvar Nagar MPS",
         "date": "17-Jun-2026"
     },
     {
@@ -5088,7 +5392,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9702732716",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -5126,7 +5430,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8433657803",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "17-Jun-2026"
     },
     {
@@ -5137,12 +5441,12 @@
         "enrolled_date": "17-Jun-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "12.0",
+        "attendance_scheduled_hours": "14.0",
         "attendance_completed_hours": "12.0",
         "attendance_pending_hours": "3.0",
         "completion_percentage": "80.0",
-        "primary_mentor_display": "Aniket Karkala (8)",
-        "mentor_split": "Aniket Karkala (8)",
+        "primary_mentor_display": "Aniket Karkala (9)",
+        "mentor_split": "Aniket Karkala (9)",
         "financial_year": "FY27",
         "contact_number": "9930761427",
         "school": "Cathedral and John Connon School",
@@ -5157,9 +5461,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "16.5",
-        "attendance_pending_hours": "7.5",
-        "completion_percentage": "68.75",
+        "attendance_completed_hours": "19.5",
+        "attendance_pending_hours": "4.5",
+        "completion_percentage": "81.25",
         "primary_mentor_display": "saiyad husain (16)",
         "mentor_split": "saiyad husain (16)",
         "financial_year": "FY27",
@@ -5176,9 +5480,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "8.0",
-        "attendance_pending_hours": "16.0",
-        "completion_percentage": "33.33",
+        "attendance_completed_hours": "10.0",
+        "attendance_pending_hours": "14.0",
+        "completion_percentage": "41.67",
         "primary_mentor_display": "Rui Jadhav (12)",
         "mentor_split": "Rui Jadhav (12)",
         "financial_year": "FY27",
@@ -5202,7 +5506,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9773534131",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "16-Jun-2026"
     },
     {
@@ -5251,15 +5555,15 @@
         "enrolled_date": "16-Jun-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "12.5",
-        "attendance_completed_hours": "2.5",
-        "attendance_pending_hours": "12.5",
-        "completion_percentage": "16.67",
-        "primary_mentor_display": "Vaishnavi Bodke (9)",
-        "mentor_split": "Vaishnavi Bodke (9)",
+        "attendance_scheduled_hours": "14.0",
+        "attendance_completed_hours": "9.5",
+        "attendance_pending_hours": "5.5",
+        "completion_percentage": "63.33",
+        "primary_mentor_display": "Vaishnavi Bodke (10)",
+        "mentor_split": "Vaishnavi Bodke (10)",
         "financial_year": "FY27",
         "contact_number": "9999023608",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "16-Jun-2026"
     },
     {
@@ -5423,9 +5727,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "22.0",
-        "attendance_completed_hours": "13.0",
-        "attendance_pending_hours": "11.0",
-        "completion_percentage": "54.17",
+        "attendance_completed_hours": "22.0",
+        "attendance_pending_hours": "2.0",
+        "completion_percentage": "91.67",
         "primary_mentor_display": "Ayushi lowanshi (15)",
         "mentor_split": "Ayushi lowanshi (15)",
         "financial_year": "FY27",
@@ -5441,12 +5745,12 @@
         "enrolled_date": "14-Jun-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "16.5",
-        "attendance_completed_hours": "4.0",
-        "attendance_pending_hours": "11.0",
-        "completion_percentage": "26.67",
-        "primary_mentor_display": "Shashank Bhosale (12)",
-        "mentor_split": "Shashank Bhosale (12)",
+        "attendance_scheduled_hours": "13.5",
+        "attendance_completed_hours": "5.5",
+        "attendance_pending_hours": "9.5",
+        "completion_percentage": "36.67",
+        "primary_mentor_display": "Shashank Bhosale (10)",
+        "mentor_split": "Shashank Bhosale (10)",
         "financial_year": "FY27",
         "contact_number": "9769713015",
         "school": "JBCN international - Chembur",
@@ -5468,7 +5772,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9167784004",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "13-Jun-2026"
     },
     {
@@ -5487,7 +5791,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9023624628",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "13-Jun-2026"
     },
     {
@@ -5525,7 +5829,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8828023782",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "13-Jun-2026"
     },
     {
@@ -5575,14 +5879,14 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "39.0",
-        "attendance_completed_hours": "7.5",
-        "attendance_pending_hours": "32.5",
-        "completion_percentage": "18.75",
+        "attendance_completed_hours": "8.5",
+        "attendance_pending_hours": "31.5",
+        "completion_percentage": "21.25",
         "primary_mentor_display": "Om Kulkarni (31)",
         "mentor_split": "Om Kulkarni (31) / Ankit Chheda (1)",
         "financial_year": "FY27",
         "contact_number": "8108216545",
-        "school": "Not Assigned",
+        "school": "Mesaieed International School",
         "date": "13-Jun-2026"
     },
     {
@@ -5620,7 +5924,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9136011362",
-        "school": "Not Assigned",
+        "school": "Kanakia International School",
         "date": "12-Jun-2026"
     },
     {
@@ -5753,7 +6057,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9751544553",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "11-Jun-2026"
     },
     {
@@ -5810,7 +6114,7 @@
         "mentor_split": "Akshat Shah (9) / Jaykumar Patel (1)",
         "financial_year": "FY27",
         "contact_number": "8306737773",
-        "school": "Not Assigned",
+        "school": "Witty International School Udaipur",
         "date": "11-Jun-2026"
     },
     {
@@ -5898,9 +6202,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "15.0",
-        "attendance_completed_hours": "6.0",
-        "attendance_pending_hours": "9.0",
-        "completion_percentage": "40.0",
+        "attendance_completed_hours": "7.5",
+        "attendance_pending_hours": "7.5",
+        "completion_percentage": "50.0",
         "primary_mentor_display": "Anthony Dsouza (10)",
         "mentor_split": "Anthony Dsouza (10)",
         "financial_year": "FY27",
@@ -6069,9 +6373,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "21.0",
-        "attendance_completed_hours": "1.5",
-        "attendance_pending_hours": "22.5",
-        "completion_percentage": "6.25",
+        "attendance_completed_hours": "3.0",
+        "attendance_pending_hours": "21.0",
+        "completion_percentage": "12.5",
         "primary_mentor_display": "Nirmit Jasani (11)",
         "mentor_split": "Nirmit Jasani (11) / Anuj Rathod (3)",
         "financial_year": "FY27",
@@ -6107,9 +6411,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "21.5",
-        "attendance_completed_hours": "17.5",
-        "attendance_pending_hours": "6.5",
-        "completion_percentage": "72.92",
+        "attendance_completed_hours": "21.5",
+        "attendance_pending_hours": "2.5",
+        "completion_percentage": "89.58",
         "primary_mentor_display": "saiyad husain (13)",
         "mentor_split": "saiyad husain (13)",
         "financial_year": "FY27",
@@ -6144,12 +6448,12 @@
         "enrolled_date": "06-Jun-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "15.0",
+        "attendance_scheduled_hours": "16.5",
         "attendance_completed_hours": "4.5",
         "attendance_pending_hours": "10.5",
         "completion_percentage": "30.0",
-        "primary_mentor_display": "Vaishnavi Bodke (10)",
-        "mentor_split": "Vaishnavi Bodke (10)",
+        "primary_mentor_display": "Vaishnavi Bodke (11)",
+        "mentor_split": "Vaishnavi Bodke (11)",
         "financial_year": "FY27",
         "contact_number": "9819575052",
         "school": "Don Bosco International School",
@@ -6164,9 +6468,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "20.5",
-        "attendance_completed_hours": "13.0",
-        "attendance_pending_hours": "11.0",
-        "completion_percentage": "54.17",
+        "attendance_completed_hours": "14.5",
+        "attendance_pending_hours": "9.5",
+        "completion_percentage": "60.42",
         "primary_mentor_display": "saiyad husain (12)",
         "mentor_split": "saiyad husain (12)",
         "financial_year": "FY27",
@@ -6201,12 +6505,12 @@
         "enrolled_date": "05-Jun-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "20.0",
-        "attendance_pending_hours": "4.0",
-        "completion_percentage": "83.33",
+        "attendance_scheduled_hours": "23.5",
+        "attendance_completed_hours": "22.0",
+        "attendance_pending_hours": "2.0",
+        "completion_percentage": "91.67",
         "primary_mentor_display": "Ayush Dwivedy (7)",
-        "mentor_split": "Ayush Dwivedy (7) / Gaurish Vaze (7)",
+        "mentor_split": "Ayush Dwivedy (7) / Gaurish Vaze (6) / Saket Singh (1)",
         "financial_year": "FY27",
         "contact_number": "9820457057",
         "school": "JBCN international - Parel",
@@ -6277,15 +6581,15 @@
         "enrolled_date": "04-Jun-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "3.5",
-        "attendance_completed_hours": "1.5",
-        "attendance_pending_hours": "38.5",
-        "completion_percentage": "3.75",
-        "primary_mentor_display": "Ankit Chheda (4)",
-        "mentor_split": "Ankit Chheda (4)",
+        "attendance_scheduled_hours": "11.5",
+        "attendance_completed_hours": "3.5",
+        "attendance_pending_hours": "36.5",
+        "completion_percentage": "8.75",
+        "primary_mentor_display": "Mayuresh Patil (4)",
+        "mentor_split": "Mayuresh Patil (4) / Ankit Chheda (4)",
         "financial_year": "FY27",
         "contact_number": "9867008068",
-        "school": "Not Assigned",
+        "school": "Ecole Mondiale World School",
         "date": "04-Jun-2026"
     },
     {
@@ -6304,7 +6608,7 @@
         "mentor_split": "Jaykumar Patel (3)",
         "financial_year": "FY27",
         "contact_number": "18176828431",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "04-Jun-2026"
     },
     {
@@ -6342,7 +6646,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7499086699",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "03-Jun-2026"
     },
     {
@@ -6373,9 +6677,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "14.0",
-        "attendance_completed_hours": "4.0",
-        "attendance_pending_hours": "11.0",
-        "completion_percentage": "26.67",
+        "attendance_completed_hours": "5.0",
+        "attendance_pending_hours": "10.0",
+        "completion_percentage": "33.33",
         "primary_mentor_display": "Vedant Patel (14)",
         "mentor_split": "Vedant Patel (14)",
         "financial_year": "FY27",
@@ -6437,7 +6741,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9730710740",
-        "school": "Not Assigned",
+        "school": "Indus International School Pune",
         "date": "01-Jun-2026"
     },
     {
@@ -6506,9 +6810,9 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "10.0",
-        "attendance_completed_hours": "2.25",
-        "attendance_pending_hours": "37.75",
-        "completion_percentage": "5.63",
+        "attendance_completed_hours": "3.0",
+        "attendance_pending_hours": "37.0",
+        "completion_percentage": "7.5",
         "primary_mentor_display": "Om Kulkarni (11)",
         "mentor_split": "Om Kulkarni (11)",
         "financial_year": "FY27",
@@ -6524,12 +6828,12 @@
         "enrolled_date": "01-Jun-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "25.0",
+        "attendance_scheduled_hours": "26.5",
         "attendance_completed_hours": "17.0",
         "attendance_pending_hours": "23.0",
         "completion_percentage": "42.5",
-        "primary_mentor_display": "Ankit Chheda (11)",
-        "mentor_split": "Ankit Chheda (11) / Jaykumar Patel (3) / Mayuresh Patil (1) / Ayush Dwivedy (1)",
+        "primary_mentor_display": "Ankit Chheda (12)",
+        "mentor_split": "Ankit Chheda (12) / Jaykumar Patel (3) / Mayuresh Patil (1) / Ayush Dwivedy (1)",
         "financial_year": "FY27",
         "contact_number": "8529833788",
         "school": "Jayshree Periwal International School",
@@ -6551,7 +6855,7 @@
         "mentor_split": "Vaishnavi Bodke (13)",
         "financial_year": "FY27",
         "contact_number": "8527200205",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "01-Jun-2026"
     },
     {
@@ -6608,7 +6912,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8828431421",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "31-May-2026"
     },
     {
@@ -6639,14 +6943,14 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "20.0",
-        "attendance_pending_hours": "4.0",
-        "completion_percentage": "83.33",
+        "attendance_completed_hours": "22.0",
+        "attendance_pending_hours": "2.0",
+        "completion_percentage": "91.67",
         "primary_mentor_display": "Shashank Bhosale (12)",
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY27",
         "contact_number": "9820505418",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "31-May-2026"
     },
     {
@@ -6665,7 +6969,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9831663361",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "30-May-2026"
     },
     {
@@ -6677,9 +6981,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "15.0",
-        "attendance_completed_hours": "1.5",
-        "attendance_pending_hours": "13.5",
-        "completion_percentage": "10.0",
+        "attendance_completed_hours": "3.0",
+        "attendance_pending_hours": "12.0",
+        "completion_percentage": "20.0",
         "primary_mentor_display": "Saket Singh (8)",
         "mentor_split": "Saket Singh (8) / Ajinkya Giri (2)",
         "financial_year": "FY27",
@@ -6703,7 +7007,7 @@
         "mentor_split": "Akshat Shah (13)",
         "financial_year": "FY27",
         "contact_number": "8306737773",
-        "school": "Not Assigned",
+        "school": "Witty International School Udaipur",
         "date": "30-May-2026"
     },
     {
@@ -6722,7 +7026,7 @@
         "mentor_split": "Akshat Shah (10)",
         "financial_year": "FY27",
         "contact_number": "9099770011",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "30-May-2026"
     },
     {
@@ -6760,7 +7064,7 @@
         "mentor_split": "Anthony Dsouza (10)",
         "financial_year": "FY27",
         "contact_number": "9833418877",
-        "school": "Not Assigned",
+        "school": "DSB International School",
         "date": "29-May-2026"
     },
     {
@@ -6817,7 +7121,7 @@
         "mentor_split": "Atharva  Dalvi (27) / Ayushi lowanshi (2)",
         "financial_year": "FY27",
         "contact_number": "14433557919",
-        "school": "Not Assigned",
+        "school": "McDonogh School",
         "date": "27-May-2026"
     },
     {
@@ -6874,7 +7178,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7710037173",
-        "school": "Not Assigned",
+        "school": "Jamnabai Narsee School",
         "date": "27-May-2026"
     },
     {
@@ -6885,15 +7189,15 @@
         "enrolled_date": "27-May-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "27.0",
-        "attendance_completed_hours": "18.5",
-        "attendance_pending_hours": "21.5",
-        "completion_percentage": "46.25",
-        "primary_mentor_display": "Ayushi lowanshi (16)",
-        "mentor_split": "Ayushi lowanshi (16) / Jaykumar Patel (2)",
+        "attendance_scheduled_hours": "29.0",
+        "attendance_completed_hours": "20.5",
+        "attendance_pending_hours": "19.5",
+        "completion_percentage": "51.25",
+        "primary_mentor_display": "Ayushi lowanshi (18)",
+        "mentor_split": "Ayushi lowanshi (18) / Jaykumar Patel (2)",
         "financial_year": "FY27",
         "contact_number": "9888446666",
-        "school": "Not Assigned",
+        "school": "The Doon School",
         "date": "27-May-2026"
     },
     {
@@ -6905,9 +7209,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "23.0",
-        "attendance_completed_hours": "22.0",
-        "attendance_pending_hours": "2.0",
-        "completion_percentage": "91.67",
+        "attendance_completed_hours": "23.0",
+        "attendance_pending_hours": "1.0",
+        "completion_percentage": "95.83",
         "primary_mentor_display": "Shashank Bhosale (12)",
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY27",
@@ -6942,12 +7246,12 @@
         "enrolled_date": "26-May-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "9.5",
+        "attendance_scheduled_hours": "7.5",
         "attendance_completed_hours": "7.5",
         "attendance_pending_hours": "16.5",
         "completion_percentage": "31.25",
-        "primary_mentor_display": "Aniket Karkala (5)",
-        "mentor_split": "Aniket Karkala (5)",
+        "primary_mentor_display": "Aniket Karkala (4)",
+        "mentor_split": "Aniket Karkala (4)",
         "financial_year": "FY27",
         "contact_number": "9920022444",
         "school": "Oberoi International school JVLR",
@@ -7121,7 +7425,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "971507000000",
-        "school": "Not Assigned",
+        "school": "Jumeirah English Speaking School (JESS) Dubai",
         "date": "22-May-2026"
     },
     {
@@ -7197,7 +7501,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7619504505",
-        "school": "Not Assigned",
+        "school": "Delhi Public School East-Bangalore",
         "date": "22-May-2026"
     },
     {
@@ -7216,7 +7520,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9731790557",
-        "school": "Not Assigned",
+        "school": "Indus International School Bangalore",
         "date": "22-May-2026"
     },
     {
@@ -7235,7 +7539,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9911002595",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "22-May-2026"
     },
     {
@@ -7254,7 +7558,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7208495720",
-        "school": "Not Assigned",
+        "school": "Mount Litera School International",
         "date": "22-May-2026"
     },
     {
@@ -7273,7 +7577,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9483434634",
-        "school": "Not Assigned",
+        "school": "Sharanya Narayani International School",
         "date": "22-May-2026"
     },
     {
@@ -7330,7 +7634,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "17746861953",
-        "school": "Not Assigned",
+        "school": "Hopkinton High School",
         "date": "22-May-2026"
     },
     {
@@ -7349,7 +7653,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9871060997",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "22-May-2026"
     },
     {
@@ -7406,7 +7710,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "972585000000",
-        "school": "Not Assigned",
+        "school": "Shacharit",
         "date": "22-May-2026"
     },
     {
@@ -7425,7 +7729,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8800359439",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "22-May-2026"
     },
     {
@@ -7444,7 +7748,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9910627102",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "22-May-2026"
     },
     {
@@ -7501,7 +7805,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "971545000000",
-        "school": "Not Assigned",
+        "school": "Jumeirah English Speaking School (JESS) Dubai",
         "date": "22-May-2026"
     },
     {
@@ -7520,7 +7824,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "8851179456",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "22-May-2026"
     },
     {
@@ -7786,7 +8090,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7739685040",
-        "school": "Not Assigned",
+        "school": "Skinner North Classical School",
         "date": "22-May-2026"
     },
     {
@@ -8094,6 +8398,25 @@
         "date": "21-May-2026"
     },
     {
+        "course_name": "3D CAD INT",
+        "course_category": "International",
+        "student_name": "TEST USD",
+        "enrolment_center": "Mumbai Dadar",
+        "enrolled_date": "20-May-2026",
+        "course_duration_hours": "24",
+        "course_fee": "360",
+        "attendance_scheduled_hours": "0.0",
+        "attendance_completed_hours": "0.0",
+        "attendance_pending_hours": "24.0",
+        "completion_percentage": "0.0",
+        "primary_mentor_display": "",
+        "mentor_split": "",
+        "financial_year": "FY27",
+        "contact_number": "9892322922",
+        "school": "Dhirubhai Ambani International School",
+        "date": "20-May-2026"
+    },
+    {
         "course_name": "Electronics Senior - Arduino",
         "course_category": "Electronics",
         "student_name": "Arjun Anand",
@@ -8109,7 +8432,7 @@
         "mentor_split": "Anthony Dsouza (11)",
         "financial_year": "FY27",
         "contact_number": "9819527784",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "20-May-2026"
     },
     {
@@ -8140,14 +8463,14 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "14.0",
-        "attendance_completed_hours": "7.0",
-        "attendance_pending_hours": "8.0",
-        "completion_percentage": "46.67",
+        "attendance_completed_hours": "8.0",
+        "attendance_pending_hours": "7.0",
+        "completion_percentage": "53.33",
         "primary_mentor_display": "Gaurish Vaze (8)",
         "mentor_split": "Gaurish Vaze (8) / Rui Jadhav (6)",
         "financial_year": "FY27",
         "contact_number": "9820949850",
-        "school": "Not Assigned",
+        "school": "St Marys International School",
         "date": "20-May-2026"
     },
     {
@@ -8242,7 +8565,7 @@
         "mentor_split": "Aniket Karkala (13) / Vedant Raut (1)",
         "financial_year": "FY27",
         "contact_number": "9820988817",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "18-May-2026"
     },
     {
@@ -8273,9 +8596,9 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "18.0",
-        "attendance_completed_hours": "11.0",
-        "attendance_pending_hours": "29.0",
-        "completion_percentage": "27.5",
+        "attendance_completed_hours": "12.5",
+        "attendance_pending_hours": "27.5",
+        "completion_percentage": "31.25",
         "primary_mentor_display": "saiyad husain (4)",
         "mentor_split": "saiyad husain (4) / Ankit Chheda (4) / Jaykumar Patel (3)",
         "financial_year": "FY27",
@@ -8356,7 +8679,7 @@
         "mentor_split": "Rohan Gaikwad (16)",
         "financial_year": "FY27",
         "contact_number": "9195996898",
-        "school": "Not Assigned",
+        "school": "William Diamond Middle School",
         "date": "15-May-2026"
     },
     {
@@ -8451,7 +8774,7 @@
         "mentor_split": "Atharva  Dalvi (16)",
         "financial_year": "FY27",
         "contact_number": "7887185432",
-        "school": "Not Assigned",
+        "school": "Grey Court School",
         "date": "13-May-2026"
     },
     {
@@ -8508,7 +8831,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9999999999",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "12-May-2026"
     },
     {
@@ -8519,15 +8842,15 @@
         "enrolled_date": "12-May-2026",
         "course_duration_hours": "10",
         "course_fee": "30000",
-        "attendance_scheduled_hours": "6.0",
+        "attendance_scheduled_hours": "6.5",
         "attendance_completed_hours": "6.0",
         "attendance_pending_hours": "4.0",
         "completion_percentage": "60.0",
         "primary_mentor_display": "Latifa Zaman (7)",
-        "mentor_split": "Latifa Zaman (7)",
+        "mentor_split": "Latifa Zaman (7) / Jaykumar Patel (1)",
         "financial_year": "FY27",
         "contact_number": "9167930993",
-        "school": "Not Assigned",
+        "school": "Prabhavati Padamashi Soni International Junior College",
         "date": "12-May-2026"
     },
     {
@@ -8584,7 +8907,7 @@
         "mentor_split": "saiyad husain (16)",
         "financial_year": "FY27",
         "contact_number": "9650917467",
-        "school": "Not Assigned",
+        "school": "Hiranandani Foundation School International",
         "date": "11-May-2026"
     },
     {
@@ -8660,7 +8983,7 @@
         "mentor_split": "Aniket Karkala (12)",
         "financial_year": "FY27",
         "contact_number": "8439500790",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "09-May-2026"
     },
     {
@@ -8717,7 +9040,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9099922728",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "08-May-2026"
     },
     {
@@ -8728,12 +9051,12 @@
         "enrolled_date": "08-May-2026",
         "course_duration_hours": "15",
         "course_fee": "15000",
-        "attendance_scheduled_hours": "4.0",
+        "attendance_scheduled_hours": "6.0",
         "attendance_completed_hours": "2.5",
         "attendance_pending_hours": "12.5",
         "completion_percentage": "16.67",
         "primary_mentor_display": "Vaishnavi Bodke (3)",
-        "mentor_split": "Vaishnavi Bodke (3)",
+        "mentor_split": "Vaishnavi Bodke (3) / Rui Jadhav (1)",
         "financial_year": "FY27",
         "contact_number": "9930003094",
         "school": "Bombay International School",
@@ -8755,7 +9078,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9923014946",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "07-May-2026"
     },
     {
@@ -8823,15 +9146,15 @@
         "enrolled_date": "06-May-2026",
         "course_duration_hours": "30",
         "course_fee": "30000",
-        "attendance_scheduled_hours": "25.5",
+        "attendance_scheduled_hours": "31.5",
         "attendance_completed_hours": "27.0",
         "attendance_pending_hours": "3.0",
         "completion_percentage": "90.0",
-        "primary_mentor_display": "Janhavi Karandi (17)",
-        "mentor_split": "Janhavi Karandi (17)",
+        "primary_mentor_display": "Janhavi Karandi (20)",
+        "mentor_split": "Janhavi Karandi (20)",
         "financial_year": "FY27",
         "contact_number": "9727755383",
-        "school": "Not Assigned",
+        "school": "Billabong High International School",
         "date": "06-May-2026"
     },
     {
@@ -8850,7 +9173,7 @@
         "mentor_split": "Drashti  Shah (17)",
         "financial_year": "FY27",
         "contact_number": "9833857909",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "06-May-2026"
     },
     {
@@ -8862,9 +9185,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "15.0",
-        "attendance_completed_hours": "12.0",
-        "attendance_pending_hours": "3.0",
-        "completion_percentage": "80.0",
+        "attendance_completed_hours": "13.5",
+        "attendance_pending_hours": "1.5",
+        "completion_percentage": "90.0",
         "primary_mentor_display": "Shivam Rane (9)",
         "mentor_split": "Shivam Rane (9) / Anthony Dsouza (1)",
         "financial_year": "FY27",
@@ -8888,7 +9211,7 @@
         "mentor_split": "saiyad husain (5) / Jaykumar Patel (2)",
         "financial_year": "FY27",
         "contact_number": "9810884325",
-        "school": "Not Assigned",
+        "school": "GD Goenka-The Flagship School",
         "date": "04-May-2026"
     },
     {
@@ -8926,7 +9249,7 @@
         "mentor_split": "Ayushi lowanshi (14) / Vaishnavi Bodke (2)",
         "financial_year": "FY27",
         "contact_number": "8976714270",
-        "school": "Not Assigned",
+        "school": "MIT Vishwashanti Gurukul",
         "date": "04-May-2026"
     },
     {
@@ -8945,7 +9268,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "03-May-2026"
     },
     {
@@ -9002,7 +9325,7 @@
         "mentor_split": "Shashank Bhosale (11)",
         "financial_year": "FY27",
         "contact_number": "9979011232",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "02-May-2026"
     },
     {
@@ -9021,7 +9344,7 @@
         "mentor_split": "Anthony Dsouza (12)",
         "financial_year": "FY27",
         "contact_number": "7032803284",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "02-May-2026"
     },
     {
@@ -9040,7 +9363,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9979011232",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "02-May-2026"
     },
     {
@@ -9116,7 +9439,7 @@
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY27",
         "contact_number": "6353722261",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "30-Apr-2026"
     },
     {
@@ -9135,7 +9458,7 @@
         "mentor_split": "Shashank Bhosale (10)",
         "financial_year": "FY27",
         "contact_number": "9099617777",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "30-Apr-2026"
     },
     {
@@ -9154,7 +9477,7 @@
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY27",
         "contact_number": "9978160112",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "30-Apr-2026"
     },
     {
@@ -9173,7 +9496,7 @@
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY27",
         "contact_number": "7016925719",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "30-Apr-2026"
     },
     {
@@ -9192,7 +9515,7 @@
         "mentor_split": "Atharva  Dalvi (4) / saiyad husain (1)",
         "financial_year": "FY27",
         "contact_number": "9824013977",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "30-Apr-2026"
     },
     {
@@ -9230,7 +9553,7 @@
         "mentor_split": "Shashank Bhosale (11)",
         "financial_year": "FY27",
         "contact_number": "9909042917",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "29-Apr-2026"
     },
     {
@@ -9268,7 +9591,7 @@
         "mentor_split": "Jaykumar Patel (17)",
         "financial_year": "FY27",
         "contact_number": "9959081710",
-        "school": "Not Assigned",
+        "school": "Oakridge International School",
         "date": "29-Apr-2026"
     },
     {
@@ -9306,7 +9629,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9727755383",
-        "school": "Not Assigned",
+        "school": "Billabong High International School",
         "date": "28-Apr-2026"
     },
     {
@@ -9363,7 +9686,7 @@
         "mentor_split": "Gaurish Vaze (11) / Saket Singh (1)",
         "financial_year": "FY27",
         "contact_number": "9004050123",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "28-Apr-2026"
     },
     {
@@ -9382,7 +9705,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "7016925719",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "27-Apr-2026"
     },
     {
@@ -9435,8 +9758,8 @@
         "attendance_completed_hours": "16.0",
         "attendance_pending_hours": "8.0",
         "completion_percentage": "66.67",
-        "primary_mentor_display": "Akshat Shah (11)",
-        "mentor_split": "Akshat Shah (11) / Gaurish Vaze (1)",
+        "primary_mentor_display": "Akshat Shah (10)",
+        "mentor_split": "Akshat Shah (10) / Gaurish Vaze (2)",
         "financial_year": "FY27",
         "contact_number": "9820303592",
         "school": "NSS Hill Spring International School",
@@ -9477,7 +9800,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9978160112",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "25-Apr-2026"
     },
     {
@@ -9496,7 +9819,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9824013977",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "25-Apr-2026"
     },
     {
@@ -9553,7 +9876,7 @@
         "mentor_split": "Aniket Karkala (13)",
         "financial_year": "FY27",
         "contact_number": "9820505418",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "24-Apr-2026"
     },
     {
@@ -9564,12 +9887,12 @@
         "enrolled_date": "24-Apr-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "23.5",
-        "attendance_completed_hours": "15.0",
-        "attendance_pending_hours": "25.0",
-        "completion_percentage": "37.5",
+        "attendance_scheduled_hours": "25.0",
+        "attendance_completed_hours": "16.5",
+        "attendance_pending_hours": "23.5",
+        "completion_percentage": "41.25",
         "primary_mentor_display": "Lavkush Chaudhary (8)",
-        "mentor_split": "Lavkush Chaudhary (8) / Akshat Shah (5) / Jaykumar Patel (2)",
+        "mentor_split": "Lavkush Chaudhary (8) / Akshat Shah (5) / Jaykumar Patel (2) / Saket Singh (1)",
         "financial_year": "FY27",
         "contact_number": "8108148543",
         "school": "Dhirubhai Ambani International School",
@@ -9591,7 +9914,7 @@
         "mentor_split": "Akshat Shah (14)",
         "financial_year": "FY27",
         "contact_number": "7499086699",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "24-Apr-2026"
     },
     {
@@ -9622,9 +9945,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "9.0",
-        "attendance_pending_hours": "15.0",
-        "completion_percentage": "37.5",
+        "attendance_completed_hours": "10.5",
+        "attendance_pending_hours": "13.5",
+        "completion_percentage": "43.75",
         "primary_mentor_display": "Anthony Dsouza (16)",
         "mentor_split": "Anthony Dsouza (16)",
         "financial_year": "FY27",
@@ -9648,7 +9971,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "6353722261",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "23-Apr-2026"
     },
     {
@@ -9667,7 +9990,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9099617777",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "23-Apr-2026"
     },
     {
@@ -9678,12 +10001,12 @@
         "enrolled_date": "23-Apr-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "9.75",
-        "attendance_completed_hours": "9.75",
-        "attendance_pending_hours": "30.25",
-        "completion_percentage": "24.38",
-        "primary_mentor_display": "Ankit Chheda (4)",
-        "mentor_split": "Ankit Chheda (4) / Om Kulkarni (3)",
+        "attendance_scheduled_hours": "11.25",
+        "attendance_completed_hours": "11.25",
+        "attendance_pending_hours": "28.75",
+        "completion_percentage": "28.13",
+        "primary_mentor_display": "Om Kulkarni (4)",
+        "mentor_split": "Om Kulkarni (4) / Ankit Chheda (4)",
         "financial_year": "FY27",
         "contact_number": "9820009704",
         "school": "Oberoi International School OGC",
@@ -9724,7 +10047,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9810933807",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "22-Apr-2026"
     },
     {
@@ -9762,7 +10085,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9899876056",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "21-Apr-2026"
     },
     {
@@ -9781,7 +10104,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9909042917",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "21-Apr-2026"
     },
     {
@@ -9914,7 +10237,7 @@
         "mentor_split": "Latifa Zaman (18)",
         "financial_year": "FY27",
         "contact_number": "7723855441",
-        "school": "Not Assigned",
+        "school": "Other School",
         "date": "18-Apr-2026"
     },
     {
@@ -9952,7 +10275,7 @@
         "mentor_split": "Aniket Karkala (8)",
         "financial_year": "FY27",
         "contact_number": "8439500790",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "18-Apr-2026"
     },
     {
@@ -9971,7 +10294,7 @@
         "mentor_split": "Ayush Dwivedy (6) / Akshat Shah (2) / Jaykumar Patel (2)",
         "financial_year": "FY27",
         "contact_number": "7718853117",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "17-Apr-2026"
     },
     {
@@ -9990,7 +10313,7 @@
         "mentor_split": "Gaurish Vaze (6)",
         "financial_year": "FY27",
         "contact_number": "8691003056",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "17-Apr-2026"
     },
     {
@@ -10002,21 +10325,21 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "23.0",
-        "attendance_pending_hours": "1.0",
-        "completion_percentage": "95.83",
+        "attendance_completed_hours": "24.0",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.0",
         "primary_mentor_display": "Shashank Bhosale (13)",
         "mentor_split": "Shashank Bhosale (13)",
         "financial_year": "FY27",
         "contact_number": "9833768471",
-        "school": "Bombay International School",
+        "school": "Sri Aurobindo International School",
         "date": "16-Apr-2026"
     },
     {
         "course_name": "WRO 2026 - Future Innovators (Cohort of 2)",
         "course_category": "TIS Nurturing Innovators",
         "student_name": "Parth jain",
-        "enrolment_center": "Mumbai Bandra",
+        "enrolment_center": "Mumbai Dadar",
         "enrolled_date": "15-Apr-2026",
         "course_duration_hours": "45",
         "course_fee": "56250",
@@ -10104,7 +10427,7 @@
         "mentor_split": "Sujal Patil (10) / saiyad husain (7)",
         "financial_year": "FY27",
         "contact_number": "9727755383",
-        "school": "Not Assigned",
+        "school": "Billabong High International School",
         "date": "14-Apr-2026"
     },
     {
@@ -10134,12 +10457,12 @@
         "enrolled_date": "14-Apr-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "22.0",
+        "attendance_scheduled_hours": "20.0",
         "attendance_completed_hours": "16.0",
         "attendance_pending_hours": "8.0",
         "completion_percentage": "66.67",
-        "primary_mentor_display": "Ayush Dwivedy (11)",
-        "mentor_split": "Ayush Dwivedy (11)",
+        "primary_mentor_display": "Ayush Dwivedy (10)",
+        "mentor_split": "Ayush Dwivedy (10)",
         "financial_year": "FY27",
         "contact_number": "9833170665",
         "school": "JBCN international - Parel",
@@ -10313,7 +10636,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9833955866",
-        "school": "Not Assigned",
+        "school": "Nita Mukesh Ambani Junior School",
         "date": "10-Apr-2026"
     },
     {
@@ -10351,7 +10674,7 @@
         "mentor_split": "Latifa Zaman (12) / Jaykumar Patel (2)",
         "financial_year": "FY27",
         "contact_number": "9972138200",
-        "school": "Not Assigned",
+        "school": "Greenwood High International School Bangalore",
         "date": "09-Apr-2026"
     },
     {
@@ -10446,7 +10769,7 @@
         "mentor_split": "",
         "financial_year": "FY27",
         "contact_number": "9711999147",
-        "school": "Not Assigned",
+        "school": "Candor International",
         "date": "05-Apr-2026"
     },
     {
@@ -10522,7 +10845,7 @@
         "mentor_split": "Ajinkya Giri (5)",
         "financial_year": "FY26",
         "contact_number": "9978160112",
-        "school": "Not Assigned",
+        "school": "Adani International School",
         "date": "31-Mar-2026"
     },
     {
@@ -10533,12 +10856,12 @@
         "enrolled_date": "31-Mar-2026",
         "course_duration_hours": "45",
         "course_fee": "56250",
-        "attendance_scheduled_hours": "50.33",
-        "attendance_completed_hours": "43.83",
-        "attendance_pending_hours": "1.17",
-        "completion_percentage": "97.4",
-        "primary_mentor_display": "Siddhesh Murudkar (37)",
-        "mentor_split": "Siddhesh Murudkar (37) / Shashank Bhosale (1)",
+        "attendance_scheduled_hours": "48.83",
+        "attendance_completed_hours": "45.33",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.73",
+        "primary_mentor_display": "Siddhesh Murudkar (35)",
+        "mentor_split": "Siddhesh Murudkar (35) / Shashank Bhosale (2)",
         "financial_year": "FY26",
         "contact_number": "9769027470",
         "school": "ASCEND International School",
@@ -10552,12 +10875,12 @@
         "enrolled_date": "31-Mar-2026",
         "course_duration_hours": "45",
         "course_fee": "56250",
-        "attendance_scheduled_hours": "50.33",
-        "attendance_completed_hours": "43.83",
-        "attendance_pending_hours": "1.17",
-        "completion_percentage": "97.4",
-        "primary_mentor_display": "Siddhesh Murudkar (37)",
-        "mentor_split": "Siddhesh Murudkar (37) / Shashank Bhosale (1)",
+        "attendance_scheduled_hours": "48.83",
+        "attendance_completed_hours": "45.33",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.73",
+        "primary_mentor_display": "Siddhesh Murudkar (35)",
+        "mentor_split": "Siddhesh Murudkar (35) / Shashank Bhosale (2)",
         "financial_year": "FY26",
         "contact_number": "9769027470",
         "school": "ASCEND International School",
@@ -10590,7 +10913,7 @@
         "enrolled_date": "31-Mar-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "26.0",
+        "attendance_scheduled_hours": "25.5",
         "attendance_completed_hours": "22.5",
         "attendance_pending_hours": "1.5",
         "completion_percentage": "93.75",
@@ -10686,9 +11009,9 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "20.0",
-        "attendance_completed_hours": "11.5",
-        "attendance_pending_hours": "12.5",
-        "completion_percentage": "47.92",
+        "attendance_completed_hours": "13.0",
+        "attendance_pending_hours": "11.0",
+        "completion_percentage": "54.17",
         "primary_mentor_display": "Ayush Dwivedy (7)",
         "mentor_split": "Ayush Dwivedy (7) / Nirmit Jasani (4) / Gaurish Vaze (2) / Anirudhha Tari (1)",
         "financial_year": "FY26",
@@ -10704,12 +11027,12 @@
         "enrolled_date": "30-Mar-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "21.5",
-        "attendance_completed_hours": "17.0",
-        "attendance_pending_hours": "7.0",
-        "completion_percentage": "70.83",
+        "attendance_scheduled_hours": "20.0",
+        "attendance_completed_hours": "18.5",
+        "attendance_pending_hours": "5.5",
+        "completion_percentage": "77.08",
         "primary_mentor_display": "Saket Singh (8)",
-        "mentor_split": "Saket Singh (8) / Gaurish Vaze (5) / Ajinkya Giri (1) / saiyad husain (1)",
+        "mentor_split": "Saket Singh (8) / Gaurish Vaze (4) / Ajinkya Giri (1) / saiyad husain (1)",
         "financial_year": "FY26",
         "contact_number": "8424998385",
         "school": "Aditya Birla World Academy",
@@ -10864,7 +11187,7 @@
         "mentor_split": "Vedant Patel (9)",
         "financial_year": "FY26",
         "contact_number": "9833418877",
-        "school": "Not Assigned",
+        "school": "DSB International School",
         "date": "26-Mar-2026"
     },
     {
@@ -11085,9 +11408,9 @@
         "course_duration_hours": "15",
         "course_fee": "15000",
         "attendance_scheduled_hours": "16.0",
-        "attendance_completed_hours": "14.0",
-        "attendance_pending_hours": "1.0",
-        "completion_percentage": "93.33",
+        "attendance_completed_hours": "15.0",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.0",
         "primary_mentor_display": "Shashank Bhosale (15)",
         "mentor_split": "Shashank Bhosale (15)",
         "financial_year": "FY26",
@@ -11103,12 +11426,12 @@
         "enrolled_date": "19-Mar-2026",
         "course_duration_hours": "40",
         "course_fee": "120000",
-        "attendance_scheduled_hours": "23.0",
-        "attendance_completed_hours": "20.0",
-        "attendance_pending_hours": "20.0",
-        "completion_percentage": "50.0",
-        "primary_mentor_display": "Ankit Chheda (9)",
-        "mentor_split": "Ankit Chheda (9) / Vedant Patel (2)",
+        "attendance_scheduled_hours": "26.0",
+        "attendance_completed_hours": "23.0",
+        "attendance_pending_hours": "17.0",
+        "completion_percentage": "57.5",
+        "primary_mentor_display": "Ankit Chheda (10)",
+        "mentor_split": "Ankit Chheda (10) / Vedant Patel (2)",
         "financial_year": "FY26",
         "contact_number": "9333660000",
         "school": "Bombay International School",
@@ -11179,12 +11502,12 @@
         "enrolled_date": "17-Mar-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "14.0",
+        "attendance_scheduled_hours": "24.0",
         "attendance_completed_hours": "14.0",
         "attendance_pending_hours": "10.0",
         "completion_percentage": "58.33",
-        "primary_mentor_display": "Akshat Shah (7)",
-        "mentor_split": "Akshat Shah (7)",
+        "primary_mentor_display": "Akshat Shah (12)",
+        "mentor_split": "Akshat Shah (12)",
         "financial_year": "FY26",
         "contact_number": "9148111048",
         "school": "B D Somani International School",
@@ -11217,12 +11540,12 @@
         "enrolled_date": "16-Mar-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "21.0",
-        "attendance_completed_hours": "10.0",
-        "attendance_pending_hours": "14.0",
-        "completion_percentage": "41.67",
-        "primary_mentor_display": "Vaishnavi Bodke (20)",
-        "mentor_split": "Vaishnavi Bodke (20) / Akshat Shah (1)",
+        "attendance_scheduled_hours": "19.0",
+        "attendance_completed_hours": "11.0",
+        "attendance_pending_hours": "13.0",
+        "completion_percentage": "45.83",
+        "primary_mentor_display": "Vaishnavi Bodke (18)",
+        "mentor_split": "Vaishnavi Bodke (18) / Akshat Shah (1)",
         "financial_year": "FY26",
         "contact_number": "9999055550",
         "school": "Heritage International Xperiential School-Gurgaon",
@@ -11320,7 +11643,7 @@
         "mentor_split": "Gaurish Vaze (14) / saiyad husain (13) / Vignesh C (1)",
         "financial_year": "FY26",
         "contact_number": "9833815240",
-        "school": "Not Assigned",
+        "school": "Nita Mukesh Ambani Junior School",
         "date": "13-Mar-2026"
     },
     {
@@ -11358,7 +11681,7 @@
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY26",
         "contact_number": "9324567291",
-        "school": "Not Assigned",
+        "school": "Narayana Marol",
         "date": "13-Mar-2026"
     },
     {
@@ -11453,7 +11776,7 @@
         "mentor_split": "Vaishnavi Bodke (9) / Lavkush Chaudhary (7)",
         "financial_year": "FY26",
         "contact_number": "9870590979",
-        "school": "Not Assigned",
+        "school": "The Green Acres Academy",
         "date": "08-Mar-2026"
     },
     {
@@ -11491,7 +11814,7 @@
         "mentor_split": "Saket Singh (10) / saiyad husain (2) / Anuj Rathod (1)",
         "financial_year": "FY26",
         "contact_number": "9867382155",
-        "school": "Not Assigned",
+        "school": "P.G. GARODIA SCHOOL (ICSE)",
         "date": "07-Mar-2026"
     },
     {
@@ -11605,7 +11928,7 @@
         "mentor_split": "Janhavi Karandi (18)",
         "financial_year": "FY26",
         "contact_number": "9867201200",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "04-Mar-2026"
     },
     {
@@ -11776,7 +12099,7 @@
         "mentor_split": "Akhil Menon (1)",
         "financial_year": "FY26",
         "contact_number": "9036449179",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "27-Feb-2026"
     },
     {
@@ -11795,7 +12118,7 @@
         "mentor_split": "Akhil Menon (1)",
         "financial_year": "FY26",
         "contact_number": "9840873679",
-        "school": "Not Assigned",
+        "school": "Stonehill International School",
         "date": "27-Feb-2026"
     },
     {
@@ -11814,7 +12137,7 @@
         "mentor_split": "Akhil Menon (1)",
         "financial_year": "FY26",
         "contact_number": "",
-        "school": "Not Assigned",
+        "school": "Home School",
         "date": "27-Feb-2026"
     },
     {
@@ -11852,7 +12175,7 @@
         "mentor_split": "Latifa Zaman (28) / Ayushi lowanshi (4)",
         "financial_year": "FY26",
         "contact_number": "9167930993",
-        "school": "Not Assigned",
+        "school": "Prabhavati Padamashi Soni International Junior College",
         "date": "27-Feb-2026"
     },
     {
@@ -11902,14 +12225,14 @@
         "course_duration_hours": "24",
         "course_fee": "24000",
         "attendance_scheduled_hours": "24.0",
-        "attendance_completed_hours": "19.5",
-        "attendance_pending_hours": "4.5",
-        "completion_percentage": "81.25",
-        "primary_mentor_display": "Drashti  Shah (16)",
-        "mentor_split": "Drashti  Shah (16)",
+        "attendance_completed_hours": "21.0",
+        "attendance_pending_hours": "3.0",
+        "completion_percentage": "87.5",
+        "primary_mentor_display": "Drashti  Shah (13)",
+        "mentor_split": "Drashti  Shah (13) / Om Kulkarni (3)",
         "financial_year": "FY26",
         "contact_number": "8655866775",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "27-Feb-2026"
     },
     {
@@ -11928,7 +12251,7 @@
         "mentor_split": "Anthony Dsouza (10)",
         "financial_year": "FY26",
         "contact_number": "8655866775",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "27-Feb-2026"
     },
     {
@@ -12156,7 +12479,7 @@
         "mentor_split": "Ayush Dwivedy (14) / Vaishnavi Bodke (2)",
         "financial_year": "FY26",
         "contact_number": "9650917467",
-        "school": "Not Assigned",
+        "school": "Hiranandani Foundation School International",
         "date": "25-Feb-2026"
     },
     {
@@ -12213,7 +12536,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "8388888830",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "21-Feb-2026"
     },
     {
@@ -12232,7 +12555,7 @@
         "mentor_split": "Anthony Dsouza (14)",
         "financial_year": "FY26",
         "contact_number": "9136011362",
-        "school": "Not Assigned",
+        "school": "Kanakia International School",
         "date": "21-Feb-2026"
     },
     {
@@ -12270,7 +12593,7 @@
         "mentor_split": "Vedant Raut (6) / Vedant Patel (5)",
         "financial_year": "FY26",
         "contact_number": "9820702950",
-        "school": "Not Assigned",
+        "school": "Garodia International Centre for Learning Mumbai",
         "date": "21-Feb-2026"
     },
     {
@@ -12650,7 +12973,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "9035019679",
-        "school": "Not Assigned",
+        "school": "Greenwood High International School Bangalore",
         "date": "08-Feb-2026"
     },
     {
@@ -12764,7 +13087,7 @@
         "mentor_split": "Vedant Raut (6) / Shashank Bhosale (6)",
         "financial_year": "FY26",
         "contact_number": "9833857909",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "02-Feb-2026"
     },
     {
@@ -12832,12 +13155,12 @@
         "enrolled_date": "30-Jan-2026",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "22.5",
-        "attendance_completed_hours": "21.0",
-        "attendance_pending_hours": "3.0",
-        "completion_percentage": "87.5",
-        "primary_mentor_display": "saiyad husain (18)",
-        "mentor_split": "saiyad husain (18)",
+        "attendance_scheduled_hours": "24.0",
+        "attendance_completed_hours": "24.0",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.0",
+        "primary_mentor_display": "saiyad husain (19)",
+        "mentor_split": "saiyad husain (19)",
         "financial_year": "FY26",
         "contact_number": "9920210380",
         "school": "Aditya Birla World Academy",
@@ -12973,7 +13296,7 @@
         "mentor_split": "Gaurish Vaze (8) / Devendra Pawar (3)",
         "financial_year": "FY26",
         "contact_number": "9619035554",
-        "school": "Not Assigned",
+        "school": "Mount Litera School International",
         "date": "22-Jan-2026"
     },
     {
@@ -13049,7 +13372,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "7739685040",
-        "school": "Not Assigned",
+        "school": "Skinner North Classical School",
         "date": "20-Jan-2026"
     },
     {
@@ -13068,7 +13391,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "9313314700",
-        "school": "Not Assigned",
+        "school": "Pathways School Gurgaon",
         "date": "19-Jan-2026"
     },
     {
@@ -13087,7 +13410,7 @@
         "mentor_split": "Lavkush Chaudhary (12) / Latifa Zaman (4) / saiyad husain (1)",
         "financial_year": "FY26",
         "contact_number": "6580282746",
-        "school": "Not Assigned",
+        "school": "St Josephs Institution International",
         "date": "16-Jan-2026"
     },
     {
@@ -13125,7 +13448,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "9167784004",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "13-Jan-2026"
     },
     {
@@ -13277,7 +13600,7 @@
         "mentor_split": "Shubham Mehta (9) / Aniket Karkala (1)",
         "financial_year": "FY26",
         "contact_number": "9833418877",
-        "school": "Not Assigned",
+        "school": "DSB International School",
         "date": "06-Jan-2026"
     },
     {
@@ -13317,6 +13640,25 @@
         "contact_number": "9930758803",
         "school": "ASCEND International School",
         "date": "05-Jan-2026"
+    },
+    {
+        "course_name": "3D CAD INT",
+        "course_category": "International",
+        "student_name": "Ayaan Gupta",
+        "enrolment_center": "Mumbai Bandra",
+        "enrolled_date": "03-Jan-2026",
+        "course_duration_hours": "24",
+        "course_fee": "360",
+        "attendance_scheduled_hours": "24.0",
+        "attendance_completed_hours": "24.0",
+        "attendance_pending_hours": "0.0",
+        "completion_percentage": "100.0",
+        "primary_mentor_display": "Shashank Bhosale (16)",
+        "mentor_split": "Shashank Bhosale (16)",
+        "financial_year": "FY26",
+        "contact_number": "9195996898",
+        "school": "William Diamond Middle School",
+        "date": "03-Jan-2026"
     },
     {
         "course_name": "FIRST Robotics Competition",
@@ -13402,12 +13744,12 @@
         "enrolled_date": "02-Jan-2026",
         "course_duration_hours": "50",
         "course_fee": "150000",
-        "attendance_scheduled_hours": "34.0",
+        "attendance_scheduled_hours": "36.0",
         "attendance_completed_hours": "34.0",
         "attendance_pending_hours": "16.0",
         "completion_percentage": "68.0",
-        "primary_mentor_display": "Ankit Chheda (13)",
-        "mentor_split": "Ankit Chheda (13) / Vedant Patel (5) / Vishesh Mistry (1)",
+        "primary_mentor_display": "Ankit Chheda (14)",
+        "mentor_split": "Ankit Chheda (14) / Vedant Patel (5) / Vishesh Mistry (1)",
         "financial_year": "FY26",
         "contact_number": "9152969221",
         "school": "Nahar International School",
@@ -13429,7 +13771,7 @@
         "mentor_split": "Shashank Bhosale (12)",
         "financial_year": "FY26",
         "contact_number": "9870723456",
-        "school": "Not Assigned",
+        "school": "Jamnabai Narsee School",
         "date": "31-Dec-2025"
     },
     {
@@ -13486,7 +13828,7 @@
         "mentor_split": "Ankit Chheda (7) / Anthony Dsouza (6)",
         "financial_year": "FY26",
         "contact_number": "9820975769",
-        "school": "Not Assigned",
+        "school": "Jamnabai Narsee School",
         "date": "27-Dec-2025"
     },
     {
@@ -13498,9 +13840,9 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "40.5",
-        "attendance_completed_hours": "36.5",
-        "attendance_pending_hours": "3.5",
-        "completion_percentage": "91.25",
+        "attendance_completed_hours": "37.5",
+        "attendance_pending_hours": "2.5",
+        "completion_percentage": "93.75",
         "primary_mentor_display": "Vedant Patel (23)",
         "mentor_split": "Vedant Patel (23)",
         "financial_year": "FY26",
@@ -13524,7 +13866,7 @@
         "mentor_split": "Vedant Patel (19) / Ankit Chheda (2)",
         "financial_year": "FY26",
         "contact_number": "9820160371",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "26-Dec-2025"
     },
     {
@@ -13562,7 +13904,7 @@
         "mentor_split": "Shashank Bhosale (5) / Ankit Chheda (4) / Shubham Mehta (3)",
         "financial_year": "FY26",
         "contact_number": "9372027436",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "26-Dec-2025"
     },
     {
@@ -13885,7 +14227,7 @@
         "mentor_split": "Akhil Menon (10)",
         "financial_year": "FY26",
         "contact_number": "",
-        "school": "Not Assigned",
+        "school": "National Public School-Agara",
         "date": "10-Dec-2025"
     },
     {
@@ -13904,7 +14246,7 @@
         "mentor_split": "Vignesh C (10)",
         "financial_year": "FY26",
         "contact_number": "",
-        "school": "Not Assigned",
+        "school": "National Public School-Agara",
         "date": "10-Dec-2025"
     },
     {
@@ -13961,7 +14303,7 @@
         "mentor_split": "Atharva  Dalvi (10)",
         "financial_year": "FY26",
         "contact_number": "9321693990",
-        "school": "Not Assigned",
+        "school": "Kanakia International School",
         "date": "08-Dec-2025"
     },
     {
@@ -14196,7 +14538,7 @@
         "course_name": "Mechatronics Intermediate",
         "course_category": "Robotics",
         "student_name": "Parth jain",
-        "enrolment_center": "Mumbai Bandra",
+        "enrolment_center": "Mumbai Dadar",
         "enrolled_date": "28-Nov-2025",
         "course_duration_hours": "24",
         "course_fee": "24000",
@@ -15386,7 +15728,7 @@
         "mentor_split": "Shashank Bhosale (7) / Amir Zakaria (4) / Ankit Chheda (3) / Aniket Karkala (1)",
         "financial_year": "FY26",
         "contact_number": "9136011362",
-        "school": "Not Assigned",
+        "school": "Kanakia International School",
         "date": "16-Nov-2025"
     },
     {
@@ -18160,7 +18502,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "9167784004",
-        "school": "Not Assigned",
+        "school": "Podar International School",
         "date": "08-Nov-2025"
     },
     {
@@ -23651,7 +23993,7 @@
         "mentor_split": "",
         "financial_year": "FY26",
         "contact_number": "7807279929",
-        "school": "Not Assigned",
+        "school": "Auckland House School for Boys",
         "date": "05-Nov-2025"
     },
     {
@@ -28971,7 +29313,7 @@
         "mentor_split": "Zaid Shaikh (9) / Aniket Karkala (7)",
         "financial_year": "FY26",
         "contact_number": "9833768471",
-        "school": "Bombay International School",
+        "school": "Sri Aurobindo International School",
         "date": "06-Oct-2025"
     },
     {
@@ -31415,9 +31757,9 @@
         "course_duration_hours": "40",
         "course_fee": "120000",
         "attendance_scheduled_hours": "57.5",
-        "attendance_completed_hours": "53.5",
+        "attendance_completed_hours": "54.5",
         "attendance_pending_hours": "0.0",
-        "completion_percentage": "133.75",
+        "completion_percentage": "136.25",
         "primary_mentor_display": "Gaurish Vaze (17)",
         "mentor_split": "Gaurish Vaze (17) / saiyad husain (16) / Latifa Zaman (7)",
         "financial_year": "FY26",
@@ -31433,12 +31775,12 @@
         "enrolled_date": "21-Aug-2025",
         "course_duration_hours": "24",
         "course_fee": "24000",
-        "attendance_scheduled_hours": "23.0",
+        "attendance_scheduled_hours": "21.0",
         "attendance_completed_hours": "21.0",
         "attendance_pending_hours": "3.0",
         "completion_percentage": "87.5",
         "primary_mentor_display": "Gaurish Vaze (8)",
-        "mentor_split": "Gaurish Vaze (8) / Saket Singh (6) / Nazeem  Patel (1)",
+        "mentor_split": "Gaurish Vaze (8) / Saket Singh (5) / Nazeem  Patel (1)",
         "financial_year": "FY26",
         "contact_number": "9833479990",
         "school": "B D Somani International School",
