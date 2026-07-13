@@ -2,6 +2,70 @@
     {
         "course_category": "Hackathon",
         "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Arav Dwivedi",
+        "new/existing": "New",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Design Foundation",
+        "student_name": "Kiaan Parikh",
+        "new/existing": "New",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "15000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Aarav Nawal",
+        "new/existing": "Existing",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Addrito Mukhopadhyay",
+        "new/existing": "New",
+        "enrolment_date": "12-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Joanne Sarah Robin",
+        "new/existing": "New",
+        "enrolment_date": "12-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Sanket Kumar",
+        "new/existing": "New",
+        "enrolment_date": "12-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Siddhhant Anand",
+        "new/existing": "New",
+        "enrolment_date": "12-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Saanvi Roy",
+        "new/existing": "New",
+        "enrolment_date": "12-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
         "student_name": "Shriya Garg",
         "new/existing": "New",
         "enrolment_date": "11-Jul-2026",
@@ -22,6 +86,14 @@
         "new/existing": "New",
         "enrolment_date": "11-Jul-2026",
         "course_fee": "24000"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Admits 360 STEM Exploration Program",
+        "student_name": "Saanvie Seth",
+        "new/existing": "Existing",
+        "enrolment_date": "11-Jul-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "TIS Schools",
