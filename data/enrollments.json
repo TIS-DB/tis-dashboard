@@ -8,6 +8,30 @@
         "course_fee": "424"
     },
     {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Arul Malajure",
+        "new/existing": "New",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Samvid Pasbola",
+        "new/existing": "New",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Aviraj Damani",
+        "new/existing": "Existing",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "17000"
+    },
+    {
         "course_category": "TIS Foundation",
         "course_name": "Design Foundation",
         "student_name": "Kiaan Parikh",
@@ -20,6 +44,14 @@
         "course_name": "Mechatronics Intermediate",
         "student_name": "Aarav Nawal",
         "new/existing": "Existing",
+        "enrolment_date": "13-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Mechatronics Intermediate",
+        "student_name": "Parth Thakkar",
+        "new/existing": "New",
         "enrolment_date": "13-Jul-2026",
         "course_fee": "24000"
     },
@@ -251,7 +283,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Aryajay Dhadha",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -259,7 +291,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Aryaman Rai",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -267,7 +299,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Attharva Jani",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -275,7 +307,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Christina Nagpal",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -283,7 +315,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Daniela Nagpal",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -291,7 +323,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Devarsh Trimukhe",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -299,7 +331,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Fiona Kotak",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -307,7 +339,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Jeev Puri",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -315,7 +347,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Jianni Shah",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -323,7 +355,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Krishang Malvadkar",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -331,7 +363,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Mokshaj Tilwani",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -339,7 +371,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Reyaansh Ruia",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -347,7 +379,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Saanvi Malvadkar",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -355,7 +387,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Samar Bisani",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -363,7 +395,7 @@
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Skie John",
-        "new/existing": "New",
+        "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
         "course_fee": "17000"
     },
@@ -1374,6 +1406,14 @@
         "new/existing": "New",
         "enrolment_date": "23-Jun-2026",
         "course_fee": "24000"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Nurturing Innovators (Ext)",
+        "student_name": "Neha Mishra",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jun-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "Bootcamps",
