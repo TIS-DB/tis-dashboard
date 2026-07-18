@@ -1,11 +1,99 @@
 [
     {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Aadit Jain",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Aditya Sinha",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "ANANT MISHRA",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Anishram Jaibhaskar",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Arnav Suryavanshi",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Atharva More",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Tanishka Panda",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "VEX V5 RC",
+        "student_name": "Reyansh Chandra",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "FIRST Robotics Competition",
+        "student_name": "Dhruv Mehrotra",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "300000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "VIREN SIDHWANI",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
         "course_category": "TIS Foundation",
         "course_name": "3D CAD",
         "student_name": "Arhaan Sethi",
         "new/existing": "Existing",
         "enrolment_date": "17-Jul-2026",
         "course_fee": "24000"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Admits 360 STEM Exploration Program",
+        "student_name": "Tunav Agrawal",
+        "new/existing": "New",
+        "enrolment_date": "17-Jul-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "Hackathon",
