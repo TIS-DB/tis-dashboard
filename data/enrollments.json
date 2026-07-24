@@ -1,11 +1,187 @@
 [
     {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Vanshee Poladiya",
+        "new/existing": "New",
+        "enrolment_date": "24-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Zenisha Shah",
+        "new/existing": "New",
+        "enrolment_date": "24-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "VEX IQ (AIS)",
+        "student_name": "Tvisha Modi",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "110000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "National Robotics League (AIS) 2026",
+        "student_name": "Alaina Parikh-Agrawal",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "28500"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Kabir Chugh Asrani",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Krish Jhamb",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Saharsh Lehri",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Vedant Amladi",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Shreya Devarajan",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "ARVIN GOEL",
+        "new/existing": "New",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "3D CAD",
+        "student_name": "Shivansh Rai",
+        "new/existing": "Existing",
+        "enrolment_date": "23-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "National Robotics League (AIS) 2026",
+        "student_name": "Veer Luwana",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "28500"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Alak Jain",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Jahaan Motwani",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Jujhaar Singh",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Kshaunish Sinha",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Rachita Gupta",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Rajveer Sanghvi",
+        "new/existing": "Existing",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Shaurya Purohit",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "424"
+    },
+    {
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
         "student_name": "Neha Mishra",
         "new/existing": "Existing",
         "enrolment_date": "22-Jul-2026",
         "course_fee": "17000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "VEX V5 RC",
+        "student_name": "Arjun Anand",
+        "new/existing": "Existing",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "135000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Aarav Pandya",
+        "new/existing": "Existing",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Admits 360 STEM Exploration Program",
+        "student_name": "Benjamin Berkson",
+        "new/existing": "New",
+        "enrolment_date": "22-Jul-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "Hackathon",
