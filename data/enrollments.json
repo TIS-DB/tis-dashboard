@@ -2,10 +2,98 @@
     {
         "course_category": "Hackathon",
         "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Naman Inani",
+        "new/existing": "New",
+        "enrolment_date": "28-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "VEX iQ + NRL (AIS)",
+        "student_name": "Shiven Patel",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "138500"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Arham Shah",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Chehel Jain",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Dhriti Jain",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
         "student_name": "Iris Dsouza",
         "new/existing": "New",
         "enrolment_date": "27-Jul-2026",
         "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Isha Kabra",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "Hackathon",
+        "course_name": "Now or Never Hack - Young Innovators Hackathon",
+        "student_name": "Kanishk Poddar",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "424"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Artificial Intelligence: Concepts to Applications",
+        "student_name": "Veer Mehta",
+        "new/existing": "Existing",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "75000"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 40 Hours",
+        "student_name": "Aditya Parikh",
+        "new/existing": "Existing",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "120000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Hrishav Vakil",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "24000"
+    },
+    {
+        "course_category": "TIS Foundation",
+        "course_name": "Python Programming - Beginner",
+        "student_name": "Vidhaan Ramchand",
+        "new/existing": "New",
+        "enrolment_date": "27-Jul-2026",
+        "course_fee": "24000"
     },
     {
         "course_category": "Hackathon",
