@@ -120,13 +120,13 @@
         "#": "10",
         "kpi_category": "Retention",
         "kpi_name": "Student Retention Rate",
-        "metric": "Students enrolling in another course / Eligible students",
+        "metric": "Students enrolling in another course / Students with Foundation or Competition courses completed",
         "target": ">90%",
-        "time_period_analysed": "18th Jul to 24th Jul",
-        "kpi_value": "0.42857142857142855",
+        "time_period_analysed": "YTD 24th Jul",
+        "kpi_value": "0.45627376425855515",
         "ni_kpi": "",
         "foundation_kpi": "",
-        "bandra_kpi": "0.0",
-        "dadar_kpi": "1.0"
+        "bandra_kpi": "0.4787234042553192",
+        "dadar_kpi": "0.4437869822485207"
     }
 ]
