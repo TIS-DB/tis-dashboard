@@ -240,19 +240,15 @@ function setCSCategory(category) {
  */
 function isTimeKPI(kpi = {}) {
   const kpiName = clean(kpi.kpi_name).toLowerCase();
-  const metric = clean(kpi.metric).toLowerCase();
-  const target = clean(kpi.target).toLowerCase();
 
-  const combinedText = `${kpiName} ${metric} ${target}`;
-
+  /*
+   * Only Query Response TAT is measured in hours.
+   * Every other KPI is treated as a percentage.
+   */
   return (
-    combinedText.includes("response tat") ||
-    combinedText.includes("query response") ||
-    combinedText.includes("turnaround time") ||
-    combinedText.includes("turn around time") ||
-    combinedText.includes("response time") ||
-    combinedText.includes("hour") ||
-    combinedText.includes("hrs")
+    kpiName.includes("query response tat") ||
+    kpiName.includes("query turnaround time") ||
+    kpiName.includes("query turn around time")
   );
 }
 
