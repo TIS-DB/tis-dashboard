@@ -55,18 +55,15 @@ function refreshDashboard() {
    MAIN RENDER
 ===================================================== */
 
+
+
 function render() {
   renderKPI();
   renderSummary();
   renderMonthlyChart();
+  renderChart();
   renderBreadcrumb();
   renderList();
-
-  /*
-  Uncomment this only if your HTML contains:
-  <canvas id="categoryChart"></canvas>
-  */
-  // renderChart();
 }
 
 /* =====================================================
