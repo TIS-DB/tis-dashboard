@@ -110,11 +110,11 @@
         "metric": "End course feedback shared within 7 days / Completed students",
         "target": ">95%",
         "time_period_analysed": "18th Jul to 24th Jul",
-        "kpi_value": "0.8461538461538461",
+        "kpi_value": "0.7142857142857143",
         "ni_kpi": "",
         "foundation_kpi": "",
-        "bandra_kpi": "0.8",
-        "dadar_kpi": "1.0"
+        "bandra_kpi": "0.75",
+        "dadar_kpi": "0.6666666666666666"
     },
     {
         "#": "10",
