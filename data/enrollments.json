@@ -1160,14 +1160,6 @@
         "course_fee": "0"
     },
     {
-        "course_category": "TIS Foundations",
-        "course_name": "Dummy",
-        "student_name": "Test Test",
-        "new/existing": "New",
-        "enrolment_date": "21-Jul-2026",
-        "course_fee": "100"
-    },
-    {
         "course_category": "Hackathon",
         "course_name": "Now or Never Hack - Young Innovators Hackathon",
         "student_name": "Adhrit Panda",
