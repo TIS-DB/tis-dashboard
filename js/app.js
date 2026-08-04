@@ -1,4 +1,7 @@
+let allData = [];
 let rawData = [];
+
+let selectedFinancialYear = "";
 
 let monthlyChart;
 let monthlyRevenueChart;
@@ -25,7 +28,10 @@ let state = {
   selectedCourse: null
 };
 
-document.addEventListener("DOMContentLoaded", loadData);
+document.addEventListener(
+  "DOMContentLoaded",
+  loadData
+);
 
 /* =====================================================
    LOAD DATA
@@ -34,11 +40,14 @@ document.addEventListener("DOMContentLoaded", loadData);
 async function loadData() {
   try {
     const response = await fetch(
-      "data/enrollments.json?v=" + Date.now()
+      "data/enrollments.json?v=" +
+      Date.now()
     );
 
     if (!response.ok) {
-      throw new Error("Unable to load enrollments.json");
+      throw new Error(
+        "Unable to load enrollments.json"
+      );
     }
 
     const data = await response.json();
@@ -49,9 +58,12 @@ async function loadData() {
       );
     }
 
-    rawData = data;
+    allData = data;
 
+    renderFinancialYearDropdown();
+    applyFinancialYearFilter();
     render();
+
   } catch (error) {
     console.error(
       "Error loading enrolment data:",
@@ -59,7 +71,9 @@ async function loadData() {
     );
 
     const listContainer =
-      document.getElementById("listContainer");
+      document.getElementById(
+        "listContainer"
+      );
 
     if (listContainer) {
       listContainer.innerHTML = `
@@ -74,6 +88,134 @@ async function loadData() {
 
 function refreshDashboard() {
   loadData();
+}
+
+/* =====================================================
+   FINANCIAL YEAR FILTER
+===================================================== */
+
+function normaliseFinancialYear(value) {
+  return String(value || "")
+    .trim()
+    .toUpperCase();
+}
+
+function getFinancialYearNumber(value) {
+  const match =
+    String(value || "").match(/\d+/);
+
+  return match
+    ? Number(match[0])
+    : 0;
+}
+
+function getUniqueFinancialYears() {
+  const years = allData
+    .map(row =>
+      normaliseFinancialYear(
+        row.financial_year
+      )
+    )
+    .filter(Boolean);
+
+  return [...new Set(years)].sort(
+    (a, b) =>
+      getFinancialYearNumber(b) -
+      getFinancialYearNumber(a)
+  );
+}
+
+function renderFinancialYearDropdown() {
+  const dropdown =
+    document.getElementById(
+      "financialYearSelect"
+    );
+
+  if (!dropdown) {
+    return;
+  }
+
+  const financialYears =
+    getUniqueFinancialYears();
+
+  if (!financialYears.length) {
+    selectedFinancialYear = "";
+
+    dropdown.innerHTML = `
+      <option value="">
+        No financial year
+      </option>
+    `;
+
+    return;
+  }
+
+  /*
+    Keep the selected year after refreshing.
+    Otherwise use the latest available year.
+  */
+
+  if (
+    !selectedFinancialYear ||
+    !financialYears.includes(
+      selectedFinancialYear
+    )
+  ) {
+    selectedFinancialYear =
+      financialYears[0];
+  }
+
+  dropdown.innerHTML =
+    financialYears
+      .map(year => `
+        <option
+          value="${year}"
+          ${
+            year === selectedFinancialYear
+              ? "selected"
+              : ""
+          }
+        >
+          ${year}
+        </option>
+      `)
+      .join("");
+}
+
+function applyFinancialYearFilter() {
+  rawData = allData.filter(row => {
+    const rowYear =
+      normaliseFinancialYear(
+        row.financial_year
+      );
+
+    return (
+      rowYear === selectedFinancialYear
+    );
+  });
+
+  state.level = "category";
+  state.selectedCategory = null;
+  state.selectedCourse = null;
+}
+
+function changeFinancialYear() {
+  const dropdown =
+    document.getElementById(
+      "financialYearSelect"
+    );
+
+  if (!dropdown) {
+    return;
+  }
+
+  selectedFinancialYear =
+    normaliseFinancialYear(
+      dropdown.value
+    );
+
+  applyFinancialYearFilter();
+  render();
 }
 
 /* =====================================================
@@ -114,11 +256,13 @@ function typeOfStudent(row) {
 }
 
 function isNewStudent(row) {
-  return typeOfStudent(row).includes("new");
+  return typeOfStudent(row)
+    .includes("new");
 }
 
 function isExistingStudent(row) {
-  return typeOfStudent(row).includes("existing");
+  return typeOfStudent(row)
+    .includes("existing");
 }
 
 function newPercent(data) {
@@ -126,26 +270,35 @@ function newPercent(data) {
     return 0;
   }
 
-  const newRows = data.filter(isNewStudent);
+  const newRows =
+    data.filter(isNewStudent);
 
-  return (newRows.length / data.length) * 100;
+  return (
+    newRows.length /
+    data.length
+  ) * 100;
 }
 
 function formatCurrency(value) {
-  return new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: 0
-  }).format(Number(value) || 0);
+  return new Intl.NumberFormat(
+    "en-IN",
+    {
+      style: "currency",
+      currency: "INR",
+      maximumFractionDigits: 0
+    }
+  ).format(Number(value) || 0);
 }
 
 function formatShortCurrency(value) {
-  const amount = Number(value) || 0;
+  const amount =
+    Number(value) || 0;
 
   if (amount >= 10000000) {
     return (
       "₹" +
-      (amount / 10000000).toFixed(2) +
+      (amount / 10000000)
+        .toFixed(2) +
       " Cr"
     );
   }
@@ -153,7 +306,8 @@ function formatShortCurrency(value) {
   if (amount >= 100000) {
     return (
       "₹" +
-      (amount / 100000).toFixed(2) +
+      (amount / 100000)
+        .toFixed(2) +
       " L"
     );
   }
@@ -161,7 +315,8 @@ function formatShortCurrency(value) {
   if (amount >= 1000) {
     return (
       "₹" +
-      (amount / 1000).toFixed(1) +
+      (amount / 1000)
+        .toFixed(1) +
       " K"
     );
   }
@@ -170,7 +325,8 @@ function formatShortCurrency(value) {
 }
 
 function setText(id, value) {
-  const element = document.getElementById(id);
+  const element =
+    document.getElementById(id);
 
   if (element) {
     element.innerText = value;
@@ -187,6 +343,15 @@ function getDateValue(row) {
   );
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 /* =====================================================
    DATE AND MONTH HANDLING
 ===================================================== */
@@ -196,16 +361,17 @@ function getMonthLabel(dateText) {
     return "Unknown";
   }
 
-  const value = String(dateText).trim();
+  const value =
+    String(dateText).trim();
 
   /*
-    Handles date format:
-    01-Aug-2026
+    Format: 03-Aug-2026
   */
 
-  const dayMonthYear = value.match(
-    /^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/
-  );
+  const dayMonthYear =
+    value.match(
+      /^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/
+    );
 
   if (dayMonthYear) {
     const month =
@@ -213,21 +379,23 @@ function getMonthLabel(dateText) {
         .substring(0, 3)
         .toLowerCase();
 
-    const matchedMonth = monthOrder.find(
-      item => item.toLowerCase() === month
-    );
+    const matchedMonth =
+      monthOrder.find(
+        item =>
+          item.toLowerCase() === month
+      );
 
     return matchedMonth || "Unknown";
   }
 
   /*
-    Handles date format:
-    2026-08-01
+    Format: 2026-08-03
   */
 
-  const yearMonthDay = value.match(
-    /^(\d{4})-(\d{1,2})-(\d{1,2})$/
-  );
+  const yearMonthDay =
+    value.match(
+      /^(\d{4})-(\d{1,2})-(\d{1,2})$/
+    );
 
   if (yearMonthDay) {
     const monthNumber =
@@ -249,20 +417,25 @@ function getMonthLabel(dateText) {
     ];
 
     return (
-      calendarMonths[monthNumber - 1] ||
-      "Unknown"
+      calendarMonths[
+        monthNumber - 1
+      ] || "Unknown"
     );
   }
 
-  const date = new Date(value);
+  const date =
+    new Date(value);
 
   if (isNaN(date.getTime())) {
     return "Unknown";
   }
 
-  return date.toLocaleString("en-US", {
-    month: "short"
-  });
+  return date.toLocaleString(
+    "en-US",
+    {
+      month: "short"
+    }
+  );
 }
 
 /* =====================================================
@@ -270,83 +443,108 @@ function getMonthLabel(dateText) {
 ===================================================== */
 
 function renderKPI() {
-  const totalStudents = rawData.length;
+  const totalEnrolments =
+    rawData.length;
 
   const newRows =
     rawData.filter(isNewStudent);
 
   const existingRows =
-    rawData.filter(isExistingStudent);
+    rawData.filter(
+      isExistingStudent
+    );
 
-  const totalRevenue = rawData.reduce(
-    (sum, row) => sum + fee(row),
-    0
-  );
+  const totalRevenue =
+    rawData.reduce(
+      (sum, row) =>
+        sum + fee(row),
+      0
+    );
 
-  const newRevenue = newRows.reduce(
-    (sum, row) => sum + fee(row),
-    0
-  );
+  const newRevenue =
+    newRows.reduce(
+      (sum, row) =>
+        sum + fee(row),
+      0
+    );
 
   const existingRevenue =
     existingRows.reduce(
-      (sum, row) => sum + fee(row),
+      (sum, row) =>
+        sum + fee(row),
       0
     );
 
   const averageRevenue =
-    totalStudents > 0
-      ? totalRevenue / totalStudents
+    totalEnrolments
+      ? totalRevenue /
+        totalEnrolments
       : 0;
 
   const newStudentShare =
-    totalStudents > 0
-      ? (newRows.length / totalStudents) * 100
+    totalEnrolments
+      ? (
+          newRows.length /
+          totalEnrolments
+        ) * 100
       : 0;
 
   setText(
     "totalStudents",
-    totalStudents.toLocaleString("en-IN")
+    totalEnrolments
+      .toLocaleString("en-IN")
   );
 
   setText(
     "existingCount",
-    existingRows.length.toLocaleString("en-IN")
+    existingRows.length
+      .toLocaleString("en-IN")
   );
 
   setText(
     "newCount",
-    newRows.length.toLocaleString("en-IN")
+    newRows.length
+      .toLocaleString("en-IN")
   );
 
   setText(
     "totalRevenue",
-    formatShortCurrency(totalRevenue)
+    formatShortCurrency(
+      totalRevenue
+    )
   );
 
   setText(
     "existingRevenue",
-    formatShortCurrency(existingRevenue)
+    formatShortCurrency(
+      existingRevenue
+    )
   );
 
   setText(
     "newRevenue",
-    formatShortCurrency(newRevenue)
+    formatShortCurrency(
+      newRevenue
+    )
   );
 
   setText(
     "avgRevenue",
-    formatShortCurrency(averageRevenue)
+    formatShortCurrency(
+      averageRevenue
+    )
   );
 
   setText(
     "newShare",
-    newStudentShare.toFixed(1) + "%"
+    newStudentShare
+      .toFixed(1) + "%"
   );
 
   setText(
     "newShareText",
-    `${newRows.length} of ${totalStudents} enrolments`
+    `${newRows.length} of ` +
+    `${totalEnrolments} enrolments`
   );
 }
 
@@ -355,15 +553,22 @@ function renderKPI() {
 ===================================================== */
 
 function renderSummary() {
-  const totalRevenue = rawData.reduce(
-    (sum, row) => sum + fee(row),
-    0
-  );
+  const totalRevenue =
+    rawData.reduce(
+      (sum, row) =>
+        sum + fee(row),
+      0
+    );
+
+  const yearText =
+    selectedFinancialYear ||
+    "Financial Year";
 
   setText(
     "summaryText",
     `${rawData.length.toLocaleString("en-IN")} enrolments · ` +
-      `${formatShortCurrency(totalRevenue)} revenue · FY27`
+    `${formatShortCurrency(totalRevenue)} revenue · ` +
+    `${yearText}`
   );
 
   const now = new Date();
@@ -371,10 +576,13 @@ function renderSummary() {
   setText(
     "updatedAt",
     "Updated " +
-      now.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit"
-      })
+      now.toLocaleTimeString(
+        [],
+        {
+          hour: "2-digit",
+          minute: "2-digit"
+        }
+      )
   );
 }
 
@@ -395,23 +603,30 @@ function getMonthlyData() {
   });
 
   rawData.forEach(row => {
-    const month = getMonthLabel(
-      getDateValue(row)
-    );
+    const month =
+      getMonthLabel(
+        getDateValue(row)
+      );
 
     if (!monthMap[month]) {
       return;
     }
 
     if (isExistingStudent(row)) {
-      monthMap[month].existingCount++;
-      monthMap[month].existingRevenue +=
+      monthMap[month]
+        .existingCount++;
+
+      monthMap[month]
+        .existingRevenue +=
         fee(row);
     }
 
     if (isNewStudent(row)) {
-      monthMap[month].newCount++;
-      monthMap[month].newRevenue +=
+      monthMap[month]
+        .newCount++;
+
+      monthMap[month]
+        .newRevenue +=
         fee(row);
     }
   });
@@ -424,167 +639,41 @@ function getMonthlyData() {
 ===================================================== */
 
 function renderMonthlyChart() {
-  const chartCanvas =
-    document.getElementById("monthlyChart");
+  const canvas =
+    document.getElementById(
+      "monthlyChart"
+    );
 
   if (
-    !chartCanvas ||
+    !canvas ||
     typeof Chart === "undefined"
   ) {
     return;
   }
 
-  const monthMap = getMonthlyData();
+  const monthMap =
+    getMonthlyData();
 
-  const existingData = monthOrder.map(
-    month => monthMap[month].existingCount
-  );
+  const existingData =
+    monthOrder.map(
+      month =>
+        monthMap[month]
+          .existingCount
+    );
 
-  const newData = monthOrder.map(
-    month => monthMap[month].newCount
-  );
+  const newData =
+    monthOrder.map(
+      month =>
+        monthMap[month]
+          .newCount
+    );
 
   if (monthlyChart) {
     monthlyChart.destroy();
   }
 
-  monthlyChart = new Chart(chartCanvas, {
-    type: "bar",
-
-    data: {
-      labels: monthOrder,
-
-      datasets: [
-        {
-          label: "Existing",
-          data: existingData,
-          backgroundColor: "#368ddb",
-          borderRadius: 5,
-          stack: "monthlyEnrolments"
-        },
-        {
-          label: "New",
-          data: newData,
-          backgroundColor: "#1b9d7f",
-          borderRadius: 5,
-          stack: "monthlyEnrolments"
-        }
-      ]
-    },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-
-      interaction: {
-        mode: "index",
-        intersect: false
-      },
-
-      plugins: {
-        legend: {
-          position: "top",
-          align: "end",
-
-          labels: {
-            boxWidth: 12,
-            boxHeight: 12
-          }
-        },
-
-        tooltip: {
-          callbacks: {
-            label(context) {
-              return (
-                context.dataset.label +
-                ": " +
-                context.raw +
-                " enrolments"
-              );
-            },
-
-            footer(items) {
-              const total = items.reduce(
-                (sum, item) =>
-                  sum + Number(item.raw || 0),
-                0
-              );
-
-              return "Total: " + total;
-            }
-          }
-        }
-      },
-
-      scales: {
-        x: {
-          stacked: true,
-
-          grid: {
-            display: false
-          }
-        },
-
-        y: {
-          stacked: true,
-          beginAtZero: true,
-
-          grid: {
-            color: "#e5e5e5"
-          },
-
-          ticks: {
-            precision: 0
-          },
-
-          title: {
-            display: true,
-            text: "Number of enrolments"
-          }
-        }
-      }
-    }
-  });
-}
-
-/* =====================================================
-   MONTHLY REVENUE CHART
-===================================================== */
-
-function renderMonthlyRevenueChart() {
-  const chartCanvas =
-    document.getElementById(
-      "monthlyRevenueChart"
-    );
-
-  if (
-    !chartCanvas ||
-    typeof Chart === "undefined"
-  ) {
-    return;
-  }
-
-  const monthMap = getMonthlyData();
-
-  const existingRevenueData =
-    monthOrder.map(
-      month =>
-        monthMap[month].existingRevenue
-    );
-
-  const newRevenueData =
-    monthOrder.map(
-      month =>
-        monthMap[month].newRevenue
-    );
-
-  if (monthlyRevenueChart) {
-    monthlyRevenueChart.destroy();
-  }
-
-  monthlyRevenueChart = new Chart(
-    chartCanvas,
-    {
+  monthlyChart =
+    new Chart(canvas, {
       type: "bar",
 
       data: {
@@ -592,18 +681,22 @@ function renderMonthlyRevenueChart() {
 
         datasets: [
           {
-            label: "Existing Revenue",
-            data: existingRevenueData,
-            backgroundColor: "#368ddb",
+            label: "Existing",
+            data: existingData,
+            backgroundColor:
+              "#368ddb",
             borderRadius: 5,
-            stack: "monthlyRevenue"
+            stack:
+              "monthlyEnrolments"
           },
           {
-            label: "New Revenue",
-            data: newRevenueData,
-            backgroundColor: "#1b9d7f",
+            label: "New",
+            data: newData,
+            backgroundColor:
+              "#1b9d7f",
             borderRadius: 5,
-            stack: "monthlyRevenue"
+            stack:
+              "monthlyEnrolments"
           }
         ]
       },
@@ -632,22 +725,185 @@ function renderMonthlyRevenueChart() {
             callbacks: {
               label(context) {
                 return (
-                  context.dataset.label +
+                  context.dataset
+                    .label +
                   ": " +
-                  formatCurrency(context.raw)
+                  context.raw +
+                  " enrolments"
                 );
               },
 
               footer(items) {
-                const total = items.reduce(
-                  (sum, item) =>
-                    sum + Number(item.raw || 0),
-                  0
+                const total =
+                  items.reduce(
+                    (sum, item) =>
+                      sum +
+                      Number(
+                        item.raw || 0
+                      ),
+                    0
+                  );
+
+                return (
+                  "Total: " + total
                 );
+              }
+            }
+          }
+        },
+
+        scales: {
+          x: {
+            stacked: true,
+
+            grid: {
+              display: false
+            }
+          },
+
+          y: {
+            stacked: true,
+            beginAtZero: true,
+
+            grid: {
+              color: "#e5e5e5"
+            },
+
+            ticks: {
+              precision: 0
+            },
+
+            title: {
+              display: true,
+              text:
+                "Number of enrolments"
+            }
+          }
+        }
+      }
+    });
+}
+
+/* =====================================================
+   MONTHLY REVENUE CHART
+===================================================== */
+
+function renderMonthlyRevenueChart() {
+  const canvas =
+    document.getElementById(
+      "monthlyRevenueChart"
+    );
+
+  if (
+    !canvas ||
+    typeof Chart === "undefined"
+  ) {
+    return;
+  }
+
+  const monthMap =
+    getMonthlyData();
+
+  const existingRevenueData =
+    monthOrder.map(
+      month =>
+        monthMap[month]
+          .existingRevenue
+    );
+
+  const newRevenueData =
+    monthOrder.map(
+      month =>
+        monthMap[month]
+          .newRevenue
+    );
+
+  if (monthlyRevenueChart) {
+    monthlyRevenueChart.destroy();
+  }
+
+  monthlyRevenueChart =
+    new Chart(canvas, {
+      type: "bar",
+
+      data: {
+        labels: monthOrder,
+
+        datasets: [
+          {
+            label:
+              "Existing Revenue",
+            data:
+              existingRevenueData,
+            backgroundColor:
+              "#368ddb",
+            borderRadius: 5,
+            stack:
+              "monthlyRevenue"
+          },
+          {
+            label:
+              "New Revenue",
+            data:
+              newRevenueData,
+            backgroundColor:
+              "#1b9d7f",
+            borderRadius: 5,
+            stack:
+              "monthlyRevenue"
+          }
+        ]
+      },
+
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        interaction: {
+          mode: "index",
+          intersect: false
+        },
+
+        plugins: {
+          legend: {
+            position: "top",
+            align: "end",
+
+            labels: {
+              boxWidth: 12,
+              boxHeight: 12
+            }
+          },
+
+          tooltip: {
+            callbacks: {
+              label(context) {
+                return (
+                  context.dataset
+                    .label +
+                  ": " +
+                  formatCurrency(
+                    context.raw
+                  )
+                );
+              },
+
+              footer(items) {
+                const total =
+                  items.reduce(
+                    (sum, item) =>
+                      sum +
+                      Number(
+                        item.raw || 0
+                      ),
+                    0
+                  );
 
                 return (
                   "Total: " +
-                  formatCurrency(total)
+                  formatCurrency(
+                    total
+                  )
                 );
               }
             }
@@ -673,8 +929,10 @@ function renderMonthlyRevenueChart() {
 
             ticks: {
               callback(value) {
-                return formatShortCurrency(
-                  value
+                return (
+                  formatShortCurrency(
+                    value
+                  )
                 );
               }
             },
@@ -686,8 +944,7 @@ function renderMonthlyRevenueChart() {
           }
         }
       }
-    }
-  );
+    });
 }
 
 /* =====================================================
@@ -695,13 +952,13 @@ function renderMonthlyRevenueChart() {
 ===================================================== */
 
 function renderCategoryRevenueChart() {
-  const chartCanvas =
+  const canvas =
     document.getElementById(
       "categoryChart"
     );
 
   if (
-    !chartCanvas ||
+    !canvas ||
     typeof Chart === "undefined"
   ) {
     return;
@@ -710,9 +967,10 @@ function renderCategoryRevenueChart() {
   const grouped =
     groupByCategory(rawData);
 
-  const labels = grouped.map(
-    item => item.category
-  );
+  const labels =
+    grouped.map(
+      item => item.category
+    );
 
   const existingRevenueData =
     grouped.map(group => {
@@ -723,7 +981,8 @@ function renderCategoryRevenueChart() {
             "Uncategorised";
 
           return (
-            category === group.category &&
+            category ===
+              group.category &&
             isExistingStudent(row)
           );
         })
@@ -743,7 +1002,8 @@ function renderCategoryRevenueChart() {
             "Uncategorised";
 
           return (
-            category === group.category &&
+            category ===
+              group.category &&
             isNewStudent(row)
           );
         })
@@ -758,9 +1018,8 @@ function renderCategoryRevenueChart() {
     categoryChart.destroy();
   }
 
-  categoryChart = new Chart(
-    chartCanvas,
-    {
+  categoryChart =
+    new Chart(canvas, {
       type: "bar",
 
       data: {
@@ -768,18 +1027,26 @@ function renderCategoryRevenueChart() {
 
         datasets: [
           {
-            label: "Existing Revenue",
-            data: existingRevenueData,
-            backgroundColor: "#368ddb",
+            label:
+              "Existing Revenue",
+            data:
+              existingRevenueData,
+            backgroundColor:
+              "#368ddb",
             borderRadius: 5,
-            stack: "categoryRevenue"
+            stack:
+              "categoryRevenue"
           },
           {
-            label: "New Revenue",
-            data: newRevenueData,
-            backgroundColor: "#1b9d7f",
+            label:
+              "New Revenue",
+            data:
+              newRevenueData,
+            backgroundColor:
+              "#1b9d7f",
             borderRadius: 5,
-            stack: "categoryRevenue"
+            stack:
+              "categoryRevenue"
           }
         ]
       },
@@ -808,22 +1075,31 @@ function renderCategoryRevenueChart() {
             callbacks: {
               label(context) {
                 return (
-                  context.dataset.label +
+                  context.dataset
+                    .label +
                   ": " +
-                  formatCurrency(context.raw)
+                  formatCurrency(
+                    context.raw
+                  )
                 );
               },
 
               footer(items) {
-                const total = items.reduce(
-                  (sum, item) =>
-                    sum + Number(item.raw || 0),
-                  0
-                );
+                const total =
+                  items.reduce(
+                    (sum, item) =>
+                      sum +
+                      Number(
+                        item.raw || 0
+                      ),
+                    0
+                  );
 
                 return (
                   "Total: " +
-                  formatCurrency(total)
+                  formatCurrency(
+                    total
+                  )
                 );
               }
             }
@@ -855,8 +1131,10 @@ function renderCategoryRevenueChart() {
 
             ticks: {
               callback(value) {
-                return formatShortCurrency(
-                  value
+                return (
+                  formatShortCurrency(
+                    value
+                  )
                 );
               }
             },
@@ -868,8 +1146,7 @@ function renderCategoryRevenueChart() {
           }
         }
       }
-    }
-  );
+    });
 }
 
 /* =====================================================
@@ -878,7 +1155,9 @@ function renderCategoryRevenueChart() {
 
 function renderBreadcrumb() {
   const breadcrumb =
-    document.getElementById("breadcrumb");
+    document.getElementById(
+      "breadcrumb"
+    );
 
   if (!breadcrumb) {
     return;
@@ -886,26 +1165,41 @@ function renderBreadcrumb() {
 
   if (state.level === "category") {
     breadcrumb.innerText =
+      `${selectedFinancialYear} · ` +
       "Tap category → course → students";
   }
 
   if (state.level === "course") {
     breadcrumb.innerHTML = `
-      <span onclick="goHome()">Home</span>
+      <span onclick="goHome()">
+        ${escapeHtml(
+          selectedFinancialYear
+        )}
+      </span>
       →
-      ${state.selectedCategory}
+      ${escapeHtml(
+        state.selectedCategory
+      )}
     `;
   }
 
   if (state.level === "student") {
     breadcrumb.innerHTML = `
-      <span onclick="goHome()">Home</span>
-      →
-      <span onclick="backToCourses()">
-        ${state.selectedCategory}
+      <span onclick="goHome()">
+        ${escapeHtml(
+          selectedFinancialYear
+        )}
       </span>
       →
-      ${state.selectedCourse}
+      <span onclick="backToCourses()">
+        ${escapeHtml(
+          state.selectedCategory
+        )}
+      </span>
+      →
+      ${escapeHtml(
+        state.selectedCourse
+      )}
     `;
   }
 }
@@ -916,13 +1210,28 @@ function renderBreadcrumb() {
 
 function renderList() {
   const box =
-    document.getElementById("listContainer");
+    document.getElementById(
+      "listContainer"
+    );
 
   if (!box) {
     return;
   }
 
   box.innerHTML = "";
+
+  if (!rawData.length) {
+    box.innerHTML = `
+      <div class="empty">
+        No enrolment data found for
+        ${escapeHtml(
+          selectedFinancialYear
+        )}.
+      </div>
+    `;
+
+    return;
+  }
 
   if (state.level === "category") {
     renderCategoryList(box);
@@ -946,50 +1255,64 @@ function renderCategoryList(box) {
     groupByCategory(rawData);
 
   grouped.forEach(item => {
-    const categoryRows = rawData.filter(
-      row =>
-        (
-          row.course_category ||
-          "Uncategorised"
-        ) === item.category
-    );
+    const categoryRows =
+      rawData.filter(
+        row =>
+          (
+            row.course_category ||
+            "Uncategorised"
+          ) === item.category
+      );
 
     const newPct =
-      newPercent(categoryRows).toFixed(0);
+      newPercent(
+        categoryRows
+      ).toFixed(0);
 
-    box.innerHTML += `
-      <div
-        class="list-card"
-        onclick="drillToCourse(
-          '${encodeURIComponent(
-            item.category
-          )}'
-        )"
-      >
-        <div class="icon">▶</div>
+    const card =
+      document.createElement("div");
 
-        <div class="title">
-          ${item.category}
+    card.className =
+      "list-card";
+
+    card.innerHTML = `
+      <div class="icon">▶</div>
+
+      <div class="title">
+        ${escapeHtml(
+          item.category
+        )}
+      </div>
+
+      <div>
+        <div class="amount">
+          ${formatShortCurrency(
+            item.revenue
+          )}
         </div>
 
-        <div>
-          <div class="amount">
-            ${formatShortCurrency(
-              item.revenue
-            )}
-          </div>
-
-          <div class="students">
-            ${item.count} enrolments ·
-            ${newPct}% new
-          </div>
+        <div class="students">
+          ${item.count} enrolments ·
+          ${newPct}% new
         </div>
       </div>
     `;
+
+    card.addEventListener(
+      "click",
+      () =>
+        drillToCourse(
+          item.category
+        )
+    );
+
+    box.appendChild(card);
   });
 
-  box.innerHTML +=
-    grandTotalCard(rawData);
+  box.insertAdjacentHTML(
+    "beforeend",
+    grandTotalCard(rawData)
+  );
 }
 
 /* =====================================================
@@ -997,62 +1320,78 @@ function renderCategoryList(box) {
 ===================================================== */
 
 function renderCourseList(box) {
-  const filtered = rawData.filter(
-    row =>
-      (
-        row.course_category ||
-        "Uncategorised"
-      ) === state.selectedCategory
-  );
+  const filtered =
+    rawData.filter(
+      row =>
+        (
+          row.course_category ||
+          "Uncategorised"
+        ) ===
+        state.selectedCategory
+    );
 
   const grouped =
     groupByCourse(filtered);
 
   grouped.forEach(item => {
-    const courseRows = filtered.filter(
-      row =>
-        (
-          row.course_name ||
-          "Unnamed Course"
-        ) === item.course
-    );
+    const courseRows =
+      filtered.filter(
+        row =>
+          (
+            row.course_name ||
+            "Unnamed Course"
+          ) === item.course
+      );
 
     const newPct =
-      newPercent(courseRows).toFixed(0);
+      newPercent(
+        courseRows
+      ).toFixed(0);
 
-    box.innerHTML += `
-      <div
-        class="list-card"
-        onclick="drillToStudent(
-          '${encodeURIComponent(
-            item.course
-          )}'
-        )"
-      >
-        <div class="icon">▶</div>
+    const card =
+      document.createElement("div");
 
-        <div class="title">
-          ${item.course}
+    card.className =
+      "list-card";
+
+    card.innerHTML = `
+      <div class="icon">▶</div>
+
+      <div class="title">
+        ${escapeHtml(
+          item.course
+        )}
+      </div>
+
+      <div>
+        <div class="amount">
+          ${formatShortCurrency(
+            item.revenue
+          )}
         </div>
 
-        <div>
-          <div class="amount">
-            ${formatShortCurrency(
-              item.revenue
-            )}
-          </div>
-
-          <div class="students">
-            ${item.count} enrolments ·
-            ${newPct}% new
-          </div>
+        <div class="students">
+          ${item.count} enrolments ·
+          ${newPct}% new
         </div>
       </div>
     `;
+
+    card.addEventListener(
+      "click",
+      () =>
+        drillToStudent(
+          item.course
+        )
+    );
+
+    box.appendChild(card);
   });
 
-  box.innerHTML +=
-    grandTotalCard(filtered);
+  box.insertAdjacentHTML(
+    "beforeend",
+    grandTotalCard(filtered)
+  );
 }
 
 /* =====================================================
@@ -1060,76 +1399,96 @@ function renderCourseList(box) {
 ===================================================== */
 
 function renderStudentList(box) {
-  const filtered = rawData.filter(
-    row =>
-      (
-        row.course_name ||
-        "Unnamed Course"
-      ) === state.selectedCourse &&
-      (
-        row.course_category ||
-        "Uncategorised"
-      ) === state.selectedCategory
-  );
+  const filtered =
+    rawData.filter(
+      row =>
+        (
+          row.course_name ||
+          "Unnamed Course"
+        ) ===
+          state.selectedCourse &&
+        (
+          row.course_category ||
+          "Uncategorised"
+        ) ===
+          state.selectedCategory
+    );
 
   filtered.forEach(row => {
-    const initials =
-      getInitials(row.student_name);
+    const studentRow =
+      document.createElement("div");
 
-    box.innerHTML += `
-      <div class="student-row">
+    studentRow.className =
+      "student-row";
 
-        <div class="avatar">
-          ${initials}
+    studentRow.innerHTML = `
+      <div class="avatar">
+        ${escapeHtml(
+          getInitials(
+            row.student_name
+          )
+        )}
+      </div>
+
+      <div>
+        <div class="title">
+          ${escapeHtml(
+            row.student_name ||
+            "Unnamed Student"
+          )}
         </div>
 
-        <div>
-          <div class="title">
-            ${
-              row.student_name ||
-              "Unnamed Student"
-            }
-          </div>
+        <div class="students">
+          ${escapeHtml(
+            getDateValue(row)
+          )}
+        </div>
+      </div>
 
-          <div class="students">
-            ${getDateValue(row)}
-          </div>
+      <div>
+        <div class="amount">
+          ${formatCurrency(
+            fee(row)
+          )}
         </div>
 
-        <div>
-          <div class="amount">
-            ${formatCurrency(fee(row))}
-          </div>
-
-          <div class="badge">
-            ${row["new/existing"] || ""}
-          </div>
+        <div class="badge">
+          ${escapeHtml(
+            row["new/existing"] ||
+            ""
+          )}
         </div>
-
       </div>
     `;
+
+    box.appendChild(studentRow);
   });
 
-  box.innerHTML +=
-    grandTotalCard(filtered);
+  box.insertAdjacentHTML(
+    "beforeend",
+    grandTotalCard(filtered)
+  );
 }
 
 /* =====================================================
-   GRAND TOTAL CARD
+   GRAND TOTAL
 ===================================================== */
 
 function grandTotalCard(data) {
-  const totalRevenue = data.reduce(
-    (sum, row) => sum + fee(row),
-    0
-  );
+  const totalRevenue =
+    data.reduce(
+      (sum, row) =>
+        sum + fee(row),
+      0
+    );
 
   const newPct =
     newPercent(data).toFixed(0);
 
   return `
-    <div class="list-card grand-total-card">
-
+    <div
+      class="list-card grand-total-card"
+    >
       <div></div>
 
       <div class="title">
@@ -1148,7 +1507,6 @@ function grandTotalCard(data) {
           ${newPct}% new
         </div>
       </div>
-
     </div>
   `;
 }
@@ -1174,12 +1532,17 @@ function groupByCategory(data) {
     }
 
     map[category].count++;
-    map[category].revenue += fee(row);
+    map[category].revenue +=
+      fee(row);
   });
 
-  return Object.values(map).sort(
-    (a, b) => b.revenue - a.revenue
-  );
+  return Object
+    .values(map)
+    .sort(
+      (a, b) =>
+        b.revenue -
+        a.revenue
+    );
 }
 
 /* =====================================================
@@ -1203,12 +1566,17 @@ function groupByCourse(data) {
     }
 
     map[course].count++;
-    map[course].revenue += fee(row);
+    map[course].revenue +=
+      fee(row);
   });
 
-  return Object.values(map).sort(
-    (a, b) => b.revenue - a.revenue
-  );
+  return Object
+    .values(map)
+    .sort(
+      (a, b) =>
+        b.revenue -
+        a.revenue
+    );
 }
 
 /* =====================================================
@@ -1232,10 +1600,8 @@ function getInitials(name = "") {
 
 function drillToCourse(category) {
   state.level = "course";
-
   state.selectedCategory =
-    decodeURIComponent(category);
-
+    category;
   state.selectedCourse = null;
 
   renderBreadcrumb();
@@ -1244,9 +1610,8 @@ function drillToCourse(category) {
 
 function drillToStudent(course) {
   state.level = "student";
-
   state.selectedCourse =
-    decodeURIComponent(course);
+    course;
 
   renderBreadcrumb();
   renderList();
@@ -1270,15 +1635,19 @@ function goHome() {
 }
 
 function goToStudents() {
-  window.location.href = "student.html";
+  window.location.href =
+    "student.html";
 }
 
 /* =====================================================
-   MAKE FUNCTIONS AVAILABLE TO HTML
+   HTML ACCESS
 ===================================================== */
 
 window.refreshDashboard =
   refreshDashboard;
+
+window.changeFinancialYear =
+  changeFinancialYear;
 
 window.drillToCourse =
   drillToCourse;
