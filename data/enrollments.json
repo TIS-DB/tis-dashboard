@@ -1,5 +1,21 @@
 [
     {
+        "course_category": "TIS Compete",
+        "course_name": "FIRST Robotics Competition (2026-2027)",
+        "student_name": "Anant Mehta",
+        "new/existing": "Existing",
+        "enrolment_date": "03-Aug-2026",
+        "course_fee": "300000"
+    },
+    {
+        "course_category": "TIS Compete",
+        "course_name": "VEX V5 RC",
+        "student_name": "Shrey Joshi",
+        "new/existing": "Existing",
+        "enrolment_date": "03-Aug-2026",
+        "course_fee": "135000"
+    },
+    {
         "course_category": "TIS Schools",
         "course_name": "National Robotics League (AIS) 2026",
         "student_name": "Hetaansh Parikh",
@@ -61,7 +77,7 @@
         "student_name": "Raghav Karthik",
         "new/existing": "New",
         "enrolment_date": "01-Aug-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -69,7 +85,7 @@
         "student_name": "Rivan Bugwadia",
         "new/existing": "New",
         "enrolment_date": "01-Aug-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Hackathon",
@@ -229,7 +245,7 @@
         "student_name": "Akshay Chari",
         "new/existing": "New",
         "enrolment_date": "31-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -237,7 +253,7 @@
         "student_name": "Arshiv Goel",
         "new/existing": "New",
         "enrolment_date": "31-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -245,7 +261,7 @@
         "student_name": "Kiaan Parikh",
         "new/existing": "Existing",
         "enrolment_date": "31-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -253,7 +269,7 @@
         "student_name": "Shivansh Vora",
         "new/existing": "Existing",
         "enrolment_date": "31-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -261,7 +277,7 @@
         "student_name": "Gunav Agarwal",
         "new/existing": "New",
         "enrolment_date": "31-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -413,7 +429,7 @@
         "student_name": "Armaan Murthy",
         "new/existing": "Existing",
         "enrolment_date": "30-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -421,7 +437,7 @@
         "student_name": "Praket Mahapatra",
         "new/existing": "New",
         "enrolment_date": "30-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -429,7 +445,7 @@
         "student_name": "Samaira Bearingwala",
         "new/existing": "New",
         "enrolment_date": "30-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -437,15 +453,15 @@
         "student_name": "Anushka Gowani",
         "new/existing": "New",
         "enrolment_date": "30-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Anaya Shah",
         "new/existing": "Existing",
         "enrolment_date": "30-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -549,7 +565,7 @@
         "student_name": "Eeshaan Aggarwal",
         "new/existing": "Existing",
         "enrolment_date": "29-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -557,7 +573,7 @@
         "student_name": "Mahir Mehta",
         "new/existing": "New",
         "enrolment_date": "29-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Hackathon",
@@ -669,7 +685,7 @@
         "student_name": "Aarav Gupta",
         "new/existing": "New",
         "enrolment_date": "28-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -677,15 +693,15 @@
         "student_name": "Samaira Gupta",
         "new/existing": "New",
         "enrolment_date": "28-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Sitara Sekhsaria",
         "new/existing": "New",
         "enrolment_date": "28-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Schools",
@@ -749,7 +765,7 @@
         "student_name": "Veer Mehta",
         "new/existing": "Existing",
         "enrolment_date": "27-Jul-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -757,7 +773,7 @@
         "student_name": "Aditya Parikh",
         "new/existing": "Existing",
         "enrolment_date": "27-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -765,7 +781,7 @@
         "student_name": "Hrishav Vakil",
         "new/existing": "New",
         "enrolment_date": "27-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -773,7 +789,7 @@
         "student_name": "Vidhaan Ramchand",
         "new/existing": "New",
         "enrolment_date": "27-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -861,7 +877,7 @@
         "student_name": "Yuvishka Srivastava",
         "new/existing": "New",
         "enrolment_date": "25-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -869,7 +885,7 @@
         "student_name": "HRIDHAAN OSATWAL",
         "new/existing": "New",
         "enrolment_date": "25-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Schools",
@@ -957,7 +973,7 @@
         "student_name": "Harshil Bagrecha",
         "new/existing": "New",
         "enrolment_date": "24-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -965,7 +981,7 @@
         "student_name": "Mishay Patel",
         "new/existing": "New",
         "enrolment_date": "24-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -973,7 +989,7 @@
         "student_name": "Neer Ayer Juyal",
         "new/existing": "New",
         "enrolment_date": "24-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Schools",
@@ -1029,7 +1045,7 @@
         "student_name": "Shreya Devarajan",
         "new/existing": "New",
         "enrolment_date": "23-Jul-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -1037,15 +1053,15 @@
         "student_name": "ARVIN GOEL",
         "new/existing": "New",
         "enrolment_date": "23-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Shivansh Rai",
         "new/existing": "Existing",
         "enrolment_date": "23-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Schools",
@@ -1133,7 +1149,7 @@
         "student_name": "Aarav Pandya",
         "new/existing": "Existing",
         "enrolment_date": "22-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Partners",
@@ -1221,7 +1237,7 @@
         "student_name": "Ranveer sehgal",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1229,7 +1245,7 @@
         "student_name": "Veer Kejriwal",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1237,7 +1253,7 @@
         "student_name": "Vivan Khatry",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -1245,7 +1261,7 @@
         "student_name": "Anika Asthaana",
         "new/existing": "New",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -1253,31 +1269,31 @@
         "student_name": "Siddarth Sethi",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Krishiv Sureka",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Shaurya Shah",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Vivan Ramchandani",
         "new/existing": "Existing",
         "enrolment_date": "20-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Schools",
@@ -1365,7 +1381,7 @@
         "student_name": "Viaan Padliya",
         "new/existing": "New",
         "enrolment_date": "19-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -1373,7 +1389,7 @@
         "student_name": "Aimee Mohan",
         "new/existing": "Existing",
         "enrolment_date": "19-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -1381,7 +1397,7 @@
         "student_name": "Vir Govani",
         "new/existing": "Existing",
         "enrolment_date": "19-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1401,11 +1417,11 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Yuvraj Mehta",
         "new/existing": "New",
         "enrolment_date": "18-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1485,15 +1501,15 @@
         "student_name": "VIREN SIDHWANI",
         "new/existing": "Existing",
         "enrolment_date": "17-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Arhaan Sethi",
         "new/existing": "Existing",
         "enrolment_date": "17-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Partners",
@@ -1517,7 +1533,7 @@
         "student_name": "Arth Mehta",
         "new/existing": "New",
         "enrolment_date": "16-Jul-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Compete",
@@ -1533,7 +1549,7 @@
         "student_name": "Hannah Francis",
         "new/existing": "New",
         "enrolment_date": "16-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -1541,7 +1557,7 @@
         "student_name": "Nivi Acharya",
         "new/existing": "New",
         "enrolment_date": "16-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Hackathon",
@@ -1565,7 +1581,7 @@
         "student_name": "Shanaya Biswas",
         "new/existing": "New",
         "enrolment_date": "15-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -1573,15 +1589,15 @@
         "student_name": "Keya Acharya",
         "new/existing": "New",
         "enrolment_date": "15-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Manasvi Saoji",
         "new/existing": "New",
         "enrolment_date": "15-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1613,7 +1629,7 @@
         "student_name": "Ari D’Almeida",
         "new/existing": "Existing",
         "enrolment_date": "14-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1621,7 +1637,7 @@
         "student_name": "Keyaan Shah",
         "new/existing": "Existing",
         "enrolment_date": "14-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -1629,15 +1645,15 @@
         "student_name": "Ruhani Choudhary",
         "new/existing": "New",
         "enrolment_date": "14-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Sahaj Choudhary",
         "new/existing": "New",
         "enrolment_date": "14-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1645,7 +1661,7 @@
         "student_name": "Krishna Prasad",
         "new/existing": "New",
         "enrolment_date": "14-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1685,7 +1701,7 @@
         "student_name": "Kiaan Parikh",
         "new/existing": "New",
         "enrolment_date": "13-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -1693,7 +1709,7 @@
         "student_name": "Aarav Nawal",
         "new/existing": "Existing",
         "enrolment_date": "13-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1701,7 +1717,7 @@
         "student_name": "Parth Thakkar",
         "new/existing": "New",
         "enrolment_date": "13-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1741,7 +1757,7 @@
         "student_name": "Saanvi Roy",
         "new/existing": "New",
         "enrolment_date": "12-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1753,11 +1769,11 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Shaunak Jose",
         "new/existing": "New",
         "enrolment_date": "11-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1765,7 +1781,15 @@
         "student_name": "Mivaan Poojara",
         "new/existing": "New",
         "enrolment_date": "11-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Admits 360 STEM Exploration Program",
+        "student_name": "Saanvie Seth",
+        "new/existing": "Existing",
+        "enrolment_date": "11-Jul-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "Partners",
@@ -1829,7 +1853,7 @@
         "student_name": "Falak Jain",
         "new/existing": "New",
         "enrolment_date": "10-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -1837,7 +1861,7 @@
         "student_name": "Dev Dwarkadas",
         "new/existing": "Existing",
         "enrolment_date": "10-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Hackathon",
@@ -1853,7 +1877,7 @@
         "student_name": "Dhruvdutt Sharma",
         "new/existing": "New",
         "enrolment_date": "09-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -1873,11 +1897,11 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Akshara Vivek",
         "new/existing": "New",
         "enrolment_date": "08-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -1901,7 +1925,7 @@
         "student_name": "Aarushi Shah",
         "new/existing": "Existing",
         "enrolment_date": "07-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -1909,7 +1933,7 @@
         "student_name": "KAVIR CHOWDHARY",
         "new/existing": "New",
         "enrolment_date": "07-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -1917,7 +1941,7 @@
         "student_name": "Rajveer Chawla",
         "new/existing": "New",
         "enrolment_date": "07-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -1925,7 +1949,7 @@
         "student_name": "Saisha Singh",
         "new/existing": "New",
         "enrolment_date": "07-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Schools",
@@ -2229,7 +2253,7 @@
         "student_name": "Aimee Mohan",
         "new/existing": "New",
         "enrolment_date": "06-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -2237,15 +2261,15 @@
         "student_name": "Meet Doshi",
         "new/existing": "New",
         "enrolment_date": "06-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Vir Dalmeida",
         "new/existing": "Existing",
         "enrolment_date": "06-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -2253,7 +2277,7 @@
         "student_name": "Shreyan Limaye",
         "new/existing": "Existing",
         "enrolment_date": "04-Jul-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Compete",
@@ -2269,7 +2293,7 @@
         "student_name": "Shreyan Limaye",
         "new/existing": "Existing",
         "enrolment_date": "04-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2277,7 +2301,7 @@
         "student_name": "Advait Sivaraman",
         "new/existing": "New",
         "enrolment_date": "04-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -2293,7 +2317,7 @@
         "student_name": "Avika Goyal",
         "new/existing": "Existing",
         "enrolment_date": "03-Jul-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2301,7 +2325,7 @@
         "student_name": "Arya Pandey",
         "new/existing": "Existing",
         "enrolment_date": "03-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -2309,15 +2333,15 @@
         "student_name": "Zayan Jaffer",
         "new/existing": "New",
         "enrolment_date": "03-Jul-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Jash Kothari",
         "new/existing": "New",
         "enrolment_date": "03-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Schools",
@@ -2501,7 +2525,7 @@
         "student_name": "Anant Upadhya",
         "new/existing": "Existing",
         "enrolment_date": "01-Jul-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2509,7 +2533,7 @@
         "student_name": "Partth Arora",
         "new/existing": "New",
         "enrolment_date": "01-Jul-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -2565,7 +2589,7 @@
         "student_name": "Nitighya Podar",
         "new/existing": "New",
         "enrolment_date": "30-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2573,7 +2597,7 @@
         "student_name": "Samara Lawande",
         "new/existing": "New",
         "enrolment_date": "30-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -2613,7 +2637,7 @@
         "student_name": "Dia Raghavan",
         "new/existing": "Existing",
         "enrolment_date": "29-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -2621,7 +2645,15 @@
         "student_name": "veer kacker",
         "new/existing": "New",
         "enrolment_date": "29-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
+    },
+    {
+        "course_category": "Partners",
+        "course_name": "Nurturing Innovators",
+        "student_name": "Shrihan Reddy Pakala",
+        "new/existing": "New",
+        "enrolment_date": "29-Jun-2026",
+        "course_fee": "0"
     },
     {
         "course_category": "Partners",
@@ -2645,7 +2677,7 @@
         "student_name": "Aahana Dani",
         "new/existing": "New",
         "enrolment_date": "27-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -2709,7 +2741,7 @@
         "student_name": "Ayaan Kapadia",
         "new/existing": "Existing",
         "enrolment_date": "26-Jun-2026",
-        "course_fee": "60000"
+        "course_fee": "66000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -2717,7 +2749,7 @@
         "student_name": "Nivaan Patel",
         "new/existing": "Existing",
         "enrolment_date": "26-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2725,7 +2757,7 @@
         "student_name": "Aryan Nahar",
         "new/existing": "New",
         "enrolment_date": "26-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -2733,7 +2765,7 @@
         "student_name": "Samaya Mubayi Bery",
         "new/existing": "New",
         "enrolment_date": "26-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -2797,7 +2829,7 @@
         "student_name": "Aryan  Shah",
         "new/existing": "Existing",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -2805,7 +2837,7 @@
         "student_name": "Kevin Mathew",
         "new/existing": "New",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -2813,7 +2845,7 @@
         "student_name": "Vedant Richa Agarwal",
         "new/existing": "Existing",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -2821,7 +2853,7 @@
         "student_name": "Aditya Khandge",
         "new/existing": "New",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -2829,7 +2861,7 @@
         "student_name": "Tavish Mundra",
         "new/existing": "New",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -2837,7 +2869,7 @@
         "student_name": "Nevaan Kohli",
         "new/existing": "New",
         "enrolment_date": "25-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -2877,7 +2909,7 @@
         "student_name": "Palaksi Agrawal",
         "new/existing": "Existing",
         "enrolment_date": "24-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -2885,7 +2917,7 @@
         "student_name": "Reyaansh Pilani",
         "new/existing": "New",
         "enrolment_date": "24-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -2997,7 +3029,7 @@
         "student_name": "Tvissha Pilani",
         "new/existing": "New",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Compete",
@@ -3013,7 +3045,7 @@
         "student_name": "Gauri Khanna",
         "new/existing": "Existing",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -3021,7 +3053,7 @@
         "student_name": "AVYAHN DALMIA",
         "new/existing": "Existing",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -3029,23 +3061,23 @@
         "student_name": "Shivansh Rai",
         "new/existing": "Existing",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Aariket Bharech",
         "new/existing": "Existing",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Arya Sabnis",
         "new/existing": "Existing",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -3053,7 +3085,7 @@
         "student_name": "Anay Lohia",
         "new/existing": "New",
         "enrolment_date": "23-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -3197,7 +3229,7 @@
         "student_name": "VIHAAN BINAYKIA",
         "new/existing": "New",
         "enrolment_date": "22-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -3205,15 +3237,15 @@
         "student_name": "Abram Vardhan",
         "new/existing": "Existing",
         "enrolment_date": "22-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Krishiv Desai",
         "new/existing": "Existing",
         "enrolment_date": "22-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -3229,7 +3261,7 @@
         "student_name": "HUSAYN MERCHANT",
         "new/existing": "Existing",
         "enrolment_date": "21-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -3277,7 +3309,7 @@
         "student_name": "Abir  Chhatwal",
         "new/existing": "Existing",
         "enrolment_date": "20-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -3285,7 +3317,7 @@
         "student_name": "Viraansh Chavva",
         "new/existing": "New",
         "enrolment_date": "20-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Schools",
@@ -3341,7 +3373,7 @@
         "student_name": "Mirka Bhartia",
         "new/existing": "New",
         "enrolment_date": "19-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -3349,7 +3381,7 @@
         "student_name": "Nivaan Tanna",
         "new/existing": "New",
         "enrolment_date": "19-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Schools",
@@ -3613,7 +3645,7 @@
         "student_name": "Mihika Daga",
         "new/existing": "Existing",
         "enrolment_date": "18-Jun-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Schools",
@@ -3893,7 +3925,7 @@
         "student_name": "Armaan Baliga",
         "new/existing": "New",
         "enrolment_date": "18-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -3901,7 +3933,7 @@
         "student_name": "Nehan Ali",
         "new/existing": "New",
         "enrolment_date": "18-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -3909,7 +3941,7 @@
         "student_name": "Riddhiman Maheshwari",
         "new/existing": "New",
         "enrolment_date": "18-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4045,7 +4077,7 @@
         "student_name": "Eeshaan Aggarwal",
         "new/existing": "New",
         "enrolment_date": "17-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4053,15 +4085,15 @@
         "student_name": "Piyansh Kaarthik",
         "new/existing": "Existing",
         "enrolment_date": "17-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Vardaan Gupta",
         "new/existing": "Existing",
         "enrolment_date": "17-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4085,7 +4117,7 @@
         "student_name": "Nawon Kim",
         "new/existing": "New",
         "enrolment_date": "16-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4093,7 +4125,7 @@
         "student_name": "Aryan Swaminathan",
         "new/existing": "New",
         "enrolment_date": "16-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -4109,7 +4141,7 @@
         "student_name": "Mihir Garg",
         "new/existing": "Existing",
         "enrolment_date": "15-Jun-2026",
-        "course_fee": "30000"
+        "course_fee": "39000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4117,7 +4149,7 @@
         "student_name": "Sanaa Kanchwala",
         "new/existing": "New",
         "enrolment_date": "15-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4125,7 +4157,7 @@
         "student_name": "Ananta Bajaj",
         "new/existing": "Existing",
         "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4133,7 +4165,7 @@
         "student_name": "Aria Podar",
         "new/existing": "New",
         "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4141,7 +4173,7 @@
         "student_name": "Arav Goyal",
         "new/existing": "Existing",
         "enrolment_date": "15-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -4165,7 +4197,7 @@
         "student_name": "Raghavi Baheti",
         "new/existing": "New",
         "enrolment_date": "14-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -4173,7 +4205,7 @@
         "student_name": "Samar Kumar",
         "new/existing": "New",
         "enrolment_date": "14-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -4221,7 +4253,7 @@
         "student_name": "Akanksha Mohanty",
         "new/existing": "New",
         "enrolment_date": "13-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4229,7 +4261,7 @@
         "student_name": "Prisha Deshmukh",
         "new/existing": "New",
         "enrolment_date": "13-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4237,7 +4269,7 @@
         "student_name": "Vivaan Dumir",
         "new/existing": "New",
         "enrolment_date": "13-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Compete",
@@ -4277,7 +4309,7 @@
         "student_name": "Kaashvi Kumar",
         "new/existing": "New",
         "enrolment_date": "12-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4285,7 +4317,7 @@
         "student_name": "Avantika Goenka",
         "new/existing": "New",
         "enrolment_date": "12-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -4293,7 +4325,7 @@
         "student_name": "Aman Goenka",
         "new/existing": "New",
         "enrolment_date": "12-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4317,7 +4349,7 @@
         "student_name": "Arya Sabnis",
         "new/existing": "New",
         "enrolment_date": "11-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4325,7 +4357,7 @@
         "student_name": "Dev Karan Singh",
         "new/existing": "Existing",
         "enrolment_date": "11-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4333,7 +4365,7 @@
         "student_name": "Ayaan  Merchant",
         "new/existing": "Existing",
         "enrolment_date": "11-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -4357,7 +4389,7 @@
         "student_name": "Arya Jha",
         "new/existing": "New",
         "enrolment_date": "10-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4365,7 +4397,7 @@
         "student_name": "Kabir Kumar",
         "new/existing": "New",
         "enrolment_date": "10-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4373,7 +4405,7 @@
         "student_name": "Aarav Shah",
         "new/existing": "New",
         "enrolment_date": "10-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4405,7 +4437,7 @@
         "student_name": "Anirudh Jatia",
         "new/existing": "New",
         "enrolment_date": "09-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4413,7 +4445,7 @@
         "student_name": "Nihira Marathe",
         "new/existing": "Existing",
         "enrolment_date": "09-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -4429,15 +4461,15 @@
         "student_name": "Anoushka Kumar",
         "new/existing": "New",
         "enrolment_date": "07-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Raghav Tulsyan",
         "new/existing": "New",
         "enrolment_date": "07-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -4453,7 +4485,7 @@
         "student_name": "Dhrish Parikh",
         "new/existing": "New",
         "enrolment_date": "06-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4461,7 +4493,7 @@
         "student_name": "RACHIT MOHAN",
         "new/existing": "New",
         "enrolment_date": "06-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4469,7 +4501,7 @@
         "student_name": "Shivansh Vora",
         "new/existing": "New",
         "enrolment_date": "06-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4477,7 +4509,7 @@
         "student_name": "Neil Sancheti",
         "new/existing": "New",
         "enrolment_date": "06-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -4493,7 +4525,7 @@
         "student_name": "Arham Kothari",
         "new/existing": "New",
         "enrolment_date": "05-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -4501,7 +4533,7 @@
         "student_name": "Kabir Chugh Asrani",
         "new/existing": "New",
         "enrolment_date": "04-Jun-2026",
-        "course_fee": "30000"
+        "course_fee": "33600"
     },
     {
         "course_category": "TIS Compete",
@@ -4517,7 +4549,7 @@
         "student_name": "Sarthak Sekhsaria",
         "new/existing": "Existing",
         "enrolment_date": "04-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4525,7 +4557,7 @@
         "student_name": "Prerna Goel",
         "new/existing": "New",
         "enrolment_date": "04-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4533,15 +4565,15 @@
         "student_name": "Vaishnavi Renduchintala",
         "new/existing": "New",
         "enrolment_date": "04-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Vihaan Varma",
         "new/existing": "Existing",
         "enrolment_date": "04-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -4565,7 +4597,7 @@
         "student_name": "Amaira Nawany",
         "new/existing": "New",
         "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4573,7 +4605,7 @@
         "student_name": "Neil Rana",
         "new/existing": "Existing",
         "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4581,7 +4613,7 @@
         "student_name": "Prithvi Ajith Menon",
         "new/existing": "New",
         "enrolment_date": "03-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -4613,7 +4645,7 @@
         "student_name": "Shivaditya Murarka",
         "new/existing": "New",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4621,7 +4653,7 @@
         "student_name": "Ansh Jalan",
         "new/existing": "New",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4629,7 +4661,7 @@
         "student_name": "Rajveer Maheshwari",
         "new/existing": "New",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4637,7 +4669,7 @@
         "student_name": "Yash Bhatia",
         "new/existing": "New",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -4645,7 +4677,7 @@
         "student_name": "Samaira Bhansali",
         "new/existing": "New",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -4653,7 +4685,7 @@
         "student_name": "Rudra Goel",
         "new/existing": "Existing",
         "enrolment_date": "01-Jun-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4673,11 +4705,11 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Reyansh Chandra",
         "new/existing": "Existing",
         "enrolment_date": "31-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4693,23 +4725,23 @@
         "student_name": "Vivaan Gupta",
         "new/existing": "New",
         "enrolment_date": "30-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Dev Karan Singh",
         "new/existing": "New",
         "enrolment_date": "30-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Sanjay K Singh",
         "new/existing": "New",
         "enrolment_date": "30-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Bootcamps",
@@ -4733,7 +4765,7 @@
         "student_name": "Radhika Beswal",
         "new/existing": "Existing",
         "enrolment_date": "29-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Bootcamps",
@@ -4781,15 +4813,15 @@
         "student_name": "Jahan Jai Nagrath",
         "new/existing": "New",
         "enrolment_date": "27-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "MISHKA MEHTA",
         "new/existing": "New",
         "enrolment_date": "27-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -4805,7 +4837,7 @@
         "student_name": "Yuvraj Saraogi",
         "new/existing": "Existing",
         "enrolment_date": "26-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -4813,7 +4845,7 @@
         "student_name": "Avyan Bhojnagarwala",
         "new/existing": "Existing",
         "enrolment_date": "26-May-2026",
-        "course_fee": "60000"
+        "course_fee": "66000"
     },
     {
         "course_category": "TIS Foundation",
@@ -4821,7 +4853,7 @@
         "student_name": "Eissa Shaikh",
         "new/existing": "New",
         "enrolment_date": "26-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -5261,7 +5293,7 @@
         "student_name": "Avyana Damani",
         "new/existing": "New",
         "enrolment_date": "22-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -5285,7 +5317,7 @@
         "student_name": "Agam Mundra",
         "new/existing": "Existing",
         "enrolment_date": "21-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "International",
@@ -5301,7 +5333,7 @@
         "student_name": "Arjun Anand",
         "new/existing": "New",
         "enrolment_date": "20-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5309,7 +5341,7 @@
         "student_name": "Roansh Desai",
         "new/existing": "Existing",
         "enrolment_date": "20-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5317,7 +5349,7 @@
         "student_name": "Arnav Gupta",
         "new/existing": "New",
         "enrolment_date": "20-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5325,7 +5357,7 @@
         "student_name": "Ryan Gandhi",
         "new/existing": "New",
         "enrolment_date": "20-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5333,7 +5365,7 @@
         "student_name": "Anay Gautam",
         "new/existing": "New",
         "enrolment_date": "19-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5341,7 +5373,7 @@
         "student_name": "Jaksh Aggarwal",
         "new/existing": "New",
         "enrolment_date": "19-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5349,7 +5381,7 @@
         "student_name": "Kiah Sharma",
         "new/existing": "New",
         "enrolment_date": "19-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5357,7 +5389,7 @@
         "student_name": "Agniv Roy",
         "new/existing": "New",
         "enrolment_date": "18-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5365,7 +5397,7 @@
         "student_name": "Nandini Pangal",
         "new/existing": "Existing",
         "enrolment_date": "18-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5373,7 +5405,7 @@
         "student_name": "Ria Chavan",
         "new/existing": "New",
         "enrolment_date": "18-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5381,7 +5413,7 @@
         "student_name": "Hridhaan Sundesha",
         "new/existing": "New",
         "enrolment_date": "17-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -5397,7 +5429,7 @@
         "student_name": "Vanshika Lamba",
         "new/existing": "Existing",
         "enrolment_date": "15-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5405,7 +5437,7 @@
         "student_name": "Ayaan Gupta",
         "new/existing": "Existing",
         "enrolment_date": "15-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5413,7 +5445,7 @@
         "student_name": "Aaditya jain",
         "new/existing": "New",
         "enrolment_date": "14-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Fellowship",
@@ -5445,7 +5477,7 @@
         "student_name": "Vivaan Puranik",
         "new/existing": "New",
         "enrolment_date": "13-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5453,7 +5485,7 @@
         "student_name": "Arjun Jhaveri",
         "new/existing": "Existing",
         "enrolment_date": "13-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5461,7 +5493,7 @@
         "student_name": "Avyay Pant",
         "new/existing": "New",
         "enrolment_date": "13-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Schools",
@@ -5481,11 +5513,11 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Devansh Jaju",
         "new/existing": "Existing",
         "enrolment_date": "12-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5493,7 +5525,7 @@
         "student_name": "Sophia Andhyarujina",
         "new/existing": "New",
         "enrolment_date": "11-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5501,7 +5533,7 @@
         "student_name": "Anay Bhandari",
         "new/existing": "Existing",
         "enrolment_date": "11-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5509,7 +5541,7 @@
         "student_name": "ARMAAN THAKER",
         "new/existing": "New",
         "enrolment_date": "11-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "Bootcamps",
@@ -5525,7 +5557,7 @@
         "student_name": "Aariket Bharech",
         "new/existing": "New",
         "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5533,7 +5565,7 @@
         "student_name": "Shaurya Goel",
         "new/existing": "Existing",
         "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5541,7 +5573,7 @@
         "student_name": "Aarav Seksaria",
         "new/existing": "New",
         "enrolment_date": "09-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5549,7 +5581,7 @@
         "student_name": "Arhaan Grover",
         "new/existing": "New",
         "enrolment_date": "09-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -5565,7 +5597,7 @@
         "student_name": "Jahan Sukhia",
         "new/existing": "New",
         "enrolment_date": "08-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5573,7 +5605,7 @@
         "student_name": "Aatman Surve",
         "new/existing": "New",
         "enrolment_date": "07-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5581,7 +5613,7 @@
         "student_name": "Vidit Shukla",
         "new/existing": "Existing",
         "enrolment_date": "07-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5589,7 +5621,7 @@
         "student_name": "Tvishaa Prabhu",
         "new/existing": "Existing",
         "enrolment_date": "07-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5597,7 +5629,7 @@
         "student_name": "Nyra Chakka",
         "new/existing": "Existing",
         "enrolment_date": "07-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -5605,7 +5637,7 @@
         "student_name": "Pranav Pandya",
         "new/existing": "Existing",
         "enrolment_date": "06-May-2026",
-        "course_fee": "30000"
+        "course_fee": "39000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5613,7 +5645,7 @@
         "student_name": "Agastya Marfatia",
         "new/existing": "Existing",
         "enrolment_date": "06-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5621,7 +5653,7 @@
         "student_name": "Keyaan Shah",
         "new/existing": "New",
         "enrolment_date": "06-May-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5629,7 +5661,7 @@
         "student_name": "Ayaan Jain",
         "new/existing": "New",
         "enrolment_date": "04-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5637,7 +5669,7 @@
         "student_name": "Viwaan Uttam",
         "new/existing": "New",
         "enrolment_date": "04-May-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5645,7 +5677,7 @@
         "student_name": "Om Chaitanya Vadkhalkar",
         "new/existing": "New",
         "enrolment_date": "04-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -5685,7 +5717,7 @@
         "student_name": "Kian Dinavahi",
         "new/existing": "New",
         "enrolment_date": "02-May-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -5757,7 +5789,7 @@
         "student_name": "Vivaan Maheshwari",
         "new/existing": "Existing",
         "enrolment_date": "30-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5765,7 +5797,7 @@
         "student_name": "Mahika Ghai",
         "new/existing": "Existing",
         "enrolment_date": "30-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -5781,7 +5813,7 @@
         "student_name": "Raghav Dalvie",
         "new/existing": "New",
         "enrolment_date": "29-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5789,7 +5821,7 @@
         "student_name": "Udbhav Sriramoju",
         "new/existing": "New",
         "enrolment_date": "29-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5797,7 +5829,7 @@
         "student_name": "Advait Adukia",
         "new/existing": "New",
         "enrolment_date": "29-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Compete",
@@ -5813,15 +5845,15 @@
         "student_name": "Aryamann Somani",
         "new/existing": "Existing",
         "enrolment_date": "28-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Pranava Randeria",
         "new/existing": "Existing",
         "enrolment_date": "28-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5829,7 +5861,7 @@
         "student_name": "Swara Vijay",
         "new/existing": "New",
         "enrolment_date": "28-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -5845,7 +5877,7 @@
         "student_name": "Samaira goyal",
         "new/existing": "New",
         "enrolment_date": "27-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Bootcamps",
@@ -5861,7 +5893,7 @@
         "student_name": "Riaan Banerjee",
         "new/existing": "New",
         "enrolment_date": "26-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5893,7 +5925,7 @@
         "student_name": "Dev Vaghani",
         "new/existing": "New",
         "enrolment_date": "25-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -5901,7 +5933,7 @@
         "student_name": "Arin Mathew",
         "new/existing": "New",
         "enrolment_date": "24-Apr-2026",
-        "course_fee": "75000"
+        "course_fee": "84000"
     },
     {
         "course_category": "TIS Foundation",
@@ -5909,7 +5941,7 @@
         "student_name": "Reyansh Chandra",
         "new/existing": "New",
         "enrolment_date": "24-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -5917,15 +5949,15 @@
         "student_name": "Arin Mathew",
         "new/existing": "New",
         "enrolment_date": "24-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Ansh Patel",
         "new/existing": "New",
         "enrolment_date": "24-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "Fellowship",
@@ -5941,7 +5973,7 @@
         "student_name": "Neel Soman",
         "new/existing": "New",
         "enrolment_date": "23-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Compete",
@@ -5965,7 +5997,7 @@
         "student_name": "Avir Raisinghani",
         "new/existing": "New",
         "enrolment_date": "23-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "Bootcamps",
@@ -6013,7 +6045,7 @@
         "student_name": "KAVISH MAHESHWARI",
         "new/existing": "Existing",
         "enrolment_date": "21-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6021,7 +6053,7 @@
         "student_name": "SAANVI MAHESHWARI",
         "new/existing": "Existing",
         "enrolment_date": "21-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6029,7 +6061,7 @@
         "student_name": "Praneet Modi",
         "new/existing": "New",
         "enrolment_date": "20-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -6037,7 +6069,7 @@
         "student_name": "Reyaan Dhulla",
         "new/existing": "New",
         "enrolment_date": "20-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -6045,7 +6077,7 @@
         "student_name": "Veer Mehta",
         "new/existing": "Existing",
         "enrolment_date": "18-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6053,7 +6085,7 @@
         "student_name": "Ahaan Kapadia",
         "new/existing": "New",
         "enrolment_date": "18-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6061,7 +6093,7 @@
         "student_name": "Taksh Kothari",
         "new/existing": "New",
         "enrolment_date": "18-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -6069,7 +6101,7 @@
         "student_name": "Arjun Mehra",
         "new/existing": "New",
         "enrolment_date": "18-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Foundation",
@@ -6077,7 +6109,7 @@
         "student_name": "Shaurya Goel",
         "new/existing": "New",
         "enrolment_date": "18-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6085,23 +6117,23 @@
         "student_name": "Niyant Shah",
         "new/existing": "New",
         "enrolment_date": "17-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Arun Trivedi",
         "new/existing": "New",
         "enrolment_date": "17-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "3D CAD",
+        "course_name": "3D CAD (Solidworks)",
         "student_name": "Dev Dwarkadas",
         "new/existing": "Existing",
         "enrolment_date": "16-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6141,7 +6173,7 @@
         "student_name": "Aarav Pandya",
         "new/existing": "New",
         "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6149,7 +6181,7 @@
         "student_name": "Yash Chhaparia",
         "new/existing": "New",
         "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6157,7 +6189,7 @@
         "student_name": "Rudraang Goenka",
         "new/existing": "Existing",
         "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6165,7 +6197,7 @@
         "student_name": "Rishi Deshmukh",
         "new/existing": "Existing",
         "enrolment_date": "14-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6189,7 +6221,7 @@
         "student_name": "Rohaan Gajjar",
         "new/existing": "New",
         "enrolment_date": "13-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6205,7 +6237,7 @@
         "student_name": "Arnav Bansal",
         "new/existing": "Existing",
         "enrolment_date": "11-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -6213,7 +6245,7 @@
         "student_name": "Jianna Vasa",
         "new/existing": "New",
         "enrolment_date": "11-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6229,7 +6261,7 @@
         "student_name": "Yuvaan Parekh",
         "new/existing": "New",
         "enrolment_date": "10-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6237,7 +6269,7 @@
         "student_name": "Veer Mahajan",
         "new/existing": "Existing",
         "enrolment_date": "10-Apr-2026",
-        "course_fee": "15000"
+        "course_fee": "19500"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6245,7 +6277,7 @@
         "student_name": "Daksh Aggarwal",
         "new/existing": "New",
         "enrolment_date": "09-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -6253,7 +6285,7 @@
         "student_name": "Preksh Doshi",
         "new/existing": "New",
         "enrolment_date": "09-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Foundation",
@@ -6261,7 +6293,7 @@
         "student_name": "Anika Dharia",
         "new/existing": "New",
         "enrolment_date": "09-Apr-2026",
-        "course_fee": "12000"
+        "course_fee": "15600"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6293,7 +6325,7 @@
         "student_name": "Arhaan Sethi",
         "new/existing": "New",
         "enrolment_date": "03-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     },
     {
         "course_category": "TIS Nurturing Innovators",
@@ -6301,7 +6333,7 @@
         "student_name": "SHREY SHAH",
         "new/existing": "New",
         "enrolment_date": "03-Apr-2026",
-        "course_fee": "120000"
+        "course_fee": "132000"
     },
     {
         "course_category": "TIS Foundation",
@@ -6309,6 +6341,6 @@
         "student_name": "Riyan Mangal",
         "new/existing": "New",
         "enrolment_date": "02-Apr-2026",
-        "course_fee": "24000"
+        "course_fee": "31200"
     }
 ]
