@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
 
   <meta
@@ -9,7 +10,9 @@
     content="width=device-width, initial-scale=1"
   >
 
-  <title>TIS Management Dashboard</title>
+  <title>
+    TIS Management Dashboard
+  </title>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
@@ -22,13 +25,17 @@
   >
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
 
+  <!-- DASHBOARD HEADER -->
+
   <header class="top-header">
 
     <div>
+
       <h1>
         TIS Management<br>
         Dashboard
@@ -37,6 +44,7 @@
       <p id="summaryText">
         Loading...
       </p>
+
     </div>
 
     <div class="header-right">
@@ -56,14 +64,33 @@
 
   </header>
 
+  <!-- NAVIGATION -->
+
   <nav class="tabs">
 
     <button
       type="button"
       class="active"
     >
-      FY27 Enrolments
+      Enrolments
     </button>
+
+    <div class="fy-filter">
+
+      <label for="financialYearSelect">
+        Financial Year
+      </label>
+
+      <select
+        id="financialYearSelect"
+        onchange="changeFinancialYear()"
+      >
+        <option value="">
+          Loading...
+        </option>
+      </select>
+
+    </div>
 
     <button
       type="button"
@@ -88,17 +115,21 @@
 
   </nav>
 
+  <!-- MAIN DASHBOARD -->
+
   <main class="container">
 
     <!-- KPI CARDS -->
 
     <section class="kpi-grid">
 
-      <!-- ENROLMENT AND REVENUE SUMMARY -->
+      <!-- ENROLMENT SUMMARY -->
 
       <div class="kpi-card">
 
-        <h3>Total Enrolments</h3>
+        <h3>
+          Total Enrolments
+        </h3>
 
         <div
           id="totalStudents"
@@ -113,11 +144,15 @@
 
           <span>
             Existing<br>
-            <b id="existingCount">0</b>
+
+            <b id="existingCount">
+              0
+            </b>
           </span>
 
           <span>
             New<br>
+
             <b
               id="newCount"
               class="green"
@@ -132,7 +167,9 @@
 
         <div class="revenue-summary">
 
-          <span>Total Revenue</span>
+          <span>
+            Total Revenue
+          </span>
 
           <strong id="totalRevenue">
             ₹0
@@ -142,11 +179,13 @@
 
       </div>
 
-      <!-- NEW SHARE AND REVENUE SPLIT -->
+      <!-- NEW SHARE AND REVENUE -->
 
       <div class="kpi-card">
 
-        <h3>New Enrolment Share</h3>
+        <h3>
+          New Enrolment Share
+        </h3>
 
         <div
           id="newShare"
@@ -165,11 +204,15 @@
 
           <span>
             Existing Revenue<br>
-            <b id="existingRevenue">₹0</b>
+
+            <b id="existingRevenue">
+              ₹0
+            </b>
           </span>
 
           <span>
             New Revenue<br>
+
             <b
               id="newRevenue"
               class="green"
@@ -206,7 +249,8 @@
         Enrolments by Month
       </h3>
 
-      <canvas id="monthlyChart"></canvas>
+      <canvas id="monthlyChart">
+      </canvas>
 
     </section>
 
@@ -218,7 +262,8 @@
         Revenue by Month
       </h3>
 
-      <canvas id="monthlyRevenueChart"></canvas>
+      <canvas id="monthlyRevenueChart">
+      </canvas>
 
     </section>
 
@@ -230,7 +275,8 @@
         Revenue by Programme Category
       </h3>
 
-      <canvas id="categoryChart"></canvas>
+      <canvas id="categoryChart">
+      </canvas>
 
     </section>
 
@@ -252,9 +298,11 @@
       id="listContainer"
       class="list-container"
     >
+
       <div class="empty">
         Loading programme data...
       </div>
+
     </section>
 
   </main>
