@@ -1,6 +1,23 @@
 let rawData = [];
-let categoryChart;
+
 let monthlyChart;
+let monthlyRevenueChart;
+let categoryChart;
+
+const monthOrder = [
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar"
+];
 
 let state = {
   level: "category",
@@ -24,15 +41,22 @@ async function loadData() {
       throw new Error("Unable to load enrollments.json");
     }
 
-    rawData = await response.json();
+    const data = await response.json();
 
-    if (!Array.isArray(rawData)) {
-      throw new Error("enrollments.json must contain an array");
+    if (!Array.isArray(data)) {
+      throw new Error(
+        "enrollments.json must contain an array"
+      );
     }
+
+    rawData = data;
 
     render();
   } catch (error) {
-    console.error("Error loading enrolment data:", error);
+    console.error(
+      "Error loading enrolment data:",
+      error
+    );
 
     const listContainer =
       document.getElementById("listContainer");
@@ -41,6 +65,7 @@ async function loadData() {
       listContainer.innerHTML = `
         <div class="empty">
           Unable to load enrolment data.
+          Please check enrollments.json.
         </div>
       `;
     }
@@ -55,23 +80,24 @@ function refreshDashboard() {
    MAIN RENDER
 ===================================================== */
 
-
-
 function render() {
   renderKPI();
   renderSummary();
   renderMonthlyChart();
-  renderChart();
+  renderMonthlyRevenueChart();
+  renderCategoryRevenueChart();
   renderBreadcrumb();
   renderList();
 }
 
 /* =====================================================
-   HELPER FUNCTIONS
+   GENERAL HELPERS
 ===================================================== */
 
 function fee(row) {
-  const value = String(row.course_fee ?? "0")
+  const value = String(
+    row.course_fee ?? "0"
+  )
     .replace(/₹/g, "")
     .replace(/,/g, "")
     .trim();
@@ -80,17 +106,27 @@ function fee(row) {
 }
 
 function typeOfStudent(row) {
-  return String(row["new/existing"] || "")
+  return String(
+    row["new/existing"] || ""
+  )
     .trim()
     .toLowerCase();
 }
 
-function newPercent(data) {
-  if (!data.length) return 0;
+function isNewStudent(row) {
+  return typeOfStudent(row).includes("new");
+}
 
-  const newRows = data.filter(row =>
-    typeOfStudent(row).includes("new")
-  );
+function isExistingStudent(row) {
+  return typeOfStudent(row).includes("existing");
+}
+
+function newPercent(data) {
+  if (!data.length) {
+    return 0;
+  }
+
+  const newRows = data.filter(isNewStudent);
 
   return (newRows.length / data.length) * 100;
 }
@@ -100,25 +136,45 @@ function formatCurrency(value) {
     style: "currency",
     currency: "INR",
     maximumFractionDigits: 0
-  }).format(value || 0);
+  }).format(Number(value) || 0);
 }
 
 function formatShortCurrency(value) {
   const amount = Number(value) || 0;
 
   if (amount >= 10000000) {
-    return "₹" + (amount / 10000000).toFixed(2) + " Cr";
+    return (
+      "₹" +
+      (amount / 10000000).toFixed(2) +
+      " Cr"
+    );
   }
 
   if (amount >= 100000) {
-    return "₹" + (amount / 100000).toFixed(2) + " L";
+    return (
+      "₹" +
+      (amount / 100000).toFixed(2) +
+      " L"
+    );
   }
 
   if (amount >= 1000) {
-    return "₹" + (amount / 1000).toFixed(1) + " K";
+    return (
+      "₹" +
+      (amount / 1000).toFixed(1) +
+      " K"
+    );
   }
 
   return formatCurrency(amount);
+}
+
+function setText(id, value) {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.innerText = value;
+  }
 }
 
 function getDateValue(row) {
@@ -131,26 +187,74 @@ function getDateValue(row) {
   );
 }
 
+/* =====================================================
+   DATE AND MONTH HANDLING
+===================================================== */
+
 function getMonthLabel(dateText) {
-  if (!dateText) return "Unknown";
+  if (!dateText) {
+    return "Unknown";
+  }
+
+  const value = String(dateText).trim();
 
   /*
-    Handles dates such as:
+    Handles date format:
     01-Aug-2026
+  */
+
+  const dayMonthYear = value.match(
+    /^(\d{1,2})-([A-Za-z]{3})-(\d{4})$/
+  );
+
+  if (dayMonthYear) {
+    const month =
+      dayMonthYear[2]
+        .substring(0, 3)
+        .toLowerCase();
+
+    const matchedMonth = monthOrder.find(
+      item => item.toLowerCase() === month
+    );
+
+    return matchedMonth || "Unknown";
+  }
+
+  /*
+    Handles date format:
     2026-08-01
   */
 
-  const parts = String(dateText).split("-");
+  const yearMonthDay = value.match(
+    /^(\d{4})-(\d{1,2})-(\d{1,2})$/
+  );
 
-  if (
-    parts.length === 3 &&
-    parts[0].length === 2 &&
-    isNaN(parts[1])
-  ) {
-    return parts[1].substring(0, 3);
+  if (yearMonthDay) {
+    const monthNumber =
+      Number(yearMonthDay[2]);
+
+    const calendarMonths = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ];
+
+    return (
+      calendarMonths[monthNumber - 1] ||
+      "Unknown"
+    );
   }
 
-  const date = new Date(dateText);
+  const date = new Date(value);
 
   if (isNaN(date.getTime())) {
     return "Unknown";
@@ -161,32 +265,22 @@ function getMonthLabel(dateText) {
   });
 }
 
-function setText(id, value) {
-  const element = document.getElementById(id);
-
-  if (element) {
-    element.innerText = value;
-  }
-}
-
 /* =====================================================
    KPI CARDS
 ===================================================== */
 
 function renderKPI() {
+  const totalStudents = rawData.length;
+
+  const newRows =
+    rawData.filter(isNewStudent);
+
+  const existingRows =
+    rawData.filter(isExistingStudent);
+
   const totalRevenue = rawData.reduce(
     (sum, row) => sum + fee(row),
     0
-  );
-
-  const totalStudents = rawData.length;
-
-  const newRows = rawData.filter(row =>
-    typeOfStudent(row).includes("new")
-  );
-
-  const existingRows = rawData.filter(row =>
-    typeOfStudent(row).includes("existing")
   );
 
   const newRevenue = newRows.reduce(
@@ -194,10 +288,11 @@ function renderKPI() {
     0
   );
 
-  const existingRevenue = existingRows.reduce(
-    (sum, row) => sum + fee(row),
-    0
-  );
+  const existingRevenue =
+    existingRows.reduce(
+      (sum, row) => sum + fee(row),
+      0
+    );
 
   const averageRevenue =
     totalStudents > 0
@@ -210,18 +305,23 @@ function renderKPI() {
       : 0;
 
   setText(
-    "totalRevenue",
-    formatShortCurrency(totalRevenue)
-  );
-
-  setText(
     "totalStudents",
     totalStudents.toLocaleString("en-IN")
   );
 
   setText(
-    "avgRevenue",
-    formatShortCurrency(averageRevenue)
+    "existingCount",
+    existingRows.length.toLocaleString("en-IN")
+  );
+
+  setText(
+    "newCount",
+    newRows.length.toLocaleString("en-IN")
+  );
+
+  setText(
+    "totalRevenue",
+    formatShortCurrency(totalRevenue)
   );
 
   setText(
@@ -235,13 +335,8 @@ function renderKPI() {
   );
 
   setText(
-    "existingCount",
-    existingRows.length.toLocaleString("en-IN")
-  );
-
-  setText(
-    "newCount",
-    newRows.length.toLocaleString("en-IN")
+    "avgRevenue",
+    formatShortCurrency(averageRevenue)
   );
 
   setText(
@@ -256,7 +351,7 @@ function renderKPI() {
 }
 
 /* =====================================================
-   DASHBOARD SUMMARY
+   HEADER SUMMARY
 ===================================================== */
 
 function renderSummary() {
@@ -265,12 +360,10 @@ function renderSummary() {
     0
   );
 
-  const totalStudents = rawData.length;
-
   setText(
     "summaryText",
-    `${totalStudents.toLocaleString("en-IN")} enrolments · ` +
-    `${formatShortCurrency(totalRevenue)} revenue · FY27`
+    `${rawData.length.toLocaleString("en-IN")} enrolments · ` +
+      `${formatShortCurrency(totalRevenue)} revenue · FY27`
   );
 
   const now = new Date();
@@ -286,6 +379,47 @@ function renderSummary() {
 }
 
 /* =====================================================
+   MONTHLY DATA
+===================================================== */
+
+function getMonthlyData() {
+  const monthMap = {};
+
+  monthOrder.forEach(month => {
+    monthMap[month] = {
+      existingCount: 0,
+      newCount: 0,
+      existingRevenue: 0,
+      newRevenue: 0
+    };
+  });
+
+  rawData.forEach(row => {
+    const month = getMonthLabel(
+      getDateValue(row)
+    );
+
+    if (!monthMap[month]) {
+      return;
+    }
+
+    if (isExistingStudent(row)) {
+      monthMap[month].existingCount++;
+      monthMap[month].existingRevenue +=
+        fee(row);
+    }
+
+    if (isNewStudent(row)) {
+      monthMap[month].newCount++;
+      monthMap[month].newRevenue +=
+        fee(row);
+    }
+  });
+
+  return monthMap;
+}
+
+/* =====================================================
    MONTHLY ENROLMENT CHART
 ===================================================== */
 
@@ -293,54 +427,21 @@ function renderMonthlyChart() {
   const chartCanvas =
     document.getElementById("monthlyChart");
 
-  if (!chartCanvas || typeof Chart === "undefined") {
+  if (
+    !chartCanvas ||
+    typeof Chart === "undefined"
+  ) {
     return;
   }
 
-  const monthOrder = [
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-    "Jan",
-    "Feb",
-    "Mar"
-  ];
-
-  const monthMap = {};
-
-  monthOrder.forEach(month => {
-    monthMap[month] = {
-      existing: 0,
-      new: 0
-    };
-  });
-
-  rawData.forEach(row => {
-    const month = getMonthLabel(getDateValue(row));
-
-    if (!monthMap[month]) {
-      return;
-    }
-
-    if (typeOfStudent(row).includes("existing")) {
-      monthMap[month].existing++;
-    } else if (typeOfStudent(row).includes("new")) {
-      monthMap[month].new++;
-    }
-  });
+  const monthMap = getMonthlyData();
 
   const existingData = monthOrder.map(
-    month => monthMap[month].existing
+    month => monthMap[month].existingCount
   );
 
   const newData = monthOrder.map(
-    month => monthMap[month].new
+    month => monthMap[month].newCount
   );
 
   if (monthlyChart) {
@@ -359,14 +460,14 @@ function renderMonthlyChart() {
           data: existingData,
           backgroundColor: "#368ddb",
           borderRadius: 5,
-          stack: "monthly"
+          stack: "monthlyEnrolments"
         },
         {
           label: "New",
           data: newData,
           backgroundColor: "#1b9d7f",
           borderRadius: 5,
-          stack: "monthly"
+          stack: "monthlyEnrolments"
         }
       ]
     },
@@ -375,7 +476,22 @@ function renderMonthlyChart() {
       responsive: true,
       maintainAspectRatio: false,
 
+      interaction: {
+        mode: "index",
+        intersect: false
+      },
+
       plugins: {
+        legend: {
+          position: "top",
+          align: "end",
+
+          labels: {
+            boxWidth: 12,
+            boxHeight: 12
+          }
+        },
+
         tooltip: {
           callbacks: {
             label(context) {
@@ -383,21 +499,18 @@ function renderMonthlyChart() {
                 context.dataset.label +
                 ": " +
                 context.raw +
-                " students"
+                " enrolments"
               );
-            }
-          }
-        },
+            },
 
-        legend: {
-          position: "top",
-          align: "end",
+            footer(items) {
+              const total = items.reduce(
+                (sum, item) =>
+                  sum + Number(item.raw || 0),
+                0
+              );
 
-          labels: {
-            boxWidth: 12,
-            boxHeight: 12,
-            font: {
-              size: 12
+              return "Total: " + total;
             }
           }
         }
@@ -406,16 +519,9 @@ function renderMonthlyChart() {
       scales: {
         x: {
           stacked: true,
+
           grid: {
             display: false
-          },
-
-          ticks: {
-            font: {
-              size: 12
-            },
-            maxRotation: 0,
-            minRotation: 0
           }
         },
 
@@ -428,10 +534,12 @@ function renderMonthlyChart() {
           },
 
           ticks: {
-            precision: 0,
-            font: {
-              size: 12
-            }
+            precision: 0
+          },
+
+          title: {
+            display: true,
+            text: "Number of enrolments"
           }
         }
       }
@@ -440,140 +548,328 @@ function renderMonthlyChart() {
 }
 
 /* =====================================================
-   CATEGORY REVENUE CHART
+   MONTHLY REVENUE CHART
 ===================================================== */
 
-function renderChart() {
+function renderMonthlyRevenueChart() {
   const chartCanvas =
-    document.getElementById("categoryChart");
+    document.getElementById(
+      "monthlyRevenueChart"
+    );
 
-  if (!chartCanvas || typeof Chart === "undefined") {
+  if (
+    !chartCanvas ||
+    typeof Chart === "undefined"
+  ) {
     return;
   }
 
-  const grouped = groupByCategory(rawData);
+  const monthMap = getMonthlyData();
 
-  const labels = grouped.map(
-    item => item.category
-  );
+  const existingRevenueData =
+    monthOrder.map(
+      month =>
+        monthMap[month].existingRevenue
+    );
 
-  const existingData = grouped.map(group =>
-    rawData
-      .filter(row =>
-        row.course_category === group.category &&
-        typeOfStudent(row).includes("existing")
-      )
-      .reduce(
-        (sum, row) => sum + fee(row),
-        0
-      )
-  );
+  const newRevenueData =
+    monthOrder.map(
+      month =>
+        monthMap[month].newRevenue
+    );
 
-  const newData = grouped.map(group =>
-    rawData
-      .filter(row =>
-        row.course_category === group.category &&
-        typeOfStudent(row).includes("new")
-      )
-      .reduce(
-        (sum, row) => sum + fee(row),
-        0
-      )
-  );
-
-  if (categoryChart) {
-    categoryChart.destroy();
+  if (monthlyRevenueChart) {
+    monthlyRevenueChart.destroy();
   }
 
-  categoryChart = new Chart(chartCanvas, {
-    type: "bar",
+  monthlyRevenueChart = new Chart(
+    chartCanvas,
+    {
+      type: "bar",
 
-    data: {
-      labels: labels,
+      data: {
+        labels: monthOrder,
 
-      datasets: [
-        {
-          label: "Existing Revenue",
-          data: existingData,
-          backgroundColor: "#368ddb",
-          borderRadius: 5
-        },
-        {
-          label: "New Revenue",
-          data: newData,
-          backgroundColor: "#1b9d7f",
-          borderRadius: 5
-        }
-      ]
-    },
-
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-
-      plugins: {
-        tooltip: {
-          callbacks: {
-            label(context) {
-              return (
-                context.dataset.label +
-                ": " +
-                formatCurrency(context.raw)
-              );
-            }
+        datasets: [
+          {
+            label: "Existing Revenue",
+            data: existingRevenueData,
+            backgroundColor: "#368ddb",
+            borderRadius: 5,
+            stack: "monthlyRevenue"
+          },
+          {
+            label: "New Revenue",
+            data: newRevenueData,
+            backgroundColor: "#1b9d7f",
+            borderRadius: 5,
+            stack: "monthlyRevenue"
           }
-        },
-
-        legend: {
-          position: "top",
-          align: "end",
-
-          labels: {
-            boxWidth: 12,
-            boxHeight: 12,
-            font: {
-              size: 12
-            }
-          }
-        }
+        ]
       },
 
-      scales: {
-        x: {
-          grid: {
-            display: false
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        interaction: {
+          mode: "index",
+          intersect: false
+        },
+
+        plugins: {
+          legend: {
+            position: "top",
+            align: "end",
+
+            labels: {
+              boxWidth: 12,
+              boxHeight: 12
+            }
           },
 
-          ticks: {
-            font: {
-              size: 11
-            },
-            maxRotation: 0,
-            minRotation: 0,
-            autoSkip: false
+          tooltip: {
+            callbacks: {
+              label(context) {
+                return (
+                  context.dataset.label +
+                  ": " +
+                  formatCurrency(context.raw)
+                );
+              },
+
+              footer(items) {
+                const total = items.reduce(
+                  (sum, item) =>
+                    sum + Number(item.raw || 0),
+                  0
+                );
+
+                return (
+                  "Total: " +
+                  formatCurrency(total)
+                );
+              }
+            }
           }
         },
 
-        y: {
-          beginAtZero: true,
+        scales: {
+          x: {
+            stacked: true,
 
-          grid: {
-            color: "#e5e5e5"
+            grid: {
+              display: false
+            }
           },
 
-          ticks: {
-            font: {
-              size: 12
+          y: {
+            stacked: true,
+            beginAtZero: true,
+
+            grid: {
+              color: "#e5e5e5"
             },
 
-            callback(value) {
-              return formatShortCurrency(value);
+            ticks: {
+              callback(value) {
+                return formatShortCurrency(
+                  value
+                );
+              }
+            },
+
+            title: {
+              display: true,
+              text: "Revenue"
             }
           }
         }
       }
     }
-  });
+  );
+}
+
+/* =====================================================
+   CATEGORY REVENUE CHART
+===================================================== */
+
+function renderCategoryRevenueChart() {
+  const chartCanvas =
+    document.getElementById(
+      "categoryChart"
+    );
+
+  if (
+    !chartCanvas ||
+    typeof Chart === "undefined"
+  ) {
+    return;
+  }
+
+  const grouped =
+    groupByCategory(rawData);
+
+  const labels = grouped.map(
+    item => item.category
+  );
+
+  const existingRevenueData =
+    grouped.map(group => {
+      return rawData
+        .filter(row => {
+          const category =
+            row.course_category ||
+            "Uncategorised";
+
+          return (
+            category === group.category &&
+            isExistingStudent(row)
+          );
+        })
+        .reduce(
+          (sum, row) =>
+            sum + fee(row),
+          0
+        );
+    });
+
+  const newRevenueData =
+    grouped.map(group => {
+      return rawData
+        .filter(row => {
+          const category =
+            row.course_category ||
+            "Uncategorised";
+
+          return (
+            category === group.category &&
+            isNewStudent(row)
+          );
+        })
+        .reduce(
+          (sum, row) =>
+            sum + fee(row),
+          0
+        );
+    });
+
+  if (categoryChart) {
+    categoryChart.destroy();
+  }
+
+  categoryChart = new Chart(
+    chartCanvas,
+    {
+      type: "bar",
+
+      data: {
+        labels: labels,
+
+        datasets: [
+          {
+            label: "Existing Revenue",
+            data: existingRevenueData,
+            backgroundColor: "#368ddb",
+            borderRadius: 5,
+            stack: "categoryRevenue"
+          },
+          {
+            label: "New Revenue",
+            data: newRevenueData,
+            backgroundColor: "#1b9d7f",
+            borderRadius: 5,
+            stack: "categoryRevenue"
+          }
+        ]
+      },
+
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        interaction: {
+          mode: "index",
+          intersect: false
+        },
+
+        plugins: {
+          legend: {
+            position: "top",
+            align: "end",
+
+            labels: {
+              boxWidth: 12,
+              boxHeight: 12
+            }
+          },
+
+          tooltip: {
+            callbacks: {
+              label(context) {
+                return (
+                  context.dataset.label +
+                  ": " +
+                  formatCurrency(context.raw)
+                );
+              },
+
+              footer(items) {
+                const total = items.reduce(
+                  (sum, item) =>
+                    sum + Number(item.raw || 0),
+                  0
+                );
+
+                return (
+                  "Total: " +
+                  formatCurrency(total)
+                );
+              }
+            }
+          }
+        },
+
+        scales: {
+          x: {
+            stacked: true,
+
+            grid: {
+              display: false
+            },
+
+            ticks: {
+              autoSkip: false,
+              maxRotation: 30,
+              minRotation: 0
+            }
+          },
+
+          y: {
+            stacked: true,
+            beginAtZero: true,
+
+            grid: {
+              color: "#e5e5e5"
+            },
+
+            ticks: {
+              callback(value) {
+                return formatShortCurrency(
+                  value
+                );
+              }
+            },
+
+            title: {
+              display: true,
+              text: "Revenue"
+            }
+          }
+        }
+      }
+    }
+  );
 }
 
 /* =====================================================
@@ -615,11 +911,12 @@ function renderBreadcrumb() {
 }
 
 /* =====================================================
-   CATEGORY, COURSE AND STUDENT LIST
+   PROGRAMME BREAKDOWN
 ===================================================== */
 
 function renderList() {
-  const box = document.getElementById("listContainer");
+  const box =
+    document.getElementById("listContainer");
 
   if (!box) {
     return;
@@ -627,154 +924,194 @@ function renderList() {
 
   box.innerHTML = "";
 
-  /* -----------------------------
-     CATEGORY LEVEL
-  ----------------------------- */
-
   if (state.level === "category") {
-    const grouped = groupByCategory(rawData);
-
-    grouped.forEach(item => {
-      const categoryRows = rawData.filter(
-        row =>
-          (row.course_category || "Uncategorised") ===
-          item.category
-      );
-
-      const newPct =
-        newPercent(categoryRows).toFixed(0);
-
-      box.innerHTML += `
-        <div
-          class="list-card"
-          onclick="drillToCourse(
-            '${encodeURIComponent(item.category)}'
-          )"
-        >
-          <div class="icon">▶</div>
-
-          <div class="title">
-            ${item.category}
-          </div>
-
-          <div>
-            <div class="amount">
-              ${formatShortCurrency(item.revenue)}
-            </div>
-
-            <div class="students">
-              ${item.count} students · ${newPct}% new
-            </div>
-          </div>
-        </div>
-      `;
-    });
-
-    box.innerHTML += grandTotalCard(rawData);
+    renderCategoryList(box);
   }
-
-  /* -----------------------------
-     COURSE LEVEL
-  ----------------------------- */
 
   if (state.level === "course") {
-    const filtered = rawData.filter(
-      row =>
-        (row.course_category || "Uncategorised") ===
-        state.selectedCategory
-    );
-
-    const grouped = groupByCourse(filtered);
-
-    grouped.forEach(item => {
-      const courseRows = filtered.filter(
-        row =>
-          (row.course_name || "Unnamed Course") ===
-          item.course
-      );
-
-      const newPct =
-        newPercent(courseRows).toFixed(0);
-
-      box.innerHTML += `
-        <div
-          class="list-card"
-          onclick="drillToStudent(
-            '${encodeURIComponent(item.course)}'
-          )"
-        >
-          <div class="icon">▶</div>
-
-          <div class="title">
-            ${item.course}
-          </div>
-
-          <div>
-            <div class="amount">
-              ${formatShortCurrency(item.revenue)}
-            </div>
-
-            <div class="students">
-              ${item.count} students · ${newPct}% new
-            </div>
-          </div>
-        </div>
-      `;
-    });
-
-    box.innerHTML += grandTotalCard(filtered);
+    renderCourseList(box);
   }
-
-  /* -----------------------------
-     STUDENT LEVEL
-  ----------------------------- */
 
   if (state.level === "student") {
-    const filtered = rawData.filter(
+    renderStudentList(box);
+  }
+}
+
+/* =====================================================
+   CATEGORY LIST
+===================================================== */
+
+function renderCategoryList(box) {
+  const grouped =
+    groupByCategory(rawData);
+
+  grouped.forEach(item => {
+    const categoryRows = rawData.filter(
       row =>
-        (row.course_name || "Unnamed Course") ===
-          state.selectedCourse &&
-        (row.course_category || "Uncategorised") ===
-          state.selectedCategory
+        (
+          row.course_category ||
+          "Uncategorised"
+        ) === item.category
     );
 
-    filtered.forEach(row => {
-      const initials =
-        getInitials(row.student_name);
+    const newPct =
+      newPercent(categoryRows).toFixed(0);
 
-      box.innerHTML += `
-        <div class="student-row">
+    box.innerHTML += `
+      <div
+        class="list-card"
+        onclick="drillToCourse(
+          '${encodeURIComponent(
+            item.category
+          )}'
+        )"
+      >
+        <div class="icon">▶</div>
 
-          <div class="avatar">
-            ${initials}
-          </div>
-
-          <div>
-            <div class="title">
-              ${row.student_name || "Unnamed Student"}
-            </div>
-
-            <div class="students">
-              ${row.enrolment_date || ""}
-            </div>
-          </div>
-
-          <div>
-            <div class="amount">
-              ${formatCurrency(fee(row))}
-            </div>
-
-            <div class="badge">
-              ${row["new/existing"] || ""}
-            </div>
-          </div>
-
+        <div class="title">
+          ${item.category}
         </div>
-      `;
-    });
 
-    box.innerHTML += grandTotalCard(filtered);
-  }
+        <div>
+          <div class="amount">
+            ${formatShortCurrency(
+              item.revenue
+            )}
+          </div>
+
+          <div class="students">
+            ${item.count} enrolments ·
+            ${newPct}% new
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  box.innerHTML +=
+    grandTotalCard(rawData);
+}
+
+/* =====================================================
+   COURSE LIST
+===================================================== */
+
+function renderCourseList(box) {
+  const filtered = rawData.filter(
+    row =>
+      (
+        row.course_category ||
+        "Uncategorised"
+      ) === state.selectedCategory
+  );
+
+  const grouped =
+    groupByCourse(filtered);
+
+  grouped.forEach(item => {
+    const courseRows = filtered.filter(
+      row =>
+        (
+          row.course_name ||
+          "Unnamed Course"
+        ) === item.course
+    );
+
+    const newPct =
+      newPercent(courseRows).toFixed(0);
+
+    box.innerHTML += `
+      <div
+        class="list-card"
+        onclick="drillToStudent(
+          '${encodeURIComponent(
+            item.course
+          )}'
+        )"
+      >
+        <div class="icon">▶</div>
+
+        <div class="title">
+          ${item.course}
+        </div>
+
+        <div>
+          <div class="amount">
+            ${formatShortCurrency(
+              item.revenue
+            )}
+          </div>
+
+          <div class="students">
+            ${item.count} enrolments ·
+            ${newPct}% new
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  box.innerHTML +=
+    grandTotalCard(filtered);
+}
+
+/* =====================================================
+   STUDENT LIST
+===================================================== */
+
+function renderStudentList(box) {
+  const filtered = rawData.filter(
+    row =>
+      (
+        row.course_name ||
+        "Unnamed Course"
+      ) === state.selectedCourse &&
+      (
+        row.course_category ||
+        "Uncategorised"
+      ) === state.selectedCategory
+  );
+
+  filtered.forEach(row => {
+    const initials =
+      getInitials(row.student_name);
+
+    box.innerHTML += `
+      <div class="student-row">
+
+        <div class="avatar">
+          ${initials}
+        </div>
+
+        <div>
+          <div class="title">
+            ${
+              row.student_name ||
+              "Unnamed Student"
+            }
+          </div>
+
+          <div class="students">
+            ${getDateValue(row)}
+          </div>
+        </div>
+
+        <div>
+          <div class="amount">
+            ${formatCurrency(fee(row))}
+          </div>
+
+          <div class="badge">
+            ${row["new/existing"] || ""}
+          </div>
+        </div>
+
+      </div>
+    `;
+  });
+
+  box.innerHTML +=
+    grandTotalCard(filtered);
 }
 
 /* =====================================================
@@ -801,11 +1138,14 @@ function grandTotalCard(data) {
 
       <div>
         <div class="amount">
-          ${formatShortCurrency(totalRevenue)}
+          ${formatShortCurrency(
+            totalRevenue
+          )}
         </div>
 
         <div class="students">
-          ${data.length} students · ${newPct}% new
+          ${data.length} enrolments ·
+          ${newPct}% new
         </div>
       </div>
 
@@ -814,7 +1154,7 @@ function grandTotalCard(data) {
 }
 
 /* =====================================================
-   GROUP DATA BY CATEGORY
+   GROUP BY CATEGORY
 ===================================================== */
 
 function groupByCategory(data) {
@@ -822,7 +1162,8 @@ function groupByCategory(data) {
 
   data.forEach(row => {
     const category =
-      row.course_category || "Uncategorised";
+      row.course_category ||
+      "Uncategorised";
 
     if (!map[category]) {
       map[category] = {
@@ -842,7 +1183,7 @@ function groupByCategory(data) {
 }
 
 /* =====================================================
-   GROUP DATA BY COURSE
+   GROUP BY COURSE
 ===================================================== */
 
 function groupByCourse(data) {
@@ -850,7 +1191,8 @@ function groupByCourse(data) {
 
   data.forEach(row => {
     const course =
-      row.course_name || "Unnamed Course";
+      row.course_name ||
+      "Unnamed Course";
 
     if (!map[course]) {
       map[course] = {
@@ -890,26 +1232,32 @@ function getInitials(name = "") {
 
 function drillToCourse(category) {
   state.level = "course";
+
   state.selectedCategory =
     decodeURIComponent(category);
+
   state.selectedCourse = null;
 
-  render();
+  renderBreadcrumb();
+  renderList();
 }
 
 function drillToStudent(course) {
   state.level = "student";
+
   state.selectedCourse =
     decodeURIComponent(course);
 
-  render();
+  renderBreadcrumb();
+  renderList();
 }
 
 function backToCourses() {
   state.level = "course";
   state.selectedCourse = null;
 
-  render();
+  renderBreadcrumb();
+  renderList();
 }
 
 function goHome() {
@@ -917,7 +1265,8 @@ function goHome() {
   state.selectedCategory = null;
   state.selectedCourse = null;
 
-  render();
+  renderBreadcrumb();
+  renderList();
 }
 
 function goToStudents() {
@@ -928,9 +1277,20 @@ function goToStudents() {
    MAKE FUNCTIONS AVAILABLE TO HTML
 ===================================================== */
 
-window.drillToCourse = drillToCourse;
-window.drillToStudent = drillToStudent;
-window.goHome = goHome;
-window.backToCourses = backToCourses;
-window.refreshDashboard = refreshDashboard;
-window.goToStudents = goToStudents;
+window.refreshDashboard =
+  refreshDashboard;
+
+window.drillToCourse =
+  drillToCourse;
+
+window.drillToStudent =
+  drillToStudent;
+
+window.backToCourses =
+  backToCourses;
+
+window.goHome =
+  goHome;
+
+window.goToStudents =
+  goToStudents;
