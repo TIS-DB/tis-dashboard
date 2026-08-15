@@ -30,8 +30,6 @@
 
 <body>
 
-  <!-- DASHBOARD HEADER -->
-
   <header class="top-header">
 
     <div>
@@ -63,8 +61,6 @@
     </div>
 
   </header>
-
-  <!-- NAVIGATION -->
 
   <nav class="tabs">
 
@@ -99,31 +95,11 @@
       Student Details
     </button>
 
-    <!--<button
-      type="button"
-      onclick="location.href='weeklyreview.html'"
-    >
-      Weekly Reviews
-    </button>
-
-   <button
-      type="button"
-      onclick="location.href='cskpi.html'"
-    >
-      Customer Success KPI
-    </button>-->
-
   </nav>
-
-  <!-- MAIN DASHBOARD -->
 
   <main class="container">
 
-    <!-- KPI CARDS -->
-
     <section class="kpi-grid">
-
-      <!-- ENROLMENT SUMMARY -->
 
       <div class="kpi-card">
 
@@ -178,8 +154,6 @@
         </div>
 
       </div>
-
-      <!-- NEW SHARE AND REVENUE -->
 
       <div class="kpi-card">
 
@@ -241,20 +215,15 @@
 
     </section>
 
-    <!-- MONTHLY ENROLMENT CHART -->
-
     <section class="chart-card">
 
       <h3>
         Enrolments by Month
       </h3>
 
-      <canvas id="monthlyChart">
-      </canvas>
+      <canvas id="monthlyChart"></canvas>
 
     </section>
-
-    <!-- MONTHLY REVENUE CHART -->
 
     <section class="chart-card">
 
@@ -262,12 +231,19 @@
         Revenue by Month
       </h3>
 
-      <canvas id="monthlyRevenueChart">
-      </canvas>
+      <canvas id="monthlyRevenueChart"></canvas>
 
     </section>
 
-    <!-- CATEGORY REVENUE CHART -->
+    <section class="chart-card">
+
+      <h3>
+        Top 4 Categories — Monthly Revenue
+      </h3>
+
+      <canvas id="topCategoryMonthlyChart"></canvas>
+
+    </section>
 
     <section class="chart-card">
 
@@ -275,12 +251,9 @@
         Revenue by Programme Category
       </h3>
 
-      <canvas id="categoryChart">
-      </canvas>
+      <canvas id="categoryChart"></canvas>
 
     </section>
-
-    <!-- PROGRAMME BREAKDOWN -->
 
     <section class="breakdown-header">
 
