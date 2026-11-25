@@ -6246,15 +6246,6 @@
         "financial_year": "FY26"
     },
     {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Arth Swaroop",
-        "new/existing": "Existing",
-        "enrolment_date": "17-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
         "course_category": "Bootcamps",
         "course_name": "Robotics Foundation Program",
         "student_name": "Reyansh Govindaraju",
@@ -6288,6 +6279,15 @@
         "new/existing": "New",
         "enrolment_date": "17-Oct-2025",
         "course_fee": "25000",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Arth Swaroop",
+        "new/existing": "Existing",
+        "enrolment_date": "17-Oct-2025",
+        "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
@@ -6896,25 +6896,7 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Ira Raghavan",
-        "new/existing": "Existing",
-        "enrolment_date": "29-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "Bootcamps",
-        "course_name": "Robotics Foundation Program",
-        "student_name": "Vihaan Chouhan",
-        "new/existing": "New",
-        "enrolment_date": "29-Oct-2025",
-        "course_fee": "25000",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Riana Arenja",
+        "student_name": "Riddhi Shankar",
         "new/existing": "Existing",
         "enrolment_date": "29-Oct-2025",
         "course_fee": "2500",
@@ -6932,7 +6914,7 @@
     {
         "course_category": "Bootcamps",
         "course_name": "Robotics Foundation Program",
-        "student_name": "Swara Karle",
+        "student_name": "Vinayak Jangam",
         "new/existing": "New",
         "enrolment_date": "29-Oct-2025",
         "course_fee": "25000",
@@ -6950,7 +6932,7 @@
     {
         "course_category": "Bootcamps",
         "course_name": "Robotics Foundation Program",
-        "student_name": "Vinayak Jangam",
+        "student_name": "Swara Karle",
         "new/existing": "New",
         "enrolment_date": "29-Oct-2025",
         "course_fee": "25000",
@@ -6959,7 +6941,7 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Riddhi Shankar",
+        "student_name": "Ira Raghavan",
         "new/existing": "Existing",
         "enrolment_date": "29-Oct-2025",
         "course_fee": "2500",
@@ -6968,91 +6950,19 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Mrunali Nikar",
+        "student_name": "Riana Arenja",
         "new/existing": "Existing",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Aliza Khan",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Raunak Jaiswar",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Anayaditya Singh Chauhan",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Kinjal Purohit",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Aanya Bhimrajka",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
+        "enrolment_date": "29-Oct-2025",
         "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
         "course_category": "Bootcamps",
         "course_name": "Robotics Foundation Program",
-        "student_name": "Alfiya Chunnu Shaikh",
+        "student_name": "Vihaan Chouhan",
         "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
+        "enrolment_date": "29-Oct-2025",
         "course_fee": "25000",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "Bootcamps",
-        "course_name": "Robotics Foundation Program",
-        "student_name": "Rehnuma Shaikh",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "25000",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "Bootcamps",
-        "course_name": "Robotics Foundation Program",
-        "student_name": "Aliza Khan",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "25000",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Deepak Shukla",
-        "new/existing": "New",
-        "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
@@ -7085,10 +6995,19 @@
     {
         "course_category": "Bootcamps",
         "course_name": "Robotics Foundation Program",
-        "student_name": "Raunak Jaiswar",
+        "student_name": "Aliza Khan",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
         "course_fee": "25000",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Mrunali Nikar",
+        "new/existing": "Existing",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
@@ -7101,6 +7020,78 @@
         "financial_year": "FY26"
     },
     {
+        "course_category": "Bootcamps",
+        "course_name": "Robotics Foundation Program",
+        "student_name": "Alfiya Chunnu Shaikh",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "25000",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "Robotics Foundation Program",
+        "student_name": "Rehnuma Shaikh",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "25000",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Kinjal Purohit",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Anayaditya Singh Chauhan",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "Bootcamps",
+        "course_name": "Robotics Foundation Program",
+        "student_name": "Raunak Jaiswar",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "25000",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Aliza Khan",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Deepak Shukla",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Aahaan Tugnawat",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
         "student_name": "Anurag Sharma",
@@ -7110,12 +7101,12 @@
         "financial_year": "FY26"
     },
     {
-        "course_category": "Bootcamps",
-        "course_name": "Robotics Foundation Program",
-        "student_name": "Prince Rajkumar Gupta",
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Aanya Bhimrajka",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
-        "course_fee": "25000",
+        "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
@@ -7191,18 +7182,18 @@
         "financial_year": "FY26"
     },
     {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Yogesh Sonawane",
+        "course_category": "Bootcamps",
+        "course_name": "Robotics Foundation Program",
+        "student_name": "Aatiqa Shaikh",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
+        "course_fee": "25000",
         "financial_year": "FY26"
     },
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Mirajul Sardar",
+        "student_name": "Yogesh Sonawane",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
         "course_fee": "2500",
@@ -7227,12 +7218,12 @@
         "financial_year": "FY26"
     },
     {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Aahaan Tugnawat",
+        "course_category": "Bootcamps",
+        "course_name": "Robotics Foundation Program",
+        "student_name": "Prince Rajkumar Gupta",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
-        "course_fee": "2500",
+        "course_fee": "25000",
         "financial_year": "FY26"
     },
     {
@@ -7272,12 +7263,21 @@
         "financial_year": "FY26"
     },
     {
-        "course_category": "Bootcamps",
-        "course_name": "Robotics Foundation Program",
-        "student_name": "Aatiqa Shaikh",
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Raunak Jaiswar",
         "new/existing": "New",
         "enrolment_date": "30-Oct-2025",
-        "course_fee": "25000",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Mirajul Sardar",
+        "new/existing": "New",
+        "enrolment_date": "30-Oct-2025",
+        "course_fee": "2500",
         "financial_year": "FY26"
     },
     {
@@ -9650,7 +9650,7 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Diya Agarwal",
+        "student_name": "EKANSH SONI",
         "new/existing": "New",
         "enrolment_date": "07-Nov-2025",
         "course_fee": "2500",
@@ -9722,7 +9722,7 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "EKANSH SONI",
+        "student_name": "Diya Agarwal",
         "new/existing": "New",
         "enrolment_date": "07-Nov-2025",
         "course_fee": "2500",
@@ -10172,15 +10172,6 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Radha Yewale",
-        "new/existing": "New",
-        "enrolment_date": "08-Nov-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
         "student_name": "MALKA SHAIKH",
         "new/existing": "New",
         "enrolment_date": "08-Nov-2025",
@@ -10191,6 +10182,15 @@
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
         "student_name": "Divya Khandekar",
+        "new/existing": "New",
+        "enrolment_date": "08-Nov-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Radha Yewale",
         "new/existing": "New",
         "enrolment_date": "08-Nov-2025",
         "course_fee": "2500",
@@ -10631,15 +10631,6 @@
     {
         "course_category": "NRL",
         "course_name": "National Robotics League Season 1 (2025)",
-        "student_name": "Sathya Sathish",
-        "new/existing": "Existing",
-        "enrolment_date": "08-Nov-2025",
-        "course_fee": "2500",
-        "financial_year": "FY26"
-    },
-    {
-        "course_category": "NRL",
-        "course_name": "National Robotics League Season 1 (2025)",
         "student_name": "Mahi Shah",
         "new/existing": "New",
         "enrolment_date": "08-Nov-2025",
@@ -10651,6 +10642,15 @@
         "course_name": "National Robotics League Season 1 (2025)",
         "student_name": "Maheeka Bijlani",
         "new/existing": "New",
+        "enrolment_date": "08-Nov-2025",
+        "course_fee": "2500",
+        "financial_year": "FY26"
+    },
+    {
+        "course_category": "NRL",
+        "course_name": "National Robotics League Season 1 (2025)",
+        "student_name": "Sathya Sathish",
+        "new/existing": "Existing",
         "enrolment_date": "08-Nov-2025",
         "course_fee": "2500",
         "financial_year": "FY26"
@@ -23554,6 +23554,15 @@
     },
     {
         "course_category": "TIS Schools",
+        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
+        "student_name": "Hreyansh Gupta",
+        "new/existing": "New",
+        "enrolment_date": "15-Sep-2026",
+        "course_fee": "17000",
+        "financial_year": "FY27"
+    },
+    {
+        "course_category": "TIS Schools",
         "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
         "student_name": "Ronav Ghelani",
         "new/existing": "New",
@@ -23717,7 +23726,7 @@
     {
         "course_category": "TIS Schools",
         "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
-        "student_name": "Hreyansh Gupta",
+        "student_name": "Anaya Jagasia",
         "new/existing": "New",
         "enrolment_date": "15-Sep-2026",
         "course_fee": "17000",
@@ -23806,20 +23815,20 @@
     },
     {
         "course_category": "TIS Schools",
-        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
-        "student_name": "Rhythm Gosavi",
-        "new/existing": "New",
-        "enrolment_date": "15-Sep-2026",
-        "course_fee": "16000",
-        "financial_year": "FY27"
-    },
-    {
-        "course_category": "TIS Schools",
         "course_name": "Physical AI and Product Innovation (Grade 8 - 10)",
         "student_name": "Shiuli Bhuwania",
         "new/existing": "New",
         "enrolment_date": "15-Sep-2026",
         "course_fee": "18000",
+        "financial_year": "FY27"
+    },
+    {
+        "course_category": "TIS Schools",
+        "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
+        "student_name": "Nirvair Agrawal",
+        "new/existing": "New",
+        "enrolment_date": "15-Sep-2026",
+        "course_fee": "16000",
         "financial_year": "FY27"
     },
     {
@@ -23887,17 +23896,8 @@
     },
     {
         "course_category": "TIS Schools",
-        "course_name": "Applied Robotics and AI System (Grade 5 - 7)",
-        "student_name": "Anaya Jagasia",
-        "new/existing": "New",
-        "enrolment_date": "15-Sep-2026",
-        "course_fee": "17000",
-        "financial_year": "FY27"
-    },
-    {
-        "course_category": "TIS Schools",
         "course_name": "Robotics & Design Foundation (Grade 3 - 4)",
-        "student_name": "Nirvair Agrawal",
+        "student_name": "Rhythm Gosavi",
         "new/existing": "New",
         "enrolment_date": "15-Sep-2026",
         "course_fee": "16000",
@@ -27802,6 +27802,15 @@
     },
     {
         "course_category": "TIS Foundation",
+        "course_name": "3D CAD (Solidworks)",
+        "student_name": "Jiyansh Oswal",
+        "new/existing": "New",
+        "enrolment_date": "28-Oct-2026",
+        "course_fee": "31200",
+        "financial_year": "FY27"
+    },
+    {
+        "course_category": "TIS Foundation",
         "course_name": "Electronics Senior - Arduino",
         "student_name": "Rajveer Chawla",
         "new/existing": "Existing",
@@ -27816,15 +27825,6 @@
         "new/existing": "Existing",
         "enrolment_date": "28-Oct-2026",
         "course_fee": "19500",
-        "financial_year": "FY27"
-    },
-    {
-        "course_category": "TIS Foundation",
-        "course_name": "3D CAD (Solidworks)",
-        "student_name": "Jiyansh Oswal",
-        "new/existing": "New",
-        "enrolment_date": "28-Oct-2026",
-        "course_fee": "31200",
         "financial_year": "FY27"
     },
     {
@@ -27856,8 +27856,8 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "Design Intermediate (Onshape)",
-        "student_name": "Sahana Vijay",
+        "course_name": "Internet of Things",
+        "student_name": "Avyaan Singh",
         "new/existing": "Existing",
         "enrolment_date": "30-Oct-2026",
         "course_fee": "31200",
@@ -27865,8 +27865,8 @@
     },
     {
         "course_category": "TIS Foundation",
-        "course_name": "Internet of Things",
-        "student_name": "Avyaan Singh",
+        "course_name": "Design Intermediate (Onshape)",
+        "student_name": "Sahana Vijay",
         "new/existing": "Existing",
         "enrolment_date": "30-Oct-2026",
         "course_fee": "31200",
@@ -27891,21 +27891,21 @@
         "financial_year": "FY27"
     },
     {
-        "course_category": "TIS Nurturing Innovators",
-        "course_name": "NI Advanced 20 Hours",
-        "student_name": "Manish Ganeshan",
-        "new/existing": "Existing",
-        "enrolment_date": "02-Nov-2026",
-        "course_fee": "66000",
-        "financial_year": "FY27"
-    },
-    {
         "course_category": "TIS Foundation",
         "course_name": "Design Foundation",
         "student_name": "Meera Kamat",
         "new/existing": "Existing",
         "enrolment_date": "02-Nov-2026",
         "course_fee": "19500",
+        "financial_year": "FY27"
+    },
+    {
+        "course_category": "TIS Nurturing Innovators",
+        "course_name": "NI Advanced 20 Hours",
+        "student_name": "Manish Ganeshan",
+        "new/existing": "Existing",
+        "enrolment_date": "02-Nov-2026",
+        "course_fee": "66000",
         "financial_year": "FY27"
     },
     {
@@ -28550,7 +28550,7 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FIRST Robotics Competition - Delhi",
-        "student_name": "Daksh Pal",
+        "student_name": "Tanishq Maurya",
         "new/existing": "New",
         "enrolment_date": "13-Nov-2026",
         "course_fee": "0",
@@ -28559,7 +28559,7 @@
     {
         "course_category": "TIS Compete",
         "course_name": "FIRST Robotics Competition - Delhi",
-        "student_name": "Tanishq Maurya",
+        "student_name": "Daksh Pal",
         "new/existing": "New",
         "enrolment_date": "13-Nov-2026",
         "course_fee": "0",
